@@ -1,0 +1,56 @@
+
+.single-counter-box {    
+    margin-bottom: 50px;
+    @media #{$xs} {            
+        text-align: center;
+    }
+    h6 {
+        font-size: 18px;
+        font-weight: 400;
+        color: $gray;
+
+        @media #{$xs} {            
+            font-size: 17px;
+        }
+    }
+    
+}
+
+.single-counter-box .counter-number span {
+	font-size: 70px;
+    font-weight: 500;
+    line-height: 1.5;
+	letter-spacing: 1px;
+    color: #171717;
+    
+    @media #{$lg} {
+        font-size: 70px;
+    }
+    @media #{$md} {
+        font-size: 50px;
+    }
+
+    @media #{$xs} {
+        font-size: 45px;
+    }
+}
+
+.single-counter-box p.counter-number {
+	font-size: 70px;
+    color: #171717;
+    @media #{$lg} {
+        font-size: 65px;
+    }
+    @media #{$md} {
+        font-size: 55px;
+    }
+    @media #{$xs} {
+        font-size: 50px;
+    }
+    
+}
+
+.single-counter-box p.counter-number {
+	border-bottom: 1px solid #ddd;
+}
+

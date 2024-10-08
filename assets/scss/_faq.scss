@@ -1,0 +1,117 @@
+.faq-section {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+}
+
+.faq-section.section-padding {
+    @media #{$md}, #{$xs} {
+      background-image: none !important;    
+    }
+  
+}
+
+.faq-section img {
+    @media #{$xs} {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }  
+}
+
+
+// CP Custom Accordion 
+
+.cp-custom-accordion .accordion-items {
+    margin-bottom: 20px;
+  }
+  .cp-custom-accordion .accordion-buttons {    
+    position: relative;
+    width: 100%;
+    padding: 30px 0px 30px 30px;
+    background-color: #fff;
+    text-align: left;
+    font-weight: 400;
+    font-size: 24px;
+    color: #171717;
+    border: none;
+    border-bottom: 1px solid #eee;    
+    @media #{$xs} {
+      padding: 20px 30px;
+      font-size: 18px;
+      line-height: 30px;
+  }
+
+  }
+
+  .cp-custom-accordion .accordion-buttons span {
+    font-size: 15px;
+    margin-right: 15px;
+    color: #777;
+}
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .cp-custom-accordion .accordion-buttons {
+      padding: 25px 28px;      
+    }
+  }
+  
+  .cp-custom-accordion .accordion-buttons::after {
+    position: absolute;
+    content: "\f061";
+    font-family: "Line Awesome Free";
+    top: 25%;
+    transform: rotate(-180deg);
+    right: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 1;
+    color: #777;
+    border: 1.5px solid #ddd;
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+  @media (max-width: 767px) {
+    .cp-custom-accordion .accordion-buttons::after {
+      top: 35px;
+      right: 0;
+      font-size: 16px;
+    }
+  }
+  .cp-custom-accordion .accordion-buttons.collapsed::after {
+    content: "\f061";
+    transform: rotate(-45deg);
+  }
+  .cp-custom-accordion .collapsed {
+    position: relative;    
+  }
+  .cp-custom-accordion .accordion-body {
+    background-color: #fff;
+    color: #878787;
+    padding: 20px 0;    
+    padding-left: 30px;
+    position: relative;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    z-index: 1;
+  }
+
+  @media (max-width: 767px) {
+    .cp-custom-accordion .accordion-body {
+      font-size: 15px;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+  
+.faq-section {
+  @media #{$xs}{
+    padding-bottom: 50px;
+  }
+    
+  }

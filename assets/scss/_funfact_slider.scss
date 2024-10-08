@@ -1,0 +1,42 @@
+.funfacts_line {
+    border-top: 1px solid #ddd;
+}
+
+.funfacts_item {
+    display: flex;
+    align-items: center;
+    height: 250px;
+    @media #{$xs}{
+        height: 100px;     
+    }
+    
+}
+
+.funfacts_item h5 {
+    font-size: 75px;
+    font-weight: 500;
+    margin-right: 60px;
+    color: #171717;
+    @media #{$xs} {
+        font-size: 36px;
+    }
+}
+
+.funfacts_item h5.stroke {
+    -webkit-text-stroke: 0.8px #171717;
+    -webkit-text-fill-color: #fff;
+}
+
+.funfacts_item img {
+    display: inline-block;  
+    position: relative;  
+    top: -6px;
+}
+
+h5.slick-slide img {
+    margin-right: 30px;
+    @media #{$xs}{
+        width: 40px;
+        height: auto;
+    }
+}

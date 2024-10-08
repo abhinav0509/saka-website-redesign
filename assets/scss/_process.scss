@@ -1,0 +1,132 @@
+.process-section.pt-0 {
+    @media #{$xs} {
+        padding-top: 50px !important;
+    }    
+  }
+
+  .process-section.pb-100 {
+    @media #{$xs} {
+        padding-bottom: 50px;
+    }
+  }
+
+.single-process-item{
+    border-top: 1px solid #ddd;
+    padding: 30px;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+    @media #{$md}{
+        padding: 30px;
+    }
+
+    h2{
+        font-size: 50px;
+    }
+
+    h4 {
+        margin: 30px 0 20px;
+    }
+
+    p{
+        margin: 0;
+    }    
+    .process-num {
+        position: relative;
+        z-index: 1;
+        i {
+            color: #ddd;
+            padding-left: 30px;
+        }
+
+        &:before {
+            position: absolute;
+            content: "";
+            top: -30px;
+            left: -30px;
+            width: 1px;
+            height: 90px;
+            background: #ddd;
+        }
+    }
+}
+
+// Extra Process 
+
+.process-content-wrap{
+    .accordions {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .cp-custom-accordion .accordion-items {
+        margin-bottom: 0;
+    }
+    .cp-custom-accordion .accordion-buttons{
+        border-top: 1px solid #ddd;
+        border-bottom: none;
+        padding: 30px 0px;
+        font-size: 30px;
+        font-weight: normal;
+    }
+    .cp-custom-accordion .accordion-body{
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 25px;
+    }
+}
+
+.process-img-wrap {
+    position: relative;
+    max-width: calc(100% - 40px);
+}
+
+.process-img-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    overflow: hidden;
+}
+
+.process-img-2 {
+    position: relative;
+    width: 75%;
+    margin: 120px auto;
+    overflow: hidden;
+}
+
+.process-img-3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    overflow: hidden;
+}
+
+
+.single-process-item {
+    padding: 40px;
+    margin-bottom: 60px;
+    h5 {
+        font-size: 24px;
+        margin: 30px 0;
+    }
+    @media #{$md}{
+        padding: 30px;
+        margin-bottom: 0;
+    }
+    @media #{$xs}{
+        padding: 30px;
+        margin-bottom: 0;
+    }
+}
+
+.process-icon img {
+    width: 60px;
+    height: auto;
+}
+
+.process-section{
+    @media #{$xs}{
+        padding-bottom: 50px;
+    }
+}

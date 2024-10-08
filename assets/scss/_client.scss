@@ -1,0 +1,37 @@
+.client-area.pt-100 {
+    @media #{$xs} {
+        padding-top: 50px;
+    }
+
+}
+
+.single-client {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 215px;
+    margin-left: 30px;
+
+    img {
+        max-width: inherit;
+    }
+
+    @media #{$lg} {
+        margin-left: 0;
+        width: inherit;
+    }
+
+    @media #{$md} {
+        margin-left: 0;
+        width: inherit;
+    }
+
+    @media #{$xs} {
+        margin-left: 0;
+        width: inherit;
+    }
+}
+
+.client-area .owl-dots {
+    display: none;
+}

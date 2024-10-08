@@ -1,0 +1,127 @@
+.cta-area {
+    position: relative;
+    z-index: 1;
+    height: 500px;
+
+    h2 {
+        font-size: 80px;
+        font-weight: 500;
+        line-height: 90px;
+
+        br {
+            @media #{$xs} {
+                display: none;
+            }
+        
+        }
+      
+        @media #{$xs} {
+            font-size: 40px;
+            line-height: 45px;
+            margin-bottom: 30px;
+        }
+
+    }
+}
+
+
+
+// CTA # 2
+
+.cta-area-two {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 75px 0;
+
+    span i {
+        transform: rotate(-45deg);
+    }
+
+    @media #{$md} {
+        text-align: center;
+        padding: 50px 100px;
+        h2 br {
+            display: none;
+          }
+    }
+    @media #{$xs} {
+        text-align: center;        
+        h2 {
+           font-size: 35px;
+           br{
+            display: none;
+           }
+          }
+    }  
+}
+
+.cta-content p {
+    font-size: 20px;
+    line-height: 30px;
+    a {
+        font-size: 20px;
+        color: #171717;
+        font-weight: 500;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 2px;
+    }
+}
+
+
+// CTA Image 
+
+.cta-img-area{
+    position: relative;
+    height: 600px;
+    @media #{$xs}{
+      display: none;
+    }
+  
+    .cta-inner {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+  
+      .cta-img-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+    }
+  
+    h2 {
+      font-size: 70px;
+      font-weight: 500;
+      line-height: 80px;
+      @media #{$xs} {
+          font-size: 45px;
+          line-height: 50px;
+          br{
+            display: none;
+          }
+      }      
+      
+    }
+  }
+  
+  
+  
+  .cta-img-area .cta-inner img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+  

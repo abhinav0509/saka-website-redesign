@@ -1,0 +1,239 @@
+
+.about-section.pb-100 {
+    @media #{$xs} {
+        padding-bottom: 50px;        
+    }    
+  }
+
+.about-bg-wrap {
+    max-width: calc(100% - 80px);
+
+    @media #{$md} {
+        margin-top: 60px;
+    }
+
+    @media #{$xs} {
+        margin-top: 60px;
+        max-width: calc(100% - 0px);
+    }
+}
+
+.about-content-wrapper {
+    h3 {
+        color: #636363;
+        font-size: 30px;
+
+        @media #{$lg} {
+            font-size: 24px;
+            line-height: 34px;
+            margin-top: 15px;
+        }
+
+        @media #{$xs} {
+            font-size: 20px;
+            line-height: 32px;
+            margin-top: 20px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        margin-top: 50px;
+        text-align: justify;
+        padding-right: 15px;
+
+        @media #{$lg} {
+            margin-top: 35px;
+        }
+
+        @media #{$md} {
+            text-align: left;
+        }
+
+        @media #{$xs} {
+            margin-top: 30px;
+        }
+    }
+}
+
+#about-two {    
+
+    .section-title {
+        margin: 0;
+    }
+
+    .about-bg-wrapper {
+        max-width: calc(100% - 40px);
+        margin-top: 60px;
+        @media #{$xs} {
+            max-width: calc(100% - 0px);
+            margin-top: 0;
+        }
+    }
+
+    .about-content-wrapper {
+        margin-top: 50px;
+        @media #{$md} {
+            max-width: calc(100% - 60px);    
+        }
+
+        h3 {
+            color: #636363;
+            font-size: 26px;
+            line-height: 36px;
+
+            @media #{$lg} {
+                font-size: 24px;
+            }
+            @media #{$xs} {
+                font-size: 20px;
+            }
+        }
+
+        p{
+            @media #{$md} {
+                margin-top: 20px;
+            }
+            @media #{$xs} {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.about-desc.pl-150 {
+    @media #{$lg} {
+        padding-left: 145px;
+    }
+    @media #{$md} {
+        padding-left: 0;
+    }
+    @media #{$xs} {
+        padding-left: 0;
+    }
+    
+  }
+
+.about-desc p {
+    margin: 0;
+    @media #{$md} {
+        margin-bottom: 30px;
+    }
+    @media #{$xs} {
+        margin-bottom: 30px;
+    }
+}
+
+// About Page 
+
+#about_page .hero-area-inner {
+    padding: 50px 0 0;
+}
+
+#about_page .section-title h1 {
+    font-size: 90px;
+    font-weight: 500;
+    line-height: 100px;
+    @media #{$lg}{
+        font-size: 80px;
+        line-height: 85px;
+    }
+    @media #{$md}{
+        font-size: 70px;
+        line-height: 80px;
+    }
+    @media #{$xs}{
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+.about-feature-img {
+    margin-top: -120px;
+    @media #{$lg} {
+        margin-top: -100px;
+    }
+    @media #{$md} {
+        margin-top: -100px;
+    }
+    @media #{$xs} {
+        margin-top: 0;
+    }
+}
+
+h1.pl-150 {
+    color: #fff;
+    @media #{$xs} {
+        color: inherit;
+        padding-left: 0;
+    }
+}
+
+// History Section 
+
+.content-wrap {
+    text-align: center;
+    padding: 20px;
+    h5 {
+        font-size: 20px;
+    }
+    p {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+}
+
+.timeline-wrap {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: #ddd;
+        content: "";
+        transform: translate(0, 60px);
+        @media #{$md}{
+            display: none;
+        }
+        @media #{$xs}{
+            display: none;
+        }
+    }
+}
+
+.single-history-item {
+    position: relative;
+    z-index: 1;
+    @media #{$xs}{
+        margin-bottom: 30px;
+    }
+}
+
+
+.history-section.pt-60.pb-60 {
+    @media #{$xs}{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+  }
+
+.history-section .mt-120 {
+    @media #{$xs}{
+        margin-top: 0;
+    }
+  }
+
+  .history-img img {
+    height: 220px;
+    width: 100%;
+}
+
+
+#about-two.about-section {
+    @media #{$md} {
+        padding-bottom: 50px;        
+    }    
+  }

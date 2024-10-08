@@ -1,0 +1,22 @@
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+.breadcrumb-item a {
+    color: #a39d9d;
+    font-size: 17px;
+}
+
+.breadcrumb-item.active {
+    color: #333;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.breadcrumb-item + .breadcrumb-item::before{
+    color: #a39d9d !important;
+}
+
+.breadcrumb-area h4 {
+    margin-top: 10px;
+}
