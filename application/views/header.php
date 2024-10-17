@@ -65,23 +65,22 @@
                             <ul>
                                 <li class="active"><a class="navlink" href="#">Home</a>
                                     <ul class="sub-menu">
-                                        <li><a href="index.html"> Home - One</a></li>
-                                        <li><a href="index-2.html">Home - Two</a></li>                                                
-                                        <li><a href="index-3.html">Home - Three</a></li>                                                                                                                                    
+                                        <li><a href="index.html"> Home</a></li>                                                                                                                                                                         
                                     </ul>
                                 </li>
                                 <li><a class="navlink" href="#">Pages</a>
                                     <ul class="sub-menu">
-                                        <li><a href="about.html">About Us</a></li>                                    
-                                        <li><a href="services.html">Our Services</a></li>
+                                        <li><a href="<?php echo base_url();?>">About Us</a></li>                                    
+                                        <li><a href="services.html">Our Products</a></li>
                                         <li><a href="team.html">Our Team</a></li>
-                                        <li><a href="price.html">Pricing Plans</a></li>
+                                        <!-- <li><a href="price.html">Pricing Plans</a></li> -->
                                         <li><a href="faq.html">FAQs</a></li>                                    
                                     </ul>
                                 </li>                                
 
                                 <li><a class="navlink" href="#">Project</a>
                                     <ul class="sub-menu">
+                                    <li><a href="project.html">Applications</a></li>
                                         <li><a href="project.html">Projects</a></li>                                        
                                         <li><a href="project-details.html">Project Details</a></li>                                        
                                     </ul>
@@ -92,7 +91,9 @@
                                         <li><a href="blog-details.html">Blog Details</a></li>
                                     </ul>
                                 </li>
-                                
+                               
+                                <li><a class="navlink" href="project-details.html">Solutions</a></li>
+
                                 <li><a class="navlink" href="contact.html">Contact</a></li>
                             </ul>                            
                         </div>

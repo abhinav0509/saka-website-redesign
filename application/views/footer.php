@@ -12,14 +12,13 @@
                     <div class="col-lg-2 col-md-6">
                         <h5>Office</h5>
                         <p>Corporate Office- <br>
-                            175 24th Street, DW-1 3567
-                            London, UK 265
+                        TEERTH BUSINESS CENTER,UNIT 11, 5th FLOOR, EL BLOCK, MIDC Bhosari, Pune 411026, Maharashtra, India.
                         </p>
                         <div class="company-email">
-                            <a href="#">info@Saka India.com</a>
+                            <a href="#"> sales@sakaindia.com</a>
                         </div>
                         <div class="phone-number">
-                            <p>+18-4675826</p>
+                            <p> +91 956 109 4128</p>
                         </div>
 
                     </div>

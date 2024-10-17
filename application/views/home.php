@@ -261,28 +261,28 @@
                     <div class="services-tab-wrapper">
                         <div class="section-title">
                             <div class="heading-animation">
-                                <h2>Our Services</h2>                                
+                                <h2>Our Products</h2>                                
                             </div>                            
                         </div>                        
                         <div class="services-tabs mt-100">
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation">
-                                    <a href="#services-item-1" class="active" data-bs-toggle="tab" role="tab" aria-controls="services-item-1" aria-selected="true">Architectural Design<span class="number">01</span></a>
+                                    <a href="#services-item-1" class="active" data-bs-toggle="tab" role="tab" aria-controls="services-item-1" aria-selected="true">Granulation System<span class="number">01</span></a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#services-item-2" data-bs-toggle="tab" role="tab" aria-controls="services-item-2" aria-selected="false">Interior Design<span class="number">02</span></a>
+                                    <a href="#services-item-2" data-bs-toggle="tab" role="tab" aria-controls="services-item-2" aria-selected="false">Spray Dryer<span class="number">02</span></a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#services-item-3" data-bs-toggle="tab" role="tab" aria-controls="services-item-3" aria-selected="false">Project Management<span class="number">03</span></a>
+                                    <a href="#services-item-3" data-bs-toggle="tab" role="tab" aria-controls="services-item-3" aria-selected="false">Rotary Dryer<span class="number">03</span></a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#services-item-4" data-bs-toggle="tab" role="tab" aria-controls="services-item-4" aria-selected="false">Historic Preservation <span class="number">04</span></a>
+                                    <a href="#services-item-4" data-bs-toggle="tab" role="tab" aria-controls="services-item-4" aria-selected="false">Fluid Bed Dryer <span class="number">04</span></a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#services-item-5" data-bs-toggle="tab" role="tab" aria-controls="services-item-5" aria-selected="false">Landscape Design<span class="number">05</span></a>
+                                    <a href="#services-item-5" data-bs-toggle="tab" role="tab" aria-controls="services-item-5" aria-selected="false">Flash Dryer<span class="number">05</span></a>
                                 </li>
                                 <li role="presentation">
-                                    <a href="#services-item-6" data-bs-toggle="tab" role="tab" aria-controls="services-item-6" aria-selected="false">Furniture Remodel<span class="number">06</span></a>
+                                    <a href="#services-item-6" data-bs-toggle="tab" role="tab" aria-controls="services-item-6" aria-selected="false">Hot Air Generator<span class="number">06</span></a>
                                 </li>
                                                         
                             </ul>                                
@@ -296,9 +296,9 @@
                         <div class="tab-pane services-content-item fade active show" id="services-item-1" role="tabpanel">                            
                             <div class="services-text">
                                 <div class="services-text-container">
-                                    <h4 class="services-title">Architectural Design</h4>
+                                    <h4 class="services-title">Granulation System</h4>
                                     <p class="text-gray mb-0">
-                                        The core identity reflects consistent  associations with the brand whereas the extended identity involves the intricate details of the brand that help generate a constant motif.
+                                    SAKA offers complete turn key solution for granulation systems right from drying till packing of granules. Our systems are widely used for granule formation for chemicals like Calcium Chloride, Magnesium Chloride, Calcium Nitrate etc. SAKA’s Granulation systems are custom built to provide desired size of granules. 
                                     </p>
                                 </div>
                             </div>                            
@@ -592,12 +592,12 @@
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="200ms">
                 <div class="single-team-item">
                     <div class="team-img">
-                    <img src="assets/img/team/1.jpg" alt="">
+                    <img src="assets/img/team/1642580790698.jfif" alt="">
                     </div>
                     <div class="team-info">
-                    <h5>Mark Wood</h5>
+                    <h5>Anand Thigale</h5>
                     <hr>
-                    <p>[Project Manager]</p>
+                    <p>Managing Director</p>
                     </div>                    
                 </div>
                 </div>
