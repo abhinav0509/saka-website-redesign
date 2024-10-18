@@ -7,9 +7,9 @@
                 <div class="col-xl-10 col-lg-10 col-md-10 text-center wow fadeInUp animated" data-wow-delay="200ms">
                     <div class="hero-area-content">
                         <div class="section-title mb-0">                                                        
-                             <h1>Transform <span><img src="assets/img/1558587673885.jpg" alt=""></span> Spaces <br> into Works of Art</h1>                                                                                            
+                             <h1>Pioneers<span><img src="assets/img/1558587673885.jpg" alt=""></span>In Process <br> Engineering Solutions</h1>                                                                                            
                             <div class="p-animation">
-                                <p>Our team of expert designers works closely with clients to create unique, functional and beautiful spaces <br> that are tailored to their specific needs and preferences.</p>
+                                <p>Our team of expert engineers and designers works closely with clients to create robust, functional and state of art solutions<br> that are tailored to their specific process engineering needs.</p>
                             </div>                                
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                     <div class="project-dtl-info dark-bg">
                         <div class="project-title">
                             <h6>Latest Project</h6>
-                            <h2 class="text-white">Industrial Loft</h2>
+                            <h2 class="text-white">Granulation System</h2>
                             <p>Year Completed 2022</p>
                         </div>
                         <div class="project-info-wrap">
@@ -47,7 +47,7 @@
                                         <h6>Industrial</h6>
                                     </div>
                                     <div class="single-project-info">
-                                        <p>Architect</p>
+                                        <p>Engineer</p>
                                         <h6>Willam Stone</h6>
                                     </div>
                                 </div>
@@ -64,7 +64,7 @@
                     <div class="project-dtl-info dark-bg">
                         <div class="project-title">
                             <h6>Latest Project</h6>
-                            <h2 class="text-white">Lakefront Retreat</h2>
+                            <h2 class="text-white">Fluid Bed Dryer</h2>
                             <p>Year Completed 2023</p>
                         </div>
                         <div class="project-info-wrap">
@@ -101,7 +101,7 @@
                     <div class="project-dtl-info dark-bg">
                         <div class="project-title">
                             <h6>Latest Project</h6>
-                            <h2 class="text-white">Mediterranean Villa</h2>
+                            <h2 class="text-white">Hot Air Generator</h2>
                             <p>Year Completed 2022</p>
                         </div>
                         <div class="project-info-wrap">
