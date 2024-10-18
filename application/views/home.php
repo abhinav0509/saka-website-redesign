@@ -7,7 +7,7 @@
                 <div class="col-xl-10 col-lg-10 col-md-10 text-center wow fadeInUp animated" data-wow-delay="200ms">
                     <div class="hero-area-content">
                         <div class="section-title mb-0">                                                        
-                             <h1>Transform <span><img src="assets/img/headline-img.jpg" alt=""></span> Spaces <br> into Works of Art</h1>                                                                                            
+                             <h1>Transform <span><img src="assets/img/1558587673885.jpg" alt=""></span> Spaces <br> into Works of Art</h1>                                                                                            
                             <div class="p-animation">
                                 <p>Our team of expert designers works closely with clients to create unique, functional and beautiful spaces <br> that are tailored to their specific needs and preferences.</p>
                             </div>                                
