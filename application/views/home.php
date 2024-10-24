@@ -7,7 +7,7 @@
                 <div class="col-xl-10 col-lg-10 col-md-10 text-center wow fadeInUp animated" data-wow-delay="200ms">
                     <div class="hero-area-content">
                         <div class="section-title mb-0">                                                        
-                             <h1>Pioneers<span><img src="assets/img/1558587673885.jpg" alt=""></span>In Process <br> Engineering Solutions</h1>                                                                                            
+                             <h1>Pioneers <span><img src="assets/img/1558587673885.jpg" alt=""></span>  In Process <br> Engineering Solutions</h1>                                                                                            
                             <div class="p-animation">
                                 <p>Our team of expert engineers and designers works closely with clients to create robust, functional and state of art solutions<br> that are tailored to their specific process engineering needs.</p>
                             </div>                                
@@ -161,7 +161,7 @@
             </div>
         </div>
     </div>
-    </div>
+</div>
 
     <!-- About Area  -->
 
@@ -209,10 +209,11 @@
                 <div class="col-xl-3 col-lg-3">
                     <div class="about-content-wrapper">
                         <div class="heading-animation">
-                            <h3>Saka India is a team of experienced architects and interior designers</h3>
+                            <h3>Saka India is a team of experienced engineers and designers</h3>
                         </div>
                         <div class="p-animation">
-                            <p>who are passionate about creating beautiful, functional spaces. We believe that good design should be accessible to everyone, and we work hard to make sure that our client's vision become reality.</p>
+                            <p>Who are passionate about developing technology that serves the true purpose of your business.The commitment to be always aligned to Customer’s purpose has earned us a 85% repeat business,
+                            even as the base of customers doubled every year since the inception.</p>
                         </div>
                     </div>
                 </div>
@@ -264,7 +265,7 @@
                                 <h2>Our Products</h2>                                
                             </div>                            
                         </div>                        
-                        <div class="services-tabs mt-100">
+                        <div class="services-tabs mt-100"> 
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation">
                                     <a href="#services-item-1" class="active" data-bs-toggle="tab" role="tab" aria-controls="services-item-1" aria-selected="true">Granulation System<span class="number">01</span></a>
