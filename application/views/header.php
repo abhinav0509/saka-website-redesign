@@ -59,20 +59,22 @@
                 <div class="container">
                     <div class="header-inner-box">
 
-                        <a href="index-2.html" class="logo">Saka India.</a>           
+                        <a href="<?php echo base_url();?>" class="logo">Saka India.</a>           
 
                         <div class="main-menu d-none d-lg-block">
                             <ul>
-                                <li class="active"><a class="navlink" href="#">Home</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.html"> Home</a></li>                                                                                                                                                                         
+                                <li class="active"><a class="navlink" href="<?php echo base_url();?>">Home</a>
+                                <ul class="sub-menu">
+                                        <li><a href="<?php echo base_url();?>"> Home - One</a></li>
+                                        <li><a href="<?php echo base_url();?>index.php/Home_two">Home - Two</a></li>
+                                        <li><a href="<?php echo base_url();?>index.php/Home_three">Home - Three</a></li>
                                     </ul>
                                 </li>
                                 <li><a class="navlink" href="#">Pages</a>
                                     <ul class="sub-menu">
                                         <li><a href="<?php echo base_url();?>index.php/About_us">About Us</a></li>                                    
                                         <li><a href="services.html">Our Products</a></li>
-                                        <li><a href="team.html">Our Team</a></li>
+                                        <li><a href="<?php echo base_url();?>index.php/Team">Our Team</a></li>
                                         <!-- <li><a href="price.html">Pricing Plans</a></li> -->
                                         <li><a href="faq.html">FAQs</a></li>                                    
                                     </ul>
@@ -81,14 +83,14 @@
                                 <li><a class="navlink" href="#">Project</a>
                                     <ul class="sub-menu">
                                     <li><a href="project.html">Applications</a></li>
-                                        <li><a href="project.html">Projects</a></li>                                        
-                                        <li><a href="project-details.html">Project Details</a></li>                                        
+                                        <li><a href="<?php echo base_url();?>index.php/Project">Projects</a></li>                                        
+                                        <li><a href="<?php echo base_url();?>index.php/Project_details">Project Details</a></li>                                        
                                     </ul>
                                 </li>
                                 <li><a class="navlink" href="#">Blog</a>
                                     <ul class="sub-menu">
-                                        <li><a href="blog.html">Blogs</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                        <li><a href="<?php echo base_url();?>index.php/Blog">Blogs</a></li>
+                                        <li><a href="<?php echo base_url();?>index.php/Blog_details">Blog Details</a></li>
                                     </ul>
                                 </li>
                                
