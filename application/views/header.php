@@ -70,7 +70,7 @@
                                 </li>
                                 <li><a class="navlink" href="#">Pages</a>
                                     <ul class="sub-menu">
-                                        <li><a href="<?php echo base_url();?>">About Us</a></li>                                    
+                                        <li><a href="<?php echo base_url();?>index.php/About_us">About Us</a></li>                                    
                                         <li><a href="services.html">Our Products</a></li>
                                         <li><a href="team.html">Our Team</a></li>
                                         <!-- <li><a href="price.html">Pricing Plans</a></li> -->
@@ -94,7 +94,7 @@
                                
                                 <li><a class="navlink" href="project-details.html">Solutions</a></li>
 
-                                <li><a class="navlink" href="contact.html">Contact</a></li>
+                                <li><a class="navlink" href="<?php echo base_url();?>index.php/Contact">Contact</a></li>
                             </ul>                            
                         </div>
 
@@ -126,18 +126,15 @@
                                         <ul class="metismenu" id="mobile-menu">
                                             <li><a class="has-arrow" href="#">Homes</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="index.html">Home - One</a></li>
-                                                    <li><a href="index-2.html">Home - Two</a></li>                                                
-                                                    <li><a href="index-3.html">Home - Three</a></li>                                                                                                                                                
+                                                    <li><a href="<?php echo base_url();?>">Home - One</a></li>                                                                                                                                                                                         
                                                 </ul>
                                             </li>
                                             <li><a class="has-arrow" href="#">Pages</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="about.html">About Us</a></li>                                                
+                                                    <li><a href="<?php echo base_url();?>index.php/About_us">About Us</a></li>                                                
                                                     <li><a href="services.html">Our Services</a></li>
                                                     <li><a href="team.html">Our Team</a></li>
-                                                    <li><a href="price.html">Pricing Plans</a></li>
-                                                    <li><a href="faq.html">FAQs</a></li>                                                
+                                                                                                  
                                                 </ul>
                                             </li>                                            
                                             <li><a class="has-arrow" href="#">project</a>
