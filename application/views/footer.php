@@ -1,167 +1,98 @@
- <!-- Footer Area -->
-
- <footer class="footer-area">
+<html>
+<body>
+<footer class="site-footer">
         <div class="container">
-            <div class="footer-up">
+            <div class="row">
+                <div class="col-sm-3 col-md-3">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">About Us</h4>
+                        <p>The College of Computer Accountants is a major public, comprehensive and research institute. The state's oldest and most comprehensive institute. </br></br><a href="#" style="color:#fff;">Read More...</a></p>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">CCA COURSES</h4>
+                        <ul class="list-links">
+                            <li><a href="#">Smart Tally</a></li>
+							<li><a href="#">Tally Professional</a></li>
+							<li><a href="#"> Smart Excel</a></li>
+							<li><a href="#"> Master In Excel</a></li>
+							<li><a href="#">Certified e Accountants</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Association</h4>
+                        <ul class="list-links">
+                            <li><a href="#">CCA Franchisee</a></li>						
+								 <li><a href="#">CCA Goverment Projects</a></li>
+								 <li><a href="#">CCA Group of Institutes</a></li>						
+								 <li><a href="#">CCA at Colleges</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-md-2">
+                    <div class="footer-widget">
+                        <h4 class="footer-widget-title">Study</h4>
+                        <ul class="list-links">
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Apply Now</a></li>
+                            <li><a href="#">Scholarships</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">International student enquiries</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-md-3">
+                    <div class="footer-widget">
+					<h4 class="footer-widget-title">Head Office</h4>
+                        <ul class="list-links">
+							<li>
+								<i class="icon-map-marker"></i> 310,311, 3rd Floor, Mahalaxmi Market, Near Desai Bandhu, Shanipar Chowk, Mandai Road, Shukrawar Peth, Pune -411002
+							</li>
+							<li><i class="icon-phone"></i> 020-32392121 / 09373703928</li>
+							<li><i class="icon-envelope"></i> enqiury@ccaindia.in</li>
+						</ul>
+                    </div>
+                </div>
+				
+				
+				
+            </div> <!-- /.row -->
+
+            <div class="bottom-footer">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
-                        <a href="index.html" class="logo">Saka India.</a>
-                        <p>Design your Dream House <br> maxime dolor voluptatibus natus
-                        </p>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
-                        <h5>Office</h5>
-                        <p>Corporate Office- <br>
-                        TEERTH BUSINESS CENTER,UNIT 11, 5th FLOOR, EL BLOCK, MIDC Bhosari, Pune 411026, Maharashtra, India.
-                        </p>
-                        <div class="company-email">
-                            <a href="#"> sales@sakaindia.com</a>
-                        </div>
-                        <div class="phone-number">
-                            <p> +91 956 109 4128</p>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-2 offset-lg-1 col-md-6 com-sm-12">
-                        <h5>Links</h5>
-                        <ul>
-                            <li>
-                                <a href="about.html">About</a>
-                                <a href="services.html">Services</a>
-                                <a href="project.html">Project</a>
-                                <a href="price.html">Pricing</a>
-                                <a href="faq.html"> FAQ</a>
-                            </li>
+                    <div class="col-md-5">
+                        <p class="small-text">All rights Reserved. Developed by  <a href="#">Maverick Software (I) Pvt. Ltd.</a></p>
+                    </div> <!-- /.col-md-5 -->
+                    <div class="col-md-7">
+                        <ul class="footer-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Placement</a></li>
+                            <li><a href="#">Gallery</a></li>
+                            <li><a href="#">Association</a></li>
+							<li><a href="<?php echo base_url();?>index.php/Admin">Login</a></li>
                         </ul>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <h5>Get in Touch</h5>
-                        <ul>
-                            <li>
-                                <div class="social-area">
-                                    <a href="#"><i class="lab la-facebook-f"></i>Facebook</a>
-                                    <a href="#"><i class="lab la-instagram"></i>Instagram</a>
-                                    <a href="#"><i class="lab la-linkedin-in"></i>linkedin</a>
-                                    <a href="#"><i class="la la-skype"></i>Skype</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    </div> <!-- /.col-md-7 -->
+                </div> <!-- /.row -->
+            </div> <!-- /.bottom-footer -->
 
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Footer Bottom Area -->
-
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row justify-content-center align-items-center justify-content-center">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <p class="copyright-line">© 2024 Saka India. All rights reserved.</p>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 text-md-end">
-                    <p class="privacy">Privacy Policy | Terms &amp; Conditions</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    </div>
-    </div>
-
-    <!-- Search Dropdown Area -->
-
-    <div class="search-popup">
-        <span class="search-back-drop"></span>
-
-        <div class="search-inner">
-            <div class="container">                
-                <button class="close-search"><span class="la la-times"></span></button>                
-                <form method="post" action="index.html">
-                    <div class="form-group">
-                        <input type="search" name="search-field" value="" placeholder="Type your keyword" required="">
-                        <button type="submit"><i class="fal fa-search"></i></button>                        
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Off-canvas Area-->
-
-    <div class="extra-info">
-        <div class="close-icon menu-close">
-            <button>
-                <i class="las la-times"></i>
-            </button>
-        </div>
-        <div class="logo-side mb-30">
-            <div class="logo">
-                <a href="index-2.html" class="logo">Saka India.</a>
-            </div>
-        </div>
-        <div class="side-info">
-            <div class="contact-list mb-40">
-                <!-- <h4>About</h4> -->
-                <p>Welcome to Saka India, a full service architecture and interior design firm. We specialize in creating beautiful, functional spaces that reflect your unique style.</p>
-                <img src="assets/img/offcanvas-img.jpg" alt="">
-
-                <div class="mt-30 mb-30">
-                    <a href="contact.html" class="white-btn">Get In Touch</a>
-                </div>
-            </div>
-            <div class="social-area-wrap">
-                <a href="#"><i class="lab la-facebook-f"></i></a>                                    
-                <a href="#"><i class="lab la-instagram"></i></a>
-                <a href="#"><i class="lab la-linkedin-in"></i></a>
-                <a href="#"><i class="lab la-skype"></i></a>                
-            </div>
-        </div>
-    </div>
-
-    <div class="offcanvas-overlay"></div>
+        </div> <!-- /.container -->
+    </footer> <!-- /.site-footer -->
 
 
-    <!-- back to top start -->
-    <div class="progress-wrap">
-        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-        </svg>
-    </div>
-
-
-    <!-- Popper JS -->
-    <script src="<?php echo base_url('assets/js/popper.min.js')?>"></script>
-    <!-- Bootstrap JS -->
-    <script src="<?php echo base_url('assets/js/bootstrap.min.js')?>"></script>
-    <!-- Wow JS -->
-    <script src="<?php echo base_url('assets/js/wow.min.js')?>"></script>
-    <!-- Way Points JS -->
-    <script src="<?php echo base_url('assets/js/jquery.waypoints.min.js')?>"></script>
-    <!-- Counter Up JS -->
-    <script src="<?php echo base_url('assets/js/jquery.counterup.min.js')?>"></script>
-    <!-- Owl Carousel JS -->
-    <script src="<?php echo base_url('assets/js/owl.carousel.min.js')?>"></script>
-    <!-- Slick Slider JS -->
-    <script src="<?php echo base_url('assets/js/slick.min.js')?>"></script>        
-    <!-- Back To Top JS -->
-    <script src="<?php echo base_url('assets/js/backToTop.js')?>"></script>
-    <!-- Metis Menu JS -->
-    <script src="<?php echo base_url('assets/js/metismenu.js')?>"></script>
-    <!-- GSAP Animation JS -->
-    <script src="<?php echo base_url('assets/js/gsap.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/gsap-scroll-to-plugin.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/SplitText.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/ScrollSmoother.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/ScrollTrigger.min.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/smoother-script.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/heading-animation.js')?>"></script>
-    <script src="<?php echo base_url('assets/js/paragraph-animation.js')?>"></script>
-    <!-- Main JS -->
-    <script src="<?php echo base_url('assets/js/main.js')?>"></script>
-
+    
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="<?php echo base_url(); ?>style/js/animationEnigne.js"></script> 
+      <script type="text/javascript" src="<?php echo base_url(); ?>Style/js/bootstrap.min.js"></script> 
+    <script src="<?php echo  base_url(); ?>Style/js/plugins.js"></script>
+    <script src="<?php echo  base_url(); ?>Style/js/custom.js"></script>
+    
 </body>
 
-</html>
+<!-- Mirrored from demo.esmeth.com/universe/Blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Feb 2015 06:02:27 GMT -->
+</html>		

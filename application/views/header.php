@@ -1,171 +1,321 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<!-- Mirrored from demo.esmeth.com/universe/Blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Feb 2015 06:00:53 GMT -->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>College Of Computer Application.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="College Education Responsive Template">
+    <meta name="author" content="Esmet">
+    <meta charset="UTF-8">
 
-    <title>Home - 01 | Saka India | Architecture & Interior Design HTML Template</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800' rel='stylesheet' type='text/css'>
+        
+    <!-- CSS Bootstrap & Custom -->
+    <link href="<?php echo base_url(); ?>Style/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="<?php echo base_url(); ?>Style/css/font-awesome.min.css" rel="stylesheet" media="screen">
+     <link href="<?php echo base_url(); ?>Style/photo.css" rel="stylesheet" media="screen">
+    <link href="<?php echo base_url(); ?>Style/css/animate.css" rel="stylesheet" media="screen">
+   
+  	<link href="<?php echo base_url(); ?>Style/css/index.css" rel="stylesheet" media="screen">
+    <link href="<?php echo base_url(); ?>Style/css/main.css" rel="stylesheet" media="screen">
+  	<link href="<?php echo base_url(); ?>Style/css/index_res.css" rel="stylesheet" >
+	   <link rel="shortcut icon" href="<?php echo base_url(); ?>Style/images/FAVICON.png">
+    
+    <link href="<?php echo base_url(); ?>Style/css/style.css" rel="stylesheet" media="screen">
+    
+    <link rel='stylesheet' id='camera-css'  href='<?php echo base_url(); ?>style/css/camera.css' type='text/css' media='all'> 
+        
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?php echo base_url(); ?>Style/images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo base_url(); ?>Style/images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo base_url(); ?>Style/images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="<?php echo base_url(); ?>Style/images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="<?php echo base_url(); ?>Style/images/ico/FAVICON.png">
+    
+    <!-- JavaScripts -->
+	
+	
+	
+    
+       <script src="<?php echo base_url(); ?>style/js/jquery-1.10.2.min.js"></script>
+       <script src="<?php echo base_url(); ?>style/js/jquery-migrate-1.2.1.min.js"></script>
+       <script src="<?php echo base_url(); ?>style/js/modernizr.js"></script>
+       <script src="<?php echo base_url(); ?>style/js/jquery.min.js"></script>
+     
+    
+       <script src="<?php echo base_url(); ?>style/js/jquery.validate.min.js"></script>
+       <script type='text/javascript' src='<?php echo base_url(); ?>style/js/jquery.mobile.customized.min.js'></script>
+      
 
-    <!--Favicon-->
-    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+       
+      
+    <!--[if lt IE 8]>
+	<div style=' clear: both; text-align:center; position: relative;'>
+            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" alt="" /></a>
+        </div>
+    <![endif]-->
+    <style>
+.error{color:red;}
+</style>
+<script>
+var j=jQuery.noConflict();
+j('document').ready(function(){
+ j(function() {
+    j('marquee').mouseover(function() {
+        j(this).attr('scrollamount',0);
+    }).mouseout(function() {
+         j(this).attr('scrollamount',2);
+    });
+  }); 
+});
+</script>
 
-    <!-- Bootstrap CSS -->
-    <link href="<?php echo base_url('assets/css/bootstrap.min.css')?>" rel="stylesheet">
-    <!-- Line Awesome CSS -->
-    <link href="<?php echo base_url('assets/css/line-awesome.min.css')?>" rel="stylesheet">
-    <!-- Font Awesome CSS -->
-    <link href="<?php echo base_url('assets/css/fontAwesomePro.css')?>" rel="stylesheet">    
-    <!-- Animate CSS-->
-    <link href="<?php echo base_url('assets/css/animate.css')?>" rel="stylesheet">        
-    <!-- Owl Carousel CSS -->
-    <link href="<?php echo base_url('assets/css/owl.carousel.css')?>" rel="stylesheet">
-    <!-- Slick Slider CSS -->
-    <link href="<?php echo base_url('assets/css/slick.css')?>" rel="stylesheet">    
-    <!-- Back to Top -->
-    <link href="<?php echo base_url('assets/css/backToTop.css')?>" rel="stylesheet">
-    <!-- Metis Menu -->
-    <link href="<?php echo base_url('assets/css/metismenu.css')?>" rel="stylesheet">
-    <!-- Style CSS -->
-    <link href="<?php echo base_url('assets/css/style.css')?>" rel="stylesheet">
-
-
-    <!-- jquery -->
-    <script src="<?php echo base_url('assets/js/jquery-1.12.4.min.js')?>"></script>
 </head>
-
 <body>
 
-    <!-- preloader -->
-    <div class="preloader">
-        <div class="spinner">
-            <div class="double-bounce1"></div>
-            <div class="double-bounce2"></div>
-        </div>
-    </div>
-
-    <!-- Mouse Cursor  -->
-    <div class="mouseCursor cursor-outer"></div>
-    <div class="mouseCursor cursor-inner"><span>Drag</span></div>
-
-    <div id="smooth-wrapper">
-
-    <!-- Header Area  -->
-
-    <div class="header-area">   
-        <div id="header-sticky">
-            <div class="navigation">
-                <div class="container">
-                    <div class="header-inner-box">
-
-                        <a href="<?php echo base_url();?>" class="logo">Saka India.</a>           
-
-                        <div class="main-menu d-none d-lg-block">
-                            <ul>
-                                <li class="active"><a class="navlink" href="<?php echo base_url();?>">Home</a>
+    <!-- This one in here is responsive menu for tablet and mobiles -->
+    <div class="responsive-navigation visible-sm visible-xs">
+        <a href="#" class="menu-toggle-btn">
+            <i class="fa fa-bars"></i>
+        </a>
+        <div class="responsive_menu">
+           <ul class="main_menu">
+                 <li class="active"><a href="<?php echo base_url(); ?>">Home</a></li>
+                            
+                            <li><a href="<?php echo base_url(); ?>index.php/welcome/about">About Us</a>
+                              <ul>
+              <li><a href="<?php echo  base_url(); ?>index.php/welcome/about">About CCA</a></li>
+              </ul>
+              </li>
+                             <li><a href="#">Courses</a>
                                 <ul class="sub-menu">
-                                        <li><a href="<?php echo base_url();?>"> Home - One</a></li>
-                                        <li><a href="<?php echo base_url();?>index.php/Home_two">Home - Two</a></li>
-                                        <li><a href="<?php echo base_url();?>index.php/Home_three">Home - Three</a></li>
-                                    </ul>
-                                </li>
-                                <li><a class="navlink" href="#">Pages</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="<?php echo base_url();?>index.php/About_us">About Us</a></li>                                    
-                                        <li><a href="services.html">Our Products</a></li>
-                                        <li><a href="<?php echo base_url();?>index.php/Team">Our Team</a></li>
-                                        <!-- <li><a href="price.html">Pricing Plans</a></li> -->
-                                        <li><a href="faq.html">FAQs</a></li>                                    
-                                    </ul>
-                                </li>                                
-
-                                <li><a class="navlink" href="#">Project</a>
-                                    <ul class="sub-menu">
-                                    <li><a href="project.html">Applications</a></li>
-                                        <li><a href="<?php echo base_url();?>index.php/Project">Projects</a></li>                                        
-                                        <li><a href="<?php echo base_url();?>index.php/Project_details">Project Details</a></li>                                        
-                                    </ul>
-                                </li>
-                                <li><a class="navlink" href="#">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="<?php echo base_url();?>index.php/Blog">Blogs</a></li>
-                                        <li><a href="<?php echo base_url();?>index.php/Blog_details">Blog Details</a></li>
-                                    </ul>
-                                </li>
-                               
-                                <li><a class="navlink" href="project-details.html">Solutions</a></li>
-
-                                <li><a class="navlink" href="<?php echo base_url();?>index.php/Contact">Contact</a></li>
-                            </ul>                            
-                        </div>
-
-                        <div class="header-right">
-                            <div class="search-trigger">                                        
-                                <i class="fal fa-search"></i>
-                            </div>
-        
-                            <div class="header-btn">
-                                <div class="menu-trigger">
-                                    <span class="lines"></span>
-                                    <span class="lines"></span>
-                                    <span class="lines"></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="mobile-nav-bar d-block col-sm-1 col-6 d-lg-none">
-                            <div class="mobile-nav-wrap">                    
-                                <div id="hamburger">
-                                    <i class="las la-bars"></i>                                    
-                                </div>
-                                <!-- mobile menu - responsive menu  -->
-                                <div class="mobile-nav">
-                                    <button type="button" class="close-nav">
-                                        <i class="las la-times-circle"></i>
-                                    </button>
-                                    <nav class="sidebar-nav">
-                                        <ul class="metismenu" id="mobile-menu">
-                                            <li><a class="has-arrow" href="#">Homes</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="<?php echo base_url();?>">Home - One</a></li>                                                                                                                                                                                         
-                                                </ul>
-                                            </li>
-                                            <li><a class="has-arrow" href="#">Pages</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="<?php echo base_url();?>index.php/About_us">About Us</a></li>                                                
-                                                    <li><a href="services.html">Our Services</a></li>
-                                                    <li><a href="team.html">Our Team</a></li>
-                                                                                                  
-                                                </ul>
-                                            </li>                                            
-                                            <li><a class="has-arrow" href="#">project</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="project.html">Project</a></li>                                                    
-                                                    <li><a href="project-details.html">Project Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="has-arrow" href="#">Blog</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="blog.html">Blogs</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
-                                            
+                                    <li><a href="#">Tally .ERP 9</a>
+                                        <ul class="sub-menu">
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/quick_tally">Quick Tally</a></li>
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/smart_tally">Smart Tally </a></li>
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/tally_professional">Tally Professional</a></li>
+                                        </ul>                                       
+                                    </li>
+                                   <li><a href="#">MicroSoft Excel 2010 </a>
+                                       <ul class="sub-menu">
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/smart_excel">Smart Excel </a></li>
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/master_excel">Master in Excel</a></li>
+                                           
                                         </ul>
-                                    </nav>  
-                                    <div class="action-bar">
-                                        <a href="mailto:info@Saka India.com"><i class="las la-envelope"></i>info@Saka India.com</a>
-                                        <a href="tel:123-456-7890"><i class="fal fa-phone"></i>123-456-7890</a>
-                                        <a href="contact.html" class="white-btn">Contact Us</a>
-                                    </div>      
-                                </div>                            
-                            </div>
-                            <div class="overlay"></div>
-                        </div>                        
+                                    </li>
+                                     <li><a href="<?php echo  base_url(); ?>index.php/welcome/cea">Certified e Accountant </a></li>
+                                    <li><a href="#">Other Courses </a>
+                                         <ul class="sub-menu">
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/mid_brain">Mid Brain Activation</a></li>
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/virtual_mba">Virtual MBA </a></li>
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/gfs_project">GFS-Project training</a></li>
+                                        </ul>
+                                    </li>
+                                    
+                              </ul>
+                            </li>
+                              <li><a href="<?php echo  base_url(); ?>index.php/welcome/placement">Placement</a>
+                                   <ul class="sub-menu" style="display:none;">
+                                       <li><a href="<?php echo  base_url(); ?>index.php/welcome/placement">CCA Placement</a></li>
+                                       <li><a href="<?php echo  base_url(); ?>index.php/welcome/fran_placement">Franchisee Placement</a></li>
+                                       <li><a href="<?php echo  base_url(); ?>index.php/welcome/employer">Employer's Request</a></li>
+                                       <li><a href="<?php echo  base_url(); ?>index.php/welcome/jobs">Job Openings</a></li>
+                                       <li><a href="<?php echo  base_url(); ?>index.php/welcome/stud_testimonal">Students Testimonial</a></li>
+                                  </ul>
+
+                            </li>
+                             <li><a href="<?php echo  base_url(); ?>index.php/welcome/placement">Student</a>
+                                   <ul class="sub-menu" style="display:none;">
+                   <li><a href="#">Apply Online Exam</a></li>
+                   <li><a href="<?php echo  base_url();?>index.php/welcome/Student">Go Online Exam</a></li>
+                   <li><a href="<?php echo  base_url(); ?>index.php/welcome/enquiry">Student Enquiry</a></li>
+                  <li><a href="<?php echo  base_url(); ?>index.php/welcome/download">Download</a></li>
+              </ul>
+              </li>
+                            <li><a href="<?php echo  base_url(); ?>index.php/welcome/download">Download</a></li>
+                            <li><a href="<?php echo  base_url(); ?>index.php/welcome/cca_gallery">Gallery</a></li>
+                            <li><a href="#">Association</a>
+                               <ul class="sub-menu">
+                                 <li><a href="<?php echo  base_url(); ?>index.php/welcome/cca_franchisee">CCA Franchisee</a></li>                      
+                                 <li><a href="#">CCA Goverment Projects</a></li>
+                                 <li><a href="#">CCA Group of Institutes</a></li>                       
+                                 <li><a href="#">CCA at Colleges</a></li>
+                               </ul>
+                            </li>
+                            <li><a href="#">Contact</a>
+                                <ul class="sub-menu">
+                                    <li><a href="<?php echo  base_url(); ?>index.php/welcome/locateus">Locate us</a></li>
+                                    <li><a href="<?php echo  base_url(); ?>index.php/welcome/contact">Contact us</a></li>
+                                   <li><a href="#">Enquiry</a>
+                                        <li><a href="#">Enquiry</a>
+                                        <ul class="sub-menu" style="display:none;">
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/enquiry">Student Enquiry</a></li>                      
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/Franchisee_Enq">Franchise Enquiry</a></li>
+                                        </ul>
+
+                                   </li>
+                                   </li>
+                                  
+                                   <!--<li><a href="#">Franchisee</a></li>-->
+                                </ul>
+                            </li>
+            </ul> <!-- /.main_menu -->
+            <ul class="social_icons">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            </ul> <!-- /.social_icons -->
+        </div> <!-- /.responsive_menu -->
+    </div> <!-- /responsive_navigation -->
+
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 header-left">
+                    <p style="color:#fff;"><i style="font-size:15px;" class="fa fa-mobile-phone"></i>+91 09326059560</p>
+                    <p style="color:#fff;"><i style="font-size:15px;" class="fa fa-mobile-phone"></i>+91 9373703928</p>
+                    <p style="color:#fff;"><i class="fa fa-phone"></i>020-32392121</p>
+                    <p style="color:#fff;"><i class="fa fa-envelope"></i><a href="mailto:email@universe.com" style="color:#fff;">email@ccaindia.com</a></p>
+                </div> <!-- /.header-left -->
+
+                <div class="col-md-6">
+                    <div class="logo">
+                       <p>
+                       <font size="30px">C</font>ollege Of <font size="30px">C</font>omputer <font size="30px">A</font>ccounts
+                       </p>
+                    </div> <!-- /.logo -->
+                    <div class="Title">
+                       
+                    </div> 
+                </div> <!-- /.col-md-4 -->
+
+               <div class="col-md-4 header-right">
+                   <div id="hmenu" style="float:right;">
+                       <a href="index.html" title="Universe" rel="home">
+                            <img src="<?php echo  base_url(); ?>style/images/logo.jpg" alt="Universe">
+                        </a>
+                   </div>
+                   
+                    <div class="search-form">
+                       
                     </div>
-                </div>
-            </div>  
-        </div>           
-    </div>
+                </div> <!-- /.header-right -->
+            </div>
+        </div> <!-- /.container -->
+
+        <div class="nav-bar-main" role="navigation">
+            <div class="container">
+               <nav class="main-navigation clearfix visible-md visible-lg" role="navigation">
+                        <ul class="main-menu sf-menu">
+                            <li class="active"><a href="<?php echo  base_url(); ?>">Home</a></li>
+                            
+                            <li><a href="#">About Us</a>
+              <ul style="display:none;">
+              <li><a href="<?php echo  base_url(); ?>index.php/welcome/about">About CCA</a></li>
+              </ul>
+              </li>
+                             <li><a href="#">Courses</a>
+                                <ul class="sub-menu" style="display:none;">
+                                    <li><a href="#">Tally .ERP 9</a>
+                                        <ul class="sub-menu" style="display:none;">
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/quick_tally">Quick Tally</a></li>
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/smart_tally">Smart Tally </a></li>
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/tally_professional">Tally Professional</a></li>
+                                        </ul>                                       
+                                    </li>
+                                    <li><a href="#">MicroSoft Excel 2010 </a>
+                                       <ul class="sub-menu"  style="display:none;">
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/smart_excel">Smart Excel </a></li>
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/master_excel">Master in Excel</a></li>
+                                           
+                                        </ul>
+                                    </li>
+                                    <li><a href="<?php echo  base_url(); ?>index.php/welcome/cea">Certified e Accountant </a></li>
+                                    <li><a href="#">Other Courses </a>
+                                         <ul class="sub-menu" style="display:none;">
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/mid_brain">Mid Brain Activation</a></li>
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/virtual_mba">Virtual MBA </a></li>
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/gfs_project">GFS-Project training</a></li>
+                                        </ul>
+                                    </li>
+                                   </ul> 
+                               
+                            </li>
+                            <li><a href="<?php echo  base_url(); ?>index.php/welcome/placement">Placement</a>
+                                   <ul class="sub-menu" style="display:none;">
+                                       <li><a href="<?php echo  base_url(); ?>index.php/welcome/placement">CCA Placement</a></li>
+                                       <li><a href="<?php echo  base_url(); ?>index.php/welcome/fran_placement">Franchisee Placement</a></li>
+                                       <li><a href="<?php echo  base_url(); ?>index.php/welcome/employer">Employer's Request</a></li>
+                                       <li><a href="<?php echo  base_url(); ?>index.php/welcome/jobs">Job Openings</a></li>
+                                       <li><a href="<?php echo  base_url(); ?>index.php/welcome/stud_testimonal">Students Testimonial</a></li>
+                                  </ul>
+
+                            </li>
+                            <li><a href="<?php echo  base_url(); ?>index.php/welcome/placement">Student</a>
+                                   <ul class="sub-menu" style="display:none;">
+                   <li><a href="#">Apply Online Exam</a></li>
+                   <li><a href="<?php echo  base_url();?>index.php/welcome/Student">Go Online Exam</a></li>
+                   <li><a href="<?php echo  base_url(); ?>index.php/welcome/enquiry">Student Enquiry</a></li>
+                   <li><a href="<?php echo  base_url(); ?>index.php/welcome/download">Download</a></li>
+
+              </ul>
+              </li>
+              
+               <li><a href="#">Franchisee</a>
+                                   <ul class="sub-menu" style="display:none;">
+                   <li><a href="<?php echo  base_url();?>index.php/welcome/Franchisee_Enq">Franchisee Enquiry</a></li>
+                   <li><a href="<?php echo base_url(); ?>index.php/welcome/Franchisee_Login">Franchisee Login</a></li>
+                  </ul>
+              </li>
+              
+              
+                            <!--<li><a href="<?php echo  base_url(); ?>index.php/welcome/cca_gallery">Gallery</a></li>-->
+                            <li><a href="#">Association</a>
+                               <ul class="sub-menu" style="display:none;">
+                                 <li><a href="<?php echo  base_url(); ?>index.php/welcome/cca_franchisee">CCA Franchisee</a></li>                      
+                                 <li><a href="#">CCA Goverment Projects</a></li>
+                                 <li><a href="#">CCA Group of Institutes</a></li>                       
+                                 <li><a href="#">CCA at Colleges</a></li>
+                               </ul>
+                            </li>
+                            <li><a href="#">Contact</a>
+                                <ul class="sub-menu" style="display:none;">
+                                    <li><a href="<?php echo  base_url(); ?>index.php/welcome/locateus">Locate us</a></li>
+                                    <li><a href="<?php echo  base_url(); ?>index.php/welcome/contact">Contact us</a></li>
+                                   <li><a href="#">Enquiry</a>
+                                        <ul class="sub-menu" style="display:none;">
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/stud_enquiry">Student Enquiry</a></li>                      
+                                           <li><a href="<?php echo  base_url(); ?>index.php/welcome/Franchisee_Enq">Franchise Enquiry</a></li>
+                                        </ul>
+
+                                   </li>
+                                   
+                                   <!--<li><a href="#">Franchisee</a></li>-->
+                                </ul>
+                            </li>
+                        </ul> <!-- /.main-menu -->
+
+                        <ul class="social-icons pull-right">
+                            <li><a href="#" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#" data-toggle="tooltip" title="RSS"><i class="fa fa-rss"></i></a></li>
+                        </ul> <!-- /.social-icons -->
+                </nav> <!-- /.main-navigation -->
+            </div> <!-- /.container -->
+        </div> <!-- /.nav-bar-main -->
+
+    </header> <!-- /.site-header -->
+	
+	
+	
+	
+	
+</body>
+</html>

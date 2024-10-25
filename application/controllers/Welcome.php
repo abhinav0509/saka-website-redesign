@@ -5,65 +5,65 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('header');
-		$this->load->view('home');
-		$this->load->view('footer');
+		$this->load->view('NFront/header');
+		$this->load->view('NFront/home');
+		$this->load->view('NFront/footer');
 	}
     
     public function Home_three()
 	{
-		$this->load->view('header');
-		$this->load->view('home-3');
-		$this->load->view('footer');
+		$this->load->view('NFront/header');
+		$this->load->view('NFront/home-3');
+		$this->load->view('NFront/footer');
 	}
 
 	public function About_us()
 	{
-		$this->load->view('header');
-		$this->load->view('about-us');
-		$this->load->view('footer');
+		$this->load->view('NFront/header');
+		$this->load->view('NFront/about-us');
+		$this->load->view('NFront/footer');
 	}
 
 	public function Blog()
 	{
-		$this->load->view('header');
-		$this->load->view('blog');
-		$this->load->view('footer');
+		$this->load->view('NFront/header');
+		$this->load->view('NFront/blog');
+		$this->load->view('NFront/footer');
 	}
 
 	public function Blog_details()
 	{
-		$this->load->view('header');
-		$this->load->view('blog-details');
-		$this->load->view('footer');
+		$this->load->view('NFront/header');
+		$this->load->view('NFront/blog-details');
+		$this->load->view('NFront/footer');
 	}
 
 	public function Project()
 	{
-		$this->load->view('header');
-		$this->load->view('project');
-		$this->load->view('footer');
+		$this->load->view('NFront/header');
+		$this->load->view('NFront/project');
+		$this->load->view('NFront/footer');
 	}
 
 	public function Project_details()
 	{
-		$this->load->view('header');
-		$this->load->view('project-details');
-		$this->load->view('footer');
+		$this->load->view('NFront/header');
+		$this->load->view('NFront/project-details');
+		$this->load->view('NFront/footer');
 	}
 
 	public function Team()
 	{
-		$this->load->view('header');
-		$this->load->view('team');
-		$this->load->view('footer');
+		$this->load->view('NFront/header');
+		$this->load->view('NFront/team');
+		$this->load->view('NFront/footer');
 	}
 
 	public function Contact()
 	{
-		$this->load->view('header');
-		$this->load->view('contact');
-		$this->load->view('footer');
+		$this->load->view('NFront/header');
+		$this->load->view('NFront/contact');
+		$this->load->view('NFront/footer');
 	}
 
 

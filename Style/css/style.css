@@ -1,0 +1,47 @@
+/*--
+	Theme Name: Universe
+	Theme URI: xxx
+	Author: Esmet Hajrizi
+	Author URI: www.esmeth.com
+	Description: College Education Responsive Template
+	Version: 1.0
+	License URI: http://
+	Tags:
+--*/
+
+@import "misc.css";
+@import "main.css";
+@import "color-scheme.css";
+@import "responsive.css";
+
+.animated1{
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    visibility: hidden !important;
+
+    -webkit-backface-visibility: hidden;
+}
+
+.animatedVisi {
+    visibility: visible !important;
+}
+
+.animated1.hinge {
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
+.animated1.rollIn {
+    -webkit-animation-name: rollIn;
+    -moz-animation-name: rollIn;
+    -o-animation-name: rollIn;
+    animation-name: rollIn;
+}

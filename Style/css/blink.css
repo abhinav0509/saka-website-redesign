@@ -1,0 +1,42 @@
+/******************************************
+ *
+ * Scripts Downloaded From coolajax.net
+ *
+ * @author       Md. Mahbub Alam Khan
+ * @copyright   Free to use :D
+ * @link            http://www.coolajax.net
+ * @version      0.0.2 12-11-2012
+ *  More Tutorial: http://www.coolajax.net/
+ *
+ ******************************************/
+
+
+
+img{
+    cursor: pointer;
+}
+.blinking{
+    -webkit-animation: blink 2s infinite;
+    -moz-animation: blink 2s infinite;    
+    animation: blink 2s infinite;
+}
+
+@-webkit-keyframes blink{
+
+    0%{ opacity:0;}
+    100%{opacity:1;}
+}
+
+@-moz-keyframes blink{
+    
+    0%{ opacity:0;}
+    100%{opacity:1;}
+
+}
+        
+@keyframes blink{
+
+    0%{ opacity:0;}
+    100%{opacity:1;}
+
+}
