@@ -75,6 +75,7 @@ j('document').ready(function(){
 </head>
 <body>
 
+<<<<<<< HEAD
     <!-- This one in here is responsive menu for tablet and mobiles -->
     <div class="responsive-navigation visible-sm visible-xs">
         <a href="#" class="menu-toggle-btn">
@@ -90,6 +91,35 @@ j('document').ready(function(){
               </ul>
               </li>
                              <li><a href="#">Courses</a>
+=======
+    <!-- preloader -->
+    <div class="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+
+    <!-- Mouse Cursor  -->
+    <div class="mouseCursor cursor-outer"></div>
+    <div class="mouseCursor cursor-inner"><span>Drag</span></div>
+
+    <div id="smooth-wrapper">
+
+    <!-- Header Area  -->
+
+    <div class="header-area">   
+        <div id="header-sticky">
+            <div class="navigation">
+                <div class="container">
+                    <div class="header-inner-box">
+
+                        <a href="<?php echo base_url();?>" class="logo"><img src="<?php echo base_url();?>assets/img/about/saka-logo.jpg" alt="saka-logo"></a>           
+
+                        <div class="main-menu d-none d-lg-block">
+                            <ul>
+                                <li class="active"><a class="navlink" href="<?php echo base_url();?>">Home</a>
+>>>>>>> 9ecce8d (design changes in hero section)
                                 <ul class="sub-menu">
                                     <li><a href="#">Tally .ERP 9</a>
                                         <ul class="sub-menu">

@@ -1,47 +1,79 @@
+<style>
+    
+    #heroVideo{
+     position: relative;
+     top:0;
+     left:0;   
+     min-width: 100%;
+     max-width:100%;
+     z-index: -1;
 
-    <div id="smooth-content">
+     
+    }
+   .hero-area-banner{
+    position: absolute;
+    background-color: #ddd;
+    color: #fff;
+    width: 100%;
+    height: 800px;
+    display: table;
+    position: relative;
+    top:25%;
+    left:0;
+    z-index: 999;
+    } 
+</style>
 
-    <!-- Hero Area  -->
-    <div id="home-3" class="hero-area">
-        <div class="container">
-            <div class="row hero-area-inner">
-                <div class="offset-xl-1 col-xl-10 offset-lg-1 col-lg-10 wow fadeInUp animated" data-wow-delay="200ms">
-                    <div class="hero-area-content">
-                        <div class="section-title">                            
-                            <h1>Transform your <br> <span>Vision  into Reality</span></h1>
+
+
+    
+   
+   <div id="smooth-content">
+
+    <!-- Hero Area -->
+
+    <div id="home-1" class="hero-area">
+ 
+     <video class="col-md-12" autoplay muted loop id="heroVideo">
+              <source src="<?php echo base_url();?>assets/img/video/saka-video3.mp4" type="video/mp4">
+             
+             
+            </video>
+      
+            <div class="hero-area-banner">
+            <div class="hero-area-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="section-title">
+                                <div class="heading-animation">
+                                    <h1>Pioneers In Process <br>Engineering Solutions</h1>
+                                </div>
+                            </div>                                                        
+                        </div>
+                        <div class="col-lg-3 text-md-end">
+                            <div class="service-info">
+                                <div class="heading-animation">
+                                    <p>65+ Years of Design Expertise</p>
+                                    <h4>Next Gen Technology For</h4>
+                                    <h5>Granulations Plants</h5>
+                                    <h5>Industrial Drying Systems</h5>
+                                    <h5>Spray Congealing Systems & More</h5>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>    
-                <div class="row mt-60">
-                    <div class="col-xl-7 col-lg-7 col-md-7">
-                        <div class="hero-area-banner">
-                            <img src="assets/img/hero-area-banner.jpg" alt="">
-                            <p>[Architecture]</p>
+                    <div class="row">
+                        <div class="offset-xl-5 col-xl-7 offset-md-4 col-md-6 text-lg-end">
+                            <div class="p-animation">
+                                <p>Welcome to Saka India, a full service architecture and interior design firm. We specialize in creating beautiful, functional spaces that reflect your unique style and personality. Let us help you transform your space into a work of art.</p>
+                            </div>
+                        <a href="about.html" class="theme-btn mt-20">Start a Project</a>    
                         </div>
                     </div>
-                    <div class="offset-xl-1 col-xl-4 offset-lg-1 col-lg-4 col-md-5">
-                        <div class="hero-area-content">
-                            <p>At Saka India, we are passionate about bringing our clients vision to life. We work closely with you. Aliquam maximus mi nec justo efficitur, quis sollicitudin sapien tempus. Vivamus dictum varius elit, ultricies sollicitudin metus fermentum vel. Maecenas eget scelerisque orci. </p>
-                        </div>
-                        <div class="directon-sign">
-                            <i class="las la-arrow-down"></i>
-                        </div>
-                        <div class="hero-area-banner mt-60">
-                            <img src="assets/img/hero-banner-2.jpg" alt="">
-                            <p>[Interior]</p>
-                        </div>
-                    </div>
-                    <div class="section-title mb-0">
-                        <span><i class="las la-arrow-down mt-30"></i></span>
-                        <h3>Saka India</h3>
-                        <p>Design your Dream House</p>
-                    </div>
-                </div>            
+                </div>
             </div>
-            
         </div>
-                
-
     </div>
 
     <!-- Service Section  -->
