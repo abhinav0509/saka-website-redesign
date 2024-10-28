@@ -16,10 +16,10 @@ else
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>National Institute of Pharmaceutical Education andResearch (NIPER) - Ahmedabad </title>
+        <title>SAKA INDIA | Dashboard </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="shortcut icon" href="<?php echo base_url(); ?>uploads/Slider/niper.jpg">
+        <link rel="shortcut icon" href="<?php echo base_url();?>uploads/Slider/logo.png">
         <link rel="stylesheet" href="<?php echo base_url(); ?>Style/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>Style/dist/css/iriy-admin.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>Style/demo/css/demo.css">
@@ -244,7 +244,7 @@ else
                         <span class="sc-visible">
                             I
                         </span>
-						<img src="<?php echo base_url(); ?>uploads/Slider/niper.jpg" style="height:40px; width:40px;">
+						<img src="<?php echo base_url();?>uploads/Slider/logo.png" style="height:40px; width:80px;">
                         <span class="sc-hidden">
                             <span class="semi-bold">Admin Dashboard</span>
                         </span>
@@ -321,7 +321,7 @@ else
 
                    <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle navbar-user" href="javascript:;">
-                        <img src="<?php echo base_url(); ?>uploads/Slider/niper.jpg" style="height:40px; width:40px;">
+                        <img src="<?php echo base_url();?>uploads/Slider/logo.png" style="height:40px; width:80px;">
                             <span class="hidden-xs"> <?php echo $userdata->email;?> </span>
                             <b class="caret"></b>
                         </a>                        
@@ -332,7 +332,7 @@ else
 								<li><a href="<?php echo base_url(); ?>index.php/Admin/mail_configure">Mail Configuration</a></li>
 							<?php } ?>
                             <li><a href="<?php echo base_url(); ?>index.php/Logout/Admin_logout">Log Out</a></li>
-                            <!--<li><a href="http://localhost/SocialMedia_RUN?unm=<?php  echo $unm; ?>&cont=<?php echo $cnt; ?>&email=<?php echo $email; ?>&pass=<?php echo rtrim($pass); ?>&web=<?php echo $website; ?>">SMO</a></li>-->
+                            <li><a href="http://localhost/SocialMedia_RUN?unm=<?php  echo $unm; ?>&cont=<?php echo $cnt; ?>&email=<?php echo $email; ?>&pass=<?php echo rtrim($pass); ?>&web=<?php echo $website; ?>">SMO</a></li>
                         </ul>
 
                     </li>
@@ -412,6 +412,11 @@ else
 			<li class="nav-dropdown">
                             <a href="<?php echo base_url()."index.php/Admin/Edit_Image" ?>" title="Edit All Function Images">
                                 <i class="fa fa-lg fa-fw fa-user"></i> Edit Images
+                            </a>
+           </li>
+           <li class="nav-dropdown">
+                            <a href="<?php echo base_url()."index.php/Admin/Blog" ?>" title="Edit All Function Blog">
+                                <i class="fa fa-lg fa-fw fa-edit"></i> Blog Details
                             </a>
            </li>
 			            <li class="nav-dropdown" id="nuser">

@@ -36,7 +36,7 @@
                         <div class="col-lg-9">
                             <div class="section-title">
                                 <div class="heading-animation">
-                                <h1>Pioneers <span><img src="<?php echo base_url();?>assets/img/1558587673885.jpg alt="></span>  In Process <br> Engineering Solutions</h1>
+                                <h1>Pioneers <span><img src="<?php echo base_url();?>assets/img/1558587673885.jpg" alt=""></span>  In Process <br> Engineering Solutions</h1>
                                 </div>
                             </div>                                                        
                         </div>

@@ -7,7 +7,7 @@
                 <div class="col-xl-10 col-lg-10 col-md-10 text-center wow fadeInUp animated" data-wow-delay="200ms">
                     <div class="hero-area-content">
                         <div class="section-title mb-0">                                                        
-                             <h1>Pioneers <span><img src="assets/img/1558587673885.jpg" alt=""></span>  In Process <br> Engineering Solutions</h1>                                                                                            
+                             <h1>Pioneers <span><img src="<?php echo base_url();?>assets/img/1558587673885.jpg" alt=""></span>  In Process <br> Engineering Solutions</h1>                                                                                            
                             <div class="p-animation">
                                 <p>Our team of expert engineers and designers works closely with clients to create robust, functional and state of art solutions<br> that are tailored to their specific process engineering needs.</p>
                             </div>                                

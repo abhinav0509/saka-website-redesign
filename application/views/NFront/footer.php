@@ -5,7 +5,7 @@
             <div class="footer-up">
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12">
-                        <a href="index.html" class="logo">Saka India.</a>
+                    <a href="<?php echo base_url();?>" class="logo"><img src="<?php echo base_url();?>uploads/About/logo1.png" style="height:75px; width:200px;"></a>
                         <p>Design your Dream House <br> maxime dolor voluptatibus natus
                         </p>
                     </div>
