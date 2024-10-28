@@ -1855,7 +1855,7 @@ input[type=search]::-webkit-search-results-decoration {
     margin-top: 50px;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 767px) {   
   #home-1 .hero-area-banner p {
     color: #333;
     margin-top: 50px;
