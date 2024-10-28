@@ -36,7 +36,7 @@
                         <div class="col-lg-9">
                             <div class="section-title">
                                 <div class="heading-animation">
-                                <h1>Pioneers <span><img src="<?php echo base_url();?>assets/img/1558587673885.jpg alt="></span>  In Process <br> Engineering Solutions</h1>
+                                <h1>Pioneers <span><img src="<?php echo base_url();?>assets/img/1558587673885.jpg" alt=""></span>  In Process <br> Engineering Solutions</h1>
                                 </div>
                             </div>                                                        
                         </div>
@@ -232,7 +232,7 @@
                             <div class="details-link"><i class="las la-arrow-right"></i></div>
                         </div>
                         <div class="service-img">
-                            <img src="assets/img/service/service-1.jpg" alt="">
+                            <img src="<?php echo base_url();?>assets/img/service/granulation-systems-saka-india-450x450.png" alt="">
                         </div>
                     </div>
                     <div class="single-service-item">
@@ -241,7 +241,7 @@
                             <div class="details-link"><i class="las la-arrow-right"></i></div>
                         </div>
                         <div class="service-img">
-                            <img src="assets/img/service/service-2.jpg" alt="">
+                            <img src="<?php echo base_url();?>assets/img/service/sprydryer-saka1.jpg" alt="">
                         </div>
                     </div>
                     <div class="single-service-item">
@@ -250,7 +250,7 @@
                             <div class="details-link"><i class="las la-arrow-right"></i></div>
                         </div>
                         <div class="service-img">
-                            <img src="assets/img/service/service-3.jpg" alt="">
+                            <img src="<?php echo base_url();?>assets/img/service/tube-bundle-rotary-dryer-1.png" alt="">
                         </div>
                     </div>
                     <div class="single-service-item">
@@ -296,12 +296,13 @@
             <div class="row">
                 <nav>
                     <div class="nav project-list" role="tablist">                        
-                        <button class="nav-link active" id="architecture-design-tab" data-bs-toggle="tab" data-bs-target="#architecture-design" type="button" role="tab" aria-controls="architecture-design" aria-selected="false">Architecture Design</button>
-                        <button class="nav-link" id="interior-design-tab" data-bs-toggle="tab" data-bs-target="#interior-design" type="button" role="tab" aria-controls="interior-design" aria-selected="false">Interior Design</button>
-                        <button class="nav-link" id="project-management-tab" data-bs-toggle="tab" data-bs-target="#project-management" type="button" role="tab" aria-controls="project-management" aria-selected="false">Project Management</button>
-                        <button class="nav-link" id="historic-preservation-tab" data-bs-toggle="tab" data-bs-target="#historic-preservation" type="button" role="tab" aria-controls="historic-preservation" aria-selected="false">Historic Preservation</button>
-                        <button class="nav-link" id="landscape-design-tab" data-bs-toggle="tab" data-bs-target="#landscape-design" type="button" role="tab" aria-controls="landscape-design" aria-selected="false">Landscape Design</button>                          
-                        <button class="nav-link" id="furniture-remodel-tab" data-bs-toggle="tab" data-bs-target="#furniture-remodel" type="button" role="tab" aria-controls="furniture-remodel" aria-selected="false">Furniture Remodel</button>                          
+                        <button class="nav-link active" id="architecture-design-tab" data-bs-toggle="tab" data-bs-target="#architecture-design" type="button" role="tab" aria-controls="architecture-design" aria-selected="false">Granulation System</button>
+                        <button class="nav-link" id="interior-design-tab" data-bs-toggle="tab" data-bs-target="#interior-design" type="button" role="tab" aria-controls="interior-design" aria-selected="false">Spray Dryer</button>
+                        <button class="nav-link" id="project-management-tab" data-bs-toggle="tab" data-bs-target="#project-management" type="button" role="tab" aria-controls="project-management" aria-selected="false">Conveying Systems</button>
+                        <button class="nav-link" id="historic-preservation-tab" data-bs-toggle="tab" data-bs-target="#historic-preservation" type="button" role="tab" aria-controls="historic-preservation" aria-selected="false">Drying Systems</button>
+                        <button class="nav-link" id="landscape-design-tab" data-bs-toggle="tab" data-bs-target="#landscape-design" type="button" role="tab" aria-controls="landscape-design" aria-selected="false">Air Heating Systems</button>                          
+                        <button class="nav-link" id="furniture-remodel-tab" data-bs-toggle="tab" data-bs-target="#furniture-remodel" type="button" role="tab" aria-controls="furniture-remodel" aria-selected="false">Fluid Bed Dryer</button>
+                                               
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">                   
@@ -643,7 +644,8 @@
                         <h2>About <br> Saka India <span class="d-none d-md-block"><i class="las la-arrow-down ml-40"></i></span></h2>                            
                     </div>
                     <div class="about-desc mt-60 pl-150">
-                        <p>Saka India is a team of experienced architects and interior designers who are passionate about creating beautiful, functional spaces. We believe that good design should be accessible to everyone, and we work hard to make sure that our clients visions become a reality.</p>
+                        <p>Saka India is a team of experienced engineers and designers Who are passionate about developing technology that serves the true purpose of your business.The commitment to be always aligned to Customer’s purpose has earned us a 85% repeat business,
+                        even as the base of customers doubled every year since the inception.</p>
                     </div>
                 </div>
                 <div class="offset-xl-1 col-xl-4 offset-lg-1 col-lg-4 col-md-6 text-end">
@@ -662,25 +664,25 @@
             <div class="row gx-5">                
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-counter-box">
-                        <p class="counter-number">[<span>30</span>+]</p>
+                        <p class="counter-number">[<span>65</span>+]</p>
                         <h6>Year of Experience</h6>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-counter-box">
-                        <p class="counter-number">[<span>56</span>]</p>
-                        <h6>Awards</h6>
+                        <p class="counter-number">[<span>250</span>+]</p>
+                        <h6>Installations</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">    
+                    <div class="single-counter-box">
+                        <p class="counter-number">[<span>300</span>+]</p>
+                        <h6>Locations Across World</h6>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-counter-box">
-                        <p class="counter-number">[<span>1235</span>]</p>
-                        <h6>Project Completed</h6>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-counter-box">
-                        <p class="counter-number">[<span>90</span>%]</p>
+                        <p class="counter-number">[<span>98</span>%]</p>
                         <h6>Clients Satisfaction</h6>
                     </div>
                 </div>                             

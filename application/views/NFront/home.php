@@ -212,7 +212,7 @@
                             <h3>Saka India is a team of experienced engineers and designers</h3>
                         </div>
                         <div class="p-animation">
-                            <p>Who are passionate about developing technology that serves the true purpose of your business.The commitment to be always aligned to Customer’s purpose has earned us a 85% repeat business,
+                            <p>Saka India is a team of experienced engineers and designers Who are passionate about developing technology that serves the true purpose of your business.The commitment to be always aligned to Customer’s purpose has earned us a 85% repeat business,
                             even as the base of customers doubled every year since the inception.</p>
                         </div>
                     </div>
