@@ -79,14 +79,14 @@ form.simple-form select {
     <div class="card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
-      <form action="<?php echo base_url();?>index.php/login_cont/check_login" onsubmit="return validate()"" method="post">
+      <form action="<?php echo base_url();?>index.php/login_cont/check_login" onsubmit="return validate()" method="post">
       <div class="input-group mb-3">
                   <fieldset style="border:none;">
                    <select class="form-control" name="user_type" style="width:100%;" >
                           <option value="">Select User Type</option>
                               <option>Admin</option>
                               <option>Employee</option>
-							                <option>Exam</option>
+							                <!-- <option>Exam</option> -->
                     </select>
                   </fieldset>
                   </div>   
