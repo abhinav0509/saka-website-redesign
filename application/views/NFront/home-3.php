@@ -26,21 +26,54 @@
 
 
 
-    
-   
-   <div id="smooth-content">
+<div id="smooth-content">
 
     <!-- Hero Area -->
 
     <div id="home-1" class="hero-area">
- 
-     <video class="col-md-12" autoplay muted loop id="heroVideo">
-              <source src="<?php echo base_url();?>assets/img/video/saka-video3.mp4" type="video/mp4">
-             
-             
-            </video>
+    <div class="container" style="margin-top:40px;">
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <div class="section-title">
+                                <div class="heading-animation">
+                                <h1>Pioneers <span><img src="<?php echo base_url();?>assets/img/1558587673885.jpg alt="></span>  In Process <br> Engineering Solutions</h1>
+                                </div>
+                            </div>                                                        
+                        </div>
+                        <div class="col-lg-3 text-md-end">
+                            <div class="service-info">
+                                <div class="heading-animation">
+                                    <p>65+ Years of Design Expertise</p>
+                                    <h4>Next Gen Technology For</h4>
+                                    <h5>Granulations Plants</h5>
+                                    <h5>Industrial Drying Systems</h5>
+                                    <h5>Spray Congealing Systems & More</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-7  col-md-6">
+                            <div class="p-animation">
+                                <p class="text-center">Our team of expert engineers and designers works closely with clients to create robust, functional and state of art solutions that are tailored to their specific process engineering needs</p>
+                            </div>
+                        <a href="about.html" class="theme-btn mt-20">Start a Project</a>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+                                                                     
+     <div class="container-fluid mt-4">
+        <video class="col-md-12" autoplay muted loop id="hero  Video">
+                <source src="<?php echo base_url();?>assets/img/video/saka-video3.mp4" type="video/mp4">
+                
+                
+        </video>
+
+     </div>
+    
       
-            <div class="hero-area-banner">
+            <!-- <div class="hero-area-banner">
             <div class="hero-area-content">
                 <div class="container">
                     <div class="row">
@@ -74,15 +107,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Service Section  -->
-    <div id="service-3" class="service-section pb-50">
+   <!-- <div id="service-3" class="service-section pb-50">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-12 text-end">
                     <div class="section-title">
-                        <h2>Our Service</h2>
+                        <h2>Our Products  </h2>
                     </div>
                 </div>
             </div>
@@ -94,7 +127,7 @@
                               <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <span>01</span>
-                                    Architectural Design                                    
+                                    Granulati on System                                 
                                 </button>
                               </h2>
                               <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -108,7 +141,7 @@
                                 <h2 class="accordion-header" id="headingOne">
                                   <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                       <span>02</span>
-                                      Interior Design
+                                      Spray Dryer
                                   </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
@@ -122,7 +155,7 @@
                               <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     <span>03</span>
-                                    Project Management
+                                    Rotary Dryer
                                 </button>
                               </h2>
                               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -136,7 +169,7 @@
                               <h2 class="accordion-header" id="headingFour">
                                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     <span>04</span>
-                                    Historic Preservation
+                                    Fluid Bed Dryer 
                                 </button>
                               </h2>
                               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
@@ -150,7 +183,7 @@
                               <h2 class="accordion-header" id="headingFive">
                                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     <span>05</span>
-                                    Landscape Design
+                                    Flash Dryer
                                 </button>
                               </h2>
                               <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
@@ -164,7 +197,7 @@
                               <h2 class="accordion-header" id="headingSix">
                                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                     <span>06</span>
-                                    Furniture Remodel
+                                    Hot Air Generator
                                 </button>
                               </h2>
                               <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
@@ -176,6 +209,77 @@
                             </div>
                           </div>
                     </div>                                        
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+  <!-- Service Section  -->
+    <div class="service-section section-padding pt-50 pb-100">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="section-title">
+                    <div class="heading-animation">
+                        <h3>Our Solutions</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="single-service-item mt-30">
+                        <div class="single-service-inner">
+                            <h5><span>01</span>Granulation System</h5>
+                            <div class="details-link"><i class="las la-arrow-right"></i></div>
+                        </div>
+                        <div class="service-img">
+                            <img src="assets/img/service/service-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-service-item">
+                        <div class="single-service-inner">
+                            <h5><span>02</span>Spray Dryer</h5>
+                            <div class="details-link"><i class="las la-arrow-right"></i></div>
+                        </div>
+                        <div class="service-img">
+                            <img src="assets/img/service/service-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-service-item">
+                        <div class="single-service-inner">
+                            <h5><span>03</span>Rotary Dryer</h5>
+                            <div class="details-link"><i class="las la-arrow-right"></i></div>
+                        </div>
+                        <div class="service-img">
+                            <img src="assets/img/service/service-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-service-item">
+                        <div class="single-service-inner">
+                            <h5><span>04</span>Fluid Bed Dryer</h5>
+                            <div class="details-link"><i class="las la-arrow-right"></i></div>
+                        </div>
+                        <div class="service-img">
+                            <img src="assets/img/service/service-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-service-item">
+                        <div class="single-service-inner">
+                            <h5><span>05</span>Flash Dryer</h5>
+                            <div class="details-link"><i class="las la-arrow-right"></i></div>
+                        </div>
+                        <div class="service-img">
+                            <img src="assets/img/service/service-5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="single-service-item">
+                        <div class="single-service-inner">
+                            <h5><span>06</span>Hot Air Generator</h5>
+                            <div class="details-link"><i class="las la-arrow-right"></i></div>
+                        </div>
+                        <div class="service-img">
+                            <img src="assets/img/service/service-6.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
