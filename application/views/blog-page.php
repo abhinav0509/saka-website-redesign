@@ -170,10 +170,6 @@ var obj1;
             getDuration();
        }
     });
-
-   
-   
-   
    searchh1();
    var Pageindex = j('#pindex').val();
    var rcount = j('#rcount').val();
@@ -396,14 +392,8 @@ function show(input) {
 
 			      
 					<div class="col-sm-2" style="margin-top:0px;margin-bottom:-29px">
-			        <input type="text" id="cnm" name="cnm" class="form-control" placeholder="Search By Company" required/>
+			        <input type="text" id="cnm" name="cnm" class="form-control" placeholder="Search By Blog" required/>
 			      </div>
-
-				  
-				  
-				  
-				  
-				  
             <div class="col-sm-2" style="margin-top:0px;margin-bottom:-29px">
                     <a class="btn btn-primary" onclick="search_data()">
                         <i class="fa fa-search"></i> Search
@@ -416,9 +406,11 @@ function show(input) {
                 <thead>
                      <tr style="background-color:#d7dadc;">
                           <th width="1%">Id</th>
+                          <th width="5%">Title</th>
                           <th width="5%">Name</th>
                           <th width="1%">Image</th>
                           <th width="10%">Contents</th>
+                          <th width="5%">Date</th>
                           <th width="5%">Edit</th>
                           <th width="5%">Delete</th>
                      </tr>	</thead>
@@ -431,12 +423,14 @@ function show(input) {
 						if(!empty($results)) { foreach($results as $row)
 						{ ?>
 						<tr>
-						<td><?php print $row->T_id; ?></td>
+						<td><?php print $row->B_id; ?></td>
+            <td><?php print $row->Title; ?></td>
 						<td><?php print $row->Name; ?></td>
-						<td><img src="<?php echo base_url(); ?>uploads/Testimonial/<?php echo $row->Image; ?>" style="height:115px; width:192px;"></td>
+						<td><img src="<?php echo base_url(); ?>uploads/Blog/<?php echo $row->Image; ?>" style="height:115px; width:192px;"></td>
 						<td><?php print $row->Content; ?></td>
-						<td style="text-align:center"><i style="color:#275273;font-size:25px;" id="EditB" onclick="Edit(jArray,<?php echo $row->T_id; ?>);" class="fa fa-edit"></i></td>
-      					<td  style="text-align:center"><i style="color:#275273;font-size:25px;" id="DeleteN" onclick="Delete(<?php echo $row->T_id; ?>);" class="fa fa-trash-o"></i></td>
+            <td><?php print $row->Insert_Date; ?></td>
+						<td style="text-align:center"><i style="color:#275273;font-size:25px;" id="EditB" onclick="Edit(jArray,<?php echo $row->B_id; ?>);" class="fa fa-edit"></i></td>
+      					<td  style="text-align:center"><i style="color:#275273;font-size:25px;" id="DeleteN" onclick="Delete(<?php echo $row->B_id; ?>);" class="fa fa-trash-o"></i></td>
       					</tr>
               	<?php } } else{ ?>
              <tr>
@@ -467,7 +461,7 @@ function show(input) {
                </form>          
 
 
-          <form id="formVideo" class="form-horizontal" role="form" action="<?php echo  base_url()."index.php/Testimonial_Data/Insert"; ?>"  enctype="multipart/form-data" method="post" name="frm">
+          <form id="formVideo" class="form-horizontal" role="form" action="<?php echo  base_url()."index.php/Blog_Data/Insert"; ?>"  enctype="multipart/form-data" method="post" name="frm">
 					<div class="panel panel-default">
                     <div class="panel-heading">
 					
@@ -486,12 +480,26 @@ function show(input) {
       
          <div class="panel panel-body" style="border:1px solid #CCC;">
 					<div class="col-sm-6" style="margin-top:1%;">
-					
-					 <div class="form-group">
+          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="inputPassword3"> Title<span class="asterisk">*</span>
+                          </label>
+                            <div class="col-sm-8">
+                             <input type="text" id="tit" name="tit" class="form-control" required/>
+                            </div>
+                          </div>
+					               <div class="form-group">
                             <label class="col-sm-4 control-label" for="inputPassword3"> Name<span class="asterisk">*</span>
                           </label>
                             <div class="col-sm-8">
                              <input type="text" id="nm" name="nm" class="form-control" required/>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="inputPassword3">Publish Date<span class="asterisk">*</span>
+                          </label>
+                            <div class="col-sm-8">
+                              <input type="text"  id="doa" name="doa" onchange="show(this)" class="form-control" title="Pleas Select Publish date" data-rel="datepicker" >
+                            
                             </div>
                           </div>
                            <div class="form-group">
@@ -510,7 +518,7 @@ function show(input) {
 					  <div class="col-sm-6" style="margin-top:1%;">
                           
                           <div class="form-group">
-                            <label class="col-sm-4 control-label" for="inputPassword3" style="display:none;" id="prelbl">Testomonial Preview
+                            <label class="col-sm-4 control-label" for="inputPassword3" style="display:none;" id="prelbl">Blog Preview
                             </label>
                             <div class="col-sm-8">
                               <img  src="" style="height:142px; width:100%; display:none;" id="photo"/>                                
@@ -560,30 +568,16 @@ function show(input) {
                      <input class="btn btn-primary" type="submit" value="Save" name="save" id="SaveBtn" onclick="return val()"/>
                      <input class="btn btn-primary " id="UpdateBtn" type="submit" style=" display:none;" value="Update" name="update" onclick="return val1()"/>
           					 <input class="btn btn-primary " id="CancelBtn" type="submit" style=" display:none;" value="Cancel" name="cancel"/>
-                   
                </div>
               </div>  
           </div>
         </div>
 					</div> 	 
-						  
-						  
-							
-						 
 							</div>
           </form>           
-                
-                
-                
-                
-                    
                 </div>
-	
-               
               </div>
            </div>
-		   
-		 
      </div>
    </div>
   

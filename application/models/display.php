@@ -4703,6 +4703,63 @@ public function get_stud_info1($name,$fid)
      return $query->result_array();
 	}
 
+   public function Blogd_display()
+   {
+      $query=$this->db->get('tbl_blog');
+      return $query->result();
+   }
+  
+  
+  
+  function Blog_display($cname)
+  {
+       /* $array=array();
+          if($cname!="")
+          {
+             $array=array('cname'=>$cname);
+          }
+          else if($cname=="")
+          {
+              $this->db->order_by('id','desc');
+           $query=$this->db->get('testimonial');
+           return $query->num_rows();
+          }
+          
+          $this->db->where($array);
+        $this->db->order_by('id','desc');*/
+          $query=$this->db->get('tbl_blog');
+          return $query->num_rows();
+  }   
+  public function Blog1_Paging($limit,$start,$cname)
+       {
+          /*
+          $array=array();
+          if($cname!="")
+          {
+             $array=array('cname'=>$cname);
+          }
+          else if($cname=="")
+          {
+              $this->db->order_by('id','desc');
+           $query=$this->db->get('testimonial');
+           return $query->result();
+          }       
+        
+        $this->db->limit($limit, $start);
+          $this->db->where($array);*/
+        $this->db->order_by('B_id','desc');
+          $query = $this->db->get("tbl_blog");
+   
+          if ($query->num_rows() > 0) {
+              foreach ($query->result() as $row) {
+                  $data[] = $row;
+              }
+              return $data;
+          }
+          return false;
+     }
+  
+
 }
 
 ?>
