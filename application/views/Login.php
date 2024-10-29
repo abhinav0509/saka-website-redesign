@@ -76,7 +76,7 @@ form.simple-form select {
     <div class="card-header text-center">
     <img src="<?php echo base_url(); ?>uploads/Slider/logo.png" style="height:80px; width:200px;">
     </div>
-    <div class="card-body">
+    <div class="card-body" style="background: #2766a947;">
       <p class="login-box-msg">Sign in to start your session</p>
 
       <form action="<?php echo base_url();?>index.php/Login_cont/check_login" onsubmit="return validate()" method="post">
@@ -91,7 +91,7 @@ form.simple-form select {
                   </fieldset>
                   </div>   
         <div class="input-group mb-3">
-        <input type="text" name="name" id="nm" class="text requiredField" title="User Name" placeholder="Username" style="width:85%;"/>
+        <input type="text" name="name" id="nm" class="text requiredField" title="User Name" placeholder="Username" style="width:85%;" required/>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -99,7 +99,7 @@ form.simple-form select {
           </div>
         </div>
         <div class="input-group mb-3">
-         <input type="password" name="pass" id="pass" class="text requiredField" title="Password" placeholder="Password" style="width:85%;"/>
+         <input type="password" name="pass" id="pass" class="text requiredField" title="Password" placeholder="Password" style="width:85%;" required/>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>

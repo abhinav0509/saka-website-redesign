@@ -107,7 +107,7 @@
         
                             <div class="header-btn">
                                 <div class="menu-trigger">
-                                    <span class="lines">Login</span>
+                                    <span class="lines"></span>
                                     <span class="lines"></span>
                                     <span class="lines"></span>
                                 </div>

@@ -99,7 +99,7 @@
         </div>
         <div class="logo-side mb-30">
             <div class="logo">
-                <a href="index-2.html" class="logo">Saka India.</a>
+            <a href="<?php echo base_url();?>" class="logo"><img src="<?php echo base_url();?>uploads/About/logo1.png" style="height:60px; width:150px;"></a>
             </div>
         </div>
         <div class="side-info">
@@ -109,9 +109,9 @@
                 <img src="assets/img/offcanvas-img.jpg" alt="">
 
                 <div class="mt-30 mb-30">
-                    <a href="contact.html" class="white-btn">Get In Touch</a>
-                </div>
-            </div>
+                    <a href="<?php echo base_url();?>index.php/Admin" target="_blank" class="white-btn">Login</a>
+                </div>              
+            </div>           
             <div class="social-area-wrap">
                 <a href="#"><i class="lab la-facebook-f"></i></a>                                    
                 <a href="#"><i class="lab la-instagram"></i></a>
