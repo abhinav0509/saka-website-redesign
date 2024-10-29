@@ -18,7 +18,7 @@
                         <i class="fa fa-users"></i>
                         </div>
                         <header>
-                            <h3 class="thin">Total Student</h3>
+                            <h3 class="thin">Total Project</h3>
                         </header>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                             <i class="fa fa-tree"></i>
                         </div>
                         <header>
-                            <h3 class="thin">Total Tree</h3>
+                            <h3 class="thin">Total Client</h3>
                         </header>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                             <i class="fa fa-leaf"></i>
                         </div>
                         <header>
-                            <h3 class="thin">Adopted</h3>
+                            <h3 class="thin">Enquiry</h3>
                         </header>
                     </div>
                 </div>
@@ -63,13 +63,13 @@
                 <div class="panel-body panel-body-danger">
                     <div class="metric-content metric-icon">
                         <div class="value">
-                            3:17
+                            250
                         </div>
                         <div class="icon">
                             <i class="fa fa-leaf"></i>
                         </div>
                         <header>
-                            <h3 class="thin">Live Tree</h3>
+                            <h3 class="thin">Employee</h3>
                         </header>
                     </div>
                 </div>

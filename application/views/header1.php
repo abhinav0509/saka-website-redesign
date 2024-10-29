@@ -332,7 +332,7 @@ else
 								<li><a href="<?php echo base_url(); ?>index.php/Admin/mail_configure">Mail Configuration</a></li>
 							<?php } ?>
                             <li><a href="<?php echo base_url(); ?>index.php/Logout/Admin_logout">Log Out</a></li>
-                            <li><a href="http://localhost/SocialMedia_RUN?unm=<?php  echo $unm; ?>&cont=<?php echo $cnt; ?>&email=<?php echo $email; ?>&pass=<?php echo rtrim($pass); ?>&web=<?php echo $website; ?>">SMO</a></li>
+                            <!-- <li><a href="http://localhost/SocialMedia_RUN?unm=<?php  echo $unm; ?>&cont=<?php echo $cnt; ?>&email=<?php echo $email; ?>&pass=<?php echo rtrim($pass); ?>&web=<?php echo $website; ?>">SMO</a></li> -->
                         </ul>
 
                     </li>
@@ -346,7 +346,7 @@ else
              <ul class="nav nav-pills nav-stacked" id="Menu">
               <li class="nav-dropdown" id="dash">
 							<a href="<?php echo base_url();?>index.php/Admin/Dashboard" title="Dashboard">
-                                <i class="fa fa-lg fa-fw fa-home"></i> Dashboard
+                                <i class="fa fa-lg fa-fw fa-dashboard"></i> Dashboard
                             </a>
               </li>
 			 <?php if($userdata->user_type=="Admin"){ ?>
@@ -396,11 +396,11 @@ else
                                 <i class="fa fa-fw fa-caret-right"></i> City Master
 				  </a>
                 </li>
-				<!--<li id="ThreeDiv">
+				<li id="ThreeDiv">
                   <a href="#" title="Admin User">
                     <i class="fa fa-fw fa-caret-right"></i> Admin User
 				  </a>
-                </li>-->				
+                </li>				
 			    <li id="ThreeDiv">
                   <a href="<?php echo base_url()."index.php/Admin/Meta" ?>" title="Admin User">
                     <i class="fa fa-fw fa-caret-right"></i> Meta Keywords
@@ -414,22 +414,22 @@ else
                                 <i class="fa fa-lg fa-fw fa-user"></i> Edit Images
                             </a>
            </li>
-           <li class="nav-dropdown">
+           <li class="nav-dropdown" id="blog">
                             <a href="<?php echo base_url()."index.php/Admin/Blog" ?>" title="Edit All Function Blog">
                                 <i class="fa fa-lg fa-fw fa-edit"></i> Blog Details
                             </a>
            </li>
 			            <li class="nav-dropdown" id="nuser">
-                            <a href="<?php echo base_url()."index.php/Admin/create_user" ?>" title="User>
+                            <a href="<?php echo base_url()."index.php/Admin/create_user" ?>" title="User">
                                 <i class="fa fa-lg fa-fw fa-user"></i> Create User
                             </a>
                         </li>
-						<!-- <li class="nav-dropdown" id="news">
+						<li class="nav-dropdown" id="news">
                             <a href="<?php echo base_url()."index.php/Admin/News" ?>" title="News And Events">
                                 <i class="fa fa-lg fa-fw fa-envelope"></i> News & Events
                             </a>
-                        </li>                    -->
-                        <li class="nav-dropdown" id="dfrr">
+                        </li>                   
+                        <!-- <li class="nav-dropdown" id="dfrr">
                           
                             <a href="#" title="Tree">
                                 <i class="fa fa-lg fa-fw fa-edit"></i>Demo Tree
@@ -458,7 +458,7 @@ else
                             </a>
                         </li>
                     </ul>
-                    </li>
+                    </li> -->
 			 <?php } ?>					
                     </ul>                  
                 </nav>

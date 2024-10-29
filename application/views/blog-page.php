@@ -148,15 +148,13 @@ table tbody td{
 }
 td:hover{cursor: pointer;}
  </style>
-
-
-
+ 
 <script type="text/javascript">
 var obj1;
   var j=jQuery.noConflict();
   j(document).ready(function(){
   j("#blog").addClass("open");
-   j("#HExp").addClass("active open");
+   j("#blog").addClass("active open");
    CKEDITOR.replace( 'Desc');
    CKEDITOR.replace('testo');
    j('#cnm').val(j('#cnm1').val());
@@ -165,7 +163,7 @@ var obj1;
    j('#doa').datepicker({
         autoclose: true,
         todayHighlight: true,
-       dateFormat: 'dd-mm-yy',
+       dateFormat: 'yy-mm-dd',
        onSelect: function(dateText){
             getDuration();
        }
@@ -270,7 +268,7 @@ function Delete(id)
  {
 	if(confirm("Are You Sure You Want To Delete It.?"))
 	j.ajax({
-			url: '<?php echo base_url(); ?>index.php/Testimonial_Data/Delete',
+			url: '<?php echo base_url(); ?>index.php/Blog_Data/Delete',
             type: 'POST',
 			data:{'action':'deltesti','T_id':id},
 			success: function(data){
@@ -279,7 +277,7 @@ function Delete(id)
 				 alert("Record Deleted Successfully.?");
 					if(data)
 					{
-					window.location="<?php echo base_url().'index.php/Admin/Testimonial'; ?>"
+					window.location="<?php echo base_url().'index.php/Admin/Blog'; ?>"
 					}
         
 				},
@@ -310,7 +308,7 @@ function Delete(id)
       {
                   editor1.insertHtml(obj1[0][r].Content);
       }
-	 $('#photo').attr('src', '<?php echo base_url().'uploads/Testimonial/'?>'+obj1[0][r].Image+' ');
+	 $('#photo').attr('src', '<?php echo base_url().'uploads/Blog/'?>'+obj1[0][r].Image+' ');
 	 $('#photo').show();
      
      $('#nm').val(obj1[0][r].Name);
@@ -391,14 +389,14 @@ function show(input) {
 				  
 
 			      
-					<div class="col-sm-2" style="margin-top:0px;margin-bottom:-29px">
+					<!-- <div class="col-sm-2" style="margin-top:0px;margin-bottom:-29px">
 			        <input type="text" id="cnm" name="cnm" class="form-control" placeholder="Search By Blog" required/>
-			      </div>
-            <div class="col-sm-2" style="margin-top:0px;margin-bottom:-29px">
+			      </div> -->
+            <!-- <div class="col-sm-2" style="margin-top:0px;margin-bottom:-29px">
                     <a class="btn btn-primary" onclick="search_data()">
                         <i class="fa fa-search"></i> Search
                     </a>
-            </div>
+            </div> -->
 			      </div>
 			    </div>
                     <!--<table id="table-hidden-row-details" class="table table-striped">-->
@@ -428,7 +426,7 @@ function show(input) {
 						<td><?php print $row->Name; ?></td>
 						<td><img src="<?php echo base_url(); ?>uploads/Blog/<?php echo $row->Image; ?>" style="height:115px; width:192px;"></td>
 						<td><?php print $row->Content; ?></td>
-            <td><?php print $row->Insert_Date; ?></td>
+            <td><?php print $row->insertdate; ?></td>
 						<td style="text-align:center"><i style="color:#275273;font-size:25px;" id="EditB" onclick="Edit(jArray,<?php echo $row->B_id; ?>);" class="fa fa-edit"></i></td>
       					<td  style="text-align:center"><i style="color:#275273;font-size:25px;" id="DeleteN" onclick="Delete(<?php echo $row->B_id; ?>);" class="fa fa-trash-o"></i></td>
       					</tr>
@@ -443,9 +441,9 @@ function show(input) {
               <?php } ?>
 						</tbody>
                     </table>
-					<div id="links" class="Pager">
+					<!-- <div id="links" class="Pager">
 							<?php echo $links; ?>
-					</div>
+					</div> -->
                   </div>
                 </div>
 				

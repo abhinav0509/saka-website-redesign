@@ -39,7 +39,7 @@ class Blog_Data extends CI_Controller {
                     'Title' => $this->input->post('tit'),
                     'Name' => $this->input->post('nm'),
                     'Content' => $this->input->post('testo'),
-                    'Insertdate' => $pub_dt
+                    'insertdate' => $pub_dt
                 );
             } else {
                 $data = array(
@@ -47,7 +47,7 @@ class Blog_Data extends CI_Controller {
                     'Name' => $this->input->post('nm'),
                     'Content' => $this->input->post('testo'),
                     'Image' => $b,
-                    'Insertdate' => $pub_dt
+                    'insertdate' => $pub_dt
                 );
             }
             $res = $this->blog->Update_Data($data, $up_id);
@@ -58,7 +58,7 @@ class Blog_Data extends CI_Controller {
                 'Name' => $this->input->post('nm'),
                 'Content' => $this->input->post('testo'),
                 'Image' => $b,
-                'Insertdate' => $pub_dt
+                'insertdate' => $pub_dt
             );
             $res = $this->blog->Insert_Data($data);
             if ($res == true) {
@@ -72,15 +72,26 @@ class Blog_Data extends CI_Controller {
 
     public function Delete()
     {
-        $a = $this->input->post('B_id');
-        $res = $this->blog->dele($a); // Adjusted to delete only by ID
-        if ($res == true) {
-            redirect('Admin/Blog');
-        } else {
-            echo "Your Data Is Not Deleted";
-            redirect('Admin/Blog');
-        }
-    }
+        $a= $_POST['B_id'];
+    //    echo $a;
+    //    die("Stop");
+        $data = array(
+           'Name' => $this->input->post('nm'),
+           'Content' => $this->input->post('testo')
+           );
+       $this->load->model('blog');
+       $res=$this->blog->dele($data,$a);
+                   if($res==true)
+                   {
+                   redirect('Admin/Blog');
+                   }
+                   else
+                   {
+                   echo "Your Data Is Not Inserted";
+                   redirect('Admin/Blog');
+                   }
+         }
+   
 
     public function GetTesto()
     {	

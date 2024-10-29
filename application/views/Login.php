@@ -76,7 +76,7 @@ form.simple-form select {
     <div class="card-header text-center">
     <img src="<?php echo base_url(); ?>uploads/Slider/logo.png" style="height:80px; width:200px;">
     </div>
-    <div class="card-body" style="background: #2766a947;">
+    <div class="card-body">
       <p class="login-box-msg">Sign in to start your session</p>
 
       <form action="<?php echo base_url();?>index.php/Login_cont/check_login" onsubmit="return validate()" method="post">
@@ -85,8 +85,8 @@ form.simple-form select {
                    <select class="form-control" name="user_type" style="width:100%;" >
                           <option value="">Select User Type</option>
                               <option>Admin</option>
-                              <option>Employee</option>
-							                <option>Exam</option>
+                              <!-- <option>Employee</option>
+							                <option>Exam</option> -->
                     </select>
                   </fieldset>
                   </div>   
