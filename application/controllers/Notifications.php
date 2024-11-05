@@ -5,7 +5,7 @@ class Notifications extends CI_Controller {
      function __construct()
      {
      	 parent::__construct();
-     	  $this->load->library("Pdf");
+     	  // $this->load->library("Pdf");
 		    $var=$this->session->userdata;
 	   	 if(isset($var['login_user']))
      	 {
@@ -21,16 +21,16 @@ class Notifications extends CI_Controller {
    public function getnotifications()
   {
     $this->load->Model('noti_mod');
-    $data1=$this->noti_mod->get_front_fran_enq_noti();
-    $data2=$this->noti_mod->get_front_stud_enq_noti();
+    // $data1=$this->noti_mod->get_front_fran_enq_noti();
+    // $data2=$this->noti_mod->get_front_stud_enq_noti();
     $data3=$this->noti_mod->get_act_stud_enq_noti();
-    $data4=$this->noti_mod->get_act_stud_add_noti();
-    $data5=$this->noti_mod->get_act_fran_ord_noti();
-    $result['data1']=$data1;
-    $result['data2']=$data2;
+    // $data4=$this->noti_mod->get_act_stud_add_noti();
+    // $data5=$this->noti_mod->get_act_fran_ord_noti();
+    // $result['data1']=$data1;
+    // $result['data2']=$data2;
     $result['data3']=$data3;
-    $result['data4']=$data4;
-    $result['data5']=$data5;
+    // $result['data4']=$data4;
+    // $result['data5']=$data5;
     print_r(json_encode($result));
   }
 

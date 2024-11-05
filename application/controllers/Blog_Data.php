@@ -73,12 +73,9 @@ class Blog_Data extends CI_Controller {
     public function Delete()
     {
         $a= $_POST['B_id'];
-    //    echo $a;
-    //    die("Stop");
-        $data = array(
-           'Name' => $this->input->post('nm'),
-           'Content' => $this->input->post('testo')
-           );
+       $data = array(
+                   'Title' => $this->input->post('course')				
+                   );
        $this->load->model('blog');
        $res=$this->blog->dele($data,$a);
                    if($res==true)
@@ -90,7 +87,8 @@ class Blog_Data extends CI_Controller {
                    echo "Your Data Is Not Inserted";
                    redirect('Admin/Blog');
                    }
-         }
+        
+    }
    
 
     public function GetTesto()

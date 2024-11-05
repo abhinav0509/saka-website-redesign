@@ -26,7 +26,7 @@ else
         <link rel="stylesheet" href="<?php echo base_url(); ?>Style/dist/assets/font-awesome/css/font-awesome.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>Style/css/demo.css">
 		<link rel="stylesheet" href="<?php echo base_url(); ?>Style/css/basic.css">
-		<link rel="stylesheet" href="<?php echo base_url(); ?>Style/css/basic_ie.css">
+		<!-- <link rel="stylesheet" href="<?php echo base_url(); ?>Style/css/basic_ie.css"> -->
         <link rel="stylesheet" href="<?php echo base_url(); ?>Style/dist/assets/plugins/jquery-jvectormap/jquery-jvectormap-1.2.2.css"/>
         <link rel="stylesheet" href="<?php echo base_url(); ?>Style/dist/css/plugins/rickshaw.min.css">
         <link rel="stylesheet" href="<?php echo base_url(); ?>Style/dist/css/plugins/morris.min.css">
@@ -90,14 +90,14 @@ else
          {
              
              var op ="<li class='dropdown-title bg-inverse'>Notifications "+0+"</li>"; 
-                 op += "<li>";
-                 op +="<a href='javascript:;' class='notification'>";
-                 op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
-                 op +="</div>";
-                 op +="<div class='notification-body'><strong>New Franchisee Registration</strong><br><small class='text-muted'>"+0+" new</small>";
-                 op +="</div>";
-                 op +="</a>";
-                 op +="</li>";
+                //  op += "<li>";
+                //  op +="<a href='javascript:;' class='notification'>";
+                //  op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
+                //  op +="</div>";
+                //  op +="<div class='notification-body'><strong>New Franchisee Registration</strong><br><small class='text-muted'>"+0+" new</small>";
+                //  op +="</div>";
+                //  op +="</a>";
+                //  op +="</li>";
 
                  op += "<li>";
                  op +="<a href='javascript:;' class='notification'>";
@@ -108,23 +108,23 @@ else
                  op +="</a>";
                  op +="</li>"; 
 
-                 op += "<li>";
-                 op +="<a href='javascript:;' class='notification'>";
-                 op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
-                 op +="</div>";
-                 op +="<div class='notification-body'><strong>Active Franchisee Student Enquiry</strong><br><small class='text-muted'>"+0+" new</small>";
-                 op +="</div>";
-                 op +="</a>";
-                 op +="</li>";
+                //  op += "<li>";
+                //  op +="<a href='javascript:;' class='notification'>";
+                //  op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
+                //  op +="</div>";
+                //  op +="<div class='notification-body'><strong>Active Franchisee Student Enquiry</strong><br><small class='text-muted'>"+0+" new</small>";
+                //  op +="</div>";
+                //  op +="</a>";
+                //  op +="</li>";
 
-                 op += "<li>";
-                 op +="<a href='javascript:;' class='notification'>";
-                 op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
-                 op +="</div>";
-                 op +="<div class='notification-body'><strong>New Student Admission</strong><br><small class='text-muted'>"+0+" new</small>";
-                 op +="</div>";
-                 op +="</a>";
-                 op +="</li>";
+                //  op += "<li>";
+                //  op +="<a href='javascript:;' class='notification'>";
+                //  op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
+                //  op +="</div>";
+                //  op +="<div class='notification-body'><strong>New Student Admission</strong><br><small class='text-muted'>"+0+" new</small>";
+                //  op +="</div>";
+                //  op +="</a>";
+                //  op +="</li>";
 
                  op += "<li>";
                  op +="<a href='javascript:;' class='notification'>";
@@ -138,18 +138,19 @@ else
             j.ajax({  
             url: '<?php echo base_url(); ?>index.php/Notifications/getnotifications',
             type: 'POST',
-            data:{'action':"getExame"},
+            data:{'action':"getData"},
       
             success: function (data) {
 
                  var obj = j.parseJSON(data);
-                 var obj1=obj['data1'];
-                 var obj2=obj['data2'];
+                //  var obj1=obj['data1'];
+                //  var obj2=obj['data2'];
                  var obj3=obj['data3'];
-                 var obj4=obj['data4'];
-                 var obj5=obj['data5'];
+                //  var obj4=obj['data4'];
+                //  var obj5=obj['data5'];
 
-                 var tot_noti=(obj1.length)+(obj2.length)+(obj3.length)+(obj4.length)+(obj5.length);
+                 var tot_noti=(obj3.length);
+                //  var tot_noti=(obj1.length)+(obj2.length)+(obj3.length)+(obj4.length)+(obj5.length);
                   //var bk=obj['data2'];
                   //var sk=obj['data3'];
                  // var st=obj['data4'];
@@ -159,23 +160,23 @@ else
                  // j('#lastid').val(sk[0]['quiz_id']); 
 
                  op ="<li class='dropdown-title bg-inverse'>Notifications "+tot_noti+"</li>"; 
-                 op += "<li>";
-                 op +="<a href='<?php echo base_url(); ?>index.php/Admin/Fran_Enquiry' class='notification'>";
-                 op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
-                 op +="</div>";
-                 op +="<div class='notification-body'><strong>New Franchisee Registration</strong><br><small class='text-muted'>"+obj1.length+" new</small>";
-                 op +="</div>";
-                 op +="</a>";
-                 op +="</li>";
+                //  op += "<li>";
+                //  op +="<a href='<?php echo base_url(); ?>index.php/Admin/Fran_Enquiry' class='notification'>";
+                //  op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
+                //  op +="</div>";
+                //  op +="<div class='notification-body'><strong>New Franchisee Registration</strong><br><small class='text-muted'>"+obj1.length+" new</small>";
+                //  op +="</div>";
+                //  op +="</a>";
+                //  op +="</li>";
 
-                 op += "<li>";
-                 op +="<a href='<?php echo base_url(); ?>index.php/Admin/Student_Enquiry' class='notification'>";
-                 op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
-                 op +="</div>";
-                 op +="<div class='notification-body'><strong>New Student Enquiry</strong><br><small class='text-muted'>"+obj2.length+" new</small>";
-                 op +="</div>";
-                 op +="</a>";
-                 op +="</li>";
+                //  op += "<li>";
+                //  op +="<a href='<?php echo base_url(); ?>index.php/Admin/Student_Enquiry' class='notification'>";
+                //  op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
+                //  op +="</div>";
+                //  op +="<div class='notification-body'><strong>New Student Enquiry</strong><br><small class='text-muted'>"+obj2.length+" new</small>";
+                //  op +="</div>";
+                //  op +="</a>";
+                //  op +="</li>";
 
                  op += "<li>";
                  op +="<a href='<?php echo base_url(); ?>index.php/Admin/Active_Fran' class='notification'>";
@@ -186,27 +187,27 @@ else
                  op +="</a>";
                  op +="</li>";
 
-                 op += "<li>";
-                 op +="<a href='<?php echo base_url(); ?>index.php/Admin/Fran_Admission' class='notification'>";
-                 op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
-                 op +="</div>";
-                 op +="<div class='notification-body'><strong>New Student Admission</strong><br><small class='text-muted'>"+obj4.length+" new</small>";
-                 op +="</div>";
-                 op +="</a>";
-                 op +="</li>";
+                //  op += "<li>";
+                //  op +="<a href='<?php echo base_url(); ?>index.php/Admin/Fran_Admission' class='notification'>";
+                //  op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
+                //  op +="</div>";
+                //  op +="<div class='notification-body'><strong>New Student Admission</strong><br><small class='text-muted'>"+obj4.length+" new</small>";
+                //  op +="</div>";
+                //  op +="</a>";
+                //  op +="</li>";
 
-                 op += "<li>";
-                 op +="<a href='<?php echo base_url(); ?>index.php/Admin/order' class='notification'>";
-                 op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
-                 op +="</div>";
-                 op +="<div class='notification-body'><strong>New Order</strong><br><small class='text-muted'>"+obj5.length+" new</small>";
-                 op +="</div>";
-                 op +="</a>";
-                 op +="</li>";
+                //  op += "<li>";
+                //  op +="<a href='<?php echo base_url(); ?>index.php/Admin/order' class='notification'>";
+                //  op +="<div class='notification-thumb pull-left'><i class='fa fa-clock-o fa-2x text-info'></i>";
+                //  op +="</div>";
+                //  op +="<div class='notification-body'><strong>New Order</strong><br><small class='text-muted'>"+obj5.length+" new</small>";
+                //  op +="</div>";
+                //  op +="</a>";
+                //  op +="</li>";
 
                  j(".noticnt").html(tot_noti);
                  j(".noti").html(op);
-                 for(i=0;i<obj1.length;i++)
+                 for(i=0;i<obj3.length;i++)
                  {   
 
                  }
@@ -270,7 +271,7 @@ else
                             <li class="dropdown-title bg-inverse">New Messages</li>
                             <li class="unread">
                                 <a href="javascript:;" class="message">
-                                    <img class="message-image img-circle" src="demo/images/avatars/1.jpg">
+                                    <img class="message-image img-circle" src="<?php echo base_url();?>Style/demo/images/avatars/1.jpg">
 
                                     <div class="message-body">
                                         <strong>Ernest Kerry</strong><br>
@@ -281,7 +282,7 @@ else
                             </li>
                             <li class="unread">
                                 <a href="javascript:;" class="message">
-                                    <img class="message-image img-circle" src="demo/images/avatars/3.jpg">
+                                    <img class="message-image img-circle" src="<?php echo base_url();?>Style/demo/images/avatars/3.jpg">
 
                                     <div class="message-body">
                                         <strong>Don Mark</strong><br>
@@ -292,7 +293,7 @@ else
                             </li>
                             <li>
                                 <a href="javascript:;" class="message">
-                                    <img class="message-image img-circle" src="demo/images/avatars/8.jpg">
+                                    <img class="message-image img-circle" src="<?php echo base_url();?>Style/demo/images/avatars/8.jpg">
 
                                     <div class="message-body">
                                         <strong>Jess Ronny</strong><br>
@@ -303,7 +304,7 @@ else
                             </li>
                             <li>
                                 <a href="javascript:;" class="message">
-                                    <img class="message-image img-circle" src="demo/images/avatars/7.jpg">
+                                    <img class="message-image img-circle" src="<?php echo base_url();?>Style/demo/images/avatars/7.jpg">
 
                                     <div class="message-body">
                                         <strong>Wilton Zeph</strong><br>

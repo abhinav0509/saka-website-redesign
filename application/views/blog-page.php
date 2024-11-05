@@ -155,15 +155,15 @@ var obj1;
   j(document).ready(function(){
   j("#blog").addClass("open");
    j("#blog").addClass("active open");
-   CKEDITOR.replace( 'Desc');
-   CKEDITOR.replace('testo');
+   CKEDITOR.replace( 'testo');
+  //  CKEDITOR.replace('testo');
    j('#cnm').val(j('#cnm1').val());
 
    var dt= new Date();
    j('#doa').datepicker({
         autoclose: true,
         todayHighlight: true,
-       dateFormat: 'yy-mm-dd',
+       dateFormat: 'dd-mm-yy',
        onSelect: function(dateText){
             getDuration();
        }
@@ -270,7 +270,7 @@ function Delete(id)
 	j.ajax({
 			url: '<?php echo base_url(); ?>index.php/Blog_Data/Delete',
             type: 'POST',
-			data:{'action':'deltesti','T_id':id},
+			data:{'action':'delblog','B_id':id},
 			success: function(data){
 				 data=data.replace(/"/g, '');
 				 
@@ -310,8 +310,8 @@ function Delete(id)
       }
 	 $('#photo').attr('src', '<?php echo base_url().'uploads/Blog/'?>'+obj1[0][r].Image+' ');
 	 $('#photo').show();
-     
-     $('#nm').val(obj1[0][r].Name);
+   $('#tit').val(obj1[0][r].Title);
+   $('#nm').val(obj1[0][r].Name);
 	 j('#bid').val(id);
      j("#UpdateBtn").show();
      j("#CancelBtn").show();
