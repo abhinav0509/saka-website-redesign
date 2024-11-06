@@ -31,37 +31,21 @@
     <!-- Hero Area -->
 
     <div id="home-1" class="hero-area">
-    <div class="container" style="margin-top:40px;">
-                    <div class="row">
-                        <div class="col-lg-9">
-                            <div class="section-title">
-                                <div class="heading-animation">
-                                <h1>Pioneers <span><img src="<?php echo base_url();?>assets/img/1558587673885.jpg" alt=""></span>  In Process <br> Engineering Solutions</h1>
-                                </div>
-                            </div>                                                        
-                        </div>
-                        <div class="col-lg-3 text-md-end">
-                            <div class="service-info">
-                                <div class="heading-animation">
-                                    <p>65+ Years of Design Expertise</p>
-                                    <h4>Next Gen Technology For</h4>
-                                    <h5>Granulations Plants</h5>
-                                    <h5>Industrial Drying Systems</h5>
-                                    <h5>Spray Congealing Systems & More</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xl-7  col-md-6">
+    <div class="container">
+            <div class="row align-items-center justify-content-center hero-area-inner">
+                <div class="col-xl-10 col-lg-10 col-md-10 text-center wow fadeInUp animated" data-wow-delay="200ms">
+                    <div class="hero-area-content">
+                        <div class="section-title mb-0">                                                        
+                             <h1>Pioneers <span><img src="<?php echo base_url();?>assets/img/1558587673885.jpg" alt=""></span>  In Process <br> Engineering Solutions</h1>                                                                                            
                             <div class="p-animation">
-                                <p class="text-center">Our team of expert engineers and designers works closely with clients to create robust, functional and state of art solutions that are tailored to their specific process engineering needs</p>
-                            </div>
-                        <a href="about.html" class="theme-btn mt-20">Start a Project</a>    
+                                <p>Our team of expert engineers and designers works closely with clients to create robust, functional and state of art solutions<br> that are tailored to their specific process engineering needs.</p>
+                            </div>  
+                            <a href="about.html" class="theme-btn mt-20">Start a Project</a>                                  
                         </div>
-                    </div>
-                </div>
+                    </div>                                                      
+                </div>                
             </div>
+        </div>
                                                                      
      <div class="container-fluid mt-4">
         <video class="col-md-12" autoplay muted loop id="hero  Video">
@@ -72,147 +56,61 @@
 
      </div>
     
-      
-            <!-- <div class="hero-area-banner">
-            <div class="hero-area-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-9">
-                            <div class="section-title">
-                                <div class="heading-animation">
-                                    <h1>Pioneers In Process <br>Engineering Solutions</h1>
-                                </div>
-                            </div>                                                        
-                        </div>
-                        <div class="col-lg-3 text-md-end">
-                            <div class="service-info">
-                                <div class="heading-animation">
-                                    <p>65+ Years of Design Expertise</p>
-                                    <h4>Next Gen Technology For</h4>
-                                    <h5>Granulations Plants</h5>
-                                    <h5>Industrial Drying Systems</h5>
-                                    <h5>Spray Congealing Systems & More</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="offset-xl-5 col-xl-7 offset-md-4 col-md-6 text-lg-end">
-                            <div class="p-animation">
-                                <p>Welcome to Saka India, a full service architecture and interior design firm. We specialize in creating beautiful, functional spaces that reflect your unique style and personality. Let us help you transform your space into a work of art.</p>
-                            </div>
-                        <a href="about.html" class="theme-btn mt-20">Start a Project</a>    
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- Service Section  -->
-   <!-- <div id="service-3" class="service-section pb-50">
+     
+     <!-- About Section  -->
+     <div class="about-section section-padding pt-0">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-12 text-end">
+            <div class="row align-items-end">
+                <div class="col-xl-7 col-lg-7 col-md-6">
                     <div class="section-title">
-                        <h2>Our Products  </h2>
+                        <h2>About <br> Saka India <span class="d-none d-md-block"><i class="las la-arrow-down ml-40"></i></span></h2>                            
+                    </div>
+                    <div class="about-desc mt-60 pl-150">
+                        <p>Saka India is a team of experienced engineers and designers Who are passionate about developing technology that serves the true purpose of your business.The commitment to be always aligned to Customer’s purpose has earned us a 85% repeat business,
+                        even as the base of customers doubled every year since the inception.</p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="cp-custom-accordion">
-                        <div class="accordions" id="accordionExample">                            
-                            <div class="accordion-items">
-                              <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <span>01</span>
-                                    Granulati on System                                 
-                                </button>
-                              </h2>
-                              <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <img src="assets/img/service/1.jpg" alt="">
-                                    <p>Mauris faucibus nisl eu mi egestas blandit. Quisque consectetur urna ac viverra iaculis. Ut turpis velit, consectetur ut tempus a, cursus id nulla. Proin imperdiet magna sit amet mollis luctus. Quisque id leo quis diam dapibus ultricies fringilla vitae neque. Aenean non sollicitudin quam, quis.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-items">
-                                <h2 class="accordion-header" id="headingOne">
-                                  <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                      <span>02</span>
-                                      Spray Dryer
-                                  </button>
-                                </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                  <div class="accordion-body">
-                                      <img src="assets/img/service/2.jpg" alt="">
-                                      <p>Morbi et faucibus ex. Proin ut enim fermentum, pretium orci sed, suscipit nisl. Etiam ut nulla a dolor consectetur consequat at id ex. Maecenas porttitor, ligula eu dictum vehicula, massa tellus gravida lectus, eget tincidunt mauris eros sit amet turpis. Pellentesque habitant morbi tristique senectus.</p>
-                                  </div>
-                                </div>
-                              </div>
-                            <div class="accordion-items">
-                              <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <span>03</span>
-                                    Rotary Dryer
-                                </button>
-                              </h2>
-                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <img src="assets/img/service/3.jpg" alt="">
-                                    <p>Mauris faucibus nisl eu mi egestas blandit. Quisque consectetur urna ac viverra iaculis. Ut turpis velit, consectetur ut tempus a, cursus id nulla. Proin imperdiet magna sit amet mollis luctus. Quisque id leo quis diam dapibus ultricies fringilla vitae neque. Aenean non sollicitudin quam, quis.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-items">
-                              <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <span>04</span>
-                                    Fluid Bed Dryer 
-                                </button>
-                              </h2>
-                              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <img src="assets/img/service/4.jpg" alt="">
-                                    <p>Mauris faucibus nisl eu mi egestas blandit. Quisque consectetur urna ac viverra iaculis. Ut turpis velit, consectetur ut tempus a, cursus id nulla. Proin imperdiet magna sit amet mollis luctus. Quisque id leo quis diam dapibus ultricies fringilla vitae neque. Aenean non sollicitudin quam, quis.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-items">
-                              <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    <span>05</span>
-                                    Flash Dryer
-                                </button>
-                              </h2>
-                              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <img src="assets/img/service/5.jpg" alt="">
-                                    <p>Mauris faucibus nisl eu mi egestas blandit. Quisque consectetur urna ac viverra iaculis. Ut turpis velit, consectetur ut tempus a, cursus id nulla. Proin imperdiet magna sit amet mollis luctus. Quisque id leo quis diam dapibus ultricies fringilla vitae neque. Aenean non sollicitudin quam, quis.</p>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="accordion-items">
-                              <h2 class="accordion-header" id="headingSix">
-                                <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    <span>06</span>
-                                    Hot Air Generator
-                                </button>
-                              </h2>
-                              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <img src="assets/img/service/6.jpg" alt="">
-                                    <p>Mauris faucibus nisl eu mi egestas blandit. Quisque consectetur urna ac viverra iaculis. Ut turpis velit, consectetur ut tempus a, cursus id nulla. Proin imperdiet magna sit amet mollis luctus. Quisque id leo quis diam dapibus ultricies fringilla vitae neque. Aenean non sollicitudin quam, quis.</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                    </div>                                        
+                <div class="offset-xl-1 col-xl-4 offset-lg-1 col-lg-4 col-md-6 text-end">
+                    <div class="about-img">
+                        <img src="assets/img/about/about-3.jpg" alt="">
+                    </div>
                 </div>
-            </div>
+            </div>            
         </div>
-    </div> -->
+    </div>
+
+    <!-- Counter Section -->
+
+    <div class="counter-section section-padding pt-0 pb-50">
+        <div class="container">
+            <div class="row gx-5">                
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-counter-box">
+                        <p class="counter-number">[<span>65</span>+]</p>
+                        <h6>Year of Experience</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-counter-box">
+                        <p class="counter-number">[<span>250</span>+]</p>
+                        <h6>Installations</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">    
+                    <div class="single-counter-box">
+                        <p class="counter-number">[<span>300</span>+]</p>
+                        <h6>Locations Across World</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-counter-box">
+                        <p class="counter-number">[<span>98</span>%]</p>
+                        <h6>Clients Satisfaction</h6>
+                    </div>
+                </div>                             
+            </div>            
+        </div>
+    </div>
 
   <!-- Service Section  -->
     <div class="service-section section-padding pt-50 pb-100">
@@ -259,7 +157,8 @@
                             <div class="details-link"><i class="las la-arrow-right"></i></div>
                         </div>
                         <div class="service-img">
-                            <img src="assets/img/service/service-4.jpg" alt="">
+                        <img src="<?php echo base_url();?>assets/img/service/flash-dryer-saka-india-300x300.png" alt="">
+                           
                         </div>
                     </div>
                     <div class="single-service-item">
@@ -268,7 +167,8 @@
                             <div class="details-link"><i class="las la-arrow-right"></i></div>
                         </div>
                         <div class="service-img">
-                            <img src="assets/img/service/service-5.jpg" alt="">
+                            <img src="<?php echo base_url();?>assets/img/service/flash-dryer-saka-india-300x300.png" alt="">
+                           
                         </div>
                     </div>
                     <div class="single-service-item">
@@ -277,7 +177,8 @@
                             <div class="details-link"><i class="las la-arrow-right"></i></div>
                         </div>
                         <div class="service-img">
-                            <img src="assets/img/service/service-6.jpg" alt="">
+                            <img src="<?php echo base_url();?>assets/img/service/hot-air-genrator.png" alt="">
+                            
                         </div>
                     </div>
                 </div>
@@ -635,60 +536,7 @@
     </div>
     </div>
 
-    <!-- About Section  -->
-    <div class="about-section section-padding pt-0">
-        <div class="container">
-            <div class="row align-items-end">
-                <div class="col-xl-7 col-lg-7 col-md-6">
-                    <div class="section-title">
-                        <h2>About <br> Saka India <span class="d-none d-md-block"><i class="las la-arrow-down ml-40"></i></span></h2>                            
-                    </div>
-                    <div class="about-desc mt-60 pl-150">
-                        <p>Saka India is a team of experienced engineers and designers Who are passionate about developing technology that serves the true purpose of your business.The commitment to be always aligned to Customer’s purpose has earned us a 85% repeat business,
-                        even as the base of customers doubled every year since the inception.</p>
-                    </div>
-                </div>
-                <div class="offset-xl-1 col-xl-4 offset-lg-1 col-lg-4 col-md-6 text-end">
-                    <div class="about-img">
-                        <img src="assets/img/about/about-3.jpg" alt="">
-                    </div>
-                </div>
-            </div>            
-        </div>
-    </div>
-
-    <!-- Counter Section -->
-
-    <div class="counter-section section-padding pt-0 pb-50">
-        <div class="container">
-            <div class="row gx-5">                
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-counter-box">
-                        <p class="counter-number">[<span>65</span>+]</p>
-                        <h6>Year of Experience</h6>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-counter-box">
-                        <p class="counter-number">[<span>250</span>+]</p>
-                        <h6>Installations</h6>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">    
-                    <div class="single-counter-box">
-                        <p class="counter-number">[<span>300</span>+]</p>
-                        <h6>Locations Across World</h6>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-counter-box">
-                        <p class="counter-number">[<span>98</span>%]</p>
-                        <h6>Clients Satisfaction</h6>
-                    </div>
-                </div>                             
-            </div>            
-        </div>
-    </div>
+   
 
     <!-- Testimonial Section  -->
 
