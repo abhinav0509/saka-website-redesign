@@ -29,7 +29,7 @@
                 <div class="panel-body panel-body-success">
                     <div class="metric-content metric-icon">
                         <div class="value">
-                            3,958
+                            2500
                         </div>
                         <div class="icon">
                             <i class="fa fa-tree"></i>
