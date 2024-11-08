@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class gallry extends CI_Controller {
+class Gallry extends CI_Controller {
 
 	
 	 var $globaldata;

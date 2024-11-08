@@ -65,7 +65,7 @@ form.simple-form select {
 }
  </style>
 </head>
-<body style="background-image: url('<?php echo base_url();?>uploads/Slider/saka.jpg');">
+<body style="background-image: url('<?php echo base_url();?>uploads/Slider/sakai.jpeg');">
 
  <div class="container">
     <section class="one">
