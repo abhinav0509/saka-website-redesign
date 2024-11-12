@@ -1393,6 +1393,7 @@ input[type=search]::-webkit-search-results-decoration {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+
 @keyframes rotateCircle {
   0% {
     transform: rotate(0deg);
@@ -1401,6 +1402,7 @@ input[type=search]::-webkit-search-results-decoration {
     transform: rotate(360deg);
   }
 }
+
 .header-area {
   border-bottom: 1px solid #eee;
 }

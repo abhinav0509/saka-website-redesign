@@ -667,7 +667,7 @@
             <div class="row mt-40">                               
                 <div class="single-blog-item pt-40 pb-40"> 
                     <div class="blog-bg">
-                        <img src="assets/img/blog/blog-4.jpg" alt="">
+                    <img src="<?php echo base_url();?>assets/img/blog/CEO-LETTER.png" alt="ceo-letter">
                     </div>                       
                     <div class="blog-content">                        
                         <div class="blog-meta">
@@ -678,7 +678,7 @@
                                 <p>by Jane Collins</p>
                             </div>
                             <div class="blog-date">
-                                <p>May 1, 2023</p>
+                                <p>May 1, 2024</p>
                             </div>
                         </div> 
                         <h3><a href="blog-details.html">How to Design a Sustaintable <br> Apartment</a></h3>
@@ -689,7 +689,7 @@
                 </div>
                 <div class="single-blog-item pb-40"> 
                     <div class="blog-bg">
-                        <img src="assets/img/blog/blog-6.jpg" alt="">
+                    <img src="<?php echo base_url();?>assets/img/blog/CEO-LETTER.png" alt="ceo-letter">
                     </div>                       
                     <div class="blog-content">                        
                         <div class="blog-meta">
@@ -700,7 +700,7 @@
                                 <p>by Paul Roberts</p>
                             </div>
                             <div class="blog-date">
-                                <p>May 1, 2023</p>
+                                <p>May 1, 2024</p>
                             </div>
                         </div> 
                         <h3><a href="blog-details.html">The importance of Lighting Design <br> in Interior Spaces</a></h3>
@@ -711,7 +711,7 @@
                 </div>
                 <div class="single-blog-item pb-40"> 
                     <div class="blog-bg">
-                        <img src="assets/img/blog/blog-7.jpg" alt="">
+                    <img src="<?php echo base_url();?>assets/img/blog/CEO-LETTER.png" alt="ceo-letter">
                     </div>                       
                     <div class="blog-content">                        
                         <div class="blog-meta">
