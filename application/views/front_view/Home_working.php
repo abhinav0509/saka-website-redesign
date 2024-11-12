@@ -75,8 +75,7 @@
             <div id="lms_testimonials_slider" class="owl-carousel owl-theme">
 
 
-			<?php if(!empty($results)){ foreach($results as $row)
-						   {
+			<?php if(!empty($results)){ foreach($results as $row){
 						   ?>
 
 

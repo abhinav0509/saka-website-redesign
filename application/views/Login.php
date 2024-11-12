@@ -65,7 +65,7 @@ form.simple-form select {
 }
  </style>
 </head>
-<body style="background-image: url('<?php echo base_url();?>uploads/Slider/sakai.jpeg');">
+<body style="background-image: url('<?php echo base_url();?>uploads/Slider/test.jpg');">
 
  <div class="container">
     <section class="one">
@@ -85,8 +85,8 @@ form.simple-form select {
                    <select class="form-control" name="user_type" style="width:100%;" >
                           <option value="">Select User Type</option>
                               <option>Admin</option>
-                              <!-- <option>Employee</option>
-							                <option>Exam</option> -->
+                               <option>Employee</option>
+							                <!-- <option>Exam</option> -->
                     </select>
                   </fieldset>
                   </div>   

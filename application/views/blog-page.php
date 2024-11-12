@@ -406,11 +406,11 @@ function show(input) {
                           <th width="1%">Id</th>
                           <th width="5%">Title</th>
                           <th width="5%">Name</th>
-                          <th width="1%">Image</th>
-                          <th width="10%">Contents</th>
+                          <th width="7%">Image</th>
+                          <th width="7%">Contents</th>
                           <th width="5%">Date</th>
-                          <th width="5%">Edit</th>
-                          <th width="5%">Delete</th>
+                          <th width="3%">Edit</th>
+                          <th width="3%">Delete</th>
                      </tr>	</thead>
 						<script>
                             var jArray=[];
@@ -529,7 +529,7 @@ function show(input) {
 			  <div class="col-sm-12">
              <div class="form-group">
                <label class="col-sm-2 control-label" for="inputPassword3">
-                 Contents<span class="asterisk">*</span>
+                 Blog Contents<span class="asterisk">*</span>
                </label>
                <div class="col-sm-9">
                  <textarea id="testo" name="testo" class="form-control" required>

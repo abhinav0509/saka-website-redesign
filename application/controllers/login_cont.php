@@ -26,7 +26,7 @@ class Login_cont extends CI_Controller {
 		    			$this->session->set_userdata('login_user', $data[0]);						
 					    if($data[0]->user_type=="Admin" || $data[0]->user_type=="Exam")
 					    {
-					    	 redirect('Admin/Home');
+					    	 redirect('Admin/Blog');
 					    }
 					    else if($data[0]->user_type=="Employee")
 					    {

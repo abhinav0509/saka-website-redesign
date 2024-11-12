@@ -247,7 +247,7 @@ table tbody td{
                                     <option value="">Select User Type</option>
                                     <option>Admin</option>
                                     <option>Employee</option>
-									<option>Exam</option>
+									<!-- <option>Exam</option> -->
                               </select>
                             </div>
                           </div>

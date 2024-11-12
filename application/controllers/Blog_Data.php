@@ -14,7 +14,7 @@ class Blog_Data extends CI_Controller {
     public function Insert()
     {
         $up_id = $this->input->post('bid');
-        $originalDate = $this->input->post('pcont');
+        $originalDate = $this->input->post('doa');
         $b = "";
         $farr = explode("/", $originalDate); 
         $farr = array_reverse($farr);

@@ -15,7 +15,7 @@ else
 <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Collge Of Computer Accounts </title>
+        <title>SAKA INDIA | Employee Dashobard </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="shortcut icon" href="<?php echo base_url(); ?>uploads/Slider/niper.jpg">
@@ -211,7 +211,7 @@ else
                         <span class="sc-visible">
                             I
                         </span>
-						<img src="<?php echo base_url(); ?>uploads/Slider/niper.jpg" style="height:40px; width:40px;">
+						<img src="<?php echo base_url();?>uploads/Slider/logo.png" style="height:40px; width:80px;">
                         <span class="sc-hidden">
                             <span class="semi-bold">Dashboard</span>
                         </span>
@@ -233,7 +233,7 @@ else
 
                    <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle navbar-user" href="javascript:;">
-                            <img class="img-circle" src="<?php echo base_url(); ?>uploads/Slider/niper.jpg">
+                        <img src="<?php echo base_url();?>uploads/Slider/logo.png" style="height:40px; width:80px;">
                             <span class="hidden-xs"> <?php echo $userdata->email;?> </span>
                             <b class="caret"></b>
                         </a>

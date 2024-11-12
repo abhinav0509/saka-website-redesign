@@ -417,10 +417,10 @@ function show(input) {
                      <tr style="background-color:#d7dadc;">
                           <th width="1%">Id</th>
                           <th width="5%">Name</th>
-                          <th width="1%">Image</th>
+                          <th width="3%">Image</th>
                           <th width="10%">Contents</th>
-                          <th width="5%">Edit</th>
-                          <th width="5%">Delete</th>
+                          <th width="1%">Edit</th>
+                          <th width="1%">Delete</th>
                      </tr>	</thead>
 						<script>
                             var jArray=[];

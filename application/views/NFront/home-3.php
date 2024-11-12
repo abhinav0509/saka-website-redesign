@@ -664,73 +664,33 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-40">                               
+            <div class="row mt-40"> 
+              <?php if(!empty($results)){ foreach($results as $row){
+						   ?>                              
                 <div class="single-blog-item pt-40 pb-40"> 
                     <div class="blog-bg">
-                    <img src="<?php echo base_url();?>assets/img/blog/CEO-LETTER.png" alt="ceo-letter">
+                    <img src="<?php echo base_url(); ?>uploads/Blog/<?php echo $row->Image; ?>" alt="ceo-letter">
                     </div>                       
                     <div class="blog-content">                        
-                        <div class="blog-meta">
+                        <!-- <div class="blog-meta">
                             <p>Architecture</p>
-                        </div>
+                        </div> -->
                         <div class="blog-info">
                             <div class="blog-author">
-                                <p>by Jane Collins</p>
+                                <p><?php echo $row->Name; ?></p>
                             </div>
                             <div class="blog-date">
-                                <p>May 1, 2024</p>
+                            <p><?php echo date('F j, Y', strtotime($row->insertdate)); ?></p>
+
                             </div>
                         </div> 
-                        <h3><a href="blog-details.html">How to Design a Sustaintable <br> Apartment</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur repellat ipsam nesciunt sed cumque iusto, doloribus iure libero quia amet laborum pariatur saepe autem et id numquam.</p>                                                       
+                        <h3><a href="blog-details.html"><?php echo $row->Title; ?></a></h3>
+                        <p><?php echo $row->Content; ?></p>                                                       
                         <a href="blog-details.html" class="read-more-btn">Read More</a>
-                    </div>    
-                                        
+                    </div>                                           
                 </div>
-                <div class="single-blog-item pb-40"> 
-                    <div class="blog-bg">
-                    <img src="<?php echo base_url();?>assets/img/blog/CEO-LETTER.png" alt="ceo-letter">
-                    </div>                       
-                    <div class="blog-content">                        
-                        <div class="blog-meta">
-                            <p>Interior</p>
-                        </div>
-                        <div class="blog-info">
-                            <div class="blog-author">
-                                <p>by Paul Roberts</p>
-                            </div>
-                            <div class="blog-date">
-                                <p>May 1, 2024</p>
-                            </div>
-                        </div> 
-                        <h3><a href="blog-details.html">The importance of Lighting Design <br> in Interior Spaces</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur repellat ipsam nesciunt sed cumque iusto, doloribus iure libero quia amet laborum pariatur saepe autem et id numquam.</p>                                                       
-                        <a href="blog-details.html" class="read-more-btn">Read More</a>
-                    </div>    
-                                        
-                </div>
-                <div class="single-blog-item pb-40"> 
-                    <div class="blog-bg">
-                    <img src="<?php echo base_url();?>assets/img/blog/CEO-LETTER.png" alt="ceo-letter">
-                    </div>                       
-                    <div class="blog-content">                        
-                        <div class="blog-meta">
-                            <p>Interior</p>
-                        </div>
-                        <div class="blog-info">
-                            <div class="blog-author">
-                                <p>by Paul Roberts</p>
-                            </div>
-                            <div class="blog-date">
-                                <p>May 1, 2023</p>
-                            </div>
-                        </div> 
-                        <h3><a href="blog-details.html">Creating a Functional Corporate Office Space</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur repellat ipsam nesciunt sed cumque iusto, doloribus iure libero quia amet laborum pariatur saepe autem et id numquam.</p>                                                       
-                        <a href="blog-details.html" class="read-more-btn">Read More</a>
-                    </div>    
-                                        
-                </div>                                       
+                <?php } } else {?>  
+                    <?php } ?>                                    
             </div>            
         </div>
     </div>
