@@ -126,8 +126,10 @@
                 <div class="col-xl-12">
                     <div class="single-service-item mt-30">
                         <div class="single-service-inner">
-                            <h5><span>01</span>Granulation System</h5>
-                            <div class="details-link"><i class="las la-arrow-right"></i></div>
+                            <a href="#">
+                                <h5><span>01</span>Granulation System</h5>
+                                <div class="details-link"><i class="las la-arrow-right"></i></div>
+                            </a>
                         </div>
                         <div class="service-img">
                             <img src="<?php echo base_url();?>assets/img/service/granulation-systems-saka-india-450x450.png" alt="">

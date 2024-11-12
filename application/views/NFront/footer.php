@@ -6,13 +6,13 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-6 col-sm-12">
                     <a href="<?php echo base_url();?>" class="logo"><img src="<?php echo base_url();?>uploads/About/logo1.png" style="height:75px; width:200px;"></a>
-                        <p>Design your Dream House <br> maxime dolor voluptatibus natus
+                        <p>Get best solution for your  <br> process engineering requirements
                         </p>
                     </div>
                     <div class="col-lg-2 col-md-6">
                         <h5>Office</h5>
                         <p>Corporate Office- <br>
-                        TEERTH BUSINESS CENTER,UNIT 11, 5th FLOOR, EL BLOCK, MIDC Bhosari, Pune 411026, Maharashtra, India.
+                          TEERTH BUSINESS CENTER,UNIT 11, 5th FLOOR, EL BLOCK, MIDC Bhosari, Pune 411026, Maharashtra, India.
                         </p>
                         <div class="company-email">
                             <a href="#"> sales@sakaindia.com</a>
