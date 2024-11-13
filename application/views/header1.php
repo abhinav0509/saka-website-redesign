@@ -51,6 +51,7 @@ else
          <script src="<?php echo base_url(); ?>Style/js/jquery.slimscroll.min.js"></script>
 		 <script src="<?php echo base_url(); ?>Style/js/social_media.js"></script>
 
+
 <style>
 .bg-inverse{
 

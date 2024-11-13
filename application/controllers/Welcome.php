@@ -30,8 +30,10 @@ class Welcome extends CI_Controller {
 
 	public function Blog()
 	{
+		$this->load->model('display');
+		$data1["results"] = $this->display->Blogd_display();
 		$this->load->view('NFront/header');
-		$this->load->view('NFront/blog');
+		$this->load->view('NFront/blog', $data1);
 		$this->load->view('NFront/footer');
 	}
 

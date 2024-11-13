@@ -29,7 +29,7 @@
                             <input type="search" placeholder="search">
                             <i class="fal fa-search"></i>
                         </div>
-                        <div class="blog-category">
+                        <!-- <div class="blog-category">
                             <h5>Categories</h5>
                             <ul>
                                 <li><span>01</span><a href="blog.html">Design Trends</a></li>
@@ -38,7 +38,7 @@
                                 <li><span>04</span><a href="blog.html">Space Planning</a></li>
                                 <li><span>05</span><a href="blog.html">Industry Insight</a></li>                                                                                            
                             </ul>
-                        </div>
+                        </div> -->
                         <div class="latest-post-wrap">
                             <h5>Latest Post</h5>
                             <div class="single-latest-post">                                
@@ -119,21 +119,20 @@
                     <hr>
                     <div class="blog-meta">
                         <div class="blog-info">
-                            <span>Sarah Roberts</span>
-                            <span>September 22, 2023</span>
+                            <span>Sarah Roberts</span>                          
                         </div>
                         <div class="blog-comments">
-                            <p>26 Comments</p>
+                        <span>September 22, 2023</span>
                         </div>
                     </div>
                     <div class="blog-featured-img mt-30">
-                        <img src="assets/img/blog/blog-feature.jpg" alt="">
+                        <img src="<?php echo base_url();?>assets/img/blog/blog-feature.jpg" alt="">
                     </div>
                     <div class="blog-content">
-                        <h3>With the rise of remote work and flexible work arrangements, more and more people are finding themselves in need of a functional home office space. </h3>
+                        <h3>With the rise of remote work and flexible work arrangements. </h3>
                         <p>Whether you'r a full time remote Suspendisse potenti. Aenean sodales euismod mi, sit amet dictum quam sodales id. Donec euismod velit nisi, in bibendum tortor efficitur in. Vivamus vulputate leo non pulvinar bibendum. Nam pharetra nulla a vestibulum molestie. Aenean pharetra.</p>
                         <p>Here are some tips for creating a functional home office space:</p>
-                        <div class="blog-content-inner">
+                        <!-- <div class="blog-content-inner">
                             <h4><span>1.</span> Starts with basics</h4>
                             <p>Donec tellus sem, semper vitae quam eu, bibendum tincidunt erat. Donec dignissim lectus id felis accumsan porta. Nunc tincidunt id est eget facilisis. Mauris orci enim, congue vel odio ac.</p>
                             <h4><span>2.</span> Consider your storage needs</h4>
@@ -144,10 +143,10 @@
                             <p>Donec tellus sem, semper vitae quam eu, bibendum tincidunt erat. Donec dignissim lectus id felis accumsan porta. Nunc tincidunt id est eget facilisis. Mauris orci enim, congue vel odio ac.</p>
                             <h4><span>5.</span> Don't forget about ergonomics</h4>
                             <p>Donec tellus sem, semper vitae quam eu, bibendum tincidunt erat. Donec dignissim lectus id felis accumsan porta. Nunc tincidunt id est eget facilisis. Mauris orci enim, congue vel odio ac.</p>
-                        </div>                                                                              
-                          <p>By following these tips and investing in a well-designed and functional home office space, you can ensure that you'r able to stay productive and focused in your work, no matter where you are.</p>
+                        </div>                                                                               -->
+                          <!-- <p>By following these tips and investing in a well-designed and functional home office space, you can ensure that you'r able to stay productive and focused in your work, no matter where you are.</p> -->
                     </div>
-                    <div class="blog-related-img mt-60">
+                    <!-- <div class="blog-related-img mt-60">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
                                 <img src="assets/img/blog/blog-15.jpg" alt="">
@@ -159,13 +158,13 @@
                                 <img src="assets/img/blog/blog-17.jpg" alt="">
                             </div>
                         </div>
-                    </div>
-                    <div class="blog-quote-text mt-60">
+                    </div> -->
+                    <!-- <div class="blog-quote-text mt-60">
                         <div class="quote-sign">
                             <img src="assets/img/straight-quotes.png" alt="">
                         </div>
                         <h3>With the rise of remote work and flexible work arrangements, more and more people are finding themeselves in need of a functional home office spaces. </h3>                        
-                    </div>
+                    </div> -->
                     <div class="blog-tag-wrap">
                         <h6>Article Tags</h6>
                         <a href="#">home office</a>
@@ -179,7 +178,7 @@
                         <a href="#">color scheme </a>
                         <a href="#">inspiration</a>                   
                     </div>
-                    <div class="commetns-section-wrap mt-100">
+                    <!-- <div class="commetns-section-wrap mt-100">
                         <div class="comments-headline">
                             <h5>8 Comments</h5>
                             <hr>
@@ -248,7 +247,7 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 
             </div>
