@@ -56,7 +56,7 @@
                 <div class="row mt-60">
                     <div class="col-xl-6">
                         <div class="google-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3690.404245521138!2d91.80989606467384!3d22.338360085303748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sdewanhat%20near%20Chattogram!5e0!3m2!1sen!2sbd!4v1677069314806!5m2!1sen!2sbd" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60489.08514924353!2d73.78252437214617!3d18.638498712859604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b96902924cc3%3A0x4627f0e244db945c!2sTeerth%20Business%20Center%20Bhosari%20MIDC!5e0!3m2!1sen!2sin!4v1732009363155!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                     <div class="col-xl-6">
@@ -81,11 +81,11 @@
                                 <div class="single-contact-info">
                                     <p>Address</p>
                                     <h4><h5>Headquarter</h5>
-                                    TEERTH BUSINESS CENTER,UNIT 11, 5th FLOOR, EL BLOCK, MIDC Bhosari, Pune 411026, Maharashtra, India.</h4>
+                                     TEERTH BUSINESS CENTER,UNIT 11, 5th FLOOR, EL BLOCK, MIDC Bhosari, Pune 411026, Maharashtra, India.</h4>
                                     <h4><h5>Plant-1</h5>
-                                    Gat No-65,Plot No.-01,PCS Chowk Dhanore (Alandi) Pune 412105 Maharashtra, India</h4>
+                                     Gat No-65,Plot No.-01,PCS Chowk Dhanore (Alandi) Pune 412105 Maharashtra, India</h4>
                                     <h4><h5>Plant-2</h5>
-                                    J58, 'S' Block, MIDC, Bhosari, Pune 411026, Maharashtra, India.</h4>
+                                     J58, 'S' Block, MIDC, Bhosari, Pune 411026, Maharashtra, India.</h4>
 
                                    
                                 </div>  
