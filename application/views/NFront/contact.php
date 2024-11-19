@@ -67,15 +67,27 @@
                             <div class="contact-info-inner">
                                 <div class="single-contact-info">
                                     <p>Email</p>
-                                    <h4>info@Saka India.com</h4>
+                                    <h4>sales@sakaindia.com</h4>
                                 </div>
                                 <div class="single-contact-info">
                                     <p>Phone</p>
-                                    <h4>(123) 456-7890</h4>
+                                    <h4>
+                                   Sales: +91 956 109 4128 <br>
+
+                                   Tel: +91-20-27110011<br>
+                                   Fax: +91-20- 27110013<br>
+                                   </h4>
                                 </div>
                                 <div class="single-contact-info">
                                     <p>Address</p>
-                                    <h4>123, Main Street, Suite 456, California, USA</h4>
+                                    <h4><h5>Headquarter</h5>
+                                    TEERTH BUSINESS CENTER,UNIT 11, 5th FLOOR, EL BLOCK, MIDC Bhosari, Pune 411026, Maharashtra, India.</h4>
+                                    <h4><h5>Plant-1</h5>
+                                    Gat No-65,Plot No.-01,PCS Chowk Dhanore (Alandi) Pune 412105 Maharashtra, India</h4>
+                                    <h4><h5>Plant-2</h5>
+                                    J58, 'S' Block, MIDC, Bhosari, Pune 411026, Maharashtra, India.</h4>
+
+                                   
                                 </div>  
                                 <div class="social-area">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>

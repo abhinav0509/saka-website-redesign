@@ -9,7 +9,7 @@
     <title>Saka India | Process Engineering Solution</title>
 
     <!--Favicon-->
-    <link rel="icon" href="assets/img/sakafavicon.ico" type="image/png">
+    <link rel="icon" href="<?php echo base_url();?>assets/img/sakafavicon.ico" type="image/png">
 
     <!-- Bootstrap CSS -->
     <link href="<?php echo base_url('assets/css/bootstrap.min.css')?>" rel="stylesheet">

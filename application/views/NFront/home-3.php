@@ -10,6 +10,7 @@
 
      
     }
+
    .hero-area-banner{
     position: absolute;
     background-color: #ddd;
@@ -22,6 +23,8 @@
     left:0;
     z-index: 999;
     } 
+
+
 </style>
 
 
@@ -29,7 +32,7 @@
 <div id="smooth-content">
 
     <!-- Hero Area -->
-
+    
     <div id="home-1" class="hero-area">
     <div class="container">
             <div class="row align-items-center justify-content-center hero-area-inner">
@@ -113,80 +116,132 @@
     </div>
 
   <!-- Service Section  -->
-    <div class="service-section section-padding pt-50 pb-100">
+  <div class="service-section section-padding pt-50">
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="section-title">
-                    <div class="heading-animation">
-                        <h3>Our Solutions</h3>
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-8">
+                    <div class="services-tab-wrapper">
+                        <div class="section-title">
+                            <div class="heading-animation">
+                                <h2>Our Products</h2>                                
+                            </div>                            
+                        </div>                        
+                        <div class="services-tabs mt-100"> 
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation">
+                                    <a href="#services-item-1" class="active" data-bs-toggle="tab" role="tab" aria-controls="services-item-1" aria-selected="true">Granulation System<span class="number">01</span></a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#services-item-2" data-bs-toggle="tab" role="tab" aria-controls="services-item-2" aria-selected="false">Spray Dryer<span class="number">02</span></a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#services-item-3" data-bs-toggle="tab" role="tab" aria-controls="services-item-3" aria-selected="false">Rotary Dryer<span class="number">03</span></a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#services-item-4" data-bs-toggle="tab" role="tab" aria-controls="services-item-4" aria-selected="false">Fluid Bed Dryer <span class="number">04</span></a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#services-item-5" data-bs-toggle="tab" role="tab" aria-controls="services-item-5" aria-selected="false">Flash Dryer<span class="number">05</span></a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#services-item-6" data-bs-toggle="tab" role="tab" aria-controls="services-item-6" aria-selected="false">Hot Air Generator<span class="number">06</span></a>
+                                </li>
+                                                        
+                            </ul>                                
+                        </div> 
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="single-service-item mt-30">
-                        <div class="single-service-inner">
-                            <a href="#">
-                                <h5><span>01</span>Granulation System</h5>
-                                <div class="details-link"><i class="las la-arrow-right"></i></div>
-                            </a>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="tab-content services-content">
+                                    
+                        <!-- Tab Content -->
+                        <div class="tab-pane services-content-item fade active show" id="services-item-1" role="tabpanel">                            
+                            <div class="services-text">
+                                <div class="services-text-container">
+                                    <h4 class="services-title">Granulation System</h4>
+                                    <p class="text-gray mb-0">
+                                        SAKA offers complete turn key solution for granulation systems right from drying till packing of granules. Our systems are widely used for granule formation for chemicals like Calcium Chloride, Magnesium Chloride, Calcium Nitrate etc. SAKA’s Granulation systems are custom built to provide desired size of granules. 
+                                    </p>
+                                </div>
+                            </div>                            
+                            <img src="<?php echo base_url();?>assets/img/service/granulation-systems-saka-india-450x450.png" alt="granulation-system">                           
+                        </div>                        
+                        
+                        <!-- Tab Content -->
+                        <div class="tab-pane services-content-item fade" id="services-item-2" role="tabpanel">                            
+                            <div class="services-text">
+                                <div class="services-text-container">
+                                    <h4 class="services-title">Spray Dryer</h4>
+                                    <p class="text-gray mb-0">
+                                        The core identity reflects consistent  associations with the brand whereas the extended identity involves the intricate details of the brand that help generate a constant motif.
+                                    </p>
+                                </div>
+                            </div>                            
+                            <img src="<?php echo base_url();?>assets/img/service/spray-dryer.png" alt="spray-dryer">                    
+                        </div>                         
+                        
+                        <!-- Tab Content -->
+                        <div class="tab-pane services-content-item fade" id="services-item-3" role="tabpanel">                            
+                            <div class="services-text">
+                                <div class="services-text-container">
+                                    <h4 class="services-title">Rotary Dryer</h4>
+                                    <p class="text-gray mb-0">
+                                        The core identity reflects consistent  associations with the brand whereas the extended identity involves the intricate details of the brand that help generate a constant motif.
+                                    </p>
+                                </div>
+                            </div>                            
+                            <img src="<?php echo base_url();?>assets/img/service/rotary-dryer.jpg" alt="rotary dryer">                   
                         </div>
-                        <div class="service-img">
-                            <img src="<?php echo base_url();?>assets/img/service/granulation-systems-saka-india-450x450.png" alt="">
-                        </div>
-                    </div>
-                    <div class="single-service-item">
-                        <div class="single-service-inner">
-                            <h5><span>02</span>Spray Dryer</h5>
-                            <div class="details-link"><i class="las la-arrow-right"></i></div>
-                        </div>
-                        <div class="service-img">
-                            <img src="<?php echo base_url();?>assets/img/service/sprydryer-saka1.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="single-service-item">
-                        <div class="single-service-inner">
-                            <h5><span>03</span>Rotary Dryer</h5>
-                            <div class="details-link"><i class="las la-arrow-right"></i></div>
-                        </div>
-                        <div class="service-img">
-                            <img src="<?php echo base_url();?>assets/img/service/tube-bundle-rotary-dryer-1.png" alt="">
-                        </div>
-                    </div>
-                    <div class="single-service-item">
-                        <div class="single-service-inner">
-                            <h5><span>04</span>Fluid Bed Dryer</h5>
-                            <div class="details-link"><i class="las la-arrow-right"></i></div>
-                        </div>
-                        <div class="service-img">
-                        <img src="<?php echo base_url();?>assets/img/service/flash-dryer-saka-india-300x300.png" alt="">
-                           
-                        </div>
-                    </div>
-                    <div class="single-service-item">
-                        <div class="single-service-inner">
-                            <h5><span>05</span>Flash Dryer</h5>
-                            <div class="details-link"><i class="las la-arrow-right"></i></div>
-                        </div>
-                        <div class="service-img">
-                            <img src="<?php echo base_url();?>assets/img/service/flash-dryer-saka-india-300x300.png" alt="">
-                           
-                        </div>
-                    </div>
-                    <div class="single-service-item">
-                        <div class="single-service-inner">
-                            <h5><span>06</span>Hot Air Generator</h5>
-                            <div class="details-link"><i class="las la-arrow-right"></i></div>
-                        </div>
-                        <div class="service-img">
-                            <img src="<?php echo base_url();?>assets/img/service/hot-air-genrator.png" alt="">
+                        
+                        
+                        <!-- Tab Content -->
+                        <div class="tab-pane services-content-item fade" id="services-item-4" role="tabpanel">
                             
+                            <div class="services-text">
+                                <div class="services-text-container">
+                                    <h4 class="services-title"> Fluid Bed Dryer</h4>
+                                    <p class="text-gray mb-0">
+                                        The core identity reflects consistent  associations with the brand whereas the extended identity involves the intricate details of the brand that help generate a constant motif.
+                                    </p>
+                                </div>
+                            </div>                            
+                            <img src="<?php echo base_url();?>assets/img/service/FLUID-BED-DRYER.png" alt="Fluid Bed Dryer">                                                   
+                        </div>                        
+                        
+                        <!-- Tab Content -->
+                        <div class="tab-pane services-content-item fade" id="services-item-5" role="tabpanel">                            
+                            <div class="services-text">
+                                <div class="services-text-container">
+                                    <h4 class="services-title">Flash Dryer</h4>
+                                    <p class="text-gray mb-0">
+                                        The core identity reflects consistent  associations with the brand whereas the extended identity involves the intricate details of the brand that help generate a constant motif.
+                                    </p>
+                                </div>
+                            </div>                            
+                            <img class="services-image" src="assets/img/service/services-5.jpg" alt="Image Description">                                                    
                         </div>
+                                                
+                        <!-- Tab Content -->
+                        <div class="tab-pane services-content-item fade" id="services-item-6" role="tabpanel">                            
+                            <div class="services-text">
+                                <div class="services-text-container">
+                                    <h4 class="services-title">Flash Dryer</h4>
+                                    <p class="text-gray mb-0">
+                                        The core identity reflects consistent  associations with the brand whereas the extended identity involves the intricate details of the brand that help generate a constant motif.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <img class="services-image" src="assets/img/service/services-6.jpg" alt="Image Description">                                                
+                        </div>
+                                                
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 
     <!-- Project Section  -->
     <div id="project-3" class="project-section section-padding pt-100 pb-100">
