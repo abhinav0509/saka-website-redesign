@@ -94,7 +94,7 @@
                                     </ul>
                                 </li>
                                
-                                <li><a class="navlink" href="project-details.html">Solutions</a></li>
+                                <li><a class="navlink" href="<?php echo base_url();?>index.php/Solution">Solutions</a></li>
 
                                 <li><a class="navlink" href="<?php echo base_url();?>index.php/Contact">Contact</a></li>
                             </ul>                            

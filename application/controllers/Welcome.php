@@ -71,6 +71,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('NFront/contact');
 		$this->load->view('NFront/footer');
 	}
+	public function Solution()
+	{
+		$this->load->view('NFront/header');
+		$this->load->view('NFront/project-details');
+		$this->load->view('NFront/footer');
+	}
 
 
 	
