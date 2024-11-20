@@ -728,9 +728,9 @@ EOD;
 	public function Dashboard()
 	{
 		$data=$this->globaldata;
-		$this->load->view('header1',$data);
-		$this->load->view('index');		
-		$this->load->view('footer1');
+		$this->load->view('cms/header',$data);
+		$this->load->view('cms/home');		
+		$this->load->view('cms/footer');
 	}
 	public function Contact()
 	{
@@ -751,9 +751,9 @@ EOD;
 		$this->load->model('display');
         $data1['users']=$this->display->Get_user_details();
 		$data=$this->globaldata;
-		$this->load->view('header1',$data);
-		$this->load->view('New_user',$data1);
-		$this->load->view('footer1');
+		$this->load->view('cms/header',$data);
+		$this->load->view('New_users',$data1);
+		$this->load->view('cms/footer');
 	}
 
 	public function user_create()
@@ -1350,9 +1350,9 @@ EOD;
         $data1["rowcount"]=$this->display->News_display();
         $data1["links"] = $this->pagination->create_links();
 		$data=$this->globaldata;
-		$this->load->view('header1',$data);
-		$this->load->view('News',$data1);
-		$this->load->view('footer1');
+		$this->load->view('cms/header',$data);
+		$this->load->view('News_new',$data1);
+		$this->load->view('cms/footer');
 	}
 	
 	public function Exam_Module()
@@ -3768,9 +3768,9 @@ public function Convert()
 		$data=$this->globaldata;
 		//print_r($data1['results']);
 		//die();
-		$this->load->view('header1',$data);
-		$this->load->view('blog-page',$data1);
-		$this->load->view('footer1');
+		$this->load->view('cms/header',$data);
+		$this->load->view('blog2',$data1);
+		$this->load->view('cms/footer');
 	}
 
 }

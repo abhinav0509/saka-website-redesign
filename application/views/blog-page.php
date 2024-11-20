@@ -194,11 +194,7 @@ var obj1;
              j('#hfield').submit();
 
    });
-  
-  
-  
-  
-  
+
 });
 </script>
 <script>

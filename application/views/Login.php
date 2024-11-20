@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="<?php echo base_url();?>assetss/css/components.css">
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="<?php echo base_url();?>assetss/css/custom.css">
-  <link rel='shortcut icon' type='image/x-icon' href="<?php echo base_url();?>uploads/Slider/logo.png"/>
+  <link rel='shortcut icon' type='image/x-icon' href="<?php echo base_url();?>assets/img/sakafavicon.ico"/>
 </head>
 <script>
  $(document).ready(function(){
