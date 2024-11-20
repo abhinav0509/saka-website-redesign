@@ -58,7 +58,49 @@
         </video>
 
      </div>
-    
+     <!-- Client Section  -->
+
+    <div class="client-area section-padding pt-100 pb-0 mb-100">
+    <div class="section-title text-center">
+                <h3>Exporting in 15+ Countries Globally</h3>
+            </div>
+    <div class="container">
+        <div class="row align-items-center">
+           
+            <div class="col-12">
+                <div class="client-wrap owl-carousel">
+                    <div class="single-client d-flex flex-column">
+                        <img src="<?php echo base_url();?>assets/img/client/us_flag.gif" alt="USA-flag"> 
+                        <h5>USA</h5>
+                        
+                    </div>
+                    <div class="single-client d-flex flex-column">
+                        <img src="<?php echo base_url();?>assets/img/client/uae_flag.gif" alt="UAE-flag">
+                        <h5>UAE</h5>
+                     
+                    </div>
+                    <div class="single-client d-flex flex-column">
+                        <img src="<?php echo base_url();?>assets/img/client/croatia_country.png" alt="Croatia">
+                        <h5>Croatia</h5>
+                    </div>
+                    <div class="single-client d-flex flex-column">
+                        <img src="<?php echo base_url();?>assets/img/client/slovenia_flag.png" alt="Slovenia-flag">
+                        <h5>Slovenia</h5>
+                    </div>
+                    <div class="single-client d-flex flex-column">
+                         <img src="<?php echo base_url();?>assets/img/client/poland_flag.png" alt="Poland-flag">
+                        <h5>Poland</h5>
+                    </div>
+                    <div class="single-client d-flex flex-column">
+                        <img src="<?php echo base_url();?>assets/img/client/thailand-flag1x.png" alt="Thailand-flag">
+                        <h5>Thailand</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+    </div>
+
      
      <!-- About Section  -->
      <div class="about-section section-padding pt-0">

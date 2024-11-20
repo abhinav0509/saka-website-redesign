@@ -1,6 +1,4 @@
-
-
-    <div id="smooth-content">
+<div id="smooth-content">
 
     <!-- Breadcrumb Area  -->
 

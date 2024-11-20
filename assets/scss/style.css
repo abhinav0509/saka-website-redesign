@@ -5539,7 +5539,6 @@ a.reply-btn i {
 .contact-section iframe {
   max-width: calc(100% - 40px);
   height: 600px;
-  filter: grayscale(1);
   position: relative;
   z-index: -1;
 }
