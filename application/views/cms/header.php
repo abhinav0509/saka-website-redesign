@@ -227,21 +227,25 @@ else
                      About Us
                   </a>
                 </li>
-                <li><a class="nav-link" href="widget-data.html">Data Widgets</a></li>
+                <li id="gallery">
+                  <a class="nav-link" href="<?php echo base_url()."index.php/Admin/Gallery" ?>" title="Gallery">
+                    Gallery
+                   </a>
+                </li>
               </ul>
               <li class="dropdown" id="blog">
                  <a href="<?php echo base_url()."index.php/Admin/Blog" ?>" title="Edit All Function Blog">
-                 <i data-feather="plus-square"></i> Blog Details
+                 <i data-feather="plus-square"></i><span>Blog Details</span>
                  </a>
            </li>
              <li class="dropdown" id="nuser">
                <a href="<?php echo base_url()."index.php/Admin/create_user" ?>" title="User">
-               <i data-feather="users"></i> Create User
+               <i data-feather="users"></i><span>Create User</span>
                   </a>
              </li>
              <li class="dropdown" id="news">
                 <a href="<?php echo base_url()."index.php/Admin/News" ?>" title="News And Events">
-                <i data-feather="clipboard"></i> News & Events
+                <i data-feather="clipboard"></i><span>News & Events</span>
                 </a>
                </li>
             </li>

@@ -30,8 +30,7 @@
                 </div>                                    
             </div>        
             <div class="row mt-40">
-            <?php if(!empty($results)){ foreach($results as $row){
-						   ?>  
+            <?php if(!empty($results)){ foreach($results as $row){ ?>  
                 <div class="col-xl-4 col-lg-4 col-md-6 col-12">
                     <hr>
                     <div class="single-blog-item mt-30">

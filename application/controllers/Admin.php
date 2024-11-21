@@ -727,9 +727,11 @@ EOD;
 	}
 	public function Dashboard()
 	{
+		$this->load->model('display');
+		$data1['blog']=$this->display->Blogd_display();
 		$data=$this->globaldata;
 		$this->load->view('cms/header',$data);
-		$this->load->view('cms/home');		
+		$this->load->view('cms/home',$data1);		
 		$this->load->view('cms/footer');
 	}
 	public function Contact()
@@ -1536,9 +1538,9 @@ EOD;
 		$this->load->model('display');
         $data1['enquiry']=$this->display->Gallery_Data();
 		$data=$this->globaldata;
-		$this->load->view('header1',$data);
-		$this->load->view('Gallery',$data1);
-		$this->load->view('footer1');
+		$this->load->view('cms/header',$data);
+		$this->load->view('Gallery_new',$data1);
+		$this->load->view('cms/footer');
 	}
 	
 	public function Paper()

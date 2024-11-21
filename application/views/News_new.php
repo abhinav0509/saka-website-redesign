@@ -141,7 +141,7 @@ function show(input) {
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <ul class="nav nav-tabs">
+                            <ul class="nav">
                                 <li class="active btn btn-success" id="t1"><a href="#tab1-1" data-toggle="tab" style="color: #ffffff;">View News <i data-feather="eye"></i></a></li>
                                 <li id="t2" class="btn btn-primary" style="margin-left: 10px;"><a href="#tab1-2" data-toggle="tab" style="color: #ffffff;">Add News <i data-feather="plus"></i></a></li>
                             </ul>
@@ -154,11 +154,11 @@ function show(input) {
                                         <table class="table table-striped" id="table-1">
                                             <thead>
                                                 <tr>
-                                                    <th width="5%">Title</th>
+                                                    <th width="4%">Title</th>
                                                     <th width="5%">Image</th>
-                                                    <th width="5%">Content</th>
+                                                    <th width="9%">Content</th>
                                                     <th width="5%">Date</th>
-                                                    <th class="text-center" width="5%">Actions</th>
+                                                    <th class="text-center" width="3%">Actions</th>
                                                 </tr>
                                             </thead>
                                             <script>
@@ -169,7 +169,7 @@ function show(input) {
                                                 <?php if (!empty($results)) { foreach ($results as $row) { ?>
                                                     <tr>
                                                         <td><?php echo $row->Title; ?></td>
-                                                        <td><img src="<?php echo base_url(); ?>uploads/News/<?php echo $row->image; ?>" style="height:115px; width:192px;"></td>
+                                                        <td style="padding: 9px;"><img src="<?php echo base_url(); ?>uploads/News/<?php echo $row->image; ?>" style="height:115px; width:192px;border-radius: 5px;"></td>
                                                         <td style="text-align: justify; line-height: 1.2; margin: 0; padding: 0;">
                                                             <?php 
                                                                 $description = strip_tags($row->Description); 

@@ -6,53 +6,53 @@
 <script src="<?php echo base_url(); ?>Style/ckeditor/ckeditor.js"></script> <!-- Ensure CKEditor is loaded -->
 
 <script type="text/javascript">
-var obj1;
+  var obj1;
   var j=jQuery.noConflict();
   j(document).ready(function(){
-  j("#blog").addClass("open");
-   j("#blog").addClass("active open");
-   CKEDITOR.replace( 'testo');
-  //  CKEDITOR.replace('testo');
-   j('#cnm').val(j('#cnm1').val());
+    j("#blog").addClass("open");
+    j("#blog").addClass("active open");
+    CKEDITOR.replace( 'testo');
+    j('#cnm').val(j('#cnm1').val());
 
-   var dt= new Date();
-   j('#doa').datepicker({
+    // Datepicker initialization
+    var dt = new Date();
+    j('#doa').datepicker({
         autoclose: true,
         todayHighlight: true,
-       dateFormat: 'dd-mm-yy',
-       onSelect: function(dateText){
-            getDuration();
-       }
+        dateFormat: 'dd-mm-yy',
+        todayBtn: "linked", // Optional: Adds a "Today" button
+        clearBtn: true, // Optional: Adds a "Clear" button
+        orientation: "bottom left", // Optional: Aligns the datepicker
+        onSelect: function(dateText) {
+            getDuration(); // Your custom function on date selection
+        }
     });
-   searchh1();
-   var Pageindex = j('#pindex').val();
-   var rcount = j('#rcount').val();
 
-   if(Pageindex == "")
-    Pageindex = 1;
+    // Your pagination and autocomplete code
+    searchh1();
+    var Pageindex = j('#pindex').val();
+    var rcount = j('#rcount').val();
 
-   if(rcount == "")
-    rcount = 0;
-  
-  j(".Pager").ASPSnippets_Pager({
-            ActiveCssClass: "current",
-            PagerCssClass: "pager",
-            PageIndex: parseInt(Pageindex),
-            PageSize: 10,
-            RecordCount: parseInt(rcount)
-        });
-        
-  j(".page").click(function () {
-            var pageindex = j(this).attr('page');
-          
-             j('#pindex').val(pageindex);
-             j('#cnm1').val(j('#cnm').val());
-             j('#hfield').submit();
+    if (Pageindex == "") Pageindex = 1;
+    if (rcount == "") rcount = 0;
 
-   });
+    j(".Pager").ASPSnippets_Pager({
+        ActiveCssClass: "current",
+        PagerCssClass: "pager",
+        PageIndex: parseInt(Pageindex),
+        PageSize: 10,
+        RecordCount: parseInt(rcount)
+    });
 
-});
-</script>
+    j(".page").click(function () {
+        var pageindex = j(this).attr('page');
+        j('#pindex').val(pageindex);
+        j('#cnm1').val(j('#cnm').val());
+        j('#hfield').submit();
+    });
+ });
+
+ </script>
 <script>
 
 function searchh1()
@@ -140,38 +140,81 @@ function Delete(id)
 	});
  }
  
- function Edit(obj1,id)
-{
-	//alert("fsgfg");
+//  function Edit(obj1,id)
+// {
+// 	//alert("fsgfg");
+//     j("#t1").removeClass("active");
+//     j("#t2").addClass("active");
+//     j("#tab1-1").removeClass("active");
+//     j("#tab1-2").addClass("active");
+// 	var r;
+//       for(i=0;i<obj1[0].length;i++)
+//       {
+//          if(obj1[0][i].T_id==id)
+//          {
+//           r=i;
+//          }	
+//       }
+//       var editor1 = CKEDITOR.instances.testo;
+//       if( editor1.mode == 'wysiwyg' )
+//       {
+//                   editor1.insertHtml(obj1[0][r].Content);
+//       }
+// 	 $('#photo').attr('src', '<?php echo base_url().'uploads/Blog/'?>'+obj1[0][r].Image+' ');
+// 	 $('#photo').show();
+//    $('#tit').val(obj1[0][r].Title);
+//    $('#nm').val(obj1[0][r].Name);
+// 	 j('#bid').val(id);
+//      j("#UpdateBtn").show();
+//      j("#CancelBtn").show();
+//      j("#SaveBtn").hide();
+// }
+
+function Edit(obj1, id) {
+    // Show the "Add Blog" tab and hide the "View Blog" tab
     j("#t1").removeClass("active");
     j("#t2").addClass("active");
     j("#tab1-1").removeClass("active");
     j("#tab1-2").addClass("active");
-	var r;
-      for(i=0;i<obj1[0].length;i++)
-      {
-         if(obj1[0][i].T_id==id)
-         {
-          r=i;
-         }	
-      }
-      var editor1 = CKEDITOR.instances.testo;
-      if( editor1.mode == 'wysiwyg' )
-      {
-                  editor1.insertHtml(obj1[0][r].Content);
-      }
-	 $('#photo').attr('src', '<?php echo base_url().'uploads/Blog/'?>'+obj1[0][r].Image+' ');
-	 $('#photo').show();
-   $('#tit').val(obj1[0][r].Title);
-   $('#nm').val(obj1[0][r].Name);
-	 j('#bid').val(id);
-     j("#UpdateBtn").show();
-     j("#CancelBtn").show();
-     j("#SaveBtn").hide();
+
+    // Search for the specific blog by its id
+    var r;
+    for (var i = 0; i < obj1[0].length; i++) {
+        if (obj1[0][i].B_id == id) {  // Ensure we're matching the right ID
+            r = i;
+            break;
+        }
+    }
+
+    // If the blog with the given ID was found
+    if (r !== undefined) {
+        var editor1 = CKEDITOR.instances.testo;
+
+        // Insert content into CKEditor if it's in 'wysiwyg' mode
+        if (editor1 && editor1.mode == 'wysiwyg') {
+            editor1.setData(obj1[0][r].Content);
+        }
+
+        // Set the form fields with the values from the selected blog
+        j('#tit').val(obj1[0][r].Title);
+        j('#nm').val(obj1[0][r].Name);
+        j('#doa').val(obj1[0][r].insertdate); // Assuming 'insertdate' is the publish date
+        j('#bid').val(id);
+
+        // Set the image preview
+        var imageSrc = '<?php echo base_url(); ?>uploads/Blog/' + obj1[0][r].Image;
+        $('#upload').attr('src', imageSrc);
+        $('#upload').show();
+
+        // Show Update button, hide Save button
+        j("#UpdateBtn").show();
+        j("#CancelBtn").show();
+        j("#SaveBtn").hide();
+    } else {
+        alert('Blog not found.');
+    }
 }
 
- 
- 
  function val1()
  { 
     document.frm.submit();
@@ -199,10 +242,13 @@ function show(input) {
             j('#hfield').submit();
 
 }
- 
- 
-</script>
 
+</script>
+<style>
+    .datepicker {
+    z-index: 9999 !important;
+}
+    </style>
 <!-- Main Content -->
 <div class="main-content">
     <section class="section">
@@ -211,7 +257,7 @@ function show(input) {
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <ul class="nav nav-tabs">
+                            <ul class="nav">
                                 <li class="active btn btn-success" id="t1"><a href="#tab1-1" data-toggle="tab" style="color: #ffffff;">View Blog Details <i data-feather="eye"></i></a></li>
                                 <li id="t2" class="btn btn-primary" style="margin-left: 10px;"><a href="#tab1-2" data-toggle="tab" style="color: #ffffff;">Add Blog <i data-feather="plus"></i></a></li>
                             </ul>
@@ -225,12 +271,12 @@ function show(input) {
                                             <thead>
                                                 <tr>
                                                     <th class="text-center" width="1%">Id</th>
-                                                    <th width="5%">Title</th>
-                                                    <th width="5%">Name</th>
-                                                    <th width="7%">Image</th>
-                                                    <th width="7%">Contents</th>
-                                                    <th width="5%">Date</th>
-                                                    <th class="text-center" width="5%">Actions</th>
+                                                    <th width="8%">Title</th>
+                                                    <th width="4%">Name</th>
+                                                    <th width="5%">Image</th>
+                                                    <th width="9%">Contents</th>
+                                                    <th width="4%">Date</th>
+                                                    <th class="text-center" width="4%">Actions</th>
                                                 </tr>
                                             </thead>
                                             <script>
@@ -243,7 +289,7 @@ function show(input) {
                                                     <td><?php echo $row->B_id; ?></td>
                                                     <td><?php echo $row->Title; ?></td>
                                                     <td><?php echo $row->Name; ?></td>
-                                                    <td><img src="<?php echo base_url(); ?>uploads/Blog/<?php echo $row->Image; ?>" style="height:115px; width:192px;"></td>
+                                                    <td style="padding: 9px;"><img src="<?php echo base_url(); ?>uploads/Blog/<?php echo $row->Image; ?>" style="height:115px; width:192px;border-radius: 5px;"></td>
                                                     <td style="text-align: justify; line-height: 1.2; margin: 0; padding: 0; white-space: normal;">
                                                         <?php 
                                                             $content = strip_tags($row->Content); 
@@ -294,19 +340,19 @@ function show(input) {
                                         </div>
                                         <div class="form-group row mb-4">
                                             <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Author Name <span class="asterisk">*</span></label>
-                                            <div class="col-sm-12 col-md-7">
+                                            <div class="col-sm-12 col-md-4">
                                             <input type="text" id="nm" name="nm" class="form-control" required>                   </div>
                                         </div>                                       
                                         <div class="form-group row mb-4">
                                             <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Publish Date <span class="asterisk">*</span></label>
-                                            <div class="col-sm-12 col-md-7">
+                                            <div class="col-sm-12 col-md-4">
                                             <input type="text"  id="doa" name="doa" onchange="show(this)" class="form-control" title="Pleas Select Publish date" data-rel="datepicker">
                                             </div>
                                         </div>               
 
                                         <div class="form-group row mb-4">
                                             <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"> Image<span class="asterisk">*</span></label>
-                                            <div class="col-sm-12 col-md-7">
+                                            <div class="col-sm-12 col-md-4">
                                             <input type="file" id="upload" name="upload" onchange="show(this)" class="form-control" style="padding-top:0px;"/>
                                             </div>
                                         </div>

@@ -81,87 +81,34 @@
             </div>
             <h2 class="section-title">Blog </h2>
             <div class="row">
+            <?php if(!empty($blog)){ foreach($blog as $row){ ?>  
               <div class="col-12 col-md-4 col-lg-4">
                 <article class="article article-style-c">
                   <div class="article-header">
-                    <div class="article-image" data-background="<?php echo base_url();?>assetss/img/blog/img01.png">
+                    <div class="article-image" data-background="<?php echo base_url(); ?>uploads/Blog/<?php echo $row->Image; ?>" style="border-radius: 5px;">
                     </div>
                   </div>
                   <div class="article-details">
-                    <div class="article-category"><a href="#">News</a>
-                      <div class="bullet"></div> <a href="#">3 DAYS</a>
+                    <div class="article-category"><a href="#">Blog</a>
+                      <div class="bullet"></div> <a href="#"><?php echo date('F j, Y', strtotime($row->insertdate)); ?></a>
                     </div>
                     <div class="article-title">
-                      <h2><a href="#">The oddest place you will find photo studios</a></h2>
+                      <h2><a href="#"><?php echo $row->Title; ?></a></h2>
                     </div>
-                    <p>A don't spirit gathered two under, lights said. May Multiply seasons you'll spirit tree morning
-                      hath first signs.</p>
+                    <p><?php echo $row->Content; ?></p>
                     <div class="article-user">
-                      <img alt="image" src="<?php echo base_url();?>assetss/img/users/user-1.png">
+                      <!-- <img alt="image" src="<?php echo base_url();?>assetss/img/users/user-1.png"> -->
                       <div class="article-user-details">
                         <div class="user-detail-name">
-                          <a href="#">Sarah Smith</a>
-                        </div>
-                        <div class="text-job">Java Developer</div>
+                          <a href="#"><?php echo $row->Name; ?></a>
+                        </div>                    
                       </div>
                     </div>
                   </div>
                 </article>
               </div>
-              <div class="col-12 col-md-4 col-lg-4">
-                <article class="article article-style-c">
-                  <div class="article-header">
-                    <div class="article-image" data-background="<?php echo base_url();?>assetss/img/blog/img01.png">
-                    </div>
-                  </div>
-                  <div class="article-details">
-                    <div class="article-category"><a href="#">News</a>
-                      <div class="bullet"></div> <a href="#">3 DAYS</a>
-                    </div>
-                    <div class="article-title">
-                      <h2><a href="#">The oddest place you will find photo studios</a></h2>
-                    </div>
-                    <p>A don't spirit gathered two under, lights said. May Multiply seasons you'll spirit tree morning
-                      hath first signs.</p>
-                    <div class="article-user">
-                      <img alt="image" src="<?php echo base_url();?>assetss/img/users/user-3.png">
-                      <div class="article-user-details">
-                        <div class="user-detail-name">
-                          <a href="#">Airi Satou</a>
-                        </div>
-                        <div class="text-job">HR Manager</div>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <div class="col-12 col-md-4 col-lg-4">
-                <article class="article article-style-c">
-                  <div class="article-header">
-                    <div class="article-image" data-background="<?php echo base_url();?>assetss/img/blog/img01.png">
-                    </div>
-                  </div>
-                  <div class="article-details">
-                    <div class="article-category"><a href="#">News</a>
-                      <div class="bullet"></div> <a href="#">3 DAYS</a>
-                    </div>
-                    <div class="article-title">
-                      <h2><a href="#">The oddest place you will find photo studios</a></h2>
-                    </div>
-                    <p>A don't spirit gathered two under, lights said. May Multiply seasons you'll spirit tree morning
-                      hath first signs.</p>
-                    <div class="article-user">
-                      <img alt="image" src="<?php echo base_url();?>assetss/img/users/user-2.png">
-                      <div class="article-user-details">
-                        <div class="user-detail-name">
-                          <a href="#">Angelica Ramos</a>
-                        </div>
-                        <div class="text-job">Web Designer</div>
-                      </div>
-                    </div>
-                  </div>
-                </article>
-              </div>
+              <?php } } else {?>  
+                <?php } ?>
             </div>
         </section>
       </div>

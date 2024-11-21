@@ -75,7 +75,7 @@ function Edit(obj1,id)
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <ul class="nav nav-tabs">
+                            <ul class="nav">
                                 <li class="active btn btn-success" id="t1"><a href="#tab1-1" data-toggle="tab" style="color: #ffffff;">View User <i data-feather="eye"></i></a></li>
                                 <li id="t2" class="btn btn-primary" style="margin-left: 10px;"><a href="#tab1-2" data-toggle="tab" style="color: #ffffff;">Add User <i data-feather="plus"></i></a></li>
                             </ul>
