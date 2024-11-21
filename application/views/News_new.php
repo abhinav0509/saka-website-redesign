@@ -182,13 +182,13 @@ function show(input) {
                                                         </td>
                                                         <td><?php echo $row->Publish_Date; ?></td>
                                                         <td class="text-center">
-                                                            <button class="btn btn-primary btn-sm" id="EditB" onclick="Edit(jArray,<?php echo $row->n_id; ?>);">
-                                                                <i class="far fa-edit"></i>
-                                                            </button>
-                                                            <button class="btn btn-danger btn-sm" id="DeleteN" onclick="Delete(<?php echo $row->n_id; ?>);">
-                                                                <i class="far fa-trash-alt"></i>
-                                                            </button>
-                                                        </td>
+                                                        <button class="btn btn-primary btn-action mr-1" data-toggle="tooltip"  onclick="Edit(jArray,<?php echo $row->n_id; ?>);">
+                                                            <i class="fas fa-pencil-alt"></i>
+                                                        </button>
+                                                        <button class="btn btn-danger btn-action" data-toggle="tooltip" onclick="Delete(<?php echo $row->n_id; ?>);">
+                                                            <i class="fas fa-trash"></i>
+                                                        </button>
+                                                    </td>
                                                     </tr>
                                                 <?php } } else { ?>
                                                     <tr> 

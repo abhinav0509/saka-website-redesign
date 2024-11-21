@@ -89,13 +89,13 @@ function Edit(obj1,id)
                                             <thead>
                                                 <tr>
                                                     
-                                                    <th class="text-center" width="5%">Name</th>
-                                                    <th width="5%">Contact</th>
-                                                    <th width="5%">Email</th>
-                                                    <th width="5%">User Name</th>
-                                                    <th width="5%">User Type</th>
-                                                    <th width="5%">Password</th>
-                                                    <th class="text-center" width="5%">Actions</th>
+                                                    <th class="text-center" width="3%">Name</th>
+                                                    <th width="3%">Contact</th>
+                                                    <th width="3%">Email</th>
+                                                    <th width="3%">User Name</th>
+                                                    <th width="3%">User Type</th>
+                                                    <th width="3%">Password</th>
+                                                    <th class="text-center" width="6%">Actions</th>
                                                 </tr>
                                             </thead>
                                             <script>
@@ -123,12 +123,20 @@ function Edit(obj1,id)
                                                         ?>
                                                     </td> -->
                                                     <!-- <td><?php echo $row->insertdate; ?></td> -->
-                                                    <td class="text-center">
+                                                    <!-- <td class="text-center">
                                                         <button class="btn btn-primary btn-sm" id="EditB" onclick="Edit(jArray,'<?php echo $row['id']; ?>');">
                                                             <i class="far fa-edit"></i>
                                                         </button>
                                                         <button class="btn btn-danger btn-sm" id="DeleteN" onclick="Delete('<?php echo $row['id']; ?>');">
                                                             <i class="far fa-trash-alt"></i>
+                                                        </button>
+                                                    </td> -->
+                                                    <td class="text-center">
+                                                        <button class="btn btn-primary btn-action mr-1" data-toggle="tooltip"  onclick="Edit(jArray,'<?php echo $row['id']; ?>');">
+                                                            <i class="fas fa-pencil-alt"></i>
+                                                        </button>
+                                                        <button class="btn btn-danger btn-action" data-toggle="tooltip" onclick="Delete('<?php echo $row['id']; ?>');">
+                                                            <i class="fas fa-trash"></i>
                                                         </button>
                                                     </td>
                                                 </tr>
