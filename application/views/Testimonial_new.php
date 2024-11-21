@@ -1,58 +1,94 @@
-<script src="<?php echo base_url(); ?>Style/jquery.min.js" type="text/javascript"></script>
-<script src="<?php echo base_url(); ?>Style/AutoComplete/Autojquery-ui.min.js" type="text/javascript"></script>
-<script src="<?php echo base_url(); ?>Style/AutoComplete/ASPSnippets_Pager.min.js" type="text/javascript"></script>
-<link href="<?php echo base_url(); ?>Style/AutoComplete/AutoComplete.css" rel="stylesheet" type="text/css" />
-<script src="<?php echo base_url(); ?>Style/bootstrap-datepicker.js"></script>
-<script src="<?php echo base_url(); ?>Style/ckeditor/ckeditor.js"></script> <!-- Ensure CKEditor is loaded -->
 
+<script src="<?php echo base_url();?>Style/AutoComplete/Autojquery-ui.min.js" type="text/javascript"></script> 
+<script src="<?php echo base_url();?>Style/AutoComplete/ASPSnippets_Pager.min.js" type="text/javascript"></script>
+<link href="<?php echo base_url();?>Style/AutoComplete/AutoComplete.css" rel="stylesheet" type="text/css"/> 
+<script src="<?php echo base_url();?>Style/bootstrap-datepicker.js"></script>
+
+<style>
+ .pager
+        {
+            height: 18px;
+            margin: 16px;
+        }
+        .pager .page
+        {
+            cursor: pointer;
+            border: 1px solid;
+            margin: 3px;
+            padding: 5px;
+            background: #E8EEF4;
+        }
+        .pager .page:hover
+        {
+            cursor: pointer;
+            border: 1px solid #1a0f49;
+            margin: 3px;
+            padding: 5px;
+            background: #253544;
+            color: #fff;
+        }
+        
+        .pager span
+        {
+            cursor: pointer;
+            border: 1px solid #1a0f49;
+            margin: 3px;
+            padding: 5px;
+            background: #253544;
+            color: #fff;
+        }
+
+</style>
+ 
 <script type="text/javascript">
-  var obj1;
+var obj1;
   var j=jQuery.noConflict();
   j(document).ready(function(){
-    j("#blog").addClass("open");
-    j("#blog").addClass("active open");
-    CKEDITOR.replace( 'testo');
-    j('#cnm').val(j('#cnm1').val());
+  j("#home").addClass("open");
+   j("#HExp").addClass("active open");
+//    CKEDITOR.replace( 'Desc');
+   CKEDITOR.replace('testo');
+   j('#cnm').val(j('#cnm1').val());
 
-    // Datepicker initialization
-    var dt = new Date();
-    j('#doa').datepicker({
+   var dt= new Date();
+   j('#doa').datepicker({
         autoclose: true,
         todayHighlight: true,
-        dateFormat: 'dd-mm-yy',
-        todayBtn: "linked", // Optional: Adds a "Today" button
-        clearBtn: true, // Optional: Adds a "Clear" button
-        orientation: "bottom left", // Optional: Aligns the datepicker
-        onSelect: function(dateText) {
-            getDuration(); // Your custom function on date selection
-        }
+       dateFormat: 'dd-mm-yy',
+       onSelect: function(dateText){
+            getDuration();
+       }
     });
 
-    // Your pagination and autocomplete code
-    searchh1();
-    var Pageindex = j('#pindex').val();
-    var rcount = j('#rcount').val();
+   searchh1();
+   var Pageindex = j('#pindex').val();
+   var rcount = j('#rcount').val();
 
-    if (Pageindex == "") Pageindex = 1;
-    if (rcount == "") rcount = 0;
+   if(Pageindex == "")
+    Pageindex = 1;
 
-    j(".Pager").ASPSnippets_Pager({
-        ActiveCssClass: "current",
-        PagerCssClass: "pager",
-        PageIndex: parseInt(Pageindex),
-        PageSize: 10,
-        RecordCount: parseInt(rcount)
-    });
+   if(rcount == "")
+    rcount = 0;
+  
+  j(".Pager").ASPSnippets_Pager({
+            ActiveCssClass: "current",
+            PagerCssClass: "pager",
+            PageIndex: parseInt(Pageindex),
+            PageSize: 10,
+            RecordCount: parseInt(rcount)
+        });
+        
+  j(".page").click(function () {
+            var pageindex = j(this).attr('page');
+          
+             j('#pindex').val(pageindex);
+             j('#cnm1').val(j('#cnm').val());
+             j('#hfield').submit();
 
-    j(".page").click(function () {
-        var pageindex = j(this).attr('page');
-        j('#pindex').val(pageindex);
-        j('#cnm1').val(j('#cnm').val());
-        j('#hfield').submit();
-    });
- });
-
- </script>
+   });
+  
+});
+</script>
 <script>
 
 function searchh1()
@@ -120,16 +156,16 @@ function Delete(id)
  {
 	if(confirm("Are You Sure You Want To Delete It.?"))
 	j.ajax({
-			url: '<?php echo base_url(); ?>index.php/Blog_Data/Delete',
+			url: '<?php echo base_url(); ?>index.php/Testimonial_Data/Delete',
             type: 'POST',
-			data:{'action':'delblog','B_id':id},
+			data:{'action':'deltesti','T_id':id},
 			success: function(data){
 				 data=data.replace(/"/g, '');
 				 
 				 alert("Record Deleted Successfully.?");
 					if(data)
 					{
-					window.location="<?php echo base_url().'index.php/Admin/Blog'; ?>"
+					window.location="<?php echo base_url().'index.php/Admin/Testimonial'; ?>"
 					}
         
 				},
@@ -140,80 +176,36 @@ function Delete(id)
 	});
  }
  
-//  function Edit(obj1,id)
-// {
-// 	//alert("fsgfg");
-//     j("#t1").removeClass("active");
-//     j("#t2").addClass("active");
-//     j("#tab1-1").removeClass("active");
-//     j("#tab1-2").addClass("active");
-// 	var r;
-//       for(i=0;i<obj1[0].length;i++)
-//       {
-//          if(obj1[0][i].T_id==id)
-//          {
-//           r=i;
-//          }	
-//       }
-//       var editor1 = CKEDITOR.instances.testo;
-//       if( editor1.mode == 'wysiwyg' )
-//       {
-//                   editor1.insertHtml(obj1[0][r].Content);
-//       }
-// 	 $('#photo').attr('src', '<?php echo base_url().'uploads/Blog/'?>'+obj1[0][r].Image+' ');
-// 	 $('#photo').show();
-//    $('#tit').val(obj1[0][r].Title);
-//    $('#nm').val(obj1[0][r].Name);
-// 	 j('#bid').val(id);
-//      j("#UpdateBtn").show();
-//      j("#CancelBtn").show();
-//      j("#SaveBtn").hide();
-// }
-
-function Edit(obj1, id) {
-    // Show the "Add Blog" tab and hide the "View Blog" tab
+ function Edit(obj1,id)
+{
+	//alert("fsgfg");
     j("#t1").removeClass("active");
     j("#t2").addClass("active");
     j("#tab1-1").removeClass("active");
     j("#tab1-2").addClass("active");
-
-    // Search for the specific blog by its id
-    var r;
-    for (var i = 0; i < obj1[0].length; i++) {
-        if (obj1[0][i].B_id == id) {  // Ensure we're matching the right ID
-            r = i;
-            break;
-        }
-    }
-
-    // If the blog with the given ID was found
-    if (r !== undefined) {
-        var editor1 = CKEDITOR.instances.testo;
-
-        // Insert content into CKEditor if it's in 'wysiwyg' mode
-        if (editor1 && editor1.mode == 'wysiwyg') {
-            editor1.setData(obj1[0][r].Content);
-        }
-
-        // Set the form fields with the values from the selected blog
-        j('#tit').val(obj1[0][r].Title);
-        j('#nm').val(obj1[0][r].Name);
-        j('#doa').val(obj1[0][r].insertdate); // Assuming 'insertdate' is the publish date
-        j('#bid').val(id);
-
-        // Set the image preview
-        var imageSrc = '<?php echo base_url(); ?>uploads/Blog/' + obj1[0][r].Image;
-        $('#upload').attr('src', imageSrc);
-        $('#upload').show();
-
-        // Show Update button, hide Save button
-        j("#UpdateBtn").show();
-        j("#CancelBtn").show();
-        j("#SaveBtn").hide();
-    } else {
-        alert('Blog not found.');
-    }
+	var r;
+      for(i=0;i<obj1[0].length;i++)
+      {
+         if(obj1[0][i].T_id==id)
+         {
+          r=i;
+         }	
+      }
+      var editor1 = CKEDITOR.instances.testo;
+      if( editor1.mode == 'wysiwyg' )
+      {
+                  editor1.insertHtml(obj1[0][r].Content);
+      }
+	 $('#photo').attr('src', '<?php echo base_url().'uploads/Testimonial/'?>'+obj1[0][r].Image+' ');
+	 $('#photo').show();
+     
+     $('#nm').val(obj1[0][r].Name);
+	 j('#bid').val(id);
+     j("#UpdateBtn").show();
+     j("#CancelBtn").show();
+     j("#SaveBtn").hide();
 }
+
 
  function val1()
  { 
@@ -231,8 +223,6 @@ function show(input) {
   }
   }  
  
-
-
  function search_data()
 {
             //j('#nm1').val(j('#nm').val());
@@ -242,15 +232,10 @@ function show(input) {
             j('#hfield').submit();
 
 }
-
+ 
 </script>
-<style>
-    .datepicker {
-    z-index: 9999 !important;
-}
-    </style>
-    
-<!-- Main Content -->
+  
+  <!-- Main Content -->
 <div class="main-content">
     <section class="section">
         <div class="section-body">
@@ -259,8 +244,8 @@ function show(input) {
                     <div class="card">
                         <div class="card-header">
                             <ul class="nav">
-                                <li class="active btn btn-success" id="t1"><a href="#tab1-1" data-toggle="tab" style="color: #ffffff;">View Blog Details <i data-feather="eye"></i></a></li>
-                                <li id="t2" class="btn btn-primary" style="margin-left: 10px;"><a href="#tab1-2" data-toggle="tab" style="color: #ffffff;">Add Blog <i data-feather="plus"></i></a></li>
+                                <li class="active btn btn-success" id="t1"><a href="#tab1-1" data-toggle="tab" style="color: #ffffff;">View Testiominal <i data-feather="eye"></i></a></li>
+                                <li id="t2" class="btn btn-primary" style="margin-left: 10px;"><a href="#tab1-2" data-toggle="tab" style="color: #ffffff;">Add Testiominal <i data-feather="plus"></i></a></li>
                             </ul>
                         </div>
                         <div class="card-body">
@@ -271,13 +256,11 @@ function show(input) {
                                         <table class="table table-striped" id="table-1">
                                             <thead>
                                                 <tr>
-                                                    <th class="text-center" width="1%">Id</th>
-                                                    <th width="8%">Title</th>
-                                                    <th width="4%">Name</th>
+                                                    <th class="text-center" width="1%">Id</th>                                             
+                                                    <th width="5%">Name</th>
                                                     <th width="5%">Image</th>
-                                                    <th width="9%">Contents</th>
-                                                    <th width="4%">Date</th>
-                                                    <th class="text-center" width="4%">Actions</th>
+                                                    <th width="5%">Contents</th>                                                 
+                                                    <th class="text-center" width="5%">Actions</th>
                                                 </tr>
                                             </thead>
                                             <script>
@@ -287,10 +270,9 @@ function show(input) {
                                             <tbody id="tdata">
                                                 <?php if (!empty($results)) { foreach($results as $row) { ?>
                                                 <tr>
-                                                    <td><?php echo $row->B_id; ?></td>
-                                                    <td><?php echo $row->Title; ?></td>
-                                                    <td><?php echo $row->Name; ?></td>
-                                                    <td style="padding: 9px;"><img src="<?php echo base_url(); ?>uploads/Blog/<?php echo $row->Image; ?>" style="height:115px; width:192px;border-radius: 5px;"></td>
+                                                    <td><?php print $row->T_id; ?></td>
+                                                    <td><?php print $row->Name; ?></td>             
+                                                    <td style="padding: 9px;"><img src="<?php echo base_url(); ?>uploads/Testimonial/<?php echo $row->Image; ?>" style="height:115px; width:192px;border-radius: 5px;"></td>
                                                     <td style="text-align: justify; line-height: 1.2; margin: 0; padding: 0; white-space: normal;">
                                                         <?php 
                                                             $content = strip_tags($row->Content); 
@@ -303,14 +285,12 @@ function show(input) {
                                                             } 
                                                             echo $shortContent; 
                                                         ?>
-                                                    </td>
-
-                                                    <td><?php echo $row->insertdate; ?></td>
+                                                    </td>   
                                                     <td class="text-center">
-                                                        <button class="btn btn-primary btn-action mr-1" data-toggle="tooltip"  onclick="Edit(jArray,<?php echo $row->B_id; ?>);">
+                                                        <button class="btn btn-primary btn-action mr-1" data-toggle="tooltip"  onclick="Edit(jArray,<?php echo $row->T_id; ?>);">
                                                             <i class="fas fa-pencil-alt"></i>
                                                         </button>
-                                                        <button class="btn btn-danger btn-action" data-toggle="tooltip" onclick="Delete(<?php echo $row->B_id; ?>);">
+                                                        <button class="btn btn-danger btn-action" data-toggle="tooltip" onclick="Delete(<?php echo $row->T_id; ?>);">
                                                             <i class="fas fa-trash"></i>
                                                         </button>
                                                     </td>
@@ -332,25 +312,13 @@ function show(input) {
                                 <!-- Add Blog Tab -->
                                 <div class="tab-pane" id="tab1-2">
                                     <h4>Write Your Post</h4>
-                                    <form id="formVideo" class="form-horizontal" role="form" action="<?php echo  base_url()."index.php/Blog_Data/Insert"; ?>"  enctype="multipart/form-data" method="post" name="frm">
+                                    <form id="formVideo" class="form-horizontal" role="form" action="<?php echo  base_url()."index.php/Testimonial_Data/Insert"; ?>"  enctype="multipart/form-data" method="post" name="frm">
                                         <div class="form-group row mb-4">
-                                            <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Title <span class="asterisk">*</span></label>
-                                            <div class="col-sm-12 col-md-7">
-                                                <input type="text" id="tit" name="tit" class="form-control" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row mb-4">
-                                            <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Author Name <span class="asterisk">*</span></label>
+                                            <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Name <span class="asterisk">*</span></label>
                                             <div class="col-sm-12 col-md-4">
-                                            <input type="text" id="nm" name="nm" class="form-control" required>                   </div>
+                                            <input type="text" id="nm" name="nm" class="form-control" required></div>
                                         </div>                                       
-                                        <div class="form-group row mb-4">
-                                            <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Publish Date <span class="asterisk">*</span></label>
-                                            <div class="col-sm-12 col-md-4">
-                                            <input type="text"  id="doa" name="doa" onchange="show(this)" class="form-control" title="Pleas Select Publish date" data-rel="datepicker">
-                                            </div>
-                                        </div>               
-
+                                        
                                         <div class="form-group row mb-4">
                                             <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"> Image<span class="asterisk">*</span></label>
                                             <div class="col-sm-12 col-md-4">
@@ -361,7 +329,7 @@ function show(input) {
                                         <input type="hidden" id="bid" name="bid" value=""/> 
 
                                         <div class="form-group row mb-4">
-                                            <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Blog Contents <span class="asterisk">*</span></label>
+                                            <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Testimonial Contents <span class="asterisk">*</span></label>
                                             <div class="col-sm-12 col-md-7">
                                                 <textarea id="testo" name="testo" class="form-control" required></textarea>
                                             </div>
@@ -385,3 +353,6 @@ function show(input) {
         </div>
     </section>
 </div>
+
+
+ 

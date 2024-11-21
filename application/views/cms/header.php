@@ -232,6 +232,21 @@ else
                     Gallery
                    </a>
                 </li>
+                <li id="HExp">
+                  <a class="nav-link" href="<?php echo base_url()."index.php/Admin/Testimonial" ?>" title="Testimonial">
+                   Testimonial
+				         </a>
+                </li>
+                <li id="HTitle">
+                  <a href="<?php echo base_url()."index.php/Admin/state1" ?>" title="State Master">
+                     State Master
+                   </a>
+                  </li>
+                    <li id="ThreeDiv">
+                      <a href="<?php echo base_url()."index.php/Admin/city1" ?>" title="City Master">
+                      City Master
+                  </a>
+                </li>
               </ul>
               <li class="dropdown" id="blog">
                  <a href="<?php echo base_url()."index.php/Admin/Blog" ?>" title="Edit All Function Blog">
@@ -247,7 +262,12 @@ else
                 <a href="<?php echo base_url()."index.php/Admin/News" ?>" title="News And Events">
                 <i data-feather="clipboard"></i><span>News & Events</span>
                 </a>
-               </li>
+              </li>
+              <li class="dropdown" id="img">
+                <a href="<?php echo base_url()."index.php/Admin/Edit_Image" ?>" title="Edit All Function Images">
+                <i data-feather="edit"></i><span>Edit Images</span>
+                </a>
+           </li>
             </li>
             <?php } ?>	           
           </ul>

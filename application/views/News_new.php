@@ -35,7 +35,7 @@
 <script>
 var j = jQuery.noConflict();
 j(document).ready(function () {
-    j("#news").addClass("open");
+    j("#news").addClass("active open");
 
     // Initialize CKEditor for the description field
     CKEDITOR.replace('Desc');

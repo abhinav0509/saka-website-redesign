@@ -1156,9 +1156,9 @@ EOD;
 	public function Edit_Image()
 	{
 		$data=$this->globaldata;
-		$this->load->view('header1',$data);
-		$this->load->view('Edit');
-		$this->load->view('footer1');
+		$this->load->view('cms/header',$data);
+		$this->load->view('Edit_new');
+		$this->load->view('cms/footer');
 	}
 	public function Book()
 	{
@@ -1983,9 +1983,9 @@ public function admin_exm_request()
    	$data=$this->globaldata;
 	$data1["links"] = $this->pagination->create_links();
 	$data1['states']=$this->display->get_state();
-   	$this->load->view('header1',$data);
-	$this->load->view('State',$data1);
-	$this->load->view('footer1');
+   	$this->load->view('cms/header',$data);
+	$this->load->view('State_new',$data1);
+	$this->load->view('cms/footer');
 		
    }
    
@@ -2038,9 +2038,9 @@ public function admin_exm_request()
     $data1['enquiry1']=$this->display->State_Data1();
    	$data=$this->globaldata;
 	$data1["links"] = $this->pagination->create_links();
-   	$this->load->view('header1',$data);
-	$this->load->view('City',$data1);
-	$this->load->view('footer1');
+   	$this->load->view('cms/header',$data);
+	$this->load->view('City_new',$data1);
+	$this->load->view('cms/footer');
 	}
    
 	/************************Mukesh Work**********/
@@ -3055,9 +3055,9 @@ public function ActiveStud()
 		$data=$this->globaldata;
 		//print_r($data1['results']);
 		//die();
-		$this->load->view('header1',$data);
-		$this->load->view('Testimonial',$data1);
-		$this->load->view('footer1');
+		$this->load->view('cms/header',$data);
+		$this->load->view('Testimonial_new',$data1);
+		$this->load->view('cms/footer');
 	}
 
 
