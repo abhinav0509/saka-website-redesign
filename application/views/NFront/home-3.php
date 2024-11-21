@@ -287,7 +287,7 @@
 
     <!-- Project Section  -->
     <div id="project-3" class="project-section section-padding pt-100 pb-100">
-        <div class="container">
+        <div class="container"> 
             <div class="row">
                 <div class="section-title">
                     <h2>Our Featured Work</h2>
@@ -309,7 +309,7 @@
                     <div class="tab-pane fade show active" id="architecture-design" role="tabpanel" aria-labelledby="architecture-design-tab" tabindex="0">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">                                
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-1.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/granulation-systems-20-ton-per-day-nagpur.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
@@ -318,13 +318,14 @@
                                         </a>
                                         <div class="featured-work-info">
                                             <h2>01</h2>
-                                            <h4>Mediterrean Villa</h4>
+                                            <h4>Nagpur</h4>
+                                            <h5 class="text-white">Capacity: 20 ton/day</h5>
                                         </div>
                                     </div>                                                                        
                                 </div>                                
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-2.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                             <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/granulation-systems-5000kg-per-hr-jagadiya-gujarat.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                   
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
@@ -332,14 +333,15 @@
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
-                                            <h2>02</h2>
-                                            <h4>Peninsula Villa</h4>
+                                        <h2>02</h2>    
+                                        <h4>Jagadiya, Gujarat</h4>
+                                        <h5 class="text-white">Capacity: 5000 kg/hr</h5>
                                         </div>
                                     </div>                                                                        
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-3.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                              <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/granulation-systems-50-ton-per-day-bhuj-gujarat.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
@@ -348,7 +350,8 @@
                                         </a>
                                         <div class="featured-work-info">
                                             <h2>03</h2>
-                                            <h4>Parkview Resort</h4>
+                                            <h4>Bhuj, Gujarat</h4>
+                                            <h5 class="text-white">Capacity: 50 ton/day</h5>
                                         </div>
                                     </div>                                                                        
                                 </div>
@@ -358,7 +361,7 @@
                     <div class="tab-pane fade" id="interior-design" role="tabpanel" aria-labelledby="interior-design-tab" tabindex="0">
                         <div class="row">                            
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">                                
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-4.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                               <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/co-current-2500kg-per-hr-1.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                  
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
@@ -367,13 +370,14 @@
                                         </a>
                                         <div class="featured-work-info">
                                             <h2>01</h2>
-                                            <h4>Restaurant Inn</h4>
+                                            <h4>Baroda</h4>
+                                            <h5 class="text-white">Capacity:9000 kg/hr</h5>
                                         </div>
                                     </div>                                                                        
                                 </div>                                
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-5.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                               <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/co-current-2000kg-per-hr.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                   
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
@@ -382,13 +386,16 @@
                                         </a>
                                         <div class="featured-work-info">
                                             <h2>02</h2>
-                                            <h4>Corporate Office</h4>
+                                            <h4>Gujarat</h4>
+                                            <h5 class="text-white">Capacity:2000 kg/hr</h5>
+                                            
                                         </div>
                                     </div>                                                                        
                                 </div>
                             </div>
+                            
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-6.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                             <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/two-fluid-nozzle-spray-dryer-1.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
@@ -397,7 +404,9 @@
                                         </a>
                                         <div class="featured-work-info">
                                             <h2>03</h2>
-                                            <h4>Museum Spaces</h4>
+                                            <h4>Gujarat</h4>
+                                            <h5 class="text-white">Capacity:300 kg/hr</h5>
+                                            
                                         </div>
                                     </div>                                                                        
                                 </div>
