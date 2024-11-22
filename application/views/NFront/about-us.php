@@ -37,9 +37,12 @@
             </div>
         </div>   
         <div class="row mt-30">                
-            <p>Saka India was founded in 1995 in California, USA. The company was established by Louis Skidmore and Nathaniel Owings, and later joined by John O. Merrill.</p>
-            <p>The company has designed the John Hancock Center, One World Trade Center and Burj Khalifa, which is currently the tallest building in the world. Throughout its history, Saka India has been recognized for its innovative designs and commitment to sustainability.</p>
-            <p> </p>
+        <p>Developing technology that serves the true purpose of your business, drives us!
+A singular focus, to keep your business goals and needs at the center in developing the technology for your processes,
+is the driving force of SAKA’s solutions.The commitment to be always aligned to Customer’s purpose has earned us a 85% repeat business,
+even as the base of customers doubled every year since the inception.</p>
+                <p>WORLD-LEADING PROCESS SOLUTIONS By challenging the conventional norms, SAKA RETHINKS, REINVENTS and REDEFINES the process engineering and technology to unfold new benchmarks for your systems in reliability, efficiency and quality.</p>
+                <p> </p>
         </div>          
     </div>                
 </div>
@@ -59,10 +62,10 @@
             <div class="col-xl-4 col-lg-4 col-md-6">
                 <div class="single-history-item">
                     <div class="content-wrap">
-                        <h5>Saka India Founding</h5>
-                        <p>1995</p>
-                    <p>The company is founded by John Smith, an experienced architect with a passion for sustainable design.
-                    </p>
+                        <h5>Saka India Inception</h5>
+                        <p>2011</p>
+                        <p>Started with a small team that can be counted on fingers with an aim to deliver next technology to its customer.
+                        </p>
                     </div>                        
                 </div>
             </div>
@@ -85,10 +88,11 @@
             <div class="col-xl-4 col-lg-4 col-md-6 order-2">
                 <div class="single-history-item">
                     <div class="content-wrap">
-                        <h5>Completing The First Project</h5>
-                        <p>1996 - 1998</p>
-                    <p>The company completes its first major project, a LEED-certified office building that sets a new standard.
-                    </p>
+                    <h5>Saka Expansion</h5>
+                            <p>2012</p>
+                        <p>It was time for SAKA to expand, we went for our own state-of-the-art manufacturing unit at Bhosari, Pune.
+                        </p>
+                   
                     </div>
                      
                 </div>
@@ -113,10 +117,52 @@
             <div class="col-xl-4 col-lg-4 col-md-6 order-4">
                 <div class="single-history-item">
                     <div class="content-wrap">
-                        <h5>Expanding Services</h5>
-                        <p>2001</p>
-                    <p>The company expands its services to include interior design, and hires its first interior designer.
+                    <h5>The Next Level</h5>
+                            <p>2014</p>
+                        <p>We added unique capabilities like CFD analysis and 3D designing. to take our design department to the next level
+                            </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row mt-120 align-items-center">
+            <div class="col-xl-4 col-lg-4 col-md-6 order-2">
+                <div class="single-history-item">
+                    <div class="content-wrap">
+                    <h5>DELIVERING THE GRANULATION
+                            </h5>
+                            <p>2016</p>
+                        <p>SAKA became only Indian company to deliver fully automatic calcium chloride granulation plant.
                         </p>
+                    </div>
+                     
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 order-1 order-xl-2">
+                <div class="single-history-item">
+                    <div class="history-img">
+                        <img src="assets/img/about/history-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 d-xs-block d-xl-none mt-60 order-3">
+                <div class="single-history-item">
+                    <div class="history-img">
+                        <img src="assets/img/about/history-2.jpg" alt="">
+                    </div>                        
+                </div>
+            </div>
+            
+            <div class="col-xl-4 col-lg-4 col-md-6 order-4">
+                <div class="single-history-item">
+                    <div class="content-wrap">
+                    <h5>The Next Level</h5>
+                            <p>2014</p>
+                        <p>We added unique capabilities like CFD analysis and 3D designing. to take our design department to the next level
+                            </p>
                     </div>
                 </div>
             </div>
