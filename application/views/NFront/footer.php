@@ -109,7 +109,7 @@
                 <img src="assets/img/offcanvas-img.jpg" alt="">
 
                 <div class="mt-30 mb-30">
-                    <a href="<?php echo base_url();?>index.php/Admin" target="_blank" class="white-btn">Login</a>
+                    <a href="<?php echo base_url();?>index.php/Admin" class="white-btn">Login</a>
                 </div>              
             </div>           
             <div class="social-area-wrap">
