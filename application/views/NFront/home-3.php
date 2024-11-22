@@ -298,7 +298,7 @@
                     <div class="nav project-list" role="tablist">                        
                         <button class="nav-link active" id="architecture-design-tab" data-bs-toggle="tab" data-bs-target="#architecture-design" type="button" role="tab" aria-controls="architecture-design" aria-selected="false">Granulation System</button>
                         <button class="nav-link" id="interior-design-tab" data-bs-toggle="tab" data-bs-target="#interior-design" type="button" role="tab" aria-controls="interior-design" aria-selected="false">Spray Dryer</button>
-                        <button class="nav-link" id="project-management-tab" data-bs-toggle="tab" data-bs-target="#project-management" type="button" role="tab" aria-controls="project-management" aria-selected="false">Conveying Systems</button>
+                        <button class="nav-link" id="project-management-tab" data-bs-toggle="tab" data-bs-target="#project-management" type="button" role="tab" aria-controls="project-management" aria-selected="false">Rotary Dryer</button>
                         <button class="nav-link" id="historic-preservation-tab" data-bs-toggle="tab" data-bs-target="#historic-preservation" type="button" role="tab" aria-controls="historic-preservation" aria-selected="false">Drying Systems</button>
                         <button class="nav-link" id="landscape-design-tab" data-bs-toggle="tab" data-bs-target="#landscape-design" type="button" role="tab" aria-controls="landscape-design" aria-selected="false">Air Heating Systems</button>                          
                         <button class="nav-link" id="furniture-remodel-tab" data-bs-toggle="tab" data-bs-target="#furniture-remodel" type="button" role="tab" aria-controls="furniture-remodel" aria-selected="false">Fluid Bed Dryer</button>
@@ -417,7 +417,7 @@
                         <div class="row">                                
                             <div class="row">
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-12">                                
-                                    <div class="featured-work-wrapper" data-background="assets/img/project/3-7.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/rotary-dryer-2000kg-per-hr-1.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                   
                                         <div class="featured-work-inner">
                                             <div class="fetured-work-bg">                                              
                                             </div>
@@ -426,13 +426,15 @@
                                             </a>
                                             <div class="featured-work-info">
                                                 <h2>01</h2>
-                                                <h4>Mediterrean Villa</h4>
+                                                <h4> Bhuj, Gujarat</h4>
+                                                <h5 class="text-white">Capacity:2000 kg/hr</h5>
                                             </div>
                                         </div>                                                                        
                                     </div>                                
                                 </div>
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                    <div class="featured-work-wrapper" data-background="assets/img/project/3-8.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                    <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/conduction-rotary-dryer.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                   
+
                                         <div class="featured-work-inner">
                                             <div class="fetured-work-bg">                                              
                                             </div>
@@ -441,13 +443,15 @@
                                             </a>
                                             <div class="featured-work-info">
                                                 <h2>02</h2>
-                                                <h4>Peninsula Villa</h4>
+                                                <h4>Maharashtra</h4>
+                                                <h5 class="text-white">Capacity:5000 kg/hr</h5>
                                             </div>
                                         </div>                                                                        
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                    <div class="featured-work-wrapper" data-background="assets/img/project/3-9.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                    <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/counter-current-rotary-dryer-2500kg-per-hr.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                   
+
                                         <div class="featured-work-inner">
                                             <div class="fetured-work-bg">                                              
                                             </div>
@@ -456,7 +460,8 @@
                                             </a>
                                             <div class="featured-work-info">
                                                 <h2>03</h2>
-                                                <h4>Parkview Resort</h4>
+                                                <h4>Sarigam, Gujarat</h4>
+                                                <h5 class="text-white">Capacity: 2500 kg/hr</h5>
                                             </div>
                                         </div>                                                                        
                                     </div>
