@@ -99,14 +99,15 @@ document.addEventListener("DOMContentLoaded", function () {
         </video>
 
      </div>
-     <!-- Client Section  -->
+
+    <!-- Client Section  -->
 
     <div class="client-area section-padding pt-100 pb-0 mb-100">
-    <div class="section-title text-center">
-                <h3>Exporting in 15+ Countries Globally</h3>
+     <div class="section-title text-center">
+            <h3>Exporting in 15+ Countries Globally</h3>
             </div>
-    <div class="container">
-        <div class="row align-items-center">
+        <div class="container">
+         <div class="row align-items-center">
            
             <div class="col-12">
                 <div class="client-wrap owl-carousel">
@@ -140,10 +141,10 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
      </div>
-    </div>
+</div>
 
      
-     <!-- About Section  -->
+    <!-- About Section  -->
      <div class="about-section section-padding pt-0">
         <div class="container">
             <div class="row align-items-end">
@@ -658,7 +659,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             </div>
                         </div>
                     </div>                        
-                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -708,6 +709,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="row mt-50">
                 <div class="col-xl-7 col-lg-7">
                     <div class="testimonial-wrapper owl-carousel">
+                    
                         <div class="single-testimonial-item">
                             <div class="quote-icon">
                                 <img src="assets/img/straight-quotes.png" alt="">
@@ -756,7 +758,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="offset-xl-1 col-xl-8 offset-lg-1 col-lg-8">
                     <div class="single-choose-item">
                         <div class="single-choose-inner">
-                            <h5><span>01</span>Innovative Design</h5>                                                            
+                            <h5><span>01</span>Process Expertise</h5> 
+                            <p>The deep process expertise means our products are embedded with an inherent
+                                vision for scaling up or adapting to future needs of your business,
+                            thus ensuring an enduring technology for the processes.</p>                                                           
                         </div>  
                         <div class="choose-img">
                             <img src="assets/img/choose/1.jpg" alt="">
@@ -764,7 +769,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                     <div class="single-choose-item">
                         <div class="single-choose-inner">
-                            <h5><span>02</span>Exceptional Service</h5>                                                            
+                            <h5><span>02</span>Advanced CFD Anlaysis</h5>
+                            <p>Using next generation Computational Fluid Dynamics(CFD) techniques SAKA is able to simulate and analyse the material behavior and properties in the process.</p>                                                                
                         </div>    
                         <div class="choose-img">
                             <img src="assets/img/choose/2.jpg" alt="">
@@ -772,7 +778,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                     <div class="single-choose-item">
                         <div class="single-choose-inner">
-                            <h5><span>03</span>Quality Craftsmanship</h5>                                                            
+                            <h5><span>03</span>Intelligent Automation</h5> 
+                            <p>SAKA's focus in automation is to leverage advanced PLC/SCADA technology to build intelligent drying processes that ensure highest efficiency in operations and best quality output.</p>                                                           
                         </div> 
                         <div class="choose-img">
                             <img src="assets/img/choose/3.jpg" alt="">
@@ -780,7 +787,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                     <div class="single-choose-item">
                         <div class="single-choose-inner">
-                            <h5><span>04</span>Experienced Team</h5>                                                            
+                            <h5><span>04</span>World Class Quality</h5> 
+                            <p>Being world-class is core to our strategy.We have established an extensive system of checks to ensure only the highest quality in our sourcing,manufacturing and site work.</p>                                                           
                         </div>  
                         <div class="choose-img">
                             <img src="assets/img/choose/4.jpg" alt="">
