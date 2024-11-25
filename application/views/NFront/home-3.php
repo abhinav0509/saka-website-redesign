@@ -23,10 +23,51 @@
     left:0;
     z-index: 999;
     } 
+    .counter-number {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+    transition: all 1s ease-in-out;
+}
 
 
 </style>
+<script>
+    // Wait for the document to be ready
+document.addEventListener("DOMContentLoaded", function () {
+    const counters = document.querySelectorAll('.counter-number');
+    
+    const animateCounter = (counter) => {
+        const target = +counter.getAttribute('data-target');
+        let count = 0;
+        const increment = Math.ceil(target / 100); // Set the increment step for smooth counting
+        
+        const interval = setInterval(() => {
+            count += increment;
+            if (count >= target) {
+                count = target;
+                clearInterval(interval);
+            }
+            counter.textContent = count;  // Update the counter number
+        }, 10);  // Update every 10ms
+    };
 
+    // Trigger counter animation when the element is in view
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                observer.unobserve(entry.target); // Stop observing after the animation is done
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => {
+        observer.observe(counter);  // Start observing the counter
+    });
+});
+
+</script>
 
 
 <div id="smooth-content">
@@ -127,35 +168,36 @@
     <!-- Counter Section -->
 
     <div class="counter-section section-padding pt-0 pb-50">
-        <div class="container">
-            <div class="row gx-5">                
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-counter-box">
-                        <p class="counter-number">[<span>65</span>+]</p>
-                        <h6>Year of Experience</h6>
-                    </div>
+    <div class="container">
+        <div class="row gx-5">                
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-counter-box">
+                    <p class="counter-number" data-target="65">0</p>
+                    <h6>Year of Experience</h6>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-counter-box">
-                        <p class="counter-number">[<span>250</span>+]</p>
-                        <h6>Installations</h6>
-                    </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-counter-box">
+                    <p class="counter-number" data-target="250">0</p>
+                    <h6>Installations</h6>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">    
-                    <div class="single-counter-box">
-                        <p class="counter-number">[<span>300</span>+]</p>
-                        <h6>Locations Across World</h6>
-                    </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">    
+                <div class="single-counter-box">
+                    <p class="counter-number" data-target="300">0</p>
+                    <h6>Locations Across World</h6>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-counter-box">
-                        <p class="counter-number">[<span>98</span>%]</p>
-                        <h6>Clients Satisfaction</h6>
-                    </div>
-                </div>                             
-            </div>            
-        </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-counter-box">
+                    <p class="counter-number" data-target="98">0</p>
+                    <h6>Clients Satisfaction</h6>
+                </div>
+            </div>                             
+        </div>            
     </div>
+</div>
+
 
   <!-- Service Section  -->
   <div class="service-section section-padding pt-50">
