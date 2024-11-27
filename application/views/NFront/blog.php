@@ -41,7 +41,7 @@
                             <!-- <div class="blog-meta">
                                 <p>Architecture</p>
                             </div> -->
-                            <h3><a href="blog-details.html"><?php echo $row->Title; ?></a></h3>
+                            <h3><a href="<?php echo base_url();?>index.php/Blog_details"><?php echo $row->Title; ?></a></h3>
                             <div class="blog-info">
                                 <div class="blog-author">
                                 <p><?php echo $row->Name; ?></p>
@@ -50,7 +50,7 @@
                                 <p><?php echo date('F j, Y', strtotime($row->insertdate)); ?></p>
                                 </div>
                             </div> 
-                            <a href="blog-details.html" class="read-more-btn">Read More</a>                           
+                            <a href="<?php echo base_url();?>index.php/Blog_details" class="read-more-btn">Read More</a>                           
                         </div>                        
                     </div>
                 </div>

@@ -15,18 +15,18 @@
     j('#cnm').val(j('#cnm1').val());
 
     // Datepicker initialization
-    var dt = new Date();
-    j('#doa').datepicker({
-        autoclose: true,
-        todayHighlight: true,
-        dateFormat: 'dd-mm-yy',
-        todayBtn: "linked", // Optional: Adds a "Today" button
-        clearBtn: true, // Optional: Adds a "Clear" button
-        orientation: "bottom left", // Optional: Aligns the datepicker
-        onSelect: function(dateText) {
-            getDuration(); // Your custom function on date selection
-        }
-    });
+    // var dt = new Date();
+    // j('#doa').datepicker({
+    //     autoclose: true,
+    //     todayHighlight: true,
+    //     dateFormat: 'dd-mm-yy',
+    //     todayBtn: "linked", // Optional: Adds a "Today" button
+    //     clearBtn: true, // Optional: Adds a "Clear" button
+    //     orientation: "bottom left", // Optional: Aligns the datepicker
+    //     onSelect: function(dateText) {
+    //         getDuration(); // Your custom function on date selection
+    //     }
+    // });
 
     // Your pagination and autocomplete code
     searchh1();
@@ -389,7 +389,7 @@ function show(input) {
                                         <div class="form-group row mb-4">
                                             <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Publish Date <span class="asterisk">*</span></label>
                                             <div class="col-sm-12 col-md-7">
-                                            <input type="text"  id="doa" name="doa" onchange="show(this)" class="form-control" title="Pleas Select Publish date" data-rel="datepicker">
+                                            <input type="date"  id="doa" name="doa" onchange="show(this)" class="form-control" title="Pleas Select Publish date">
                                             </div>
                                         </div>               
 

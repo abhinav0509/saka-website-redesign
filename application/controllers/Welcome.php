@@ -31,14 +31,14 @@ class Welcome extends CI_Controller {
 	public function Blog()
 	{
 		$this->load->model('display');
-		$data1["results"] = $this->display->Blogd_display();
+		$data1["results"] = $this->display->Blogdispaly_display();
 		$this->load->view('NFront/header');
 		$this->load->view('NFront/blog', $data1);
 		$this->load->view('NFront/footer');
 	}
 
 	public function Blog_details()
-	{
+	{   
 		$this->load->view('NFront/header');
 		$this->load->view('NFront/blog-details');
 		$this->load->view('NFront/footer');

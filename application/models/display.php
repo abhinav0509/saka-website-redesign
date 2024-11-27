@@ -4704,12 +4704,20 @@ public function get_stud_info1($name,$fid)
 	}
 
    public function Blogd_display()
-   {
+   {  
+      $this->db->limit(3,0);
+      $this->db->order_by('B_id','desc');
       $query=$this->db->get('tbl_blog');
       return $query->result();
    }
-  
-  
+   
+   public function Blogdispaly_display()
+   {  
+      // $this->db->limit(3,0);
+      $this->db->order_by('B_id','desc');
+      $query=$this->db->get('tbl_blog');
+      return $query->result();
+   }
   
   function Blog_display($cname)
   {
