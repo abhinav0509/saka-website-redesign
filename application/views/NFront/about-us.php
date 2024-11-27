@@ -23,7 +23,7 @@
                 <div class="hero-area-content">
                     <div class="section-title">                            
                         <h1>Learn About Our <i>/</i> <br></h1>
-                        <h1 class="pl-150">Vision and Values</h1>
+                        <h1 class="pl-150 text-black">Vision and Values</h1>
                     </div>
                 </div>
             </div> 
