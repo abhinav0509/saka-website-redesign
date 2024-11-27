@@ -100,7 +100,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
      </div>
 
-    <!-- Client Section  -->
+
+ <!-- Client Section  -->
 
     <div class="client-area section-padding pt-100 pb-0 mb-100">
      <div class="section-title text-center">
@@ -112,29 +113,29 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="col-12">
                 <div class="client-wrap owl-carousel">
                     <div class="single-client d-flex flex-column">
-                        <img src="<?php echo base_url();?>assets/img/client/us_flag.gif" alt="USA-flag"> 
+                        <img src="<?php echo base_url();?>assets/img/client/USA-flag.png" alt="USA-flag"> 
                         <h5>USA</h5>
                         
                     </div>
                     <div class="single-client d-flex flex-column">
-                        <img src="<?php echo base_url();?>assets/img/client/uae_flag.gif" alt="UAE-flag">
+                        <img src="<?php echo base_url();?>assets/img/client/uae-flag.png" alt="UAE-flag">
                         <h5>UAE</h5>
                      
                     </div>
                     <div class="single-client d-flex flex-column">
-                        <img src="<?php echo base_url();?>assets/img/client/croatia_country.png" alt="Croatia">
+                        <img src="<?php echo base_url();?>assets/img/client/croatia-flag.png" alt="Croatia">
                         <h5>Croatia</h5>
                     </div>
                     <div class="single-client d-flex flex-column">
-                        <img src="<?php echo base_url();?>assets/img/client/slovenia_flag.png" alt="Slovenia-flag">
-                        <h5>Slovenia</h5>
+                        <img src="<?php echo base_url();?>assets/img/client/Portugal-flag.png" alt="Portugal-flag">
+                        <h5>Portugal</h5>
                     </div>
                     <div class="single-client d-flex flex-column">
-                         <img src="<?php echo base_url();?>assets/img/client/poland_flag.png" alt="Poland-flag">
+                         <img src="<?php echo base_url();?>assets/img/client/poland-flag.png" alt="Poland-flag">
                         <h5>Poland</h5>
                     </div>
                     <div class="single-client d-flex flex-column">
-                        <img src="<?php echo base_url();?>assets/img/client/thailand-flag1x.png" alt="Thailand-flag">
+                        <img src="<?php echo base_url();?>assets/img/client/thailand-flag.png" alt="Thailand-flag">
                         <h5>Thailand</h5>
                     </div>
                 </div>
@@ -167,9 +168,9 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
 
     
-<!--    Counter Section -->
+<!-- Counter Section -->
  
-    <div class="counter-section section-padding pt-0 pb-50">
+<div class="counter-section section-padding pt-0 pb-50">
     <div class="container">
         <div class="row gx-5">                
             <div class="col-lg-3 col-md-6 col-sm-6">
@@ -202,6 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   <!-- Service Section  -->
+
   <div class="service-section section-padding pt-50">
         <div class="container">
             <div class="row">
@@ -330,6 +332,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     <!-- Project Section  -->
+
     <div id="project-3" class="project-section section-padding pt-100 pb-100">
         <div class="container"> 
             <div class="row">
@@ -691,7 +694,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
     </div>
-    </div>
+ </div>
 
    
 
@@ -762,7 +765,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <h5><span>01</span>Process Expertise</h5> 
                             <p>The deep process expertise means our products are embedded with an inherent
                                 vision for scaling up or adapting to future needs of your business,
-                            thus ensuring an enduring technology for the processes.</p>                                                           
+                                thus ensuring an enduring technology for the processes.</p>                                                           
                         </div>  
                         <div class="choose-img">
                             <img src="assets/img/choose/1.jpg" alt="">
@@ -799,6 +802,106 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
     </div>
+    <!-- Team Section  -->
+
+    <div class="team-section gray-bg section-padding pb-100">
+        <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6">
+            <div class="section-title">            
+                <div class="heading-animation">
+                    <h2>Our Team</h2>
+                </div>
+                <span class="d-none d-md-block"><i class="las la-arrow-down mt-30"></i></span>
+            </div>                      
+            </div>
+            <div class="col-xl-6 col-lg-6">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="200ms">
+                <div class="single-team-item">
+                    <div class="team-img">
+                    <img src="assets/img/team/1642580790698.jfif" alt="">
+                    </div>
+                    <div class="team-info">
+                    <h5>Anand Thigale</h5>
+                    <hr>
+                    <p>Managing Director</p>
+                    </div>                    
+                </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="400ms">
+                <div class="single-team-item">
+                    <div class="team-img">
+                    <img src="assets/img/team/2.jpg" alt="">
+                    </div>
+                    <div class="team-info">
+                    <h5>Natasha Kareem</h5>
+                    <hr>
+                    <p>[Project Manager]</p>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="600ms">
+            <div class="single-team-item">
+                <div class="team-img">
+                <img src="assets/img/team/3.jpg" alt="">
+                </div>
+                <div class="team-info">
+                <h5>Decan Rice</h5>
+                <hr>
+                <p>[Architect]</p>
+                </div>
+            
+            </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="200ms">
+            <div class="single-team-item">
+                <div class="team-img">
+                <img src="assets/img/team/4.jpg" alt="" >
+                </div>
+                <div class="team-info">
+                <h5>Patric Evra</h5>
+                <hr>
+                <p>[Architect]</p>
+                </div>
+                
+            </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="400ms">
+            <div class="single-team-item">
+                <div class="team-img">
+                <img src="assets/img/team/5.jpg" alt="" >
+                </div>
+                <div class="team-info">
+                <h5>Sophie White</h5>
+                <hr>
+                <p>[Civil Engineer]</p>
+                </div>
+                
+            </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="600ms">
+            <div class="single-team-item">
+                <div class="team-img">
+                <img src="assets/img/team/6.jpg" alt="" >
+                </div>
+                <div class="team-info">
+                <h5>Phil Jhones</h5>
+                <hr>
+                <p>[Architect]</p>
+                </div>
+            
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
 
     <!-- CTA Area  -->
     <div class="cta-area-two gray-bg" data-background="assets/img/cta-sketch.png">

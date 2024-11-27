@@ -279,52 +279,58 @@ even as the base of customers doubled every year since the inception.</p>
 </div>
 
 <!-- Why Choose Us Section  -->
-<div class="why-choose-us-section section-padding pt-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-3 col-lg-3">
-                <div class="section-title">
-                    <h2>Why Choose Saka India?</h2>
+ 
+ <div class="why-choose-us-section section-padding pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3">
+                    <div class="section-title">
+                        <h2>Why Choose Saka India?</h2>
+                    </div>
                 </div>
-            </div>
-            <div class="offset-xl-1 col-xl-8 offset-lg-1 col-lg-8">
-                <div class="single-choose-item">
-                    <div class="single-choose-inner">
-                        <h5><span>01</span>Innovative Design</h5>                                                            
-                    </div>  
-                    <div class="choose-img">
-                        <img src="assets/img/choose/1.jpg" alt="">
-                    </div>                      
-                </div>
-                <div class="single-choose-item">
-                    <div class="single-choose-inner">
-                        <h5><span>02</span>Exceptional Service</h5>                                                            
-                    </div>    
-                    <div class="choose-img">
-                        <img src="assets/img/choose/2.jpg" alt="">
-                    </div>                                          
-                </div>
-                <div class="single-choose-item">
-                    <div class="single-choose-inner">
-                        <h5><span>03</span>Quality Craftsmanship</h5>                                                            
-                    </div> 
-                    <div class="choose-img">
-                        <img src="assets/img/choose/3.jpg" alt="">
-                    </div>                                             
-                </div>
-                <div class="single-choose-item">
-                    <div class="single-choose-inner">
-                        <h5><span>04</span>Experienced Team</h5>                                                            
-                    </div>  
-                    <div class="choose-img">
-                        <img src="assets/img/choose/4.jpg" alt="">
-                    </div>                                            
+                <div class="offset-xl-1 col-xl-8 offset-lg-1 col-lg-8">
+                    <div class="single-choose-item">
+                        <div class="single-choose-inner">
+                            <h5><span>01</span>Process Expertise</h5> 
+                            <p>The deep process expertise means our products are embedded with an inherent
+                                vision for scaling up or adapting to future needs of your business,
+                                thus ensuring an enduring technology for the processes.</p>                                                           
+                        </div>  
+                        <div class="choose-img">
+                            <img src="assets/img/choose/1.jpg" alt="">
+                        </div>                      
+                    </div>
+                    <div class="single-choose-item">
+                        <div class="single-choose-inner">
+                            <h5><span>02</span>Advanced CFD Anlaysis</h5>
+                            <p>Using next generation Computational Fluid Dynamics(CFD) techniques SAKA is able to simulate and analyse the material behavior and properties in the process.</p>                                                                
+                        </div>    
+                        <div class="choose-img">
+                            <img src="assets/img/choose/2.jpg" alt="">
+                        </div>                                          
+                    </div>
+                    <div class="single-choose-item">
+                        <div class="single-choose-inner">
+                            <h5><span>03</span>Intelligent Automation</h5> 
+                            <p>SAKA's focus in automation is to leverage advanced PLC/SCADA technology to build intelligent drying processes that ensure highest efficiency in operations and best quality output.</p>                                                           
+                        </div> 
+                        <div class="choose-img">
+                            <img src="assets/img/choose/3.jpg" alt="">
+                        </div>                                             
+                    </div>
+                    <div class="single-choose-item">
+                        <div class="single-choose-inner">
+                            <h5><span>04</span>World Class Quality</h5> 
+                            <p>Being world-class is core to our strategy.We have established an extensive system of checks to ensure only the highest quality in our sourcing,manufacturing and site work.</p>                                                           
+                        </div>  
+                        <div class="choose-img">
+                            <img src="assets/img/choose/4.jpg" alt="">
+                        </div>                                            
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>    
-
 <!-- Counter Section -->
 
 <div class="counter-section section-padding pt-0 pb-50">
