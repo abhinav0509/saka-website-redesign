@@ -34,7 +34,7 @@
        <script src="<?php echo base_url(); ?>Style/dist/assets/plugins/flot/jquery.flot.resize.js"></script>
        <script src="<?php echo base_url(); ?>Style/dist/assets/plugins/raphael/raphael-min.js"></script>
        <script src="<?php echo base_url(); ?>Style/dist/assets/plugins/morris/morris.min.js"></script>
-       <script src="<?php echo base_url(); ?>Style/demo/js/dashboard.js"></script>
+       <!-- <script src="<?php echo base_url(); ?>Style/demo/js/dashboard.js"></script> -->
 </body>
 
 

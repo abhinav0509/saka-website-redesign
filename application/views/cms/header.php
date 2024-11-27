@@ -26,7 +26,7 @@ else
   <link rel="stylesheet" href="<?php echo base_url();?>assetss/css/components.css">
   <!-- Custom style CSS -->
   <link rel="stylesheet" href="<?php echo base_url();?>assetss/css/custom.css">
-  <script src="<?php echo base_url(); ?>Style/js/jquery-1.10.2.min.js"></script>
+  <!-- <script src="<?php echo base_url(); ?>Style/js/jquery-1.10.2.min.js"></script> -->
         <script src="<?php echo base_url(); ?>Style/dist/assets/libs/jquery/jquery.min.js"></script>
         <script src="<?php echo base_url(); ?>Style/ckeditor/ckeditor.js"></script>
 		
