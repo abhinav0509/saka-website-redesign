@@ -166,8 +166,9 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
     </div>
 
-    <!-- Counter Section -->
-
+    
+<!--    Counter Section -->
+ 
     <div class="counter-section section-padding pt-0 pb-50">
     <div class="container">
         <div class="row gx-5">                
