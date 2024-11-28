@@ -58,8 +58,8 @@
             <div class="navigation">
                 <div class="container">
                     <div class="header-inner-box">
-
-                        <a href="<?php echo base_url();?>" class="logo"><img src="<?php echo base_url();?>uploads/About/logo1.png" style="height:50px; width:150px;"></a>           
+                                   
+                        <a href="<?php echo base_url();?>" class="logo"><img src="<?php echo base_url();?>assets/img/about/saka-logo-hd.png" style="height:150x; width:150px;"></a>           
 
                         <div class="main-menu d-none d-lg-block">
                             <ul>

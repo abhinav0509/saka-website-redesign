@@ -820,7 +820,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="200ms">
                 <div class="single-team-item">
                     <div class="team-img">
-                    <img src="assets/img/team/1642580790698.jfif" alt="">
+                   
+                    <img src=" <?php echo base_url();?>assets/img/team/anand-sir.jpg" alt="anand sir-Image">
                     </div>
                     <div class="team-info">
                     <h5>Anand Thigale</h5>
