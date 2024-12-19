@@ -16,6 +16,7 @@
 </div>
 
 <!-- Hero Area  -->
+ 
 <div id="about_page" class="hero-area">
     <div class="container">
         <div class="row hero-area-inner">
@@ -41,7 +42,7 @@
 A singular focus, to keep your business goals and needs at the center in developing the technology for your processes,
 is the driving force of SAKA’s solutions.The commitment to be always aligned to Customer’s purpose has earned us a 85% repeat business,
 even as the base of customers doubled every year since the inception.</p>
-                <p>WORLD-LEADING PROCESS SOLUTIONS By challenging the conventional norms, SAKA RETHINKS, REINVENTS and REDEFINES the process engineering and technology to unfold new benchmarks for your systems in reliability, efficiency and quality.</p>
+                <p><b> WE BRING WORLD-LEADING PROCESS SOLUTIONS</b> By challenging the conventional norms, <b>SAKA RETHINKS, REINVENTS and REDEFINES </b> the process engineering and technology to unfold new benchmarks for your systems in reliability, efficiency and quality.</p>
                 <p> </p>
         </div>          
     </div>                
@@ -189,13 +190,13 @@ even as the base of customers doubled every year since the inception.</p>
                             <h2 class="accordion-header" id="headingOne">
                               <button class="accordion-buttons" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                   <span>01</span>
-                                  Architectural Design
+                                  Granulation System
                               </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                               <div class="accordion-body">
                                   <img src="assets/img/service/1.jpg" alt="">
-                                  <p>Morbi et faucibus ex. Proin ut enim fermentum, pretium orci sed, suscipit nisl. Etiam ut nulla a dolor consectetur consequat at id ex. Maecenas porttitor, ligula eu dictum vehicula, massa tellus gravida lectus, eget tincidunt mauris eros sit amet turpis. Pellentesque habitant morbi tristique senectus.</p>
+                                  <p> SAKA offers complete turn key solution for granulation systems right from drying till packing of granules. Our systems are widely used for granule formation for chemicals like Calcium Chloride, Magnesium Chloride, Calcium Nitrate etc. SAKA’s Granulation systems are custom built to provide desired size of granules.</p>
                               </div>
                             </div>
                           </div>
@@ -204,13 +205,13 @@ even as the base of customers doubled every year since the inception.</p>
                           <h2 class="accordion-header" id="headingTwo">
                             <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 <span>02</span>
-                                Interior Design                                  
+                                Spray Dryer                                
                             </button>
                           </h2>
                           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <img src="assets/img/service/2.jpg" alt="">
-                                <p>Mauris faucibus nisl eu mi egestas blandit. Quisque consectetur urna ac viverra iaculis. Ut turpis velit, consectetur ut tempus a, cursus id nulla. Proin imperdiet magna sit amet mollis luctus. Quisque id leo quis diam dapibus ultricies fringilla vitae neque. Aenean non sollicitudin quam, quis.</p>
+                                <p>SAKA’s Spray Dryers are designed to serve your specific process needs to deliver best output efficiency, with optimum operational costs and no product wastage.</p>
                             </div>
                           </div>
                         </div>
@@ -219,13 +220,13 @@ even as the base of customers doubled every year since the inception.</p>
                           <h2 class="accordion-header" id="headingThree">
                             <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 <span>03</span>
-                                Project Management
+                                Rotary Dryer
                             </button>
                           </h2>
                           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <img src="assets/img/service/3.jpg" alt="">
-                                <p>Morbi et faucibus ex. Proin ut enim fermentum, pretium orci sed, suscipit nisl. Etiam ut nulla a dolor consectetur consequat at id ex. Maecenas porttitor, ligula eu dictum vehicula, massa tellus gravida lectus, eget tincidunt mauris eros sit amet turpis. Pellentesque habitant morbi tristique senectus.</p>
+                                <p>Rotary Dryers are known for their robust construction. Rotary dryers are able achieve to very high temperature. SAKA offers wide range of Rotary Dryers that are designed to deliver best output, efficiently.</p>
                             </div>
                           </div>
                         </div>
@@ -233,13 +234,13 @@ even as the base of customers doubled every year since the inception.</p>
                           <h2 class="accordion-header" id="headingFour">
                             <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 <span>04</span>
-                                Historic Preservation
+                                Fluid Bed Dryer
                             </button>
                           </h2>
                           <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <img src="assets/img/service/4.jpg" alt="">
-                                <p>Morbi et faucibus ex. Proin ut enim fermentum, pretium orci sed, suscipit nisl. Etiam ut nulla a dolor consectetur consequat at id ex. Maecenas porttitor, ligula eu dictum vehicula, massa tellus gravida lectus, eget tincidunt mauris eros sit amet turpis. Pellentesque habitant morbi tristique senectus.</p>
+                                <p>SAKA make Fluid Bed Dryers are ideal for agglomeration, granulation or dry powder formation. Fully customized to meet your specific requirement and trusted by many companies in India and abroad.</p>
                             </div>
                           </div>
                         </div>
@@ -247,13 +248,15 @@ even as the base of customers doubled every year since the inception.</p>
                           <h2 class="accordion-header" id="headingFive">
                             <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                 <span>05</span>
-                                Landscape Design
+                                Coolers
                             </button>
                           </h2>
                           <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <img src="assets/img/service/5.jpg" alt="">
-                                <p>Morbi et faucibus ex. Proin ut enim fermentum, pretium orci sed, suscipit nisl. Etiam ut nulla a dolor consectetur consequat at id ex. Maecenas porttitor, ligula eu dictum vehicula, massa tellus gravida lectus, eget tincidunt mauris eros sit amet turpis. Pellentesque habitant morbi tristique senectus.</p>
+                                <p>Get easy to operate and maintain coolers from SAKA. Our coolers are manufactured with latest technology and superior material quality
+
+</p>
                             </div>
                           </div>
                         </div>
@@ -364,7 +367,7 @@ even as the base of customers doubled every year since the inception.</p>
     </div>
 </div>
 
-<!-- Team Section  -->
+<!-- Team Section 
 
 <div class="team-section section-padding pt-100 pb-100">
     <div class="container">
@@ -462,7 +465,7 @@ even as the base of customers doubled every year since the inception.</p>
         </div>
     </div>
     </div>
-</div>
+</div> -->
 
 <!-- Award Section  -->
 
