@@ -261,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <div class="services-text-container">
                                     <h4 class="services-title">Spray Dryer</h4>
                                     <p class="text-gray mb-0">
-                                        The core identity reflects consistent  associations with the brand whereas the extended identity involves the intricate details of the brand that help generate a constant motif.
+                                    SAKA’s Spray Dryers are designed to serve your specific process needs to deliver best output efficiency, with optimum operational costs and no product wastage
                                     </p>
                                 </div>
                             </div>                            
@@ -274,7 +274,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <div class="services-text-container">
                                     <h4 class="services-title">Rotary Dryer</h4>
                                     <p class="text-gray mb-0">
-                                        The core identity reflects consistent  associations with the brand whereas the extended identity involves the intricate details of the brand that help generate a constant motif.
+                                    Rotary Dryers are known for their robust construction. Rotary dryers are able achieve to very high temperature. SAKA offers wide range of Rotary Dryers that are designed to deliver best output, efficiently.
                                     </p>
                                 </div>
                             </div>                            
@@ -313,9 +313,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="tab-pane services-content-item fade" id="services-item-6" role="tabpanel">                            
                             <div class="services-text">
                                 <div class="services-text-container">
-                                    <h4 class="services-title">Flash Dryer</h4>
+                                    <h4 class="services-title">Rotary Dryer</h4>
                                     <p class="text-gray mb-0">
-                                        The core identity reflects consistent  associations with the brand whereas the extended identity involves the intricate details of the brand that help generate a constant motif.
+                                      SAKA make Fluid Bed Dryers are ideal for agglomeration, granulation or dry powder formation. Fully customized to meet your specific requirement and trusted by many companies in India and abroad.
                                     </p>
                                 </div>
                             </div>
@@ -820,7 +820,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="200ms">
                 <div class="single-team-item">
                     <div class="team-img">
-                    <img src="assets/img/team/1642580790698.jfif" alt="">
+                   
+                    <img src=" <?php echo base_url();?>assets/img/team/anand-sir.jpg" alt="anand sir-Image">
                     </div>
                     <div class="team-info">
                     <h5>Anand Thigale</h5>
@@ -927,7 +928,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="row">
                 <div class="col-xl-6">
                     <div class="section-title">                    
-                        <h2>Design Insight</h2>
+                        <h2>Saka Insights</h2>
                     </div>
                 </div>
             </div>

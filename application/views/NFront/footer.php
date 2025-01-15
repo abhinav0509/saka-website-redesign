@@ -69,7 +69,7 @@
     </div>
 
     </div>
-    </div>
+ </div>
 
     <!-- Search Dropdown Area -->
 
@@ -99,7 +99,7 @@
         </div>
         <div class="logo-side mb-30">
             <div class="logo">
-            <a href="<?php echo base_url();?>" class="logo"><img src="<?php echo base_url();?>uploads/About/logo1.png" style="height:60px; width:150px;"></a>
+            <a href="<?php echo base_url();?>" class="logo"><img src="<?php echo base_url();?>assets/img/about/saka-logo-hd.png" style="height:150x; width:150px;"></a>
             </div>
         </div>
         <div class="side-info">
