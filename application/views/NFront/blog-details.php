@@ -1,6 +1,8 @@
-<div id="smooth-content">
+
+    <div id="smooth-content">
 
     <!-- Breadcrumb Area  -->
+
     <div class="breadcrumb-area mt-50 mb-50">
         <div class="container">
             <div class="row">
@@ -22,16 +24,13 @@
             <div class="row gx-5 justify-content-around">
                 <div class="col-xl-4 col-lg-4 order-2 order-lg-1">
                     <div class="blog-sidebar">
-                        <!-- Search bar -->
                         <div class="search-bar-wrap d-flex">
                             <input type="search" placeholder="search">
                             <i class="fal fa-search"></i>
                         </div>
-
-                        <!-- Latest Post -->
                         <div class="latest-post-wrap">
                             <h5>Latest Post</h5>
-                            <div class="single-latest-post">                                 
+                            <div class="single-latest-post">                                
                                 <div class="latest-post-content">
                                     <div class="post-tag">
                                         <p>Space Planning</p>
@@ -49,153 +48,108 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Add more latest posts here... -->
-                        </div>
-
-                        <!-- Popular Tags -->
-                        <div class="popular-tag-wrap mt-60">
-                            <h5>Popular Tags</h5>
-                            <a href="#">design trends</a>
-                            <a href="#">sustainability</a>
-                            <a href="#">interior design</a>
-                            <a href="#">architecture</a>
-                            <!-- More tags -->
-                        </div>                        
+                            <div class="single-latest-post">                                
+                                <div class="latest-post-content">
+                                    <div class="post-tag">
+                                        <p>Historic Preservation</p>
+                                    </div>
+                                    <div class="post-title">
+                                        <h3><a href="blog-details.html">Preserving the Past: <br>Importance of Historic Restoration</a></h3>
+                                    </div>
+                                    <div class="blog-info">
+                                        <div class="blog-author">
+                                            <p>by Haily Johnson</p>
+                                        </div>
+                                        <div class="blog-date">
+                                            <p>April 17, 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-latest-post">                                
+                                <div class="latest-post-content">
+                                    <div class="post-tag">
+                                        <p>Space Planning</p>
+                                    </div>
+                                    <div class="post-title">
+                                        <h3><a href="blog-details.html">Designing for Accessibility: <br> Creating Inclusive Spaces</a></h3>
+                                    </div>
+                                    <div class="blog-info">
+                                        <div class="blog-author">
+                                            <p>by Jane Pullman</p>
+                                        </div>
+                                        <div class="blog-date">
+                                            <p>April 10, 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </div>                      
                     </div>
                 </div>
-
+                <?php if(!empty($result)){ foreach($result as $row){ ?> 
                 <div class="col-xl-8 col-lg-8 order-1 order-lg-2">
                     <div class="section-title">
-                        <h2>Creating a <br> Functional Home <br> Office Space <span><i class="las la-arrow-right"></i></span></h2>                        
+                        <h2><?php echo $row['title']; ?><span><i class="las la-arrow-right"></i></span></h2>                        
                     </div>
                     <hr>
                     <div class="blog-meta">
                         <div class="blog-info">
-                            <span>Sarah Roberts</span>                          
+                            <span><?php echo $row['name']; ?></span>
                         </div>
-                        <div class="blog-comments">
-                        <span>September 22, 2023</span>
+                        <div class="blog-date">
+                            <p>
+                                <?php 
+                                    // Check if 'insertdate' exists and is valid
+                                    if (isset($row['insertdate']) && !empty($row['insertdate'])) {
+                                        echo date('F j, Y', strtotime($row['insertdate']));
+                                    } else {
+                                        echo "Date not available";
+                                    }
+                                ?>
+                            </p>
                         </div>
                     </div>
-
-                    <!-- Working in Progress Section -->
-                    <div class="working-in-progress-banner">
-                        <h3>🚧 This section is currently under construction. Please check back later. 🚧</h3>
-                        <p>We are working hard to bring you the best content! Stay tuned!</p>
-                    </div>
-
                     <div class="blog-featured-img mt-30">
-                        <img src="<?php echo base_url();?>assets/img/blog/blog-feature.jpg" alt="">
+                        <img src="<?php echo base_url(); ?>uploads/Blog/<?php echo $row['image']; ?>" alt="ceo-letter">
                     </div>
-
                     <div class="blog-content">
-                        <h3>With the rise of remote work and flexible work arrangements.</h3>
-                        <p>Whether you're a full-time remote worker or a hybrid, designing a functional home office is crucial for productivity. Here are some tips to consider:</p>
-
-                        <!-- Placeholder for Content under Construction -->
-                        <div class="blog-content-inner">
-                            <h4><span>1.</span> Starts with basics</h4>
-                            <p>We're currently updating this section with the latest tips and advice. Stay tuned!</p>
-                            <h4><span>2.</span> Consider your storage needs</h4>
-                            <p>Our team is working on some fresh insights about optimizing home office storage.</p>
-                            <h4><span>3.</span> Design for productivity</h4>
-                            <p>More information coming soon on the best productivity-enhancing designs for your workspace!</p>
-                        </div>
+                        <p>Whether you'r a full time remote Suspendisse potenti. Aenean sodales euismod mi, sit amet dictum quam sodales id. Donec euismod velit nisi, in bibendum tortor efficitur in. Vivamus vulputate leo non pulvinar bibendum. Nam pharetra nulla a vestibulum molestie. Aenean pharetra.</p>
+                        <p>Here are some tips for creating a functional home office space:</p>
+                        <p>By following these tips and investing in a well-designed and functional home office space, you can ensure that you'r able to stay productive and focused in your work, no matter where you are.</p>
                     </div>
-
-                    <!-- Article Tags -->
-                    <div class="blog-tag-wrap">
-                        <h6>Article Tags</h6>
-                        <a href="#">home office</a>
-                        <a href="#">productivity</a>
-                        <a href="#">ergonomics</a>
-                        <a href="#">workspace design</a>
-                        <!-- More tags -->
-                    </div>
-                </div>                
+                </div>
+                <?php } }?>
+                
             </div>
         </div>
     </div>
 
+
     <!-- Newsletter Section  -->
+
     <div class="newsletter-section">
         <div class="container">
             <div class="row newsletter-inner gray-bg align-items-center">
                 <div class="col-xl-7 col-lg-7">
                     <div class="section-title">
-                        <h2>Stay Up-to-date <br> with Saka India <span><i class="las la-arrow-right"></i></span> </h2>
+                        <h2>Stay Up-to-date <br> with Archipix <span><i class="las la-arrow-right"></i></span> </h2>
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-5">
                     <div class="newsletter-content">
                         <p>Sign up for our newsletter to stay in the know about our latest projects, design insight and industry news. </p>
+                        <!-- <h3>We will deliver our best content straight to your inbox.</h3> -->
                         <div class="subscribed-form">
                             <form>
                                 <input type="text" placeholder="Type your Email">
                                 <input class="bordered-btn" type="submit" value="Sign Up">
                             </form>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-</div>
-
-<!-- Work In Progress Popup -->
-<div id="workInProgressPopup" class="modal">
-    <div class="modal-content">
-        <span class="close-btn" onclick="closePopup()">×</span>
-        <h3>🚧 This page is under construction 🚧</h3>
-        <p>We're working hard to bring you the best content. Please check back later!</p>
-    </div>
-</div>
-
-<!-- Add the following CSS for the popup modal -->
-<style>
-    .modal {
-        display: none;
-        position: fixed;
-        z-index: 1;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.5); /* Black with opacity */
-        overflow: auto;
-    }
-    .modal-content {
-        background-color: #fff;
-        margin: 15% auto;
-        padding: 20px;
-        border-radius: 5px;
-        width: 80%;
-        max-width: 500px;
-    }
-    .close-btn {
-        color: #aaa;
-        font-size: 28px;
-        font-weight: bold;
-        position: absolute;
-        right: 10px;
-        top: 5px;
-    }
-    .close-btn:hover,
-    .close-btn:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
-</style>
-
-<!-- Add the following JavaScript to show the popup -->
-<script>
-    window.onload = function() {
-        document.getElementById('workInProgressPopup').style.display = 'block';
-    }
-
-    function closePopup() {
-        document.getElementById('workInProgressPopup').style.display = 'none';
-    }
-</script>
+</div>  
+   

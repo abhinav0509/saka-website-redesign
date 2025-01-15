@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 
-    <title>Saka India | Process Engineering Solution</title>
+    <title>Saka Engineering Systems | Process Engineering Solution</title>
 
     <!--Favicon-->
     <link rel="icon" href="<?php echo base_url();?>assets/img/sakafavicon.ico" type="image/png">
@@ -90,7 +90,7 @@
                                 <li><a class="navlink" href="#">Blog</a>
                                     <ul class="sub-menu">
                                         <li><a href="<?php echo base_url();?>index.php/Blog">Blogs</a></li>
-                                        <li><a href="<?php echo base_url();?>index.php/Blog_details">Blog Details</a></li>
+                                        <!-- <li><a href="<?php echo base_url();?>index.php/Blog_details">Blog Details</a></li> -->
                                     </ul>
                                 </li>
                                

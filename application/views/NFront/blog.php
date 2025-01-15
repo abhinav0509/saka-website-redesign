@@ -50,7 +50,7 @@
                                 <p><?php echo date('F j, Y', strtotime($row->insertdate)); ?></p>
                                 </div>
                             </div> 
-                            <a href="<?php echo base_url();?>index.php/Blog_details" class="read-more-btn">Read More</a>                           
+                            <a href="<?php echo base_url();?>index.php/SingleBlog/<?php echo $row->Title;?>" class="read-more-btn">Read More</a>                           
                         </div>                        
                     </div>
                 </div>

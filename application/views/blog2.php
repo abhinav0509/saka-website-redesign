@@ -13,7 +13,10 @@
     j("#blog").addClass("active open");
     CKEDITOR.replace( 'testo');
     j('#cnm').val(j('#cnm1').val());
-
+    // j(".td_text").slimscroll({
+    // height: '70px',
+    // wheelStep: 1
+    // });
     // Datepicker initialization
     // var dt = new Date();
     // j('#doa').datepicker({
@@ -230,9 +233,6 @@ function show(input) {
   reader.readAsDataURL(input.files[0]);
   }
   }  
- 
-
-
  function search_data()
 {
             //j('#nm1').val(j('#nm').val());

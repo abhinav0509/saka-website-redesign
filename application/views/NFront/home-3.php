@@ -953,7 +953,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div> 
                         <h3><a href="blog-details.html"><?php echo $row->Title; ?></a></h3>
                         <p><?php echo $row->Content; ?></p>                                                       
-                        <a href="blog-details.html" class="read-more-btn">Read More</a>
+                        <a href="<?php echo base_url();?>index.php/SingleBlog/<?php echo $row->Title;?>" class="read-more-btn">Read More</a>
                     </div>                                           
                 </div>
                 <?php } } else {?>  
