@@ -3,7 +3,7 @@
 	color: #fff;
 	position: relative;
 	margin-top: -100px;
-    z-index: -1;
+    z-index: 1 !important;
     padding-top: 100px;
 	@media #{$md} {
 		padding: 100px 50px;		
