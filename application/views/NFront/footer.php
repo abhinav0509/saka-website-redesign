@@ -7,8 +7,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="<?php echo base_url();?>" class="logo"><img src="<?php echo base_url();?>uploads/About/logo1.png" style="height:75px; width:200px;"></a>
-                        <p>Get best solution for your process engineering requirements
-                        </p>
+                        <p>Get best solution for your process engineering requirements</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                         <h5>Office</h5>

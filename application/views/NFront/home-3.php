@@ -956,8 +956,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
                             </div>
                         </div> 
-                        <h3><a href="blog-details.html"><?php echo $row->Title; ?></a></h3>
-                        <p><?php echo $row->Content; ?></p>                                                       
+                        <h3><a href="<?php echo base_url();?>index.php/SingleBlog/<?php echo $row->Title;?>"><?php echo $row->Title; ?></a></h3>
+                        <p> <?php 
+                                                            $content = strip_tags($row->Content); 
+                                                            // Remove any extra spaces or line breaks within the content
+                                                            $content = preg_replace('/\s+/', ' ', $content); // This replaces multiple spaces with a single space
+                                                            
+                                                            $shortContent = substr($content, 0, 300); 
+                                                            if (strlen($content) > 300) { 
+                                                                $shortContent .= '...'; 
+                                                            } 
+                                                            echo $shortContent; 
+                                                        ?></p>                                                       
                         <a href="<?php echo base_url();?>index.php/SingleBlog/<?php echo $row->Title;?>" class="read-more-btn">Read More</a>
                     </div>                                           
                 </div>
