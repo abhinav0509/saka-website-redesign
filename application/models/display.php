@@ -4771,7 +4771,7 @@ public function get_stud_info1($name,$fid)
       if($urll!="")
       {
          $this->db->limit(1,0);
-         $this->db->select('tbl_blog.B_id,tbl_blog.title,tbl_blog.name,tbl_blog.content,tbl_blog.image');
+         $this->db->select('tbl_blog.B_id,tbl_blog.title,tbl_blog.name,tbl_blog.content,tbl_blog.image,tbl_blog.insertdate');
          $this->db->from('tbl_blog');
          $this->db->where(trim('tbl_blog.title'),trim($urll));
          $query = $this->db->get();
@@ -4779,7 +4779,7 @@ public function get_stud_info1($name,$fid)
       }
       else
       {
-         $this->db->select('tbl_blog.B_id,tbl_blog.title,tbl_blog.name,tbl_blog.content,tbl_blog.image');
+         $this->db->select('tbl_blog.B_id,tbl_blog.title,tbl_blog.name,tbl_blog.content,tbl_blog.image,tbl_blog.insertdate');
          $this->db->from('tbl_blog');
          $this->db->order_by('id','asc');
          $query = $this->db->get();

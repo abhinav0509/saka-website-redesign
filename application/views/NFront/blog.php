@@ -9,7 +9,7 @@
             <div class="row">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>                          
+                        <li class="breadcrumb-item"><a href="<?php echo base_url();?>">Home</a></li>                          
                         <li class="breadcrumb-item active" aria-current="page">Blog</li>
                     </ol>
                 </nav>
@@ -24,7 +24,7 @@
                 <div class="col-xl-9 col-lg-9">
                     <div class="hero-area-content">
                         <div class="section-title">                            
-                            <h1>Design Insight</h1>                            
+                            <h1>Saka India Insight</h1>                            
                         </div>
                     </div>
                 </div>                                    
@@ -55,13 +55,13 @@
                                                         ?></p> 
                             <div class="blog-info">
                                 <div class="blog-author">
-                                <p><?php echo $row->Name; ?></p>
+                                <p><b><?php echo $row->Name; ?></b></p>
                                 </div>
                                 <div class="blog-date">
-                                <p><?php echo date('F j, Y', strtotime($row->insertdate)); ?></p>
+                                <p><b><?php echo date('F j, Y', strtotime($row->insertdate)); ?></b></p>
                                 </div>
                             </div> 
-                            <a href="<?php echo base_url();?>index.php/SingleBlog/<?php echo $row->Title;?>" class="read-more-btn">Read More</a>                           
+                            <a href="<?php echo base_url();?>index.php/SingleBlog/<?php echo $row->Title;?>" class="read-more-btn" style="font-size: 18px;">Read More <i class="las la-arrow-right"></i></a>                           
                         </div>                        
                     </div>
                 </div>

@@ -968,7 +968,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                                             } 
                                                             echo $shortContent; 
                                                         ?></p>                                                       
-                        <a href="<?php echo base_url();?>index.php/SingleBlog/<?php echo $row->Title;?>" class="read-more-btn">Read More</a>
+                        <a href="<?php echo base_url();?>index.php/SingleBlog/<?php echo $row->Title;?>" class="read-more-btn" style="font-size: 18px;">Read More <i class="las la-arrow-right"></i></a>
                     </div>                                           
                 </div>
                 <?php } } else {?>  

@@ -8,11 +8,11 @@
             <div class="row">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>                          
-                        <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>                          
+                        <li class="breadcrumb-item"><a href="<?php echo base_url();?>">Home</a></li>                          
+                        <li class="breadcrumb-item"><a href="<?php echo base_url();?>index.php/Blog">Blog</a></li>                          
                         <li class="breadcrumb-item active" aria-current="page">Details</li>
                     </ol>
-                    <h4>Design Insight</h4>
+                    <h4>Saka India Insight</h4>
                 </nav>
             </div>
         </div>
@@ -95,18 +95,11 @@
                     <hr>
                     <div class="blog-meta">
                         <div class="blog-info">
-                            <span><?php echo $row['name']; ?></span>
+                            <span><b><?php echo $row['name']; ?></b></span>
                         </div>
                         <div class="blog-date">
-                            <p>
-                                <?php 
-                                    // Check if 'insertdate' exists and is valid
-                                    if (isset($row['insertdate']) && !empty($row['insertdate'])) {
-                                        echo date('F j, Y', strtotime($row['insertdate']));
-                                    } else {
-                                        echo "Date not available";
-                                    }
-                                ?>
+                            <p><b><?php echo date('F j, Y', strtotime($row['insertdate'])); ?></b>
+                               
                             </p>
                         </div>
                     </div>
