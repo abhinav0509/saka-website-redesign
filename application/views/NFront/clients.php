@@ -1,5 +1,6 @@
 
 <style>
+    
 .filter-button
 {
     
@@ -12,7 +13,9 @@
 }
 
 </style>
-    <div id="smooth-content">
+
+
+<div id="smooth-content">
 
     <!-- Breadcrumb Area  -->
 

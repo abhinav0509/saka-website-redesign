@@ -78,7 +78,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('NFront/footer');
 	}
     public function SingleBlog()
-{
+   {
 	$urll = trim(urldecode($this->uri->segment(2)));
 	if($this->uri->segment(2)!="")
 	{
@@ -95,6 +95,14 @@ class Welcome extends CI_Controller {
 	$this->load->view('NFront/blog-details',$data1);
 	$this->load->view('NFront/footer');
 }
+=======
+    public function ClientList()
+	{
+		$this->load->view('NFront/header');
+		$this->load->view('NFront/clients');
+		$this->load->view('NFront/footer');
+	}
+>>>>>>> 88ed326722cf7ad0d48cb9419e7b3a9bd5dbaece
 
 	
 }

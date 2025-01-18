@@ -41,7 +41,18 @@
                             <!-- <div class="blog-meta">
                                 <p>Architecture</p>
                             </div> -->
-                            <h3><a href="<?php echo base_url();?>index.php/Blog_details"><?php echo $row->Title; ?></a></h3>
+                            <h3><a href="<?php echo base_url();?>index.php/SingleBlog/<?php echo $row->Title;?>"><?php echo $row->Title; ?></a></h3>
+                            <p> <?php 
+                                                            $content = strip_tags($row->Content); 
+                                                            // Remove any extra spaces or line breaks within the content
+                                                            $content = preg_replace('/\s+/', ' ', $content); // This replaces multiple spaces with a single space
+                                                            
+                                                            $shortContent = substr($content, 0, 150); 
+                                                            if (strlen($content) > 150) { 
+                                                                $shortContent .= '...'; 
+                                                            } 
+                                                            echo $shortContent; 
+                                                        ?></p> 
                             <div class="blog-info">
                                 <div class="blog-author">
                                 <p><?php echo $row->Name; ?></p>

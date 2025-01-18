@@ -1,15 +1,15 @@
  <!-- Footer Area -->
 
- <footer class="footer-area">
-        <div class="container">
-            <div class="footer-up">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+
+ <footer class="footer-area" style="z-index:2;">
+    <div class="container">
+        <div class="footer-up">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12">
                     <a href="<?php echo base_url();?>" class="logo"><img src="<?php echo base_url();?>uploads/About/logo1.png" style="height:75px; width:200px;"></a>
-                        <p>Get best solution for your  <br> process engineering requirements
-                        </p>
-                    </div>
-                    <div class="col-lg-2 col-md-6">
+                        <p>Get best solution for your process engineering requirements</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12">
                         <h5>Office</h5>
                         <p>Corporate Office- <br>
                           TEERTH BUSINESS CENTER,UNIT 11, 5th FLOOR, EL BLOCK, MIDC Bhosari, Pune 411026, Maharashtra, India.
@@ -21,7 +21,7 @@
                             <p> +91 956 109 4128</p>
                         </div>
 
-                    </div>
+                </div>
                     <div class="col-lg-2 offset-lg-1 col-md-6 com-sm-12">
                         <h5>Links</h5>
                         <ul>
@@ -34,7 +34,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
+                    <div class="col-lg-2 col-md-6 col-sm-12">
                         <h5>Get in Touch</h5>
                         <ul>
                             <li>

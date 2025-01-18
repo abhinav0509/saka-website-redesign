@@ -1,37 +1,41 @@
 <style>
     
     #heroVideo{
-     position: relative;
-     top:0;
-     left:0;   
-     min-width: 100%;
-     max-width:100%;
-     z-index: -1;
+        position: relative;
+        top:0;
+        left:0;   
+        min-width: 100%;
+        max-width:100%;
+        z-index: -1;
 
      
     }
 
    .hero-area-banner{
-    position: absolute;
-    background-color: #ddd;
-    color: #fff;
-    width: 100%;
-    height: 800px;
-    display: table;
-    position: relative;
-    top:25%;
-    left:0;
-    z-index: 999;
+        position: absolute;
+        background-color: #ddd;
+        color: #fff;
+        width: 100%;
+        height: 800px;
+        display: table;
+        position: relative;
+        top:25%;
+        left:0;
+        z-index: 999;
     } 
     .counter-number {
-    font-size: 40px;
-    font-weight: bold;
-    color: #333;
-    transition: all 1s ease-in-out;
-}
+        font-size: 40px;
+        font-weight: bold;
+        color: #333;
+        transition: all 1s ease-in-out;
+   }
+   .services-text{
+        background-color:#e7e7e7;
+   }
 
 
 </style>
+
 <script>
     // Wait for the document to be ready
 document.addEventListener("DOMContentLoaded", function () {
@@ -72,9 +76,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 <div id="smooth-content">
 
-    <!-- Hero Area -->
+<!-- Hero Area -->
     
-    <div id="home-1" class="hero-area">
+<div id="home-1" class="hero-area" style="background-color:#FBFBFB;">
     <div class="container">
             <div class="row align-items-center justify-content-center hero-area-inner">
                 <div class="col-xl-10 col-lg-10 col-md-10 text-center wow fadeInUp animated" data-wow-delay="200ms">
@@ -84,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="p-animation">
                                 <p>Our team of expert engineers and designers works closely with clients to create robust, functional and state of art solutions<br> that are tailored to their specific process engineering needs.</p>
                             </div>  
-                            <a href="about.html" class="theme-btn mt-20">Start a Project</a>                                  
+                               <a href="about.html" class="theme-btn mt-20">Start a Project</a>                                  
                         </div>
                     </div>                                                      
                 </div>                
@@ -261,7 +265,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <div class="services-text-container">
                                     <h4 class="services-title">Spray Dryer</h4>
                                     <p class="text-gray mb-0">
-                                    SAKA’s Spray Dryers are designed to serve your specific process needs to deliver best output efficiency, with optimum operational costs and no product wastage
+                                      SAKA’s Spray Dryers are designed to serve your specific process needs to deliver best output efficiency, with optimum operational costs and no product wastage
                                     </p>
                                 </div>
                             </div>                            
@@ -952,8 +956,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
                             </div>
                         </div> 
-                        <h3><a href="blog-details.html"><?php echo $row->Title; ?></a></h3>
-                        <p><?php echo $row->Content; ?></p>                                                       
+                        <h3><a href="<?php echo base_url();?>index.php/SingleBlog/<?php echo $row->Title;?>"><?php echo $row->Title; ?></a></h3>
+                        <p> <?php 
+                                                            $content = strip_tags($row->Content); 
+                                                            // Remove any extra spaces or line breaks within the content
+                                                            $content = preg_replace('/\s+/', ' ', $content); // This replaces multiple spaces with a single space
+                                                            
+                                                            $shortContent = substr($content, 0, 300); 
+                                                            if (strlen($content) > 300) { 
+                                                                $shortContent .= '...'; 
+                                                            } 
+                                                            echo $shortContent; 
+                                                        ?></p>                                                       
                         <a href="<?php echo base_url();?>index.php/SingleBlog/<?php echo $row->Title;?>" class="read-more-btn">Read More</a>
                     </div>                                           
                 </div>
@@ -965,7 +979,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     <!-- Newsletter Section  -->
 
-    <div class="newsletter-section">
+    <div class="newsletter-section" style="z-index:200 !important;">
         <div class="container">
             <div class="row newsletter-inner gray-bg align-items-center">
                 <div class="col-xl-7 col-lg-7">

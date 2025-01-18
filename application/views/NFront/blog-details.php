@@ -114,9 +114,9 @@
                         <img src="<?php echo base_url(); ?>uploads/Blog/<?php echo $row['image']; ?>" alt="ceo-letter">
                     </div>
                     <div class="blog-content">
-                        <p>Whether you'r a full time remote Suspendisse potenti. Aenean sodales euismod mi, sit amet dictum quam sodales id. Donec euismod velit nisi, in bibendum tortor efficitur in. Vivamus vulputate leo non pulvinar bibendum. Nam pharetra nulla a vestibulum molestie. Aenean pharetra.</p>
-                        <p>Here are some tips for creating a functional home office space:</p>
-                        <p>By following these tips and investing in a well-designed and functional home office space, you can ensure that you'r able to stay productive and focused in your work, no matter where you are.</p>
+                        <p><?php echo $row['content'];?></p>
+                        
+                        
                     </div>
                 </div>
                 <?php } }?>
