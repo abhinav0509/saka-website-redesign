@@ -77,7 +77,6 @@ class Welcome extends CI_Controller {
 		$this->load->view('NFront/project-details');
 		$this->load->view('NFront/footer');
 	}
-<<<<<<< HEAD
     public function SingleBlog()
 {
 	$urll = trim(urldecode($this->uri->segment(2)));
@@ -90,31 +89,12 @@ class Welcome extends CI_Controller {
 		$urll = '';
 	}
 	$this->load->Model('display');
-	// $data['spec']=$this->Front_mod->get_speciality();
 	$data['results']=$this->display->Blogdispaly_display();
 	$data1['result']=$this->display->get_singleblog($urll);
-	// $data['testi']=$this->Front_mod->get_depttesti($urll);
-	// $data['news']=$this->Front_mod->get_news();
-	// //$data['testi']=$this->Front_mod->get_testi();
-	// $data['acadtype']=$this->Front_mod->getacadType();
-	// $data['who']=$this->Front_mod->get_who();
-	// $data['category']=$this->Front_mod->get_package();
-	// $data['contact']=$this->Front_mod->get_contacts();
-	// $data['facilities']=$this->Front_mod->get_facility();
-	// $data['dept1']=$this->Front_mod->get_diagnostic();
-	// $data['id']=$this->Front_mod->get_hosid();
 	$this->load->view('NFront/header',$data);
 	$this->load->view('NFront/blog-details',$data1);
 	$this->load->view('NFront/footer');
 }
-=======
-    public function ClientList()
-	{
-		$this->load->view('NFront/header');
-		$this->load->view('NFront/clients');
-		$this->load->view('NFront/footer');
-	}
->>>>>>> 88ed326722cf7ad0d48cb9419e7b3a9bd5dbaece
 
 	
 }
