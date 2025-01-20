@@ -248,6 +248,54 @@ function show(input) {
     .datepicker {
     z-index: 9999 !important;
 }
+.copyCircleBTN {
+  border: 1px solid #555 !important;
+  background: #555 !important;
+  color: #fff;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  line-height: 31px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+.linkedinCircleBTN {
+  border: 1px solid #007BB6 !important;
+  background: #007BB6 !important;
+  color: #fff;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  line-height: 31px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+.twitterCircleBTN {
+  border: 1px solid #1DA1F2 !important;
+  background: #1DA1F2 !important;
+  color: #fff;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  line-height: 31px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+.fbCircleBTN {
+  border: 1px solid #3B5998 !important;
+  background: #3B5998 !important;
+  color: #fff;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  line-height: 31px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
     </style>
     
  <!-- Main Content -->
@@ -353,8 +401,14 @@ function show(input) {
                       <div class="article-user-details">
                         <div class="user-detail-name">
                           <a href="#"><?php echo $row->Name; ?></a>
-                        </div>                    
-                      </div>
+                        </div>
+                        <div class="row mt-1 blogShareLinkContainer" style="margin-top: -1.75rem !important; margin-left: 180px;">
+                          <a href="javascript:;" class="btn btn-warning btn-circle fbCircleBTN" data-toggle="tooltip" data-placement="top" title="Share On Facebook" onclick=""><i class="fab fa-facebook-f"></i></a>
+                          <a href="javascript:;" class="btn btn-warning btn-circle twitterCircleBTN" data-toggle="tooltip" data-placement="top" title="Share On Twitter" onclick=""><i class="fab fa-twitter"></i></a>
+                          <a href="javascript:;" class="btn btn-warning btn-circle linkedinCircleBTN" data-toggle="tooltip" data-placement="top" title="Share On Linkedin" onclick=""><i class="fab fa-linkedin-in"></i></a>
+                          <a href="javascript:;" class="btn btn-warning btn-circle copyCircleBTN" data-toggle="tooltip" data-placement="top" title="Copy Link" data-value=""><i class="fa fa-fw fa-link"></i></a>
+                        </div>                                                 
+                      </div>                                    
                     </div>
                   </div>
                 </article>

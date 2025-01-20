@@ -941,7 +941,7 @@ document.addEventListener("DOMContentLoaded", function () {
 						   ?>                              
                 <div class="single-blog-item pt-40 pb-40"> 
                     <div class="blog-bg">
-                    <img src="<?php echo base_url(); ?>uploads/Blog/<?php echo $row->Image; ?>" alt="ceo-letter">
+                    <img src="<?php echo base_url(); ?>uploads/Blog/<?php echo $row->Image; ?>" alt="ceo-letter" style="border-radius: 5px;">
                     </div>                       
                     <div class="blog-content">                        
                         <!-- <div class="blog-meta">

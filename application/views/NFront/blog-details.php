@@ -1,4 +1,77 @@
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Find the Copy Link button
+        const copyLinkButton = document.querySelector('.copyCircleBTN');
 
+        // Attach click event listener
+        copyLinkButton.addEventListener('click', function () {
+            // Get the current URL
+            const url = window.location.href;
+
+            // Create a temporary input element to copy the URL
+            const tempInput = document.createElement('input');
+            tempInput.value = url;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            // Optionally, alert the user that the link has been copied
+            alert('Link copied to clipboard!');
+        });
+    });
+</script>
+
+<style>
+    .copyCircleBTN {
+        border: 1px solid #555 !important;
+        background: #555 !important;
+        color: #fff;
+        margin-left: 5px;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        line-height: 31px;
+        border-radius: 50px;
+        vertical-align: middle;
+    }
+    .linkedinCircleBTN {
+        border: 1px solid #007BB6 !important;
+        background: #007BB6 !important;
+        color: #fff;
+        margin-left: 5px;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        line-height: 31px;
+        border-radius: 50px;
+        vertical-align: middle;
+    }
+    .twitterCircleBTN {
+        border: 1px solid #1DA1F2 !important;
+        background: #1DA1F2 !important;
+        color: #fff;
+        margin-left: 5px;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        line-height: 31px;
+        border-radius: 50px;
+        vertical-align: middle;
+    }
+    .fbCircleBTN {
+        border: 1px solid #3B5998 !important;
+        background: #3B5998 !important;
+        color: #fff;
+        margin-left: 5px;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        line-height: 31px;
+        border-radius: 50px;
+        vertical-align: middle;
+    }
+</style>
     <div id="smooth-content">
 
     <!-- Breadcrumb Area  -->
@@ -107,10 +180,14 @@
                         <img src="<?php echo base_url(); ?>uploads/Blog/<?php echo $row['image']; ?>" alt="ceo-letter">
                     </div>
                     <div class="blog-content">
-                        <p><?php echo $row['content'];?></p>
-                        
-                        
-                    </div>
+                        <p><?php echo $row['content'];?></p>                          
+                    </div><br><br>
+                   <div class="row mt-1 blogShareLinkContainer" style="margin-top: -1.75rem !important; margin-left: 180px;">
+                    <a href="javascript:;" class="btn btn-warning btn-circle fbCircleBTN" data-toggle="tooltip" data-placement="top" title="Share On Facebook" onclick=""><i class="fab fa-facebook-f"></i></a>
+                    <a href="javascript:;" class="btn btn-warning btn-circle twitterCircleBTN" data-toggle="tooltip" data-placement="top" title="Share On Twitter" onclick=""><i class="fa fa-twitter"></i></a>
+                    <a href="javascript:;" class="btn btn-warning btn-circle linkedinCircleBTN" data-toggle="tooltip" data-placement="top" title="Share On Linkedin" onclick=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href="javascript:;" class="btn btn-warning btn-circle copyCircleBTN" data-toggle="tooltip" data-placement="top" title="Copy Link" data-value=""><i class="fa fa-fw fa-link"></i></a>
+                </div>
                 </div>
                 <?php } }?>
                 
