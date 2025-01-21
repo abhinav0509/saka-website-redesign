@@ -30,7 +30,7 @@
     <!-- Style CSS -->
     <link href="<?php echo base_url('assets/css/style.css')?>" rel="stylesheet">
 
-
+    <!-- <link href="<?php echo base_url('assetss/css/app.min.css')?>" rel="stylesheet"> -->
     <!-- jquery -->
     <script src="<?php echo base_url('assets/js/jquery-1.12.4.min.js')?>"></script>
 </head>

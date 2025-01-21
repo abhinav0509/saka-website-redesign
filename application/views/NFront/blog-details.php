@@ -1,9 +1,15 @@
+
+<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+
+<!-- SweetAlert2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.js"></script>
+
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         // Find the Copy Link button
         const copyLinkButton = document.querySelector('.copyCircleBTN');
 
-        // Attach click event listener
+        // Attach click event listener for the Copy Link button
         copyLinkButton.addEventListener('click', function () {
             // Get the current URL
             const url = window.location.href;
@@ -16,8 +22,29 @@
             document.execCommand('copy');
             document.body.removeChild(tempInput);
 
-            // Optionally, alert the user that the link has been copied
-            alert('Link copied to clipboard!');
+            // Show SweetAlert popup after copying the link
+            Swal.fire({
+                icon: 'success',
+                title: 'Link copied to clipboard!',
+                showConfirmButton: false,
+                timer: 1500
+            });
+        });
+
+        // Add click event for Facebook share
+        const fbButton = document.querySelector('.fbCircleBTN');
+        fbButton.addEventListener('click', function () {
+            const url = window.location.href;
+            const fbShareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+            window.open(fbShareUrl, '_blank');
+        });
+
+        // Add click event for LinkedIn share
+        const linkedinButton = document.querySelector('.linkedinCircleBTN');
+        linkedinButton.addEventListener('click', function () {
+            const url = window.location.href;
+            const linkedinShareUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`;
+            window.open(linkedinShareUrl, '_blank');
         });
     });
 </script>
@@ -95,75 +122,11 @@
     <div class="blog-details-page">
         <div class="container">
             <div class="row gx-5 justify-content-around">
-                <div class="col-xl-4 col-lg-4 order-2 order-lg-1">
-                    <div class="blog-sidebar">
-                        <div class="search-bar-wrap d-flex">
-                            <input type="search" placeholder="search">
-                            <i class="fal fa-search"></i>
-                        </div>
-                        <div class="latest-post-wrap">
-                            <h5>Latest Post</h5>
-                            <div class="single-latest-post">                                
-                                <div class="latest-post-content">
-                                    <div class="post-tag">
-                                        <p>Space Planning</p>
-                                    </div>
-                                    <div class="post-title">
-                                        <h3><a href="blog-details.html">Maximizing Small Spaces: <br> Creative Design Solutions</a></h3>
-                                    </div>
-                                    <div class="blog-info">
-                                        <div class="blog-author">
-                                            <p>by Jane Pullman</p>
-                                        </div>
-                                        <div class="blog-date">
-                                            <p>May 1, 2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-latest-post">                                
-                                <div class="latest-post-content">
-                                    <div class="post-tag">
-                                        <p>Historic Preservation</p>
-                                    </div>
-                                    <div class="post-title">
-                                        <h3><a href="blog-details.html">Preserving the Past: <br>Importance of Historic Restoration</a></h3>
-                                    </div>
-                                    <div class="blog-info">
-                                        <div class="blog-author">
-                                            <p>by Haily Johnson</p>
-                                        </div>
-                                        <div class="blog-date">
-                                            <p>April 17, 2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="single-latest-post">                                
-                                <div class="latest-post-content">
-                                    <div class="post-tag">
-                                        <p>Space Planning</p>
-                                    </div>
-                                    <div class="post-title">
-                                        <h3><a href="blog-details.html">Designing for Accessibility: <br> Creating Inclusive Spaces</a></h3>
-                                    </div>
-                                    <div class="blog-info">
-                                        <div class="blog-author">
-                                            <p>by Jane Pullman</p>
-                                        </div>
-                                        <div class="blog-date">
-                                            <p>April 10, 2023</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>                           
-                        </div>                      
-                    </div>
-                </div>
+            <?php $this->load->view('NFront/sidebar');?>
                 <?php if(!empty($result)){ foreach($result as $row){ ?> 
                 <div class="col-xl-8 col-lg-8 order-1 order-lg-2">
                     <div class="section-title">
-                        <h2><?php echo $row['title']; ?><span><i class="las la-arrow-right"></i></span></h2>                        
+                        <h3 class="breadcrumb"><?php echo $row['title']; ?></h3>                        
                     </div>
                     <hr>
                     <div class="blog-meta">
@@ -184,9 +147,9 @@
                     </div><br><br>
                    <div class="row mt-1 blogShareLinkContainer" style="margin-top: -1.75rem !important; margin-left: 180px;">
                     <a href="javascript:;" class="btn btn-warning btn-circle fbCircleBTN" data-toggle="tooltip" data-placement="top" title="Share On Facebook" onclick=""><i class="fab fa-facebook-f"></i></a>
-                    <a href="javascript:;" class="btn btn-warning btn-circle twitterCircleBTN" data-toggle="tooltip" data-placement="top" title="Share On Twitter" onclick=""><i class="fa fa-twitter"></i></a>
+                    <a href="javascript:;" class="btn btn-warning btn-circle twitterCircleBTN" data-toggle="tooltip" data-placement="top" title="Share On Twitter" onclick=""><i class="fab fa-twitter"></i></a>
                     <a href="javascript:;" class="btn btn-warning btn-circle linkedinCircleBTN" data-toggle="tooltip" data-placement="top" title="Share On Linkedin" onclick=""><i class="fab fa-linkedin-in"></i></a>
-                    <a href="javascript:;" class="btn btn-warning btn-circle copyCircleBTN" data-toggle="tooltip" data-placement="top" title="Copy Link" data-value=""><i class="fa fa-fw fa-link"></i></a>
+                    <a href="javascript:;" class="btn btn-warning btn-circle copyCircleBTN" data-toggle="tooltip" data-placement="top" title="Copy Link" data-value=""><i class="fas fa-link"></i></a>
                 </div>
                 </div>
                 <?php } }?>
@@ -203,7 +166,7 @@
             <div class="row newsletter-inner gray-bg align-items-center">
                 <div class="col-xl-7 col-lg-7">
                     <div class="section-title">
-                        <h2>Stay Up-to-date <br> with Archipix <span><i class="las la-arrow-right"></i></span> </h2>
+                        <h2>Stay Up-to-date <br> with Saka India <span><i class="las la-arrow-right"></i></span> </h2>
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-5">

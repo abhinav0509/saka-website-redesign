@@ -1,13 +1,117 @@
+<script>
+$(document).ready(function(){
+    $(".contctus").addClass("active");
+
+    $("#btnContus").click(function(event){
+        event.preventDefault();  // Prevent form submission to keep it on the page
+        var flag = true;
+        var str = /^([\w-\.]+)@((
+
+\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]
+
+?)$/;
+
+        // Validate name
+        if ($("#txtcname").val().match('^[a-z A-Z]{3,16}$')) {
+            $('#txtcname').removeClass('invalid').addClass('valid');
+        } else {
+            $('#txtcname').removeClass('valid').addClass('invalid');
+            flag = false;
+        }
+
+        // Validate email
+        if ($("#txtcemail").val() !== "" && $("#txtcemail").val().match(str)) {
+            $('#txtcemail').removeClass('invalid').addClass('valid');
+        } else {
+            $('#txtcemail').removeClass('valid').addClass('invalid');
+            flag = false;
+        }
+
+        // Validate mobile
+        if ($("#txtcmobile").val().match('^[0-9]{10}$')) {
+            $('#txtcmobile').removeClass('invalid').addClass('valid');
+        } else {
+            $('#txtcmobile').removeClass('valid').addClass('invalid');
+            flag = false;
+        }
+
+        // Validate message
+        if ($("#txtcmessage").val() !== "") {
+            $('#txtcmessage').removeClass('invalid').addClass('valid');
+        } else {
+            $('#txtcmessage').removeClass('valid').addClass('invalid');
+            flag = false;
+        }
+
+        // If everything is valid, submit the form
+        if (flag) {
+            concmsinsert();
+        }
+    });
+});
+
+function concmsinsert() {
+    $("#btnContus").attr('disabled', true);
+    $("#loaderImg").show();
+
+    $.ajax({
+        url: "<?= base_url();?>index.php/Insert/insert_enquiry",
+        data: {
+            'name': $("#txtcname").val(),
+            'email': $("#txtcemail").val(),
+            'mobile': $("#txtcmobile").val(),
+            'subject': $("#txtcsubject").val(),
+            'message': $("#txtcmessage").val(),
+        },
+        type: "POST",
+        success: function(data) {
+            var obj = $.parseJSON(data);
+            if (obj.msg == "Success") {
+                swal({
+                    title: "Success",
+                    type: "success",
+                    text: "Enquiry Sent Successfully...!!!"
+                });
+
+                // Reset form
+                $("#txtcname").val("");
+                $("#txtcemail").val("");
+                $("#txtcmobile").val("");
+                $("#txtcsubject").val("");
+                $("#txtcmessage").val("");
+                $("#btnContus").attr('disabled', false);
+                $("#loaderImg").hide();
+            } else {
+                swal({
+                    title: "Error",
+                    type: "error",
+                    text: "Error!!! Please Try Again"
+                });
+                $("#btnContus").attr('disabled', false);
+                $("#loaderImg").hide();
+            }
+        },
+        error: function() {
+            swal({
+                title: "Error",
+                type: "error",
+                text: "Something went wrong, please try again!"
+            });
+            $("#btnContus").attr('disabled', false);
+            $("#loaderImg").hide();
+        }
+    });
+}
+</script>
+
+
 <div id="smooth-content">
-
-    <!-- Breadcrumb Area  -->
-
     <div class="breadcrumb-area mt-50">
         <div class="container">
             <div class="row">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>                          
+                        <li class="breadcrumb-item"><a href="<?php echo base_url();?>">Home</a></li>                          
                         <li class="breadcrumb-item active" aria-current="page">Contact</li>
                     </ol>
                 </nav>
@@ -15,15 +119,13 @@
         </div>
     </div>
 
-    <!-- Contact Section  -->
-
     <div class="contact-section section-padding pt-0">
         <div class="container">
             <div class="col-xl-12 col-lg-12">
                 <div class="section-title mt-20">
                     <h1>Contact Us <span><i class="las la-arrow-right"></i></span></h1>
                 </div>
-            </div>  
+            </div>
             <div class="row justify-content-center mt-60">
                 <div class="col-xl-12">
                     <img src="assets/img/contact-bg.jpg" alt="">
@@ -32,7 +134,7 @@
             <div class="row mt-60">
                 <div class="col-xl-5 col-lg-5">
                     <div class="contact-text">
-                        <p>Have a question about our services or want to get started on you design project? We are here to help! Fill out the contact form below and one of our team members will get back to you within 24 hours. Alternatively, you can reach out to us via phone or email using the contact information provided below. We can't wait to hear from you!</p>
+                        <p>Have a question about our services or want to get started on your design project? We are here to help! Fill out the contact form below and one of our team members will get back to you within 24 hours. Alternatively, you can reach out to us via phone or email using the contact information provided below. We can't wait to hear from you!</p>
                     </div>
                 </div>
                 <div class="offset-xl-1 col-xl-6 offset-lg-1 col-lg-6">
@@ -40,12 +142,13 @@
                         <div class="section-title">
                             <h2>Submit Form <span><i class="las la-arrow-right"></i></span></h2>
                         </div>
-                        <form action="#">
-                            <input type="text" placeholder="Your Name">
-                            <input type="email" placeholder="Email">
-                            <input type="tel" placeholder="Phone Number">
-                            <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
-                            <input type="submit" value="Submit">
+                        <form action="" method="POST" id="enqForm">
+                            <input id="txtcname" name="cname" placeholder="Name" required="" title="Please Enter Characters Only" type="text" pattern="[a-zA-Z ]+">
+                            <input id="txtcemail" name="cemail" placeholder="Email address" title="Please Enter Correct EmailID" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                            <input id="txtcmobile" name="cmobile" placeholder="Enter 10 digit Mobile No." title="Enter 10 Digit Mobile No." required="" type="text" pattern="[0789][0-9]{9}">
+                            <input id="txtcsubject" name="csubject" placeholder="Subject" required="" type="text">
+                            <textarea id="txtcmessage" name="cmessage" placeholder="Write message" required=""></textarea>
+                            <input type="submit" value="Submit" id="btnContus">
                         </form>
                     </div>
                 </div>
@@ -54,7 +157,7 @@
                 <div class="row mt-60">
                     <div class="col-xl-6">
                         <div class="google-map">
-                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60489.08514924353!2d73.78252437214617!3d18.638498712859604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b96902924cc3%3A0x4627f0e244db945c!2sTeerth%20Business%20Center%20Bhosari%20MIDC!5e0!3m2!1sen!2sin!4v1732009363155!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60489.08514924353!2d73.78252437214617!3d18.638498712859604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b96902924cc3%3A0x4627f0e244db945c!2sTeerth%20Business%20Center%20Bhosari%20MIDC!5e0!3m2!1sen!2sin!4v1732009363155!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                     <div class="col-xl-6">
@@ -71,10 +174,13 @@
                                     <p>Phone</p>
                                     <h4>
                                    Sales: +91 956 109 4128 <br>
+                                   Sales: +91 956 109 4128 <br>
 
-                                   Tel: +91-20-27110011<br>
-                                   Fax: +91-20- 27110013<br>
-                                   </h4>
+                                        Sales: +91 956 109 4128 <br>
+
+                                        Tel: +91-20-27110011<br>
+                                        Fax: +91-20- 27110013<br>
+                                    </h4>
                                 </div>
                                 <div class="single-contact-info">
                                     <p>Address</p>
@@ -84,8 +190,6 @@
                                      Gat No-65,Plot No.-01,PCS Chowk Dhanore (Alandi) Pune 412105 Maharashtra, India</h4>
                                     <h4><h5>Plant-2</h5>
                                      J58, 'S' Block, MIDC, Bhosari, Pune 411026, Maharashtra, India.</h4>
-
-                                   
                                 </div>  
                                 <div class="social-area">
                                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -126,5 +230,4 @@
                 </div>
             </div>
         </div>
-    </div>
- 
+</div>

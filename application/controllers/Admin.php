@@ -849,9 +849,9 @@ EOD;
         $data1["results"] = $this->display->About_Paging($config["per_page"], $page);
         $data1["links"] = $this->pagination->create_links();
 		$data=$this->globaldata;
-		$this->load->view('header1',$data);
-		$this->load->view('about',$data1);
-		$this->load->view('footer1');
+		$this->load->view('cms/header');
+		$this->load->view('about-us');
+		$this->load->view('cms/footer');
 	}
 	
 	public function Student_Enquiry()
