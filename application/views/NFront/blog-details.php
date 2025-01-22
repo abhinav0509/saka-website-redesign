@@ -47,7 +47,7 @@
             window.open(linkedinShareUrl, '_blank');
         });
     });
-</script>
+</script>                
 
 <style>
     .copyCircleBTN {
