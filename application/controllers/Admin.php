@@ -850,7 +850,7 @@ EOD;
         $data1["links"] = $this->pagination->create_links();
 		$data=$this->globaldata;
 		$this->load->view('cms/header');
-		$this->load->view('about-us');
+		$this->load->view('about');
 		$this->load->view('cms/footer');
 	}
 	
