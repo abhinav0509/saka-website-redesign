@@ -18,6 +18,7 @@
     </div>
 
     <!-- Hero Area  -->
+     
     <div id="blog_page" class="hero-area">
         <div class="container">
             <div class="row hero-area-inner">

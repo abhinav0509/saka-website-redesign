@@ -680,19 +680,19 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="col-12">
                 <div class="client-wrap owl-carousel">
                     <div class="single-client">
-                        <a href="#"><img src="assets/img/client/1.png" alt=""></a>
+                        <img src="<?php echo base_url();?>assets/img/client/aditya-birla-chemicals-logo.png" alt="adiya-birla-chemicals-logo">
                     </div>
                     <div class="single-client">
-                        <a href="#"><img src="assets/img/client/2.png" alt=""></a>
+                    <img src="<?php echo base_url();?>assets/img/client/godrej-logo.png" alt="">
                     </div>
                     <div class="single-client">
-                        <a href="#"><img src="assets/img/client/3.png" alt=""></a>
+                    <img src="<?php echo base_url();?>assets/img/client/DeepakNitrite-logo.png" alt="">
                     </div>
                     <div class="single-client">
-                        <a href="#"><img src="assets/img/client/4.png" alt=""></a>
+                    <img src="<?php echo base_url();?>assets/img/client/excel-crop-care.png" alt="">
                     </div>
                     <div class="single-client">
-                        <a href="#"><img src="assets/img/client/5.png" alt=""></a>
+                    <img src="<?php echo base_url();?>assets/img/client/aarti-logo.png" alt="">
                     </div>
                 </div>
             </div>

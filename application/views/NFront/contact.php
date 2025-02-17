@@ -5,11 +5,7 @@ $(document).ready(function(){
     $("#btnContus").click(function(event){
         event.preventDefault();  // Prevent form submission to keep it on the page
         var flag = true;
-        var str = /^([\w-\.]+)@((
-
-\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]
-
-?)$/;
+        var str = /^([a-zA-Z0-9._%+-]+)@([a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/;  // Corrected email regex
 
         // Validate name
         if ($("#txtcname").val().match('^[a-z A-Z]{3,16}$')) {
@@ -55,7 +51,8 @@ function concmsinsert() {
     $("#loaderImg").show();
 
     $.ajax({
-        url: "<?= base_url();?>index.php/Insert/insert_enquiry",
+        url: "<?= base_url();?>index.php/Insert/insert_enquiry",  // Ensure your PHP handler is correct
+        type: "POST",
         data: {
             'name': $("#txtcname").val(),
             'email': $("#txtcemail").val(),
@@ -63,29 +60,44 @@ function concmsinsert() {
             'subject': $("#txtcsubject").val(),
             'message': $("#txtcmessage").val(),
         },
-        type: "POST",
         success: function(data) {
-            var obj = $.parseJSON(data);
-            if (obj.msg == "Success") {
-                swal({
-                    title: "Success",
-                    type: "success",
-                    text: "Enquiry Sent Successfully...!!!"
-                });
+            try {
+                var obj = JSON.parse(data);  // Try parsing the response as JSON
+                if (obj.msg == "Success") {
+                    swal({
+                        title: "Success",
+                        text: "Enquiry Sent Successfully...!!!",
+                        icon: "success"
+                    }).then(function() {
+                        // Reset form fields
+                        $("#txtcname").val("");
+                        $("#txtcemail").val("");
+                        $("#txtcmobile").val("");
+                        $("#txtcsubject").val("");
+                        $("#txtcmessage").val("");
 
-                // Reset form
-                $("#txtcname").val("");
-                $("#txtcemail").val("");
-                $("#txtcmobile").val("");
-                $("#txtcsubject").val("");
-                $("#txtcmessage").val("");
-                $("#btnContus").attr('disabled', false);
-                $("#loaderImg").hide();
-            } else {
+                        // Enable button and hide loader
+                        $("#btnContus").attr('disabled', false);
+                        $("#loaderImg").hide();
+
+                        // Reload the page after successful form submission
+                        location.reload();
+                    });
+                } else {
+                    swal({
+                        title: "Error",
+                        text: "Error!!! Please Try Again",
+                        icon: "error"
+                    });
+                    $("#btnContus").attr('disabled', false);
+                    $("#loaderImg").hide();
+                }
+            } catch (e) {
+                // If JSON parsing fails, show an error
                 swal({
                     title: "Error",
-                    type: "error",
-                    text: "Error!!! Please Try Again"
+                    text: "Invalid response from server. Please try again.",
+                    icon: "error"
                 });
                 $("#btnContus").attr('disabled', false);
                 $("#loaderImg").hide();
@@ -94,8 +106,8 @@ function concmsinsert() {
         error: function() {
             swal({
                 title: "Error",
-                type: "error",
-                text: "Something went wrong, please try again!"
+                text: "Something went wrong, please try again!",
+                icon: "error"
             });
             $("#btnContus").attr('disabled', false);
             $("#loaderImg").hide();
@@ -103,7 +115,6 @@ function concmsinsert() {
     });
 }
 </script>
-
 
 <div id="smooth-content">
     <div class="breadcrumb-area mt-50">
@@ -144,7 +155,7 @@ function concmsinsert() {
                         </div>
                         <form action="" method="POST" id="enqForm">
                             <input id="txtcname" name="cname" placeholder="Name" required="" title="Please Enter Characters Only" type="text" pattern="[a-zA-Z ]+">
-                            <input id="txtcemail" name="cemail" placeholder="Email address" title="Please Enter Correct EmailID" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                            <input id="txtcemail" name="cemail" placeholder="Email address" title="Please Enter Correct EmailID" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}">
                             <input id="txtcmobile" name="cmobile" placeholder="Enter 10 digit Mobile No." title="Enter 10 Digit Mobile No." required="" type="text" pattern="[0789][0-9]{9}">
                             <input id="txtcsubject" name="csubject" placeholder="Subject" required="" type="text">
                             <textarea id="txtcmessage" name="cmessage" placeholder="Write message" required=""></textarea>
@@ -173,13 +184,9 @@ function concmsinsert() {
                                 <div class="single-contact-info">
                                     <p>Phone</p>
                                     <h4>
-                                   Sales: +91 956 109 4128 <br>
-                                   Sales: +91 956 109 4128 <br>
-
-                                        Sales: +91 956 109 4128 <br>
-
-                                        Tel: +91-20-27110011<br>
-                                        Fax: +91-20- 27110013<br>
+                                   Sales: +91 956 109 4128 <br>                             
+                                   Tel: +91-20-27110011<br>
+                                   Fax: +91-20- 27110013<br>
                                     </h4>
                                 </div>
                                 <div class="single-contact-info">

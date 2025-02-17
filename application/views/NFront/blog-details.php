@@ -47,7 +47,7 @@
             window.open(linkedinShareUrl, '_blank');
         });
     });
-</script>
+</script>                
 
 <style>
     .copyCircleBTN {
@@ -119,6 +119,7 @@
     </div>
 
     <!-- Blog Details Page  -->
+     
     <div class="blog-details-page">
         <div class="container">
             <div class="row gx-5 justify-content-around">

@@ -3,21 +3,21 @@
 
     <!-- Breadcrumb Area  -->
 
-    <div class="breadcrumb-area mt-50">
+<div class="breadcrumb-area mt-50">
         <div class="container">
             <div class="row">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                      <li class="breadcrumb-item"><a href="project.html">Project</a></li>
-                      <li class="breadcrumb-item active" aria-current="page">Details</li>
+                      
+                      <li class="breadcrumb-item active" aria-current="page">Applications</li>
                     </ol>
                 </nav>
             </div>
         </div>
-    </div>
+</div>
 
-    <!-- Project Details  -->
+<!-- Project Details  -->
     <div class="project-details-wrap section-padding pt-0">
         <div class="container">
             <div class="row gx-5 justify-content-around align-items-end mt-30">
@@ -95,9 +95,9 @@
                             </div>
                             <div class="col-xl-6 col-lg-6 col-md-6">
                                 <div class="project-details-img">
-                                    <img src="assets/img/project/gallery-3.jpg" alt="">
+                                <img src="<?php echo base_url();?>assets/img/application/ChemicalIndustry.jpg" >
                                     <figure>
-                                        <figcaption>Kitchen Room</figcaption>
+                                        <figcaption>Agriculture</figcaption>
                                     </figure>
                                 </div>
                             </div>
