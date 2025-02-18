@@ -683,16 +683,16 @@ document.addEventListener("DOMContentLoaded", function () {
                         <img src="<?php echo base_url();?>assets/img/client/aditya-birla-chemicals-logo.png" alt="adiya-birla-chemicals-logo">
                     </div>
                     <div class="single-client">
-                    <img src="<?php echo base_url();?>assets/img/client/godrej-logo.png" alt="">
+                    <img src="<?php echo base_url();?>assets/img/client/godrej-logo.png" alt="godrej-logo">
                     </div>
                     <div class="single-client">
-                    <img src="<?php echo base_url();?>assets/img/client/DeepakNitrite-logo.png" alt="">
+                    <img src="<?php echo base_url();?>assets/img/client/DeepakNitrite-logo.png" alt="deepak nitrate logo">
                     </div>
                     <div class="single-client">
-                    <img src="<?php echo base_url();?>assets/img/client/excel-crop-care.png" alt="">
+                    <img src="<?php echo base_url();?>assets/img/client/excel-crop-care.png" alt="excel-crop-care logo">
                     </div>
                     <div class="single-client">
-                    <img src="<?php echo base_url();?>assets/img/client/aarti-logo.png" alt="">
+                    <img src="<?php echo base_url();?>assets/img/client/aarti-logo.png" alt="aarti-logo">
                     </div>
                 </div>
             </div>
@@ -723,11 +723,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <img src="assets/img/straight-quotes.png" alt="">
                             </div>
                             <div class="testimonial-content">
-                                <p>I hired Saka India to design and build my dream home, and I could be happier with the result. From the intial consultation to the final walk-through, the Saka India team was professional.</p>
+                                <p>We’ve been working with Saka India for over three years now, and their commitment to quality and precision is unmatched. Their team has consistently delivered high-grade materials that meet our stringent standards.</p>
                             </div>
                             <div class="testimonial-author">
                                 <img src="assets/img/testimonial/1.png" alt="">
-                                <h6 class="text-black">Lisa Ray <span>New York, USA</span></h6>
+                                <h6 class="text-black">Madhav Patel <span>Ahemedabad, Gujrat</span></h6>
                             </div>
 
                         </div>
@@ -736,7 +736,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <img src="assets/img/straight-quotes.png" alt="">
                             </div>
                             <div class="testimonial-content">
-                                <p>I hired Saka India to design and build my dream home, and I could be happier with the result. From the intial consultation to the final walk-through, the Saka India team was professional.</p>
+                                <p>Saka India has been instrumental in helping us streamline our manufacturing process. Their expertise in chemical processing and timely delivery has significantly reduced our downtime and improved efficiency</p>
                             </div>
                             <div class="testimonial-author">
                                 <img src="assets/img/testimonial/2.png" alt="">
