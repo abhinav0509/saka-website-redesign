@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="p-animation">
                                 <p>Our team of expert engineers and designers works closely with clients to create robust, functional and state of art solutions<br> that are tailored to their specific process engineering needs.</p>
                             </div>  
-                               <a href="about.html" class="theme-btn mt-20">Start a Project</a>                                  
+                               <a href="<?php echo base_url();?>index.php/Contact" class="theme-btn mt-20">Start a Project</a>                                  
                         </div>
                     </div>                                                      
                 </div>                
