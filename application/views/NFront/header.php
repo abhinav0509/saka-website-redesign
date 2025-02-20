@@ -63,26 +63,29 @@
 
                         <div class="main-menu d-none d-lg-block">
                             <ul>
-                                <li class="active"><a class="navlink" href="<?php echo base_url();?>">Home</a>
+                                <li class="active"><a class="navlink" href="<?php echo base_url();?>index.php/Home_three">Home</a>
                                 <ul class="sub-menu">
-                                        <li><a href="<?php echo base_url();?>"> Home - One</a></li>
+                                        <!-- <li><a href="<?php echo base_url();?>"> Home - One</a></li>
                                         <li><a href="<?php echo base_url();?>index.php/Home_two">Home - Two</a></li>
-                                        <li><a href="<?php echo base_url();?>index.php/Home_three">Home - Three</a></li>
+                                        <li><a href="<?php echo base_url();?>index.php/Home_three">Home - Three</a></li> -->
+                                        <!-- <li><a href="<?php echo base_url();?>index.php/Home_three">Home</a></li> -->
+                                        <li><a href="<?php echo base_url();?>index.php/Home_two">Home - Two</a></li>
+                                        
                                     </ul>
                                 </li>
-                                <li><a class="navlink" href="#">Pages</a>
+                                <li><a class="navlink" href="#">About Us</a>
                                     <ul class="sub-menu">
                                         <li><a href="<?php echo base_url();?>index.php/About_us">About Us</a></li>                                    
-                                        <li><a href="services.html">Our Products</a></li>
+                                        <!-- <li><a href="services.html">Our Products</a></li> -->
                                         <li><a href="<?php echo base_url();?>index.php/Team">Our Team</a></li>
                                         <!-- <li><a href="price.html">Pricing Plans</a></li> -->
-                                        <li><a href="faq.html">FAQs</a></li>                                    
+                                        <!-- <li><a href="faq.html">FAQs</a></li>                                     -->
                                     </ul>
                                 </li>                                
 
                                 <li><a class="navlink" href="#">Project</a>
                                     <ul class="sub-menu">
-                                    <li><a href="project.html">Applications</a></li>
+                                    <!-- <li><a href="project.html">Applications</a></li> -->
                                         <li><a href="<?php echo base_url();?>index.php/Project">Projects</a></li>                                        
                                         <li><a href="<?php echo base_url();?>index.php/Project_details">Project Details</a></li>                                        
                                     </ul>

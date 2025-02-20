@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="p-animation">
                                 <p>Our team of expert engineers and designers works closely with clients to create robust, functional and state of art solutions<br> that are tailored to their specific process engineering needs.</p>
                             </div>  
-                               <a href="<?php echo base_url();?>index.php/Contact" class="theme-btn mt-20">Start a Project</a>                                  
+                               <a href="about.html" class="theme-btn mt-20">Start a Project</a>                                  
                         </div>
                     </div>                                                      
                 </div>                
@@ -685,7 +685,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="single-client">
                     <img src="<?php echo base_url();?>assets/img/client/godrej-logo.png" alt="godrej-logo">
                     </div>
-                    <div class="single-client">
+                     <div class="single-client">
                     <img src="<?php echo base_url();?>assets/img/client/DeepakNitrite-logo.png" alt="deepak nitrate logo">
                     </div>
                     <div class="single-client">
@@ -859,7 +859,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="team-info">
                 <h5>Decan Rice</h5>
                 <hr>
-                <p>[Architect]</p>
+                <p>[Senior Designer]</p>
                 </div>
             
             </div>
@@ -872,7 +872,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="team-info">
                 <h5>Patric Evra</h5>
                 <hr>
-                <p>[Architect]</p>
+                <p>[Marketing & Sales Head]</p>
                 </div>
                 
             </div>
@@ -885,7 +885,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="team-info">
                 <h5>Sophie White</h5>
                 <hr>
-                <p>[Civil Engineer]</p>
+                <p>[Engineer]</p>
                 </div>
                 
             </div>
@@ -898,7 +898,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="team-info">
                 <h5>Phil Jhones</h5>
                 <hr>
-                <p>[Architect]</p>
+                <p>[Enginner]</p>
                 </div>
             
             </div>
