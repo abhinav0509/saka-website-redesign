@@ -1,6 +1,4 @@
  <!-- Footer Area -->
-
-
  <footer class="footer-area" style="z-index:2;">
     <div class="container">
         <div class="footer-up">

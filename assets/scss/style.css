@@ -4171,7 +4171,6 @@ figcaption {
   flex: 0 0 45%;
 }
 #blog-3 .blog-content {
-  padding-left: 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

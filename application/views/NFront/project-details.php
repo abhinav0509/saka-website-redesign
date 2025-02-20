@@ -75,29 +75,25 @@
       }
     }
   </style>
+      <div id="smooth-content">
 
-<div id="smooth-content">
-
-    <!-- Breadcrumb Area  -->
+<!-- Breadcrumb Area  -->
 
 <div class="breadcrumb-area mt-50">
-        <div class="container">
-            <div class="row">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                      <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                      
-                      <li class="breadcrumb-item active" aria-current="page">Applications</li>
-                    </ol>
-                </nav>
-            </div>
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="project.html">Project</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Details</li>
+                </ol>
+            </nav>
         </div>
+    </div>
 </div>
 
-<!-- Application Details  -->
-    
-
-  
+<!-- Project Details  -->
 <div class="container-fluid">
     <div class="bento-grid">
       <!-- Food Industry -->
@@ -143,10 +139,31 @@
       </div>
     </div>
   </div>
-</div>
-       
-    
+<!-- Newsletter Section  -->
 
-    
+<div class="newsletter-section">
+    <div class="container">
+        <div class="row newsletter-inner gray-bg align-items-center">
+            <div class="col-xl-7 col-lg-7">
+                <div class="section-title">
+                    <h2>Stay Up-to-date <br> with Saka <span><i class="las la-arrow-right"></i></span> </h2>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-5">
+                <div class="newsletter-content">
+                    <p>Sign up for our newsletter to stay in the know about our latest projects, design insight and industry news. </p>
+                    <!-- <h3>We will deliver our best content straight to your inbox.</h3> -->
+                    <div class="subscribed-form">
+                        <form>
+                            <input type="text" placeholder="Type your Email">
+                            <input class="bordered-btn" type="submit" value="Sign Up">
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
     
