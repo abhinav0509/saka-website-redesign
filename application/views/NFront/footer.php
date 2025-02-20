@@ -103,7 +103,7 @@
         <div class="side-info">
             <div class="contact-list mb-40">
                 <!-- <h4>About</h4> -->
-                <p>Welcome to Saka India, a full service architecture and interior design firm. We specialize in creating beautiful, functional spaces that reflect your unique style.</p>
+                <p>Welcome to Saka India, We provide world class process engineering solution with our cutting edge technologies and a expereinced team.</p>
                 <img src="assets/img/offcanvas-img.jpg" alt="">
 
                 <div class="mt-30 mb-30">
