@@ -64,14 +64,14 @@
                         <div class="main-menu d-none d-lg-block">
                             <ul>
                                 <li class="active"><a class="navlink" href="<?php echo base_url();?>index.php/Home_three">Home</a>
-                                <ul class="sub-menu">
+                                <!-- <ul class="sub-menu"> -->
                                         <!-- <li><a href="<?php echo base_url();?>"> Home - One</a></li>
                                         <li><a href="<?php echo base_url();?>index.php/Home_two">Home - Two</a></li>
                                         <li><a href="<?php echo base_url();?>index.php/Home_three">Home - Three</a></li> -->
                                         <!-- <li><a href="<?php echo base_url();?>index.php/Home_three">Home</a></li> -->
-                                        <li><a href="<?php echo base_url();?>index.php/Home_two">Home - Two</a></li>
+                                        <!-- <li><a href="<?php echo base_url();?>index.php/Home_two">Home - Two</a></li> -->
                                         
-                                    </ul>
+                                    <!-- </ul> -->
                                 </li>
                                 <li><a class="navlink" href="#">About Us</a>
                                     <ul class="sub-menu">
