@@ -402,7 +402,7 @@ function show(input) {
                         <div class="user-detail-name">
                           <a href="#"><?php echo $row->Name; ?></a>
                         </div>
-                        <div class="row mt-1 blogShareLinkContainer" style="margin-top: -1.75rem !important; margin-left: 180px;">
+                        <div class="row mt-1 blogShareLinkContainer" style="margin-top: -1.75rem !important; margin-left: 160px;">
                           <a href="javascript:;" class="btn btn-warning btn-circle fbCircleBTN" data-toggle="tooltip" data-placement="top" title="Share On Facebook" onclick=""><i class="fab fa-facebook-f"></i></a>
                           <a href="javascript:;" class="btn btn-warning btn-circle twitterCircleBTN" data-toggle="tooltip" data-placement="top" title="Share On Twitter" onclick=""><i class="fab fa-twitter"></i></a>
                           <a href="javascript:;" class="btn btn-warning btn-circle linkedinCircleBTN" data-toggle="tooltip" data-placement="top" title="Share On Linkedin" onclick=""><i class="fab fa-linkedin-in"></i></a>
