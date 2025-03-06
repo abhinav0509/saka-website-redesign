@@ -223,7 +223,7 @@ else
                   data-feather="briefcase"></i><span>Home</span></a>
               <ul class="dropdown-menu">
               <li id="Habout">
-                  <a class="nav-link" href="<?php echo base_url()."index.php/Admin/about"; ?>" title="About Us">
+                  <a class="nav-link" href="<?php echo base_url()."index.php/Admin/About" ?>" title="About Us">
                      About Us
                   </a>
                 </li>
@@ -245,6 +245,11 @@ else
                     <li id="ThreeDiv">
                       <a href="<?php echo base_url()."index.php/Admin/city1" ?>" title="City Master">
                       City Master
+                  </a>
+                </li>
+                <li id="team">
+                      <a href="<?php echo base_url()."index.php/Admin/Team" ?>" title="Team">
+                      Team
                   </a>
                 </li>
               </ul>

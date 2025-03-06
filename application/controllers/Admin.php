@@ -210,16 +210,16 @@ $your_pdf_file = $fulpath."/".$filename;
 	{		
 		if($this->session->userdata("loginType")){
 			if($this->session->userdata("loginType")=="Student"){
-				redirect('Student/Home');
+				redirect('Student/Dashboard');
 			}
 			if($this->session->userdata("loginType")=="Admin"){
-				redirect('Admin/Home');
+				redirect('Admin/Dashboard');
 			}
 			if($this->session->userdata("loginType")=="Franchisee"){
-				redirect('Franchisee/Home');
+				redirect('Franchisee/Dashboard');
 			}
 			if($this->session->userdata("loginType")=="Employee"){
-				redirect('Employee/Home');
+				redirect('Employee/Dashboard');
 			}
 		}else{
 			$this->load->view('Login');		
@@ -718,13 +718,13 @@ EOD;
 	    $this->load->model('news');	
 	    $this->news->getfrnenq($name);
 	}
-	public function Home()
-	{
-		$data=$this->globaldata;
-		$this->load->view('header1',$data);
-		$this->load->view('Home');		
-		$this->load->view('footer1');
-	}
+	// public function Home()
+	// {
+	// 	$data=$this->globaldata;
+	// 	$this->load->view('cms/header',$data);
+	// 	$this->load->view('home');		
+	// 	$this->load->view('cms/footer');
+	// }
 	public function Dashboard()
 	{
 		$this->load->model('display');
@@ -836,23 +836,23 @@ EOD;
 		 }
 	}
 	
-	public function about()
-	{
-		$this->load->model('display');
-		$config=array();
-        $config["base_url"]=base_url()."index.php/Admin/about";
-        $config["total_rows"]=$this->display->About_display();
-        $config["per_page"] = 3;
-        $config["uri_segment"] = 3;
-        $this->pagination->initialize($config);
-        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
-        $data1["results"] = $this->display->About_Paging($config["per_page"], $page);
-        $data1["links"] = $this->pagination->create_links();
-		$data=$this->globaldata;
-		$this->load->view('cms/header');
-		$this->load->view('about');
-		$this->load->view('cms/footer');
-	}
+	// public function about()
+	// {
+	// 	$this->load->model('display');
+	// 	$config=array();
+    //     $config["base_url"]=base_url()."index.php/Admin/about";
+    //     $config["total_rows"]=$this->display->About_display();
+    //     $config["per_page"] = 3;
+    //     $config["uri_segment"] = 3;
+    //     $this->pagination->initialize($config);
+    //     $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+    //     $data1["results"] = $this->display->About_Paging($config["per_page"], $page);
+    //     $data1["links"] = $this->pagination->create_links();
+	// 	$data=$this->globaldata;
+	// 	$this->load->view('cms/header');
+	// 	$this->load->view('about');
+	// 	$this->load->view('cms/footer');
+	// }
 	
 	public function Student_Enquiry()
 	{
@@ -3748,11 +3748,8 @@ public function Convert()
          	//$course=$this->input->post('cor');
          	//echo $author=$this->input->post('auth');
  
-	
     /*888888888888888888888888888888888888888888888888888888888888888*/
-        
-
-
+      
 	    $this->load->model('display');
 		$config=array();
         $config["base_url"]=base_url()."index.php/Admin/Blog";
@@ -3774,7 +3771,110 @@ public function Convert()
 		$this->load->view('blog2',$data1);
 		$this->load->view('cms/footer');
 	}
+    public function Team()
+	{
+		 $data1['dt']=array(
+         	'page_index'=>$this->input->post('pindex'),
+         	'cname'=>$this->input->post('cnm1'),
+         	//'course'=>$this->input->post('cnm1')
+         	//'author'=>$this->input->post('auth')
+         	);         
+      
+         $pageindex=$this->input->post("pindex");
+         
 
+         if($pageindex=="")
+         {
+         	$pageindex=0;
+         }
+         else if($pageindex >=1)
+         {
+         	$pageindex=intval(($pageindex-1)*10);
+         }
+         else
+         {
+         	$pageindex=0;
+         }
+        
+        	$cname=$this->input->post('cnm1');
+         	//$course=$this->input->post('cor');
+         	//echo $author=$this->input->post('auth');
+ 
+    /*888888888888888888888888888888888888888888888888888888888888888*/
+      
+	    $this->load->model('display');
+		$config=array();
+        $config["base_url"]=base_url()."index.php/Admin/Team";
+        //$config["total_rows"]=$this->display->Book_display($bname,$course,$author);
+		$config["total_rows"]=$this->display->Teamd_display($cname);
+        $config["per_page"] = 10;
+        $config["uri_segment"] = $pageindex;
+        $this->pagination->initialize($config);
+       //$page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        $data1["team"] = $this->display->Team1_Paging($config["per_page"], $pageindex,$cname);
+		//$data1['rowcount']=$this->display->Book_display($bname,$course,$);
+		$data1['rowcount']=$this->display->Team_display($cname);
+        // $data1["links"] = $this->pagination->create_links();		
+		//$data1['course']=$this->display->getcourse();
+		$data=$this->globaldata;
+		// print_r($data1['results']);
+		// die();
+		$this->load->view('cms/header',$data);
+		$this->load->view('team',$data1);
+		$this->load->view('cms/footer');
+	}
+	public function About()
+	{
+		 $data1['dt']=array(
+         	'page_index'=>$this->input->post('pindex'),
+         	'cname'=>$this->input->post('cnm1'),
+         	//'course'=>$this->input->post('cnm1')
+         	//'author'=>$this->input->post('auth')
+         	);         
+      
+         $pageindex=$this->input->post("pindex");
+         
+
+         if($pageindex=="")
+         {
+         	$pageindex=0;
+         }
+         else if($pageindex >=1)
+         {
+         	$pageindex=intval(($pageindex-1)*10);
+         }
+         else
+         {
+         	$pageindex=0;
+         }
+        
+        	$cname=$this->input->post('cnm1');
+         	//$course=$this->input->post('cor');
+         	//echo $author=$this->input->post('auth');
+ 
+    /*888888888888888888888888888888888888888888888888888888888888888*/
+      
+	    $this->load->model('display');
+		$config=array();
+        $config["base_url"]=base_url()."index.php/Admin/About";
+        //$config["total_rows"]=$this->display->Book_display($bname,$course,$author);
+		$config["total_rows"]=$this->display->About_display($cname);
+        $config["per_page"] = 10;
+        $config["uri_segment"] = $pageindex;
+        $this->pagination->initialize($config);
+       //$page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        $data1["results"] = $this->display->About_Paging($config["per_page"], $pageindex,$cname);
+		//$data1['rowcount']=$this->display->Book_display($bname,$course,$);
+		$data1['rowcount']=$this->display->About_display($cname);
+        // $data1["links"] = $this->pagination->create_links();		
+		//$data1['course']=$this->display->getcourse();
+		$data=$this->globaldata;
+		//print_r($data1['results']);
+		//die();
+		$this->load->view('cms/header',$data);
+		$this->load->view('about-us',$data1);
+		$this->load->view('cms/footer');
+	}
 }
 
 

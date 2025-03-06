@@ -4786,6 +4786,60 @@ public function get_stud_info1($name,$fid)
          return $query->result_array();		
       }
    }
+   public function Teamd_display()
+   {  
+      $this->db->limit(3,0);
+      $this->db->order_by('id','desc');
+      $query=$this->db->get('tbl_team');
+      return $query->result();
+   }
+   function Team_display($cname)
+  {
+       /* $array=array();
+          if($cname!="")
+          {
+             $array=array('cname'=>$cname);
+          }
+          else if($cname=="")
+          {
+              $this->db->order_by('id','desc');
+           $query=$this->db->get('testimonial');
+           return $query->num_rows();
+          }
+          
+          $this->db->where($array);
+        $this->db->order_by('id','desc');*/
+          $query=$this->db->get('tbl_team');
+          return $query->num_rows();
+  }   
+  public function Team1_Paging($limit,$start,$cname)
+       {
+          /*
+          $array=array();
+          if($cname!="")
+          {
+             $array=array('cname'=>$cname);
+          }
+          else if($cname=="")
+          {
+              $this->db->order_by('id','desc');
+           $query=$this->db->get('testimonial');
+           return $query->result();
+          }       
+        
+        $this->db->limit($limit, $start);
+          $this->db->where($array);*/
+        $this->db->order_by('id','desc');
+          $query = $this->db->get("tbl_team");
+   
+          if ($query->num_rows() > 0) {
+              foreach ($query->result() as $row) {
+                  $data[] = $row;
+              }
+              return $data;
+          }
+          return false;
+     }
 
 }
 

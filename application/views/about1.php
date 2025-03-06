@@ -44,12 +44,12 @@ j(document).ready(function(){
                       <thead>
                         <tr>
                         
-                         <th width="3%" class="thdesign">Id</th>
+                          <th width="3%" class="thdesign">Id</th>
                           <th width="7%" class="thdesign">Content</th>
                           <th width="7%" class="thdesign">Mission</th>
                           <th width="7%" class="thdesign">Vission</th>
                           <th width="7%" class="thdesign">Values</th>
-						  <th width="7%" class="thdesign">Image</th>
+						              <th width="7%" class="thdesign">Image</th>
                           <th width="1%" class="thdesign">Edit</th>
                           <th width="1%" class="thdesign">Delete</th>
                         </tr>

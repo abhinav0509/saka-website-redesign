@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $default_controller = "Welcome";
-$controller_exceptions = array('Admin','Admin2','Login_cont','Logout','Blog_Data','Notifications','News_Data','Gallry','Testimonial_Data','Employee','gallry','Insert','About');
+$controller_exceptions = array('Admin','Admin2','Login_cont','Logout','Blog_Data','Notifications','News_Data','Gallry','Testimonial_Data','Employee','gallry','Insert','About','Insert_team');
 
 $route['default_controller'] = $default_controller;
 $route['404_override'] = '';
