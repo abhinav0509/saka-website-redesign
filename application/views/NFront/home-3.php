@@ -837,12 +837,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="400ms">
                 <div class="single-team-item">
                     <div class="team-img">
-                    <img src="assets/img/team/2.jpg" alt="">
+                    <img src=" <?php echo base_url();?>assets/img/team/Sunil-Kumar-Yadav.jpg" alt="Sunil-Kumar-Yadav-Image">
                     </div>
                     <div class="team-info">
-                    <h5>Natasha Kareem</h5>
+                    <h5>Mr. Sunil Kumar Yadav</h5>
                     <hr>
-                    <p>[Project Manager]</p>
+                    <p>Sr. GM Project</p>
                     </div>
                     
                 </div>
@@ -854,12 +854,12 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="600ms">
             <div class="single-team-item">
                 <div class="team-img">
-                <img src="assets/img/team/3.jpg" alt="">
+                <img src=" <?php echo base_url();?>assets/img/team/Rekha-Malvadkar.jpeg" alt="Rekha-Malvadkar-Image">
                 </div>
                 <div class="team-info">
-                <h5>Decan Rice</h5>
+                <h5>Mrs. Rekha-Malvadkar</h5>
                 <hr>
-                <p>[Senior Designer]</p>
+                <p>Director Finance & Accounts </p>
                 </div>
             
             </div>
