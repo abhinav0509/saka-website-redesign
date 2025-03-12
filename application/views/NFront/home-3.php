@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
                                                                      
-     <div class="container mt-4">
+     <div class="container-fluid mt-4">
         <video class="col-md-12" autoplay muted loop id="hero  Video">
                 <source src="<?php echo base_url();?>assets/img/video/Saka-Corporate Video_final.mp4" type="video/mp4">
                 

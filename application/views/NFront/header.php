@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <meta name="description" content="Saka India is a leading manufacturer of process engineering equipment in Pune, India. Specializing in industrial automation, turnkey engineering solutions, and high-performance industrial equipment for diverse industries. Contact us for custom manufacturing solutions!">
+
 
     <title>Saka Engineering Systems | Process Engineering Solution</title>
 
