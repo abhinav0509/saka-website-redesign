@@ -260,20 +260,7 @@ even as the base of customers doubled every year since the inception.</p>
                             </div>
                           </div>
                         </div>
-                        <div class="accordion-items">
-                          <h2 class="accordion-header" id="headingSix">
-                            <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                <span>06</span>
-                                Furniture Remodel
-                            </button>
-                          </h2>
-                          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <img src="assets/img/service/6.jpg" alt="">
-                                <p>Morbi et faucibus ex. Proin ut enim fermentum, pretium orci sed, suscipit nisl. Etiam ut nulla a dolor consectetur consequat at id ex. Maecenas porttitor, ligula eu dictum vehicula, massa tellus gravida lectus, eget tincidunt mauris eros sit amet turpis. Pellentesque habitant morbi tristique senectus.</p>
-                            </div>
-                          </div>
-                        </div>
+                      
                       </div>
                 </div>                                        
             </div>
@@ -367,181 +354,105 @@ even as the base of customers doubled every year since the inception.</p>
     </div>
 </div>
 
-<!-- Team Section 
 
-<div class="team-section section-padding pt-100 pb-100">
-    <div class="container">
-    <div class="row">
-        <div class="col-xl-6 col-lg-6 order-2 order-lg-1">
+
+ <!-- Team Section  -->
+
+ <div class="team-section gray-bg section-padding pb-100">
+        <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-lg-6">
+            <div class="section-title">            
+                <div class="heading-animation">
+                    <h2>Our Team</h2>
+                </div>
+                <span class="d-none d-md-block"><i class="las la-arrow-down mt-30"></i></span>
+            </div>                      
+            </div>
+            <div class="col-xl-6 col-lg-6">
             <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="200ms">
                 <div class="single-team-item">
                     <div class="team-img">
-                    <img src="assets/img/team/1.jpg" alt="">
+                   
+                    <img src=" <?php echo base_url();?>assets/img/team/anand-sir.jpg" alt="anand sir-Image">
                     </div>
                     <div class="team-info">
-                    <h5>Mark Wood</h5>
+                    <h5>Anand Thigale</h5>
                     <hr>
-                    <p>[Project Manager]</p>
-                    </div>
-                
+                    <p>Managing Director</p>
+                    </div>                    
                 </div>
                 </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="400ms">
                 <div class="single-team-item">
                     <div class="team-img">
-                    <img src="assets/img/team/2.jpg" alt="">
+                    <img src=" <?php echo base_url();?>assets/img/team/Sunil-Kumar-Yadav.jpg" alt="Sunil-Kumar-Yadav-Image">
                     </div>
                     <div class="team-info">
-                    <h5>Natasha Kareem</h5>
+                    <h5>Mr. Sunil Kumar Yadav</h5>
                     <hr>
-                    <p>[Product Designer]</p>
+                    <p>Sr. GM Project</p>
                     </div>
                     
                 </div>
                 </div>
             </div>
             </div>
-        <div class="col-xl-6 col-lg-6 order-1 order-lg-2 text-end">
-        <div class="section-title">            
-            <h2>Our Team</h2>
-            <span><i class="las la-arrow-down mt-30"></i></span>
-        </div>                      
         </div>
-        
-    </div>
-    <div class="row">
-        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-        <div class="single-team-item">
-            <div class="team-img">
-            <img src="assets/img/team/3.jpg" alt="">
-            </div>
-            <div class="team-info">
-            <h5>Decan Rice</h5>
-            <hr>
-            <p>[Architect]</p>
-            </div>
-        
-        </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-        <div class="single-team-item">
-            <div class="team-img">
-            <img src="assets/img/team/4.jpg" alt="" >
-            </div>
-            <div class="team-info">
-            <h5>Patric Evra</h5>
-            <hr>
-            <p>[Architect]</p>
-            </div>
-            
-        </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-        <div class="single-team-item">
-            <div class="team-img">
-            <img src="assets/img/team/5.jpg" alt="" >
-            </div>
-            <div class="team-info">
-            <h5>Sophie White</h5>
-            <hr>
-            <p>[Civil Engineer]</p>
-            </div>
-            
-        </div>
-        </div>
-        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-        <div class="single-team-item">
-            <div class="team-img">
-            <img src="assets/img/team/6.jpg" alt="" >
-            </div>
-            <div class="team-info">
-            <h5>Phil Jhones</h5>
-            <hr>
-            <p>[Architect]</p>
-            </div>
-        
-        </div>
-        </div>
-    </div>
-    </div>
-</div> -->
-
-<!-- Award Section  -->
-
-<div class="award-section section-padding pt-0">
-    <div class="container">
         <div class="row">
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                <div class="section-title">
-                    <h2>Awards <span><i class="las la-arrow-down"></i></span></h2>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="600ms">
+            <div class="single-team-item">
+                <div class="team-img">
+                <img src=" <?php echo base_url();?>assets/img/team/Rekha-Malvadkar.jpeg" alt="Rekha-Malvadkar-Image">
                 </div>
-            </div>
+                <div class="team-info">
+                <h5>Mrs. Rekha-Malvadkar</h5>
+                <hr>
+                <p>Director Finance & Accounts </p>
+                </div>
             
-        </div>
-        <div class="award-wrap mt-30">
-            <div class="row mt-30 mb-30">
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                    <div class="single-award-item">
-                        <div class="award-icon">
-                            <i class="las la-arrow-right"></i>
-                        </div>
-                        <div class="award-info">
-                            <p>2023</p>
-                            <h3>AIA Award</h3>
-                        </div>
-                    </div>
+            </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="200ms">
+            <div class="single-team-item">
+                <div class="team-img">
+                <img src="assets/img/team/4.jpg" alt="" >
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                    <div class="single-award-item">
-                        <div class="award-icon">
-                            <i class="las la-arrow-right"></i>
-                        </div>
-                        <div class="award-info">
-                            <p>2023</p>
-                            <h3>ASID Award</h3>
-                        </div>
-                    </div>
+                <div class="team-info">
+                <h5>Patric Evra</h5>
+                <hr>
+                <p>[Marketing & Sales Head]</p>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4">
-                    <div class="single-award-item">
-                        <div class="award-icon">
-                            <i class="las la-arrow-right"></i>
-                        </div>
-                        <div class="award-info">
-                            <p>2023</p>
-                            <h3>Leed Gold Certify</h3>
-                        </div>
-                    </div>
+                
+            </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="400ms">
+            <div class="single-team-item">
+                <div class="team-img">
+                <img src="assets/img/team/5.jpg" alt="" >
                 </div>
+                <div class="team-info">
+                <h5>Sophie White</h5>
+                <hr>
+                <p>[Engineer]</p>
+                </div>
+                
+            </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="600ms">
+            <div class="single-team-item">
+                <div class="team-img">
+                <img src="assets/img/team/6.jpg" alt="" >
+                </div>
+                <div class="team-info">
+                <h5>Phil Jhones</h5>
+                <hr>
+                <p>[Enginner]</p>
+                </div>
+            
+            </div>
             </div>
         </div>
-    </div>
-</div>
-
-<!-- Newsletter Section  -->
-
-<div class="newsletter-section">
-    <div class="container">
-        <div class="row newsletter-inner gray-bg align-items-center">
-            <div class="col-xl-7 col-lg-7">
-                <div class="section-title">
-                    <h2>Stay Up-to-date <br> with Saka India <span><i class="las la-arrow-right"></i></span> </h2>
-                </div>
-            </div>
-            <div class="col-xl-5 col-lg-5">
-                <div class="newsletter-content">
-                    <p>Sign up for our newsletter to stay in the know about our latest projects, design insight and industry news. </p>
-                    <!-- <h3>We will deliver our best content straight to your inbox.</h3> -->
-                    <div class="subscribed-form">
-                        <form>
-                            <input type="text" placeholder="Type your Email">
-                            <input class="bordered-btn" type="submit" value="Sign Up">
-                        </form>
-
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
-</div>
