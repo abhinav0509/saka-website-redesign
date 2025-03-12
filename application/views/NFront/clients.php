@@ -309,33 +309,6 @@
         </div>
     </div>
 
-    <!-- Newsletter Section  -->
-
-    <div class="newsletter-section">
-        <div class="container">
-            <div class="row newsletter-inner gray-bg align-items-center">
-                <div class="col-xl-7 col-lg-7">
-                    <div class="section-title">
-                        <h2>Stay Up-to-date <br> with Saka India <span><i class="las la-arrow-right"></i></span> </h2>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-lg-5">
-                    <div class="newsletter-content">
-                        <p>Sign up for our newsletter to stay in the know about our latest projects, design insight and industry news. </p>
-                        <!-- <h3>We will deliver our best content straight to your inbox.</h3> -->
-                        <div class="subscribed-form">
-                            <form>
-                                <input type="text" placeholder="Type your Email">
-                                <input class="bordered-btn" type="submit" value="Sign Up">
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-   
 
   <script>
      $(document).ready(function(){
