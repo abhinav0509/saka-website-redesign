@@ -323,39 +323,37 @@ even as the base of customers doubled every year since the inception.</p>
     </div>
 <!-- Counter Section -->
 
-<div class="counter-section section-padding pt-0 pb-50">
-    <div class="container">
-        <div class="row gx-5">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-counter-box">
-                    <p class="counter-number"><span>1037</span></p>
-                    <h6>Project Completed</h6>
+<div class="counter-section section-padding pt-50 pb-50">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-counter-box">
+                        <p class="counter-number"><span>400 </span>+</p>
+                        <h6>Plant Installations</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-counter-box">
-                    <p class="counter-number"><span>156</span></p>
-                    <h6>Qualified Team</h6>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-counter-box">
+                        <p class="counter-number"><span>300</span>+</p>
+                        <h6>Processes Analyzed</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-counter-box">
-                    <p class="counter-number"><span>90</span>%</p>
-                    <h6>Client Satisfaction</h6>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-counter-box">
+                        <p class="counter-number"><span>99</span>%</p>
+                        <h6>Client Satisfaction</h6>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-counter-box">
-                    <p class="counter-number"><span>23</span>+</p>
-                    <h6>Year of Experience</h6>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-counter-box">
+                        <p class="counter-number"><span>20</span>+</p>
+                        <h6>Year of Experience</h6>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-
-
-
+    
  <!-- Team Section  -->
 
  <div class="team-section gray-bg section-padding pb-100">
