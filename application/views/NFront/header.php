@@ -80,18 +80,19 @@
                                         <li><a href="<?php echo base_url();?>About_us">About Us</a></li>                                    
                                         <!-- <li><a href="services.html">Our Products</a></li> -->
                                         <li><a href="<?php echo base_url();?>Team">Our Team</a></li>
-                                        <!-- <li><a href="price.html">Pricing Plans</a></li> -->
+                                        <li><a class="navlink" href="<?php echo base_url();?>Gallery">Our Gallery</a></li>
+                                        <li><a href="#">Career</a></li>
                                         <!-- <li><a href="faq.html">FAQs</a></li>                                     -->
                                     </ul>
                                 </li>                                
 
-                                <!--<li><a class="navlink" href="#">Project</a>-->
-                                <!--    <ul class="sub-menu">-->
-                                    <!-- <li><a href="project.html">Applications</a></li> -->
-                                <!--        <li><a href="<?php echo base_url();?>index.php/Project">Projects</a></li>                                        -->
-                                <!--        <li><a href="<?php echo base_url();?>index.php/Project_details">Project Details</a></li>                                        -->
-                                <!--    </ul>-->
-                                <!--</li>-->
+                                <li><a class="navlink" href="#">Solution</a>
+                                    <ul class="sub-menu">
+                                     <!-- <li><a href="project.html">Applications</a></li> -->
+                                        <li><a href="<?php echo base_url();?>index.php/Project">Projects</a></li>
+                                       <li><a href="<?php echo base_url();?>index.php/Project_details">Project Details</a></li>                                        
+                                    </ul> 
+                                </li>
                                 <li><a class="navlink" href="<?php echo base_url();?>Blog">Blogs</a>
                                     <!--<ul class="sub-menu">-->
                                     <!--    <li><a href="<?php echo base_url();?>index.php/Blog">Blogs</a></li>-->
@@ -100,8 +101,7 @@
                                 </li>
                                
                                 <li><a class="navlink" href="<?php echo base_url();?>Solution">Applications</a></li>
-                                <li><a class="navlink" href="<?php echo base_url();?>ClientList">Our Clients</a></li>
-                                 <li><a class="navlink" href="<?php echo base_url();?>Gallery">Gallery</a></li>
+                                <li><a class="navlink" href="<?php echo base_url();?>ClientList">Our Clients</a></li>                                
                                 <li><a class="navlink" href="<?php echo base_url();?>Contact">Contact</a></li>
                             </ul>                            
                         </div>
