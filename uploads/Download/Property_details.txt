@@ -1,8 +1,0 @@
-Database Name:                propertybasket
-
-
-Database Username:            propertybasket
-
-
-
-Database Password:            Admin@123   
