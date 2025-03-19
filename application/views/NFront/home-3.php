@@ -240,7 +240,7 @@
                                 <div class="services-text-container">
                                     <h4 class="services-title">Rotary Dryer</h4>
                                     <p class="text-gray mb-0">
-                                    Rotary Dryers are known for their robust construction. Rotary dryers are able achieve to very high temperature. SAKA offers wide range of Rotary Dryers that are designed to deliver best output, efficiently.
+                                        Rotary Dryers are known for their robust construction. Rotary dryers are able achieve to very high temperature. SAKA offers wide range of Rotary Dryers that are designed to deliver best output, efficiently.
                                     </p>
                                 </div>
                             </div>                            
