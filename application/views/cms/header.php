@@ -199,7 +199,7 @@ else
               <?php } ?>
               <div class="dropdown-divider"></div>
               <a href="<?php echo base_url(); ?>index.php/Logout/Admin_logout" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
-                LogOut
+                Logout
               </a>
             </div>
           </li>
@@ -229,7 +229,7 @@ else
                 </li>
                 <li id="gallery">
                   <a class="nav-link" href="<?php echo base_url()."index.php/Admin/Gallery" ?>" title="Gallery">
-                    Gallery
+                    Gallery Img
                    </a>
                 </li>
                 <li id="HExp">
@@ -249,7 +249,7 @@ else
                 </li>
                 <li id="team">
                       <a href="<?php echo base_url()."index.php/Admin/Team" ?>" title="Team">
-                      Team
+                     Our Team 
                   </a>
                 </li>
               </ul>
@@ -277,8 +277,17 @@ else
                 <a href="<?php echo base_url()."index.php/Admin/Products" ?>" title="Products">
                 <i data-feather="edit"></i><span>Products</span>
                 </a>
+           </li>   
+           <li class="dropdown" id="products">
+                <a href="<?php echo base_url()."index.php/Admin/" ?>" title="Contact Us">
+                <i data-feather="headphones"></i><span>Contact Us</span>
+                </a>
            </li>
-            </li>
+           <li class="dropdown" id="products">
+                <a href="<?php echo base_url()."index.php/Admin/" ?>" title="Career">
+                <i data-feather="user"></i><span> Add Career</span>
+                </a>
+           </li>           
             <?php } ?>	           
           </ul>
         </aside>

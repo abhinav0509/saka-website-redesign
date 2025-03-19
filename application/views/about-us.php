@@ -51,7 +51,7 @@ function Edit(obj1, id) {
             r = i;
         }
     }
-    var editor1 = CKEDITOR.instances.content1;
+    var editor1 = CKEDITOR.instances.content;
     var editor2 = CKEDITOR.instances.values;
     var editor3 = CKEDITOR.instances.mission;
     var editor4 = CKEDITOR.instances.vission;
@@ -145,13 +145,13 @@ function show(input) {
                                         <table class="table table-striped" id="table-1">
                                             <thead>
                                                 <tr>
-                                                    <th class="text-center" width="1%">Id</th>
+                                                    <!-- <th class="text-center" width="1%">Id</th> -->
                                                     <th width="10%" class="thdesign">Content</th>
                                                     <th width="10%" class="thdesign">Mission</th>
                                                     <th width="10%" class="thdesign">Vission</th>
                                                     <th width="10%" class="thdesign">Values</th>
                                                     <th width="5%" class="thdesign">Image</th>
-                                                    <th class="text-center" width="4%">Actions</th>
+                                                    <th class="text-center" width="6%">Actions</th>
                                                 </tr>
                                             </thead>
                                             <script>
@@ -161,7 +161,7 @@ function show(input) {
                                             <tbody id="tdata">
                                                 <?php if (!empty($results)) { foreach ($results as $row) { ?>
                                                     <tr>
-                                                        <td><?php print $row->id; ?></td>
+                                                        <!-- <td><?php print $row->id; ?></td> -->
                                                         <td><?php print $row->About_Content; ?></td>
                                                         <td><?php print $row->mission; ?></td>
                                                         <td><?php print $row->vission; ?></td>

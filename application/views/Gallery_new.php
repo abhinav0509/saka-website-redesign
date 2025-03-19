@@ -57,8 +57,8 @@
                                 t = file.type,
                                 n = file.name,
                                 s = ~~(file.size / 1024) + 'KB';
-                            if ((h < 480 && w < 920) || (h < 480) || (w < 920)) {
-                                alert(n + " File Not Supported. Please Upload Images Within 480px Height and 920px Width.");
+                            if ((h < 350 && w < 350) || (h < 350) || (w < 350)) {
+                                alert(n + " File Not Supported. Please Upload Images Within 350px Height and 350px Width.");
                                 j('#userfile').val("");
                             }
                         };
@@ -170,7 +170,7 @@
                             <ul class="nav">
                                 <li class="active btn btn-success" id="t1"><a href="#tab1-1" data-toggle="tab" style="color: #ffffff;">View Gallery <i data-feather="eye"></i></a></li>
                                 <li id="t2" class="btn btn-primary" style="margin-left: 10px;"><a href="#tab1-2" data-toggle="tab" style="color: #ffffff;">Add Gallery <i data-feather="plus"></i></a></li>
-                                <li id="t3" class="btn btn-warning" style="margin-left: 10px;"><a href="#tab1-3" data-toggle="tab" style="color: #ffffff;">Edit Gallery <i data-feather="edit"></i></a></li>
+                                <!-- <li id="t3" class="btn btn-warning" style="margin-left: 10px;"><a href="#tab1-3" data-toggle="tab" style="color: #ffffff;">Edit Gallery <i data-feather="edit"></i></a></li> -->
                             </ul>
                         </div>
                         <div class="card-body">

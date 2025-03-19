@@ -18,7 +18,7 @@
   <!-- Custom JS File -->
   <script src="<?php echo base_url();?>assetss/js/custom.js"></script>
   <script src="<?php echo base_url(); ?>assetss/bundles/ckeditor/ckeditor.js"></script>
-
+  <script src="<?php echo base_url(); ?>assetss\bundles\sweetalert/sweetalert.min.js"></script>
   <script src="<?php echo base_url(); ?>Style/dist/assets/bs3/js/bootstrap.min.js"></script>
        
 
@@ -36,7 +36,4 @@
        <script src="<?php echo base_url(); ?>Style/dist/assets/plugins/morris/morris.min.js"></script>
        <!-- <script src="<?php echo base_url(); ?>Style/demo/js/dashboard.js"></script> -->
 </body>
-
-
-<!-- index.html  21 Nov 2019 03:47:04 GMT -->
 </html>

@@ -4,7 +4,7 @@
         <div class="footer-up">
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-12">
-                    <a href="<?php echo base_url();?>" class="logo"><img src="<?php echo base_url();?>uploads/About/logo1.png" style="height:75px; width:200px;"></a>
+                    <a href="<?php echo base_url();?>" class="logo"><img src="<?php echo base_url();?>uploads/About/output-onlinepngtools.png" style="height:75px; width:200px;"></a>
                         <p>Get best solution for your process engineering requirements</p>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
@@ -13,10 +13,10 @@
                           TEERTH BUSINESS CENTER,UNIT 11, 5th FLOOR, EL BLOCK, MIDC Bhosari, Pune 411026, Maharashtra, India.
                         </p>
                         <div class="company-email">
-                            <a href="#"> sales@sakaindia.com</a>
+                            <p href="#"><i class="fa fa-envelope"></i>   sales@sakaindia.com</p>
                         </div>
                         <div class="phone-number">
-                            <p> +91 956 109 4128</p>
+                            <p><i class="fa fa-user-headset"></i>  +91 956 109 4128</p>
                         </div>
 
                 </div>
@@ -24,11 +24,11 @@
                         <h5>Links</h5>
                         <ul>
                             <li>
-                                <a href="about.html">About</a>
-                                <a href="services.html">Services</a>
-                                <a href="project.html">Project</a>
-                                <a href="price.html">Pricing</a>
-                                <a href="faq.html"> FAQ</a>
+                                <a href="<?php echo base_url();?>About_us">About Us</a>
+                                <a href="<?php echo base_url();?>Contact">Contact Us</a>
+                                <a href="<?php echo base_url();?>Gallery">Gallery</a>
+                                <!-- <a href="price.html">Pricing</a>
+                                <a href="faq.html"> FAQ</a> -->
                             </li>
                         </ul>
                     </div>
@@ -104,7 +104,7 @@
             <div class="contact-list mb-40">
                 <!-- <h4>About</h4> -->
                 <p>Welcome to Saka India, We provide world class process engineering solution with our cutting edge technologies and a expereinced team.</p>
-                <img src="assets/img/offcanvas-img.jpg" alt="">
+                <!-- <img src="assets/img/offcanvas-img.jpg" alt=""> -->
 
                 <div class="mt-30 mb-30">
                     <a href="<?php echo base_url();?>index.php/Admin" class="white-btn">Login</a>
