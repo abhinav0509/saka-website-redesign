@@ -25,7 +25,7 @@
     } 
     .counter-number {
         font-size: 40px;
-        font-weight: bold;
+        font-weight: ;
         color: #333;
         transition: all 1s ease-in-out;
    }
@@ -88,14 +88,14 @@ document.addEventListener("DOMContentLoaded", function () {
                             <div class="p-animation">
                                 <p>Our team of expert engineers and designers works closely with clients to create robust, functional and state of art solutions<br> that are tailored to their specific process engineering needs.</p>
                             </div>  
-                               <a href="about.html" class="theme-btn mt-20">Start a Project</a>                                  
+                               <a href="<?php echo base_url();?>index.php/Contact" class="theme-btn mt-20">Start a Project</a>                                  
                         </div>
                     </div>                                                      
                 </div>                
             </div>
         </div>
                                                                      
-     <div class="container-fluid mt-4">
+     <div class="container-fluid mt-4" style="overflow:hidden;">
         <video class="col-md-12" autoplay muted loop id="hero  Video">
                 <source src="<?php echo base_url();?>assets/img/video/Saka-Corporate Video_final.mp4" type="video/mp4">
                 
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         
                     </div>
                     <div class="single-client d-flex flex-column">
-                        <img src="<?php echo base_url();?>assets/img/client/uae-flag.png" alt="UAE-flag">
+                        <img src="<?php echo base_url();?>assets/img/client/UAE-flag.png" alt="UAE-flag">
                         <h5>UAE</h5>
                      
                     </div>
@@ -164,7 +164,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div class="offset-xl-1 col-xl-4 offset-lg-1 col-lg-4 col-md-6 text-end">
                     <div class="about-img">
-                        <img src="assets/img/about/about-3.jpg" alt="">
+                        <img src="assets/img/about/saka-about-image.jpg" alt="">
                     </div>
                 </div>
             </div>            
@@ -179,25 +179,25 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="row gx-5">                
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-counter-box">
-                    <p class="counter-number" data-target="65">0</p>
+                    <p class="counter-number" data-target="23">0</p>
                     <h6>Year of Experience</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-counter-box">
-                    <p class="counter-number" data-target="250">0</p>
+                    <p class="counter-number" data-target="1037">0</p>
                     <h6>Installations</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">    
                 <div class="single-counter-box">
-                    <p class="counter-number" data-target="300">0</p>
+                    <p class="counter-number" data-target="25">0</p>
                     <h6>Locations Across World</h6>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-counter-box">
-                    <p class="counter-number" data-target="98">0</p>
+                    <p class="counter-number" data-target="99">0</p>
                     <h6>Clients Satisfaction</h6>
                 </div>
             </div>                             
@@ -310,21 +310,21 @@ document.addEventListener("DOMContentLoaded", function () {
                                     </p>
                                 </div>
                             </div>                            
-                            <img class="services-image" src="assets/img/service/services-5.jpg" alt="Image Description">                                                    
+                             <img class="services-image" src="<?php echo base_url();?>assets/img/service/flash-dryer-saka-india-300x300.png" alt="Image Description">                                                  
                         </div>
                                                 
                         <!-- Tab Content -->
                         <div class="tab-pane services-content-item fade" id="services-item-6" role="tabpanel">                            
                             <div class="services-text">
                                 <div class="services-text-container">
-                                    <h4 class="services-title">Rotary Dryer</h4>
+                                    <h4 class="services-title">Hot Air Generator</h4>
                                     <p class="text-gray mb-0">
-                                      SAKA make Fluid Bed Dryers are ideal for agglomeration, granulation or dry powder formation. Fully customized to meet your specific requirement and trusted by many companies in India and abroad.
+                                      SAKA make Hot Air Generator are ideal for agglomeration, granulation or dry powder formation. Fully customized to meet your specific requirement and trusted by many companies in India and abroad.
                                     </p>
                                 </div>
                             </div>
                             
-                            <img class="services-image" src="assets/img/service/services-6.jpg" alt="Image Description">                                                
+                            <img class="services-image" src="<?php echo base_url();?>assets/img/service/hot-air-genrator.png" alt="Image Description">                                                
                         </div>
                                                 
                     </div>
@@ -360,11 +360,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="tab-pane fade show active" id="architecture-design" role="tabpanel" aria-labelledby="architecture-design-tab" tabindex="0">
                         <div class="row">
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">                                
-                                <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/granulation-systems-20-ton-per-day-nagpur.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/granulation-systems-20-ton-per-day-nagpur.jpg" style="cursor: pointer;" onclick="">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -376,11 +376,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </div>                                
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                             <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/granulation-systems-5000kg-per-hr-jagadiya-gujarat.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                   
+                             <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/granulation-systems-5000kg-per-hr-jagadiya-gujarat.jpg" style="cursor: pointer;" onclick="">                                   
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -392,11 +392,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                              <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/granulation-systems-50-ton-per-day-bhuj-gujarat.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                              <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/granulation-systems-50-ton-per-day-bhuj-gujarat.jpg" style="cursor: pointer;" onclick="">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -412,11 +412,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="tab-pane fade" id="interior-design" role="tabpanel" aria-labelledby="interior-design-tab" tabindex="0">
                         <div class="row">                            
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">                                
-                               <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/co-current-2500kg-per-hr-1.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                  
+                               <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/co-current-2500kg-per-hr-1.jpg" style="cursor: pointer;" onclick="">                                  
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -428,11 +428,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </div>                                
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                               <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/co-current-2000kg-per-hr.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                   
+                               <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/co-current-2000kg-per-hr.jpg" style="cursor: pointer;" onclick="">                                   
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -446,11 +446,11 @@ document.addEventListener("DOMContentLoaded", function () {
                             </div>
                             
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                             <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/two-fluid-nozzle-spray-dryer-1.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                             <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/two-fluid-nozzle-spray-dryer-1.jpg" style="cursor: pointer;" onclick="">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -468,11 +468,11 @@ document.addEventListener("DOMContentLoaded", function () {
                         <div class="row">                                
                             <div class="row">
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-12">                                
-                                <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/rotary-dryer-2000kg-per-hr-1.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                   
+                                <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/rotary-dryer-2000kg-per-hr-1.jpg" style="cursor: pointer;" onclick="">                                   
                                         <div class="featured-work-inner">
                                             <div class="fetured-work-bg">                                              
                                             </div>
-                                            <a href="project-details.html" class="details-link">
+                                            <a href="#" class="details-link">
                                                 <i class="las la-arrow-right"></i>
                                             </a>
                                             <div class="featured-work-info">
@@ -484,12 +484,12 @@ document.addEventListener("DOMContentLoaded", function () {
                                     </div>                                
                                 </div>
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                    <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/conduction-rotary-dryer.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                   
+                                    <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/conduction-rotary-dryer.jpg" style="cursor: pointer;" onclick="">                                   
 
                                         <div class="featured-work-inner">
                                             <div class="fetured-work-bg">                                              
                                             </div>
-                                            <a href="project-details.html" class="details-link">
+                                            <a href="#" class="details-link">
                                                 <i class="las la-arrow-right"></i>
                                             </a>
                                             <div class="featured-work-info">
@@ -501,12 +501,12 @@ document.addEventListener("DOMContentLoaded", function () {
                                     </div>
                                 </div>
                                 <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                    <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/counter-current-rotary-dryer-2500kg-per-hr.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                   
+                                    <div class="featured-work-wrapper" data-background="<?php echo base_url();?>assets/img/project/counter-current-rotary-dryer-2500kg-per-hr.jpg" style="cursor: pointer;" onclick="">                                   
 
                                         <div class="featured-work-inner">
                                             <div class="fetured-work-bg">                                              
                                             </div>
-                                            <a href="project-details.html" class="details-link">
+                                            <a href="#" class="details-link">
                                                 <i class="las la-arrow-right"></i>
                                             </a>
                                             <div class="featured-work-info">
@@ -523,11 +523,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="tab-pane fade" id="historic-preservation" role="tabpanel" aria-labelledby="historic-preservation-tab" tabindex="0">
                         <div class="row">                                
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">                                
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-10.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                <div class="featured-work-wrapper" data-background="assets/img/project/3-10.jpg" style="cursor: pointer;" onclick="">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -538,11 +538,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </div>                                
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-11.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                <div class="featured-work-wrapper" data-background="assets/img/project/3-11.jpg" style="cursor: pointer;" onclick="">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -553,11 +553,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-12.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                <div class="featured-work-wrapper" data-background="assets/img/project/3-12.jpg" style="cursor: pointer;" onclick="">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -572,11 +572,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="tab-pane fade" id="landscape-design" role="tabpanel" aria-labelledby="landscape-design-tab" tabindex="0">
                         <div class="row">                                
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">                                
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-13.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                <div class="featured-work-wrapper" data-background="assets/img/project/3-13.jpg" style="cursor: pointer;" onclick="">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -587,11 +587,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </div>                                
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-14.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                <div class="featured-work-wrapper" data-background="assets/img/project/3-14.jpg" style="cursor: pointer;" onclick="">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -602,11 +602,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-15.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                <div class="featured-work-wrapper" data-background="assets/img/project/3-15.jpg" style="cursor: pointer;" onclick="">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -621,11 +621,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="tab-pane fade" id="furniture-remodel" role="tabpanel" aria-labelledby="furniture-remodel-tab" tabindex="0">
                         <div class="row">                                
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">                                
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-16.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                <div class="featured-work-wrapper" data-background="assets/img/project/3-16.jpg" style="cursor: pointer;" onclick="">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -636,11 +636,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </div>                                
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-17.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                <div class="featured-work-wrapper" data-background="assets/img/project/3-17.jpg" style="cursor: pointer;" onclick="">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -651,11 +651,11 @@ document.addEventListener("DOMContentLoaded", function () {
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-6 col-12">
-                                <div class="featured-work-wrapper" data-background="assets/img/project/3-18.jpg" style="cursor: pointer;" onclick="window.location='project-details.html';">                                    
+                                <div class="featured-work-wrapper" data-background="assets/img/project/3-18.jpg" style="cursor: pointer;" onclick="">                                    
                                     <div class="featured-work-inner">
                                         <div class="fetured-work-bg">                                              
                                         </div>
-                                        <a href="project-details.html" class="details-link">
+                                        <a href="#" class="details-link">
                                             <i class="las la-arrow-right"></i>
                                         </a>
                                         <div class="featured-work-info">
@@ -674,31 +674,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
     <!-- Client Section  -->
 
-    <div class="client-area section-padding pt-0">
+  <div class="client-area section-padding pt-0">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12">
                 <div class="client-wrap owl-carousel">
                     <div class="single-client">
-                        <img src="<?php echo base_url();?>assets/img/client/aditya-birla-chemicals-logo.png" alt="adiya-birla-chemicals-logo">
+                        <img src="<?php echo base_url();?>assets/img/client/asian-paints.jpg" alt="asian-paints-logo">
                     </div>
                     <div class="single-client">
-                    <img src="<?php echo base_url();?>assets/img/client/godrej-logo.png" alt="godrej-logo">
+                        <img src="<?php echo base_url();?>assets/img/client/godrej.jpg" alt="godrej-logo">
                     </div>
                      <div class="single-client">
-                    <img src="<?php echo base_url();?>assets/img/client/DeepakNitrite-logo.png" alt="deepak nitrate logo">
+                        <img src="<?php echo base_url();?>assets/img/client/johnson.jpg" alt="johnson-logo">
                     </div>
                     <div class="single-client">
-                    <img src="<?php echo base_url();?>assets/img/client/excel-crop-care.png" alt="excel-crop-care logo">
+                        <img src="<?php echo base_url();?>assets/img/client/BARC.jpg" alt="BARC-logo">
                     </div>
                     <div class="single-client">
-                    <img src="<?php echo base_url();?>assets/img/client/aarti-logo.png" alt="aarti-logo">
+                        <img src="<?php echo base_url();?>assets/img/client/adityabirla-chemicals.jpg" alt="aditya-birla-chemicals-logo">
                     </div>
                 </div>
             </div>
         </div>
     </div>
- </div>
+</div>
 
    
 
@@ -726,7 +726,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <p>We’ve been working with Saka India for over three years now, and their commitment to quality and precision is unmatched. Their team has consistently delivered high-grade materials that meet our stringent standards.</p>
                             </div>
                             <div class="testimonial-author">
-                                <img src="assets/img/testimonial/1.png" alt="">
+                                <!--<img src="assets/img/testimonial/1.png" alt="">-->
                                 <h6 class="text-black">Madhav Patel <span>Ahemedabad, Gujrat</span></h6>
                             </div>
 
@@ -739,7 +739,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <p>Saka India has been instrumental in helping us streamline our manufacturing process. Their expertise in chemical processing and timely delivery has significantly reduced our downtime and improved efficiency</p>
                             </div>
                             <div class="testimonial-author">
-                                <img src="assets/img/testimonial/2.png" alt="">
+                                <!--<img src="assets/img/testimonial/2.png" alt="">-->
                                 <h6 class="text-black">Paul Scholes <span>Manchester, UK</span></h6>
                             </div>
                         </div>
@@ -747,7 +747,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div class="col-xl-5 col-lg-5">
                     <div class="testimonial-bg-wrapper d-none d-md-block">
-                        <img src="assets/img/testimonial-bg.jpg" alt="">
+                        <img src="assets/img/saka-testimonial-global.png" alt="">
                     </div>
                 </div>
             </div>
@@ -771,36 +771,36 @@ document.addEventListener("DOMContentLoaded", function () {
                                 vision for scaling up or adapting to future needs of your business,
                                 thus ensuring an enduring technology for the processes.</p>                                                           
                         </div>  
-                        <div class="choose-img">
-                            <img src="assets/img/choose/1.jpg" alt="">
-                        </div>                      
+                        <!--<div class="choose-img">-->
+                        <!--    <img src="assets/img/choose/1.jpg" alt="">-->
+                        <!--</div>                      -->
                     </div>
                     <div class="single-choose-item">
                         <div class="single-choose-inner">
                             <h5><span>02</span>Advanced CFD Anlaysis</h5>
                             <p>Using next generation Computational Fluid Dynamics(CFD) techniques SAKA is able to simulate and analyse the material behavior and properties in the process.</p>                                                                
                         </div>    
-                        <div class="choose-img">
-                            <img src="assets/img/choose/2.jpg" alt="">
-                        </div>                                          
+                        <!--<div class="choose-img">-->
+                        <!--    <img src="assets/img/choose/2.jpg" alt="">-->
+                        <!--</div>                                          -->
                     </div>
                     <div class="single-choose-item">
                         <div class="single-choose-inner">
                             <h5><span>03</span>Intelligent Automation</h5> 
                             <p>SAKA's focus in automation is to leverage advanced PLC/SCADA technology to build intelligent drying processes that ensure highest efficiency in operations and best quality output.</p>                                                           
                         </div> 
-                        <div class="choose-img">
-                            <img src="assets/img/choose/3.jpg" alt="">
-                        </div>                                             
+                        <!--<div class="choose-img">-->
+                        <!--    <img src="assets/img/choose/3.jpg" alt="">-->
+                        <!--</div>                                             -->
                     </div>
                     <div class="single-choose-item">
                         <div class="single-choose-inner">
                             <h5><span>04</span>World Class Quality</h5> 
                             <p>Being world-class is core to our strategy.We have established an extensive system of checks to ensure only the highest quality in our sourcing,manufacturing and site work.</p>                                                           
                         </div>  
-                        <div class="choose-img">
-                            <img src="assets/img/choose/4.jpg" alt="">
-                        </div>                                            
+                        <!--<div class="choose-img">-->
+                        <!--    <img src="assets/img/choose/4.jpg" alt="">-->
+                        <!--</div>                                            -->
                     </div>
                 </div>
             </div>
@@ -830,19 +830,19 @@ document.addEventListener("DOMContentLoaded", function () {
                     <div class="team-info">
                     <h5>Anand Thigale</h5>
                     <hr>
-                    <p>Managing Director</p>
+                    <p>[Managing Director]</p>
                     </div>                    
                 </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="400ms">
                 <div class="single-team-item">
                     <div class="team-img">
-                    <img src=" <?php echo base_url();?>assets/img/team/Sunil-Kumar-Yadav.jpg" alt="Sunil-Kumar-Yadav-Image">
+                    <img src=" <?php echo base_url();?>assets/img/team/sunil.jpg" alt="Sunil-Kumar-Yadav-Image">
                     </div>
                     <div class="team-info">
                     <h5>Mr. Sunil Kumar Yadav</h5>
                     <hr>
-                    <p>Sr. GM Project</p>
+                    <p>[Sr. GM Project]</p>
                     </div>
                     
                 </div>
@@ -851,58 +851,59 @@ document.addEventListener("DOMContentLoaded", function () {
             </div>
         </div>
         <div class="row">
+             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="400ms">
+            <div class="single-team-item">
+                <div class="team-img">
+                <img src="<?php echo base_url();?>assets/img/team/Sanjay-Shah (1).png" alt="Sanjay-Shah" >
+                </div>
+                <div class="team-info">
+                <h5>Sanjay Shah</h5>
+                <hr>
+                <p>[Director]</p>
+                </div>
+                
+            </div>
+            </div>
+             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="200ms">
+            <div class="single-team-item">
+                <div class="team-img">
+                <img src="<?php echo base_url();?>assets/img/team/Saurabh-Thigale.jpg" alt="Saurabh-Thigale" >
+                </div>
+                <div class="team-info">
+                <h5>Saurabh Thigale</h5>
+                <hr>
+                <p>[Manager - Design]</p>
+                </div>
+                
+            </div>
+            </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="600ms">
             <div class="single-team-item">
                 <div class="team-img">
-                <img src=" <?php echo base_url();?>assets/img/team/Rekha-Malvadkar.jpeg" alt="Rekha-Malvadkar-Image">
+                <img src=" <?php echo base_url();?>assets/img/team/Rekha-Malvadkar.png" alt="Rekha-Malvadkar-Image">
                 </div>
                 <div class="team-info">
                 <h5>Mrs. Rekha-Malvadkar</h5>
                 <hr>
-                <p>Director Finance & Accounts </p>
+                <p>[Director Finance & Accounts]</p>
                 </div>
             
             </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="200ms">
-            <div class="single-team-item">
-                <div class="team-img">
-                <img src="assets/img/team/4.jpg" alt="" >
-                </div>
-                <div class="team-info">
-                <h5>Patric Evra</h5>
-                <hr>
-                <p>[Marketing & Sales Head]</p>
-                </div>
-                
-            </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="400ms">
-            <div class="single-team-item">
-                <div class="team-img">
-                <img src="assets/img/team/5.jpg" alt="" >
-                </div>
-                <div class="team-info">
-                <h5>Sophie White</h5>
-                <hr>
-                <p>[Engineer]</p>
-                </div>
-                
-            </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="600ms">
-            <div class="single-team-item">
-                <div class="team-img">
-                <img src="assets/img/team/6.jpg" alt="" >
-                </div>
-                <div class="team-info">
-                <h5>Phil Jhones</h5>
-                <hr>
-                <p>[Enginner]</p>
-                </div>
+           
+            <!--<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="600ms">-->
+            <!--<div class="single-team-item">-->
+            <!--    <div class="team-img">-->
+            <!--    <img src="assets/img/team/6.jpg" alt="" >-->
+            <!--    </div>-->
+            <!--    <div class="team-info">-->
+            <!--    <h5>Phil Jhones</h5>-->
+            <!--    <hr>-->
+            <!--    <p>[Enginner]</p>-->
+            <!--    </div>-->
             
-            </div>
-            </div>
+            <!--</div>-->
+            <!--</div>-->
         </div>
         </div>
     </div>
@@ -919,7 +920,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
                 <div class="col-xl-5 col-lg-5">
                     <div class="cta-content">
-                        <p>Explore our <a href="project.html">portfolio</a> to see examples of our projects and get inspired for your own space.</p>
+                        <p>Explore our <a href="#">portfolio</a> to see examples of our projects and get inspired for your own space.</p>
                     </div>
                 </div>
             </div>
@@ -979,29 +980,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
     <!-- Newsletter Section  -->
 
-    <div class="newsletter-section" style="z-index:200 !important;">
-        <div class="container">
-            <div class="row newsletter-inner gray-bg align-items-center">
-                <div class="col-xl-7 col-lg-7">
-                    <div class="section-title">
-                        <h2>Stay Up-to-date <br> with Saka India <span><i class="las la-arrow-right"></i></span> </h2>
-                    </div>
-                </div>
-                <div class="col-xl-5 col-lg-5">
-                    <div class="newsletter-content">
-                        <p>Sign up for our newsletter to stay in the know about our latest projects, design insight and industry news. </p>
+    <!--<div class="newsletter-section" style="z-index:200 !important;">-->
+    <!--    <div class="container">-->
+    <!--        <div class="row newsletter-inner gray-bg align-items-center">-->
+    <!--            <div class="col-xl-7 col-lg-7">-->
+    <!--                <div class="section-title">-->
+    <!--                    <h2>Stay Up-to-date <br> with Saka India <span><i class="las la-arrow-right"></i></span> </h2>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-xl-5 col-lg-5">-->
+    <!--                <div class="newsletter-content">-->
+    <!--                    <p>Sign up for our newsletter to stay in the know about our latest projects, design insight and industry news. </p>-->
                         <!-- <h3>We will deliver our best content straight to your inbox.</h3> -->
-                        <div class="subscribed-form">
-                            <form>
-                                <input type="text" placeholder="Type your Email">
-                                <input class="bordered-btn" type="submit" value="Sign Up">
-                            </form>
+    <!--                    <div class="subscribed-form">-->
+    <!--                        <form>-->
+    <!--                            <input type="text" placeholder="Type your Email">-->
+    <!--                            <input class="bordered-btn" type="submit" value="Sign Up">-->
+    <!--                        </form>-->
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
     
    

@@ -139,7 +139,7 @@ function concmsinsert() {
             </div>
             <div class="row justify-content-center mt-60">
                 <div class="col-xl-12">
-                    <img src="assets/img/contact-bg.jpg" alt="">
+                    <img src="<?php echo base_url();?>assets/img/saka-contactus.png" alt="">
                 </div>                              
             </div>
             <div class="row mt-60">

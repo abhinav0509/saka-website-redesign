@@ -207,9 +207,9 @@
 
         <div class="error-content">
             <h1 class="error-number">404</h1>
-            <h2 class="error-text">Page Not Found</h2>
+            <h2 class="error-text">Page Not Found | Saka India</h2>
             <p class="error-description">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
-            <a href="index.html" class="home-button">
+            <a href="<?php echo base_url()?>" class="home-button">
                 Back to Home
                 <i class="las la-arrow-right"></i>
             </a>

@@ -32,7 +32,7 @@ public function insert_enquiry()
 	$op.="<div style='background-color:#000000;width:80%;max-width:600px;margin-left:auto;margin-right:auto;'>";
 	$op.="<div style='background-color:#ffffff;padding:50px;'>";
 	$op.="<header style='text-align:center;'>";
-	$op.="<img src='https://sakaindia.com/wp-content/uploads/2016/09/logo.jpg' style='width:150px'/>";
+	$op.="<img src='https://sakaindia.com/assets/img/about/saka-logo-hd.png' style='width:150px'/>";
 	$op.="<h1>Enquiry </h1>";
 	$op.="</header>";
 	$op.="<hr style='height:5px;background-color:hsl(192, 82.90%, 52.00%);border-color:rgb(31, 170, 234);'>";
@@ -68,7 +68,7 @@ public function insert_enquiry()
 	$op.="</div>";
 	$op.="<footer style='text-align:center;'>";
 	$op.="<section style='font-size:10px;color:#000000;padding:20px 0;background-color:#ffffff !important;'>";
-	$op.="<img src='https://sakaindia.com/wp-content/uploads/2016/09/logo.jpg' style='width:100px'/>";
+	$op.="<img src='https://sakaindia.com/assets/img/about/saka-logo-hd.png' style='width:100px'/>";
 	$op.="<p>";
 	$op.="<a href='https://www.sakaindia.com/'>www.sakaindia.com</a>";
 	$op.="</p>";
@@ -89,8 +89,8 @@ public function insert_enquiry()
              $mail->Password = $pass;               // SMTP password
              $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
              $mail->Port = 587;                                    //Set the SMTP port number - 587 for authenticated TLS
-             $mail->setFrom('msipl@mavericksoftware.in', 'MSIPL');     //Set who the message is to be sent from
-             $mail->addAddress('msipl@mavericksoftware.in', 'MSIPL');  // Add a recipient
+             $mail->setFrom('sales@sakaindia.com', 'SAKA INDIA');     //Set who the message is to be sent from
+             $mail->addAddress('sales@sakaindia.com', 'SAKA INDIA');  // Add a recipient
           
              $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
              $mail->isHTML(true);                                  // Set email format to HTML
@@ -121,7 +121,7 @@ public function insert_enquiry()
 			$op .= "<div style='background-color:#000000;width:80%;max-width:600px;margin-left:auto;margin-right:auto;'>";
 			$op .= "<div style='background-color:#ffffff;padding:50px;'>";
 			$op .= "<header style='text-align:center;'>";
-			$op .= "<img src='https://sakaindia.com/wp-content/uploads/2016/09/logo.jpg' style='width:150px'/>";
+			$op .= "<img src='https://sakaindia.com/assets/img/about/saka-logo-hd.png' style='width:150px'/>";
 			$op .= "<h2>Saka Engineering System Pvt Ltd.</h2>";
 			$op .= "</header>";
 			$op .= "<hr style='height:5px;background-color: #EA5C1F;border-color: #EA5C1F;'>";
@@ -137,7 +137,7 @@ public function insert_enquiry()
 			$op .= "</div>";
 			$op .= "<footer style='text-align:center;'>";
 			$op .= "<section style='font-size:10px;color:#000000;padding:20px 0;background-color:#ffffff !important;'>";
-			$op .= "<img src='https://sakaindia.com/wp-content/uploads/2016/09/logo.jpg' style='width:100px'/>";
+			$op .= "<img src='https://sakaindia.com/assets/img/about/saka-logo-hd.png' style='width:100px'/>";
 			$op .= "<p><a href='https://www.sakaindia.com/'>www.sakaindia.com</a></p>";
 			$op .= "<p>TEERTH BUSINESS CENTER,UNIT 11, 5th FLOOR, EL BLOCK, MIDC Bhosari, Pune 411026, Maharashtra, India.</p>";
 			$op .= "<p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Saka Engineering System Pvt Ltd. All Rights Reserved</p>";
@@ -159,9 +159,9 @@ public function insert_enquiry()
 			  $mail->Password = $pass;               // SMTP password
 			  $mail->SMTPSecure = 'tls';                            // Enable encryption, 'ssl' also accepted
 			  $mail->Port = 587;                                    //Set the SMTP port number - 587 for authenticated TLS
-			  $mail->setFrom('msipl@mavericksoftware.in', 'MSIPL');     //Set who the message is to be sent from
-			  $mail->addAddress($email, 'Inlaks Budhrani');  // Add a recipient
-			  $mail->AddReplyTo('msipl@mavericksoftware.in', ' Reply to MSIPL');
+			  $mail->setFrom('sales@sakaindia.com', 'SAKA INDIA');     //Set who the message is to be sent from
+			  $mail->addAddress($email, 'SAKA INDIA');  // Add a recipient
+			  $mail->AddReplyTo('sales@sakaindia.com', ' Reply to SAKA INDIA');
 			  $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
 			  $mail->isHTML(true);                                  // Set email format to HTML
 			  

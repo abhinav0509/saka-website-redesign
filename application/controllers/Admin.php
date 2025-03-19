@@ -3875,6 +3875,58 @@ public function Convert()
 		$this->load->view('about-us',$data1);
 		$this->load->view('cms/footer');
 	}
+	public function Products()
+	{
+		 $data1['dt']=array(
+         	'page_index'=>$this->input->post('pindex'),
+         	'cname'=>$this->input->post('cnm1'),
+         	//'course'=>$this->input->post('cnm1')
+         	//'author'=>$this->input->post('auth')
+         	);         
+      
+         $pageindex=$this->input->post("pindex");
+         
+
+         if($pageindex=="")
+         {
+         	$pageindex=0;
+         }
+         else if($pageindex >=1)
+         {
+         	$pageindex=intval(($pageindex-1)*10);
+         }
+         else
+         {
+         	$pageindex=0;
+         }
+        
+        	$cname=$this->input->post('cnm1');
+         	//$course=$this->input->post('cor');
+         	//echo $author=$this->input->post('auth');
+ 
+    /*888888888888888888888888888888888888888888888888888888888888888*/
+		
+		$this->load->model('display');
+		$config=array();
+		$config["base_url"]=base_url()."index.php/Admin/Products";
+		//$config["total_rows"]=$this->display->Book_display($bname,$course,$author);
+		$config["total_rows"]=$this->display->Productd_display($cname);
+		$config["per_page"] = 10;
+		$config["uri_segment"] = $pageindex;
+		$this->pagination->initialize($config);
+	//$page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+		$data1["results"] = $this->display->Product1_Paging($config["per_page"], $pageindex,$cname);
+		//$data1['rowcount']=$this->display->Book_display($bname,$course,$);
+		$data1['rowcount']=$this->display->Product_display($cname);
+		// $data1["links"] = $this->pagination->create_links();		
+		//$data1['course']=$this->display->getcourse();
+		$data=$this->globaldata;
+		//print_r($data1['results']);
+		//die();
+		$this->load->view('cms/header',$data);
+		$this->load->view('products',$data1);
+		$this->load->view('cms/footer');
+	}
 }
 
 

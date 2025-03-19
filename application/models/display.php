@@ -4840,7 +4840,90 @@ public function get_stud_info1($name,$fid)
           }
           return false;
      }
-
-}
+     public function Productd_display()
+     {  
+        $this->db->limit(3,0);
+        $this->db->order_by('id','desc');
+        $query=$this->db->get('tbl_product');
+        return $query->result();
+     }
+     
+     public function Productdispaly_display()
+     {  
+        // $this->db->limit(3,0);
+        $this->db->order_by('id','desc');
+        $query=$this->db->get('tbl_product');
+        return $query->result();
+     }
+    
+    function Product_display($cname)
+    {
+         /* $array=array();
+            if($cname!="")
+            {
+               $array=array('cname'=>$cname);
+            }
+            else if($cname=="")
+            {
+                $this->db->order_by('id','desc');
+             $query=$this->db->get('testimonial');
+             return $query->num_rows();
+            }
+            
+            $this->db->where($array);
+          $this->db->order_by('id','desc');*/
+            $query=$this->db->get('tbl_product');
+            return $query->num_rows();
+    }   
+    public function Product1_Paging($limit,$start,$cname)
+         {
+            /*
+            $array=array();
+            if($cname!="")
+            {
+               $array=array('cname'=>$cname);
+            }
+            else if($cname=="")
+            {
+                $this->db->order_by('id','desc');
+             $query=$this->db->get('testimonial');
+             return $query->result();
+            }       
+          
+          $this->db->limit($limit, $start);
+            $this->db->where($array);*/
+          $this->db->order_by('id','desc');
+            $query = $this->db->get("tbl_product");
+     
+            if ($query->num_rows() > 0) {
+                foreach ($query->result() as $row) {
+                    $data[] = $row;
+                }
+                return $data;
+            }
+            return false;
+       }
+       public function get_singleProduct($urll)
+        {
+        if($urll!="")
+        {
+           $this->db->limit(1,0);
+           $this->db->select('tbl_blog.B_id,tbl_blog.title,tbl_blog.name,tbl_blog.content,tbl_blog.image,tbl_blog.insertdate');
+           $this->db->from('tbl_product');
+           $this->db->where(trim('tbl_blog.title'),trim($urll));
+           $query = $this->db->get();
+           return $query->result_array();		
+        }
+        else
+        {
+           $this->db->select('tbl_blog.B_id,tbl_blog.title,tbl_blog.name,tbl_blog.content,tbl_blog.image,tbl_blog.insertdate');
+           $this->db->from('tbl_product');
+           $this->db->order_by('id','asc');
+           $query = $this->db->get();
+           return $query->result_array();		
+        }
+     }
+  
+  }
 
 ?>

@@ -380,19 +380,19 @@ even as the base of customers doubled every year since the inception.</p>
                     <div class="team-info">
                     <h5>Anand Thigale</h5>
                     <hr>
-                    <p>Managing Director</p>
+                    <p>[Managing Director]</p>
                     </div>                    
                 </div>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="400ms">
                 <div class="single-team-item">
                     <div class="team-img">
-                    <img src=" <?php echo base_url();?>assets/img/team/Sunil-Kumar-Yadav.jpg" alt="Sunil-Kumar-Yadav-Image">
+                    <img src=" <?php echo base_url();?>assets/img/team/sunil.jpg" alt="Sunil-Kumar-Yadav-Image">
                     </div>
                     <div class="team-info">
                     <h5>Mr. Sunil Kumar Yadav</h5>
                     <hr>
-                    <p>Sr. GM Project</p>
+                    <p>[Sr. GM Project]</p>
                     </div>
                     
                 </div>
@@ -404,55 +404,57 @@ even as the base of customers doubled every year since the inception.</p>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="600ms">
             <div class="single-team-item">
                 <div class="team-img">
-                <img src=" <?php echo base_url();?>assets/img/team/Rekha-Malvadkar.jpeg" alt="Rekha-Malvadkar-Image">
+                <img src=" <?php echo base_url();?>assets/img/team/Rekha-Malvadkar.png" alt="Rekha-Malvadkar-Image">
                 </div>
                 <div class="team-info">
                 <h5>Mrs. Rekha-Malvadkar</h5>
                 <hr>
-                <p>Director Finance & Accounts </p>
+                <p>[Director Finance & Accounts]</p>
                 </div>
             
             </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="200ms">
+            
+             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="200ms">
             <div class="single-team-item">
                 <div class="team-img">
-                <img src="assets/img/team/4.jpg" alt="" >
+                <img src="<?php echo base_url();?>assets/img/team/Saurabh-Thigale.jpg" alt="Saurabh-Thigale" >
                 </div>
                 <div class="team-info">
-                <h5>Patric Evra</h5>
+                <h5>Saurabh Thigale</h5>
                 <hr>
-                <p>[Marketing & Sales Head]</p>
+                <p>[Manager - Design]</p>
                 </div>
                 
             </div>
             </div>
+            
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="400ms">
             <div class="single-team-item">
                 <div class="team-img">
-                <img src="assets/img/team/5.jpg" alt="" >
+                <img src="<?php echo base_url();?>assets/img/team/Sanjay-Shah (1).png" alt="Sanjay-Shah" >
                 </div>
                 <div class="team-info">
-                <h5>Sophie White</h5>
+                <h5>Sanjay Shah</h5>
                 <hr>
-                <p>[Engineer]</p>
+                <p>[Director]</p>
                 </div>
                 
             </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="600ms">
-            <div class="single-team-item">
-                <div class="team-img">
-                <img src="assets/img/team/6.jpg" alt="" >
-                </div>
-                <div class="team-info">
-                <h5>Phil Jhones</h5>
-                <hr>
-                <p>[Enginner]</p>
-                </div>
+            <!--<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 wow fadeInUp animated" data-wow-delay="600ms">-->
+            <!--<div class="single-team-item">-->
+            <!--    <div class="team-img">-->
+            <!--    <img src="assets/img/team/6.jpg" alt="" >-->
+            <!--    </div>-->
+            <!--    <div class="team-info">-->
+            <!--    <h5>Phil Jhones</h5>-->
+            <!--    <hr>-->
+            <!--    <p>[Enginner]</p>-->
+            <!--    </div>-->
             
-            </div>
-            </div>
+            <!--</div>-->
+            <!--</div>-->
         </div>
         </div>
     </div>

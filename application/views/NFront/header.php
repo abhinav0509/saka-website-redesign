@@ -40,12 +40,12 @@
 <body>
 
     <!-- preloader -->
-    <div class="preloader">
-        <div class="spinner">
-            <div class="double-bounce1"></div>
-            <div class="double-bounce2"></div>
-        </div>
-    </div>
+    <!--<div class="preloader">-->
+    <!--    <div class="spinner">-->
+    <!--        <div class="double-bounce1"></div>-->
+    <!--        <div class="double-bounce2"></div>-->
+    <!--    </div>-->
+    <!--</div>-->
 
     <!-- Mouse Cursor  -->
     <div class="mouseCursor cursor-outer"></div>
@@ -65,7 +65,7 @@
 
                         <div class="main-menu d-none d-lg-block">
                             <ul>
-                                <li class="active"><a class="navlink" href="<?php echo base_url();?>index.php/Home_three">Home</a>
+                                <li class="active"><a class="navlink" href="<?php echo base_url();?>">Home</a>
                                 <!-- <ul class="sub-menu"> -->
                                         <!-- <li><a href="<?php echo base_url();?>"> Home - One</a></li>
                                         <li><a href="<?php echo base_url();?>index.php/Home_two">Home - Two</a></li>
@@ -75,34 +75,34 @@
                                         
                                     <!-- </ul> -->
                                 </li>
-                                <li><a class="navlink" href="#">About Us</a>
+                                <li><a class="navlink" href="<?php echo base_url();?>About_us">About Us</a>
                                     <ul class="sub-menu">
-                                        <li><a href="<?php echo base_url();?>index.php/About_us">About Us</a></li>                                    
+                                        <li><a href="<?php echo base_url();?>About_us">About Us</a></li>                                    
                                         <!-- <li><a href="services.html">Our Products</a></li> -->
-                                        <li><a href="<?php echo base_url();?>index.php/Team">Our Team</a></li>
+                                        <li><a href="<?php echo base_url();?>Team">Our Team</a></li>
                                         <!-- <li><a href="price.html">Pricing Plans</a></li> -->
                                         <!-- <li><a href="faq.html">FAQs</a></li>                                     -->
                                     </ul>
                                 </li>                                
 
-                                <li><a class="navlink" href="#">Project</a>
-                                    <ul class="sub-menu">
+                                <!--<li><a class="navlink" href="#">Project</a>-->
+                                <!--    <ul class="sub-menu">-->
                                     <!-- <li><a href="project.html">Applications</a></li> -->
-                                        <li><a href="<?php echo base_url();?>index.php/Project">Projects</a></li>                                        
-                                        <li><a href="<?php echo base_url();?>index.php/Project_details">Project Details</a></li>                                        
-                                    </ul>
-                                </li>
-                                <li><a class="navlink" href="#">Blog</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="<?php echo base_url();?>index.php/Blog">Blogs</a></li>
+                                <!--        <li><a href="<?php echo base_url();?>index.php/Project">Projects</a></li>                                        -->
+                                <!--        <li><a href="<?php echo base_url();?>index.php/Project_details">Project Details</a></li>                                        -->
+                                <!--    </ul>-->
+                                <!--</li>-->
+                                <li><a class="navlink" href="<?php echo base_url();?>Blog">Blogs</a>
+                                    <!--<ul class="sub-menu">-->
+                                    <!--    <li><a href="<?php echo base_url();?>index.php/Blog">Blogs</a></li>-->
                                         <!-- <li><a href="<?php echo base_url();?>index.php/Blog_details">Blog Details</a></li> -->
-                                    </ul>
+                                    <!--</ul>-->
                                 </li>
                                
-                                <li><a class="navlink" href="<?php echo base_url();?>index.php/Solution">Applications</a></li>
-                                <li><a class="navlink" href="<?php echo base_url();?>index.php/ClientList">Our Clients</a></li>
-
-                                <li><a class="navlink" href="<?php echo base_url();?>index.php/Contact">Contact</a></li>
+                                <li><a class="navlink" href="<?php echo base_url();?>Solution">Applications</a></li>
+                                <li><a class="navlink" href="<?php echo base_url();?>ClientList">Our Clients</a></li>
+                                 <li><a class="navlink" href="<?php echo base_url();?>Gallery">Gallery</a></li>
+                                <li><a class="navlink" href="<?php echo base_url();?>Contact">Contact</a></li>
                             </ul>                            
                         </div>
 
@@ -132,39 +132,37 @@
                                     </button>
                                     <nav class="sidebar-nav">
                                         <ul class="metismenu" id="mobile-menu">
-                                            <li><a class="has-arrow" href="#">Homes</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="<?php echo base_url();?>">Home - One</a></li>                                                                                                                                                                                         
-                                                </ul>
+                                            <li><a class="" href="<?php echo base_url();?>">Home</a>
+                                                <!--<ul class="sub-menu">-->
+                                                <!--    <li><a href="<?php echo base_url();?>">Home</a></li>                                                                                                                                                                                         -->
+                                                <!--</ul>-->
                                             </li>
-                                            <li><a class="has-arrow" href="#">Pages</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="<?php echo base_url();?>index.php/About_us">About Us</a></li>                                                
-                                                    <li><a href="services.html">Our Services</a></li>
-                                                    <li><a href="team.html">Our Team</a></li>
+                                           
+                                                    <li><a href="<?php echo base_url();?>About_us">About Us</a></li>                                                
+                                                    <!--<li><a href="services.html">Our Services</a></li>-->
+                                                    <li><a href="<?php echo base_url();?>Team">Our Team</a></li>
                                                                                                   
-                                                </ul>
-                                            </li>                                            
-                                            <li><a class="has-arrow" href="#">project</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="project.html">Project</a></li>                                                    
-                                                    <li><a href="project-details.html">Project Details</a></li>
-                                                </ul>
+                                                                                      
+                                            <!--<li><a class="has-arrow" href="#">project</a>-->
+                                            <!--    <ul class="sub-menu">-->
+                                            <!--        <li><a href="project.html">Project</a></li>                                                    -->
+                                            <!--        <li><a href="project-details.html">Project Details</a></li>-->
+                                            <!--    </ul>-->
+                                            <!--</li>-->
+                                            <li><a class="" href="<?php echo base_url();?>Blog">Blogs</a>
+                                                <!--<ul class="sub-menu">-->
+                                                <!--    <li><a href="<?php echo base_url();?>index.php/Blog">Blogs</a></li>-->
+                                                    <!--<li><a href="blog-details.html">Blog Details</a></li>-->
+                                                <!--</ul>-->
                                             </li>
-                                            <li><a class="has-arrow" href="#">Blog</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="blog.html">Blogs</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="<?php echo base_url();?>Contact">Contact</a></li>
                                             
                                         </ul>
                                     </nav>  
                                     <div class="action-bar">
-                                        <a href="mailto:info@Saka India.com"><i class="las la-envelope"></i>info@Saka India.com</a>
-                                        <a href="tel:123-456-7890"><i class="fal fa-phone"></i>123-456-7890</a>
-                                        <a href="contact.html" class="white-btn">Contact Us</a>
+                                        <a href="mailto:info@Saka India.com"><i class="las la-envelope"></i>sales@sakaindia.com</a>
+                                        <a href="tel:123-456-7890"><i class="fal fa-phone"></i>+91 956 109 4128</a>
+                                        <a href="<?php echo base_url();?>Contact" class="white-btn">Contact Us</a>
                                     </div>      
                                 </div>                            
                             </div>

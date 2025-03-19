@@ -5,12 +5,16 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{   
+		$this->load->model('display');
+		$data1["results"] = $this->display->Blogd_display();
+	
+		// $data1['states']=$this->display->get_state();
 		$this->load->view('NFront/header');
-		$this->load->view('NFront/home');
+		$this->load->view('NFront/home-3', $data1);
 		$this->load->view('NFront/footer');
 	}
     
-    public function Home_three()
+    public function Home()
 	{   
 		$this->load->model('display');
 		$data1["results"] = $this->display->Blogd_display();
@@ -71,6 +75,7 @@ class Welcome extends CI_Controller {
 		$this->load->view('NFront/contact');
 		$this->load->view('NFront/footer');
 	}
+
 	public function Solution()
 	{
 		$this->load->view('NFront/header');
@@ -100,6 +105,12 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('NFront/header');
 		$this->load->view('NFront/clients');
+		$this->load->view('NFront/footer');
+	}
+	public function Gallery()
+	{
+		$this->load->view('NFront/header');
+		$this->load->view('NFront/gallery');
 		$this->load->view('NFront/footer');
 	}
 }

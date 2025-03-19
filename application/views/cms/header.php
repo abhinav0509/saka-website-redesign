@@ -254,7 +254,7 @@ else
                 </li>
               </ul>
               <li class="dropdown" id="blog">
-                 <a href="<?php echo base_url()."index.php/Admin/Blog" ?>" title="Edit All Function Blog">
+                 <a href="<?php echo base_url()."Admin/Blog" ?>" title="Edit All Function Blog">
                  <i data-feather="plus-square"></i><span>Blog Details</span>
                  </a>
            </li>
@@ -271,6 +271,11 @@ else
               <li class="dropdown" id="img">
                 <a href="<?php echo base_url()."index.php/Admin/Edit_Image" ?>" title="Edit All Function Images">
                 <i data-feather="edit"></i><span>Edit Images</span>
+                </a>
+           </li>
+           <li class="dropdown" id="products">
+                <a href="<?php echo base_url()."index.php/Admin/Products" ?>" title="Products">
+                <i data-feather="edit"></i><span>Products</span>
                 </a>
            </li>
             </li>

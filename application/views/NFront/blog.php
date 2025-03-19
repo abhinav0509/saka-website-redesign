@@ -42,7 +42,7 @@
                             <!-- <div class="blog-meta">
                                 <p>Architecture</p>
                             </div> -->
-                            <h3><a href="<?php echo base_url();?>index.php/SingleBlog/<?php echo $row->Title;?>"><?php echo $row->Title; ?></a></h3>
+                            <h3><a href="<?php echo base_url();?>SingleBlog/<?php echo $row->Title;?>"><?php echo $row->Title; ?></a></h3>
                             <p> <?php 
                                                             $content = strip_tags($row->Content); 
                                                             // Remove any extra spaces or line breaks within the content
@@ -62,7 +62,7 @@
                                 <p><b><?php echo date('F j, Y', strtotime($row->insertdate)); ?></b></p>
                                 </div>
                             </div> 
-                            <a href="<?php echo base_url();?>index.php/SingleBlog/<?php echo $row->Title;?>" class="read-more-btn" style="font-size: 18px;">Read More <i class="las la-arrow-right"></i></a>                           
+                            <a href="<?php echo base_url();?>SingleBlog/<?php echo $row->Title;?>" class="read-more-btn" style="font-size: 18px;">Read More <i class="las la-arrow-right"></i></a>                           
                         </div>                        
                     </div>
                 </div>
