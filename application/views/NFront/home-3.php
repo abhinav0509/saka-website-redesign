@@ -872,7 +872,7 @@
 
 
     <!-- CTA Area  -->
-    <div class="cta-area-two gray-bg" data-background="assets/img/cta-sketch.png">
+    <!-- <div class="cta-area-two gray-bg" data-background="assets/img/cta-sketch.png">
         <div class="container">
             <div class="row align-items-end">
                 <div class="col-xl-7 col-lg-7">
@@ -887,7 +887,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Blog Section  -->
     <div id="blog-3" class="blog-section section-padding pb-50">

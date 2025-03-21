@@ -79,20 +79,19 @@
 
 <!-- Breadcrumb Area  -->
 
-<div class="breadcrumb-area mt-50 mb-50">
-        <div class="container">
-            <div class="row">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="<?php echo base_url();?>">Home</a></li>                          
-                        <li class="breadcrumb-item"><a href="<?php echo base_url();?>index.php/">Solutions</a></li>                          
-                        <li class="breadcrumb-item active" aria-current="page">Details</li>
-                    </ol>
-                    <h4>Saka India Insight</h4>
-                </nav>
-            </div>
+<div class="breadcrumb-area mt-50">
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="project.html">Project</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Details</li>
+                </ol>
+            </nav>
         </div>
     </div>
+</div>
 
 <!-- Project Details  -->
 <div class="project-details-wrap section-padding pt-0">
