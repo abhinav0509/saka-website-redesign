@@ -89,8 +89,8 @@
                                 <li><a class="navlink" href="#">Solution</a>
                                     <ul class="sub-menu">
                                      <!-- <li><a href="project.html">Applications</a></li> -->
-                                        <li><a href="<?php echo base_url();?>index.php/Project">Projects</a></li>
-                                       <li><a href="<?php echo base_url();?>index.php/Project_details">Project Details</a></li>                                        
+                                        <li><a href="<?php echo base_url();?>index.php/Project">Solutions</a></li>
+                                       <li><a href="<?php echo base_url();?>index.php/Project_details">Solutions Details</a></li>                                        
                                     </ul> 
                                 </li>
                                 <li><a class="navlink" href="<?php echo base_url();?>Blog">Blogs</a>

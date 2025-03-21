@@ -50,8 +50,10 @@ class Welcome extends CI_Controller {
 
 	public function Project()
 	{
+		$this->load->model('display');
+		$data1["results"] = $this->display->Productdispaly_display();
 		$this->load->view('NFront/header');
-		$this->load->view('NFront/project');
+		$this->load->view('NFront/project', $data1);
 		$this->load->view('NFront/footer');
 	}
 
