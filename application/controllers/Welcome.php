@@ -81,7 +81,7 @@ class Welcome extends CI_Controller {
 	public function Solution()
 	{
 		$this->load->view('NFront/header');
-		$this->load->view('NFront/project-details');
+		$this->load->view('NFront/application');
 		$this->load->view('NFront/footer');
 	}
     public function SingleBlog()
