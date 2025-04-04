@@ -77,6 +77,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('NFront/contact');
 		$this->load->view('NFront/footer');
 	}
+	public function CSR()
+	{
+		$this->load->view('NFront/header');
+		$this->load->view('NFront/csr');
+		$this->load->view('NFront/footer');
+	}
 
 	public function Solution()
 	{
@@ -84,24 +90,25 @@ class Welcome extends CI_Controller {
 		$this->load->view('NFront/application');
 		$this->load->view('NFront/footer');
 	}
+
     public function SingleBlog()
-   {
-	$urll = trim(urldecode($this->uri->segment(2)));
-	if($this->uri->segment(2)!="")
-	{
-	$urll = trim(urldecode($this->uri->segment(2)));	
-	}
-	else
-	{
-		$urll = '';
-	}
-	$this->load->Model('display');
-	$data['results']=$this->display->Blogdispaly_display();
-	$data1['result']=$this->display->get_singleblog($urll);
-	$this->load->view('NFront/header',$data);
-	$this->load->view('NFront/blog-details',$data1);
-	$this->load->view('NFront/footer');
-}
+   	{
+		$urll = trim(urldecode($this->uri->segment(2)));
+		if($this->uri->segment(2)!="")
+		{
+		$urll = trim(urldecode($this->uri->segment(2)));	
+		}
+		else
+		{
+			$urll = '';
+		}
+		$this->load->Model('display');
+		$data['results']=$this->display->Blogdispaly_display();
+		$data1['result']=$this->display->get_singleblog($urll);
+		$this->load->view('NFront/header',$data);
+		$this->load->view('NFront/blog-details',$data1);
+		$this->load->view('NFront/footer');
+    }
 
     public function ClientList()
 	{

@@ -81,6 +81,7 @@
                                         <!-- <li><a href="services.html">Our Products</a></li> -->
                                         <li><a href="<?php echo base_url();?>Team">Our Team</a></li>
                                         <li><a class="navlink" href="<?php echo base_url();?>Gallery">Our Gallery</a></li>
+                                        <li><a href="<?php echo base_url();?>CSR">CSR</a></li>
                                         <li><a href="#">Career</a></li>
                                         <!-- <li><a href="faq.html">FAQs</a></li>                                     -->
                                     </ul>
@@ -173,3 +174,33 @@
             </div>  
         </div>           
     </div>
+
+    <!-- Header Area End -->
+     <script>
+            document.addEventListener('contextmenu', function(event) {
+            if (event.target.nodeName === 'IMG') {
+                event.preventDefault();
+                return false;
+            }
+        }, false);
+
+        // You can also add a custom message
+        document.addEventListener('contextmenu', function(event) {
+            if (event.target.nodeName === 'IMG') {
+                event.preventDefault();
+                alert("Image downloading is not permitted.");
+                return false;
+            }
+        }, false);
+             
+        // Prevent dragging of images
+        // This will prevent dragging of images on the entire document
+        document.addEventListener('dragstart', function(event) {
+            if (event.target.nodeName === 'IMG') {
+                event.preventDefault();
+                return false;
+            }
+        }, false);
+
+
+     </script>
