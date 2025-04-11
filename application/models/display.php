@@ -1780,7 +1780,7 @@ public function get_pass_stud_count($from_dt,$course,$stud,$fran,$res)
 
 
  public function get_pass_stud($limit,$start,$from_dt,$course,$stud,$fran,$res)
-    {
+{
         $dt=date('Y-m-d');
         $array=array();
         if($from_dt==$dt && $course=="" && $stud=="" && $fran=="" && $res=="")
@@ -2223,7 +2223,7 @@ public function Demo_order_count($from_dt,$to_dt,$fname)
      return $query->num_rows();
 }
 	
-	public function Demo_order_Data($limit,$start,$from_dt,$to_dt,$fname)
+public function Demo_order_Data($limit,$start,$from_dt,$to_dt,$fname)
 {
  	   $array=array();
      $dt=date('Y-m-d');
@@ -2255,7 +2255,7 @@ public function Demo_order_count($from_dt,$to_dt,$fname)
      $this->db->limit($limit, $start);
      $this->load->database();
      $this->db->select('O_id,o_date,f_id,Customer_Name,SUM(Quanitity) AS Total_quantity,SUM(Price) AS Total_Price,Status');
-	 $this->db->group_by('o_date');
+	  $this->db->group_by('o_date');
      $this->db->where($array);
      $query=$this->db->get('demoorder');
 	   return $query->result();
@@ -2589,7 +2589,7 @@ public function get_certi_berfore_data_count($from_dt,$to_dt,$fname,$stud,$cours
         if($fname==""){
         	$this->db->where(array('admission.e_status'=>'Complete','exm_status.certi_status'=>"NotIssued",'admission.f_id'=>'834'));
 		}else
-			$this->db->where(array('admission.e_status'=>'Complete','exm_status.certi_status'=>"NotIssued"));
+		  $this->db->where(array('admission.e_status'=>'Complete','exm_status.certi_status'=>"NotIssued"));
         $this->db->where($array);
         $this->db->group_by('admission.id');
         $query=$this->db->get('before_certi');
@@ -2735,7 +2735,8 @@ public function set_certi_date($id,$from_dt)
 }
 
 
-/*public function get_summary_details($session)
+/*
+public function get_summary_details($session)
 {
    $this->db->select('count(admission.id) as admission_count,admission.course_date');
    $this->db->select('count(enquiry.id) as enquiry_count,enquiry.enq_date');
@@ -2750,7 +2751,8 @@ public function set_certi_date($id,$from_dt)
    $this->db->group_by(array("admission.course_date","enquiry.enq_date",'forder.o_date') ); 
    $query=$this->db->get();
    return $query->result_array();
-}*/
+}
+*/
 
 /********************End******************************/
  public function issued_certi_data_count($from_dt,$to_dt,$fname,$course,$stud)
@@ -3237,7 +3239,11 @@ public function Expense_Detail_count($from_dt,$to_dt)
         $this->db->order_by('id','Asc');
         $query=$this->db->get();
         return $query->num_rows();
-}   
+}
+
+
+
+
 public function Expense_Detail($limit,$start,$from_dt,$to_dt)
 {
         $array=array();
@@ -3582,7 +3588,7 @@ function Emp_display($cname)
         return $query->num_rows();
 }   
 public function Emp_Paging($limit,$start,$cname)
-     {
+{
         
         $array=array();
         if($cname!="")
@@ -3658,7 +3664,7 @@ function Active_display($cname,$sname)
 }   
 
 public function Active_Paging($limit,$start,$cname,$sname)
-     {
+{
         
    if($cname!="")
 	 {
@@ -4625,7 +4631,7 @@ public function get_stud_info1($name,$fid)
     }
 
    public function meta_details($limit,$start){
-	    $this->db->limit($limit,$start);
+	   $this->db->limit($limit,$start);
   	   $this->db->order_by('id','desc');
        $query=$this->db->get('meta');
 	   return $query->result_array();

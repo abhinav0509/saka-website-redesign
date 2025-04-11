@@ -73,7 +73,7 @@
                                         <!-- <li><a href="<?php echo base_url();?>index.php/Home_three">Home</a></li> -->
                                         <!-- <li><a href="<?php echo base_url();?>index.php/Home_two">Home - Two</a></li> -->
                                         
-                                    <!-- </ul> -->
+                                <!-- </ul> -->
                                 </li>
                                 <li><a class="navlink" href="<?php echo base_url();?>About_us">About Us</a>
                                     <ul class="sub-menu">
@@ -104,6 +104,7 @@
                                 <li><a class="navlink" href="<?php echo base_url();?>Solution">Applications</a></li>
                                 <li><a class="navlink" href="<?php echo base_url();?>ClientList">Our Clients</a></li>                                
                                 <li><a class="navlink" href="<?php echo base_url();?>Contact">Contact</a></li>
+
                             </ul>                            
                         </div>
 
@@ -188,7 +189,7 @@
         document.addEventListener('contextmenu', function(event) {
             if (event.target.nodeName === 'IMG') {
                 event.preventDefault();
-                alert("Image downloading is not permitted.");
+                alert("Copyright © Saka India, Image downloading is not permitted.");
                 return false;
             }
         }, false);
