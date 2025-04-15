@@ -96,7 +96,7 @@ class Welcome extends CI_Controller {
 		$urll = trim(urldecode($this->uri->segment(2)));
 		if($this->uri->segment(2)!="")
 		{
-			$urll = trim(urldecode($this->uri->segment(2)));	
+		$urll = trim(urldecode($this->uri->segment(2)));	
 		}
 		else
 		{

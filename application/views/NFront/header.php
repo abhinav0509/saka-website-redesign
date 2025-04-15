@@ -109,9 +109,9 @@
                         </div>
 
                         <div class="header-right">
-                            <div class="search-trigger">                                        
+                            <!-- <div class="search-trigger">                                        
                                 <i class="fal fa-search"></i>
-                            </div>
+                            </div> -->
         
                             <div class="header-btn">
                                 <div class="menu-trigger">
