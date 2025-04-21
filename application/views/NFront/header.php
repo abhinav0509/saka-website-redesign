@@ -65,47 +65,44 @@
 
                         <div class="main-menu d-none d-lg-block">
                             <ul>
-                                <li class="active"><a class="navlink" href="<?php echo base_url();?>">Home</a>
-                                <!-- <ul class="sub-menu"> -->
-                                        <!-- <li><a href="<?php echo base_url();?>"> Home - One</a></li>
-                                        <li><a href="<?php echo base_url();?>index.php/Home_two">Home - Two</a></li>
-                                        <li><a href="<?php echo base_url();?>index.php/Home_three">Home - Three</a></li> -->
-                                        <!-- <li><a href="<?php echo base_url();?>index.php/Home_three">Home</a></li> -->
-                                        <!-- <li><a href="<?php echo base_url();?>index.php/Home_two">Home - Two</a></li> -->
-                                        
-                                <!-- </ul> -->
+                                <li class="<?php echo ($this->uri->segment(1) == '' || $this->uri->segment(1) == 'Home') ? 'active' : ''; ?>">
+                                    <a class="navlink" href="<?php echo base_url();?>">Home</a>
                                 </li>
-                                <li><a class="navlink" href="<?php echo base_url();?>About_us">About Us</a>
+                                <li class="<?php echo ($this->uri->segment(1) == 'About_us' || $this->uri->segment(1) == 'Team' || $this->uri->segment(1) == 'Gallery' || $this->uri->segment(1) == 'CSR') ? 'active' : ''; ?>">
+                                    <a class="navlink" href="<?php echo base_url();?>About_us">About Us</a>
                                     <ul class="sub-menu">
-                                        <li><a href="<?php echo base_url();?>About_us">About Us</a></li>                                    
-                                        <!-- <li><a href="services.html">Our Products</a></li> -->
+                                        <li><a href="<?php echo base_url();?>About_us">About Us</a></li>
                                         <li><a href="<?php echo base_url();?>Team">Our Team</a></li>
                                         <li><a class="navlink" href="<?php echo base_url();?>Gallery">Our Gallery</a></li>
                                         <li><a href="<?php echo base_url();?>CSR">CSR</a></li>
                                         <li><a href="#">Career</a></li>
-                                        <!-- <li><a href="faq.html">FAQs</a></li>                                     -->
                                     </ul>
-                                </li>                                
+                                </li>
 
-                                <li><a class="navlink" href="<?php echo base_url();?>index.php/Project">Solutions</a>
+                                <li class="<?php echo ($this->uri->segment(1) == 'Project' || $this->uri->segment(1) == 'Project_details') ? 'active' : ''; ?>">
+                                    <a class="navlink" href="<?php echo base_url();?>index.php/Project">Solutions</a>
                                     <ul class="sub-menu">
-                                     <!-- <li><a href="project.html">Applications</a></li> -->
                                         <li><a href="<?php echo base_url();?>index.php/Project">Solutions</a></li>
-                                       <li><a href="<?php echo base_url();?>index.php/Project_details">Solutions Details</a></li>                                        
-                                    </ul> 
+                                        <li><a href="<?php echo base_url();?>index.php/Project_details">Solutions Details</a></li>
+                                    </ul>
                                 </li>
-                                <li><a class="navlink" href="<?php echo base_url();?>Blog">Blogs</a>
-                                    <!--<ul class="sub-menu">-->
-                                    <!--    <li><a href="<?php echo base_url();?>index.php/Blog">Blogs</a></li>-->
-                                        <!-- <li><a href="<?php echo base_url();?>index.php/Blog_details">Blog Details</a></li> -->
-                                    <!--</ul>-->
-                                </li>
-                               
-                                <li><a class="navlink" href="<?php echo base_url();?>Solution">Applications</a></li>
-                                <li><a class="navlink" href="<?php echo base_url();?>ClientList">Our Clients</a></li>                                
-                                <li><a class="navlink" href="<?php echo base_url();?>Contact">Contact</a></li>
 
-                            </ul>                            
+                                <li class="<?php echo ($this->uri->segment(1) == 'Blog') ? 'active' : ''; ?>">
+                                    <a class="navlink" href="<?php echo base_url();?>Blog">Blogs</a>
+                                </li>
+
+                                <li class="<?php echo ($this->uri->segment(1) == 'Solution') ? 'active' : ''; ?>">
+                                    <a class="navlink" href="<?php echo base_url();?>Solution">Applications</a>
+                                </li>
+
+                                <li class="<?php echo ($this->uri->segment(1) == 'ClientList') ? 'active' : ''; ?>">
+                                    <a class="navlink" href="<?php echo base_url();?>ClientList">Our Clients</a>
+                                </li>
+
+                                <li class="<?php echo ($this->uri->segment(1) == 'Contact') ? 'active' : ''; ?>">
+                                    <a class="navlink" href="<?php echo base_url();?>Contact">Contact</a>
+                                </li>
+                            </ul>
                         </div>
 
                         <div class="header-right">
@@ -134,31 +131,21 @@
                                     </button>
                                     <nav class="sidebar-nav">
                                         <ul class="metismenu" id="mobile-menu">
-                                            <li><a class="" href="<?php echo base_url();?>">Home</a>
-                                                <!--<ul class="sub-menu">-->
-                                                <!--    <li><a href="<?php echo base_url();?>">Home</a></li>                                                                                                                                                                                         -->
-                                                <!--</ul>-->
+                                            <li class="<?php echo ($this->uri->segment(1) == '' || $this->uri->segment(1) == 'Home') ? 'active' : ''; ?>">
+                                                <a href="<?php echo base_url();?>">Home</a>
                                             </li>
-                                           
-                                                    <li><a href="<?php echo base_url();?>About_us">About Us</a></li>                                                
-                                                    <!--<li><a href="services.html">Our Services</a></li>-->
-                                                    <li><a href="<?php echo base_url();?>Team">Our Team</a></li>
-                                                                                                  
-                                                                                      
-                                            <!--<li><a class="has-arrow" href="#">project</a>-->
-                                            <!--    <ul class="sub-menu">-->
-                                            <!--        <li><a href="project.html">Project</a></li>                                                    -->
-                                            <!--        <li><a href="project-details.html">Project Details</a></li>-->
-                                            <!--    </ul>-->
-                                            <!--</li>-->
-                                            <li><a class="" href="<?php echo base_url();?>Blog">Blogs</a>
-                                                <!--<ul class="sub-menu">-->
-                                                <!--    <li><a href="<?php echo base_url();?>index.php/Blog">Blogs</a></li>-->
-                                                    <!--<li><a href="blog-details.html">Blog Details</a></li>-->
-                                                <!--</ul>-->
+                                            <li class="<?php echo ($this->uri->segment(1) == 'About_us') ? 'active' : ''; ?>">
+                                                <a href="<?php echo base_url();?>About_us">About Us</a>
                                             </li>
-                                            <li><a href="<?php echo base_url();?>Contact">Contact</a></li>
-                                            
+                                            <li class="<?php echo ($this->uri->segment(1) == 'Team') ? 'active' : ''; ?>">
+                                                <a href="<?php echo base_url();?>Team">Our Team</a>
+                                            </li>
+                                            <li class="<?php echo ($this->uri->segment(1) == 'Blog') ? 'active' : ''; ?>">
+                                                <a href="<?php echo base_url();?>Blog">Blogs</a>
+                                            </li>
+                                            <li class="<?php echo ($this->uri->segment(1) == 'Contact') ? 'active' : ''; ?>">
+                                                <a href="<?php echo base_url();?>Contact">Contact</a>
+                                            </li>
                                         </ul>
                                     </nav>  
                                     <div class="action-bar">
@@ -205,3 +192,55 @@
 
 
      </script>
+
+<style>
+/* Add these styles to ensure active states are properly visible */
+.main-menu ul li.active > a.navlink {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.main-menu ul li.active > a.navlink::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
+}
+
+.main-menu ul li > a.navlink::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.main-menu ul li > a.navlink:hover::after {
+    transform: scaleX(1);
+}
+
+/* Mobile menu active states */
+.mobile-nav .metismenu li.active > a {
+    color: var(--primary-color);
+    font-weight: 600;
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+/* Sub-menu active states */
+.main-menu ul li.active .sub-menu li a:hover,
+.main-menu ul li .sub-menu li.active > a {
+    color: var(--primary-color);
+    background-color: rgba(0, 123, 255, 0.1);
+}
+</style>
+</body>
+</html>
