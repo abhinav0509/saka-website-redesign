@@ -344,7 +344,7 @@
                                     </p>
                                 </div>
                             </div>                            
-                            <img class="services-image" src="assets/img/service/services-4.jpg" alt="Image Description">                                                    
+                             <img class="services-image" src="assets/img/service/services-4.jpg" alt="Image Description">                                                    
                         </div>                        
                         
                         <!-- Tab Content -->

@@ -88,6 +88,7 @@
 
 <style>
 /* Product Catalog Styles */
+
 .search-filter-section {
     background: #f8f9fa;
     padding: 20px 0;
@@ -98,11 +99,14 @@
 
 .search-wrapper {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .search-input-group {
     position: relative;
+    max-width: 600px;
+
+    margin: 0 auto;
 }
 
 .search-input-group i {
@@ -115,11 +119,11 @@
 
 .search-input-group input {
     padding-left: 45px;
-    height: 50px;
+    height: 65px;
     border-radius: 8px;
     border: 1px solid #ddd;
     width: 100%;
-    font-size: 16px;
+    font-size: 15px;
     transition: all 0.3s ease;
 }
 
@@ -136,23 +140,24 @@
 
 #productGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
     padding: 20px 0;
 }
 
 .product-item {
     position: relative;
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
     aspect-ratio: 1;
+    background: #f8f9fa;
 }
 
 .product-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .product-item img {
@@ -163,7 +168,7 @@
 }
 
 .product-item:hover img {
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
 
 .product-overlay {
@@ -171,7 +176,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 20px;
+    padding: 15px;
     background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
     color: white;
     opacity: 0;
@@ -183,20 +188,21 @@
 }
 
 .product-title {
-    font-size: 1.2rem;
-    margin-bottom: 5px;
+    font-size: 1rem;
+    margin-bottom: 3px;
     font-weight: 600;
+    line-height: 1.3;
 }
 
 .product-category {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     opacity: 0.8;
 }
 
 /* Bento Grid Layout */
 .product-item:nth-child(3n+1) {
-    grid-column: span 2;
-    grid-row: span 2;
+    grid-column: span 1;
+    grid-row: span 1;
 }
 
 .product-item:nth-child(3n+2) {
@@ -209,14 +215,29 @@
     grid-row: span 1;
 }
 
+/* Featured Product Highlight */
+.product-item:nth-child(5n+1) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
 @media (max-width: 768px) {
     #productGrid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
     }
     
-    .product-item:nth-child(3n+1) {
+    .product-item:nth-child(5n+1) {
         grid-column: span 1;
         grid-row: span 1;
+    }
+
+    .product-title {
+        font-size: 0.9rem;
+    }
+
+    .product-category {
+        font-size: 0.75rem;
     }
 }
 
@@ -251,28 +272,32 @@
 .no-results {
     grid-column: 1 / -1;
     text-align: center;
-    padding: 40px;
+    padding: 30px;
     color: #666;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
 }
+
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Product data array
+    // Product data 
+    
     const products = [
         // Granulation Category
         {
             id: 1,
             name: "Granulation Calcium Chloride",
-            image: "assets/img/products/granulation/calcium-chloride.jpg",
+            image: "assets/img/products/granulation/CaCl2-Granulation-Plant.JPG",
             category: "granulation",
             tags: ["granulation", "chemical"]
         },
         {
             id: 2,
             name: "Granulation Sodium Benzoate",
-            image: "assets/img/products/granulation/sodium-benzoate.jpg",
+            image: "assets/img/products/granulation/Sodium-Benzoate-Granulation-System.JPG",
             category: "granulation",
             tags: ["granulation", "chemical"]
         },
@@ -284,270 +309,56 @@ document.addEventListener('DOMContentLoaded', function() {
             tags: ["granulation", "chemical"]
         },
         // Dryers Category
-        {
+        { 
             id: 4,
-            name: "Spray Dryer",
-            image: "assets/img/products/dryers/spray-dryer.jpg",
-            category: "dryers",
+            name: "Nozzle Type Spray Dryer",
+            image: "assets/img/products/spray-dryers/NOZZLE-TYPE-SPRAY-DRYER.JPG",
+            category: "Spray Dryers",
             tags: ["dryer", "industrial"]
         },
         {
             id: 5,
-            name: "Rotary Dryer",
-            image: "assets/img/products/dryers/rotary-dryer.jpg",
-            category: "dryers",
+            name: "Atomiser Type Spray Dryer",
+            image: "assets/img/products/spray-dryers/Atomiser-Type-Spray-Dryer.JPG",
+            category: "Spary Dryers",
             tags: ["dryer", "industrial"]
         },
         {
             id: 6,
-            name: "Fluid Bed Dryer",
-            image: "assets/img/products/dryers/fluid-bed-dryer.jpg",
-            category: "dryers",
+            name: "Three Stage Spray Dryer",
+            image: "assets/img/products/spray-dryers/Three-Stage-Spray-Dryer.JPG",
+            category: "Spray Dryers",
             tags: ["dryer", "industrial"]
         },
         {
             id: 7,
-            name: "Flash Dryer",
-            image: "assets/img/products/dryers/flash-dryer.jpg",
-            category: "dryers",
+            name: "Atomiser Type Spray Dryer Zero Discharge System",
+            image: "assets/img/products/spray-dryers/Atomiser-Type-Spray-Dryer-Zero-Discharge-System.JPG",
+            category: "Spray Dryers",
             tags: ["dryer", "industrial"]
         },
-        // Coolers Category
         {
             id: 8,
-            name: "Spray Cooler",
-            image: "assets/img/products/coolers/spray-cooler.jpg",
-            category: "coolers",
-            tags: ["cooler", "industrial"]
+            name: "Atomiser Type Spray Dryer Zero Discharge System",
+            image: "assets/img/products/spray-dryers/Atomiser-Type-Spray-Dryer-Zero-Discharge-System.JPG",
+            category: "Spray Dryers",
+            tags: ["dryer", "industrial"]
         },
         {
             id: 9,
-            name: "Rotary Cooler",
-            image: "assets/img/products/coolers/rotary-cooler.jpg",
-            category: "coolers",
-            tags: ["cooler", "industrial"]
+            name: "Atomiser Type Spray Dryer Zero Discharge System",
+            image: "assets/img/products/spray-dryers/Atomiser-Type-Spray-Dryer-Zero-Discharge-System.JPG",
+            category: "Spray Dryers",
+            tags: ["dryer", "industrial"]
         },
         {
             id: 10,
-            name: "Fluid Bed Cooler",
-            image: "assets/img/products/coolers/fluid-bed-cooler.jpg",
-            category: "coolers",
-            tags: ["cooler", "industrial"]
+            name: "Atomiser Type Spray Dryer Zero Discharge System",
+            image: "assets/img/products/spray-dryers/Atomiser-Type-Spray-Dryer-Zero-Discharge-System.JPG",
+            category: "Spray Dryers",
+            tags: ["dryer", "industrial"]
         },
-        // Air Heater Category
-        {
-            id: 11,
-            name: "Thermic Fluid",
-            image: "assets/img/products/air-heater/thermic-fluid.jpg",
-            category: "air-heater",
-            tags: ["heater", "thermal"]
-        },
-        {
-            id: 12,
-            name: "Heat Exchanger",
-            image: "assets/img/products/air-heater/heat-exchanger.jpg",
-            category: "air-heater",
-            tags: ["heater", "thermal"]
-        },
-        {
-            id: 13,
-            name: "Air Cooler, Air Moisture Separator",
-            image: "assets/img/products/air-heater/air-cooler.jpg",
-            category: "air-heater",
-            tags: ["cooler", "separator"]
-        },
-        // Hot Air Generator Category
-        {
-            id: 14,
-            name: "Hot Air Generator",
-            image: "assets/img/products/hot-air/hot-air-generator.jpg",
-            category: "hot-air",
-            tags: ["generator", "thermal"]
-        },
-        {
-            id: 15,
-            name: "Air Pollution Control Equipment",
-            image: "assets/img/products/hot-air/pollution-control.jpg",
-            category: "hot-air",
-            tags: ["control", "environmental"]
-        },
-        {
-            id: 16,
-            name: "Thermic Fluid Heater",
-            image: "assets/img/products/hot-air/thermic-fluid-heater.jpg",
-            category: "hot-air",
-            tags: ["heater", "thermal"]
-        },
-        // Other Products Category
-        {
-            id: 17,
-            name: "Shugi Mixer",
-            image: "assets/img/products/other/shugi-mixer.jpg",
-            category: "other",
-            tags: ["mixer", "processing"]
-        },
-        {
-            id: 18,
-            name: "Turnkey Projects",
-            image: "assets/img/products/other/turnkey-projects.jpg",
-            category: "other",
-            tags: ["projects", "engineering"]
-        },
-        {
-            id: 19,
-            name: "Material Handling System",
-            image: "assets/img/products/other/material-handling.jpg",
-            category: "other",
-            tags: ["handling", "system"]
-        },
-        {
-            id: 20,
-            name: "Pin Mill",
-            image: "assets/img/products/other/pin-mill.jpg",
-            category: "other",
-            tags: ["mill", "processing"]
-        },
-        {
-            id: 21,
-            name: "Lump Breaker",
-            image: "assets/img/products/other/lump-breaker.jpg",
-            category: "other",
-            tags: ["breaker", "processing"]
-        },
-        {
-            id: 22,
-            name: "Blender (Fast Mixer)",
-            image: "assets/img/products/other/blender.jpg",
-            category: "other",
-            tags: ["mixer", "processing"]
-        },
-        {
-            id: 23,
-            name: "Vertical Blender",
-            image: "assets/img/products/other/vertical-blender.jpg",
-            category: "other",
-            tags: ["mixer", "processing"]
-        },
-        {
-            id: 24,
-            name: "Plow Mixer",
-            image: "assets/img/products/other/plow-mixer.jpg",
-            category: "other",
-            tags: ["mixer", "processing"]
-        },
-        {
-            id: 25,
-            name: "Ribbon Blender",
-            image: "assets/img/products/other/ribbon-blender.jpg",
-            category: "other",
-            tags: ["mixer", "processing"]
-        },
-        {
-            id: 26,
-            name: "Twin Feed Screw",
-            image: "assets/img/products/other/twin-feed-screw.jpg",
-            category: "other",
-            tags: ["screw", "feeding"]
-        },
-        {
-            id: 27,
-            name: "Rapid Mixer",
-            image: "assets/img/products/other/rapid-mixer.jpg",
-            category: "other",
-            tags: ["mixer", "processing"]
-        },
-        {
-            id: 28,
-            name: "Rotary Air Lock Valve",
-            image: "assets/img/products/other/air-lock-valve.jpg",
-            category: "other",
-            tags: ["valve", "control"]
-        },
-        {
-            id: 29,
-            name: "Bag Filter",
-            image: "assets/img/products/other/bag-filter.jpg",
-            category: "other",
-            tags: ["filter", "environmental"]
-        },
-        {
-            id: 30,
-            name: "Blower",
-            image: "assets/img/products/other/blower.jpg",
-            category: "other",
-            tags: ["blower", "air"]
-        },
-        {
-            id: 31,
-            name: "Atomizer",
-            image: "assets/img/products/other/atomizer.jpg",
-            category: "other",
-            tags: ["atomizer", "spray"]
-        },
-        {
-            id: 32,
-            name: "Bucket Elevator",
-            image: "assets/img/products/other/bucket-elevator.jpg",
-            category: "other",
-            tags: ["elevator", "handling"]
-        },
-        {
-            id: 33,
-            name: "Coal Crusher",
-            image: "assets/img/products/other/coal-crusher.jpg",
-            category: "other",
-            tags: ["crusher", "processing"]
-        },
-        {
-            id: 34,
-            name: "Screw Feeder",
-            image: "assets/img/products/other/screw-feeder.jpg",
-            category: "other",
-            tags: ["feeder", "feeding"]
-        },
-        {
-            id: 35,
-            name: "Pneumatic Conveyor",
-            image: "assets/img/products/other/pneumatic-conveyor.jpg",
-            category: "other",
-            tags: ["conveyor", "handling"]
-        },
-        {
-            id: 36,
-            name: "Plough Mixer",
-            image: "assets/img/products/other/plough-mixer.jpg",
-            category: "other",
-            tags: ["mixer", "processing"]
-        },
-        // Plant Engineering Category
-        {
-            id: 37,
-            name: "Food Preservative Manufacturing",
-            image: "assets/img/products/plant/food-preservative.jpg",
-            category: "plant-engineering",
-            tags: ["food", "manufacturing"]
-        },
-        {
-            id: 38,
-            name: "Material Handling System",
-            image: "assets/img/products/plant/material-handling.jpg",
-            category: "plant-engineering",
-            tags: ["handling", "system"]
-        },
-        {
-            id: 39,
-            name: "PPT Silica Manufacturing",
-            image: "assets/img/products/plant/silica-manufacturing.jpg",
-            category: "plant-engineering",
-            tags: ["silica", "manufacturing"]
-        },
-        {
-            id: 40,
-            name: "Klin Plants",
-            image: "assets/img/products/plant/klin-plants.jpg",
-            category: "plant-engineering",
-            tags: ["klin", "plants"]
-        }
+      
     ];
 
     const productGrid = document.getElementById('productGrid');
@@ -560,11 +371,11 @@ document.addEventListener('DOMContentLoaded', function() {
         card.className = 'product-item';
         card.setAttribute('data-category', product.category);
         card.setAttribute('data-tags', product.tags.join(','));
-        
+        const baseUrl = "<?php echo base_url(); ?>";
         card.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
+            <img src="${baseUrl}${product.image}" alt="${product.name}">
             <div class="product-overlay">
-                <h3 class="product-title">${product.name}</h3>
+                <h3 class="product-title text-white">${product.name}</h3>
                 <span class="product-category">${product.category.replace('-', ' ').toUpperCase()}</span>
             </div>
         `;
@@ -574,6 +385,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to filter products based on search term
     function filterProducts(searchTerm) {
+    
         const filteredProducts = products.filter(product => {
             const productName = product.name.toLowerCase();
             const productCategory = product.category.toLowerCase();
