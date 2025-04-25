@@ -41,7 +41,7 @@
                     <div class="search-wrapper">
                         <div class="search-input-group">
                             <i class="las la-search"></i>
-                            <input type="text" id="productSearch" class="form-control" placeholder="Search products...">
+                            <input type="text" id="productSearch" class="form-control" placeholder="Search products here...">
                         </div>
                     </div>
                 </div>
@@ -87,6 +87,7 @@
 </div>
 
 <style>
+    
 /* Product Catalog Styles */
 
 .search-filter-section {
@@ -105,7 +106,6 @@
 .search-input-group {
     position: relative;
     max-width: 600px;
-
     margin: 0 auto;
 }
 
@@ -133,6 +133,51 @@
     outline: none;
 }
 
+/* Search Suggestions Styles */
+.search-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1001;
+    display: none;
+}
+
+.search-suggestions.show {
+    display: block;
+}
+
+.suggestion-item {
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-bottom: 1px solid #eee;
+}
+
+.suggestion-item:last-child {
+    border-bottom: none;
+}
+
+.suggestion-item:hover {
+    background-color: #f5f5f5;
+}
+
+.suggestion-item .product-name {
+    font-weight: 500;
+    color: #333;
+}
+
+.suggestion-item .product-category {
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 4px;
+}
+
 .product-grid-section {
     min-height: 100vh;
     position: relative;
@@ -140,8 +185,8 @@
 
 #productGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
     padding: 20px 0;
 }
 
@@ -153,6 +198,7 @@
     transition: all 0.3s ease;
     aspect-ratio: 1;
     background: #f8f9fa;
+    height: 100%;
 }
 
 .product-item:hover {
@@ -177,7 +223,7 @@
     left: 0;
     right: 0;
     padding: 15px;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    background: rgba(0, 0, 0, 0.7);
     color: white;
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -188,7 +234,7 @@
 }
 
 .product-title {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 3px;
     font-weight: 600;
     line-height: 1.3;
@@ -223,8 +269,8 @@
 
 @media (max-width: 768px) {
     #productGrid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
     }
     
     .product-item:nth-child(5n+1) {
@@ -233,7 +279,7 @@
     }
 
     .product-title {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .product-category {
@@ -242,6 +288,7 @@
 }
 
 /* Loading Animation */
+
 .loading {
     position: absolute;
     top: 0;
@@ -277,6 +324,11 @@
     font-size: 1.1rem;
     background: #f8f9fa;
     border-radius: 8px;
+}
+.product-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 </style>
@@ -347,7 +399,7 @@ document.addEventListener('DOMContentLoaded', function() {
         {
             id: 9,
             name: "Atomiser Type Spray Dryer Zero Discharge System",
-            image: "assets/img/products/spray-dryers/Atomiser-Type-Spray-Dryer-Zero-Discharge-System.JPG",
+            image: "assets/img/products/Atomizer.JPG",
             category: "Spray Dryers",
             tags: ["dryer", "industrial"]
         },
@@ -365,6 +417,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const searchInput = document.getElementById('productSearch');
     let searchTimeout;
 
+    // Create search suggestions container
+    const suggestionsContainer = document.createElement('div');
+    suggestionsContainer.className = 'search-suggestions';
+    searchInput.parentNode.appendChild(suggestionsContainer);
+
     // Function to create product card
     function createProductCard(product) {
         const card = document.createElement('div');
@@ -375,7 +432,7 @@ document.addEventListener('DOMContentLoaded', function() {
         card.innerHTML = `
             <img src="${baseUrl}${product.image}" alt="${product.name}">
             <div class="product-overlay">
-                <h3 class="product-title text-white">${product.name}</h3>
+                <h3 class="product-title" style="color:#fff;">${product.name}</h3>
                 <span class="product-category">${product.category.replace('-', ' ').toUpperCase()}</span>
             </div>
         `;
@@ -383,9 +440,52 @@ document.addEventListener('DOMContentLoaded', function() {
         return card;
     }
 
+    // Function to show search suggestions
+    function showSuggestions(searchTerm) {
+        if (!searchTerm) {
+            suggestionsContainer.classList.remove('show');
+            return;
+        }
+
+        const filteredProducts = products.filter(product => {
+            const productName = product.name.toLowerCase();
+            const productCategory = product.category.toLowerCase();
+            const productTags = product.tags.join(' ').toLowerCase();
+            
+            return productName.includes(searchTerm) || 
+                   productCategory.includes(searchTerm) || 
+                   productTags.includes(searchTerm);
+        });
+
+        if (filteredProducts.length > 0) {
+            suggestionsContainer.innerHTML = filteredProducts.map(product => `
+                <div class="suggestion-item" data-product-id="${product.id}">
+                    <div class="product-name">${product.name}</div>
+                    <div class="product-category">${product.category}</div>
+                </div>
+            `).join('');
+
+            suggestionsContainer.classList.add('show');
+
+            // Add click event listeners to suggestions
+            suggestionsContainer.querySelectorAll('.suggestion-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    const productId = parseInt(this.getAttribute('data-product-id'));
+                    const selectedProduct = products.find(p => p.id === productId);
+                    if (selectedProduct) {
+                        searchInput.value = selectedProduct.name;
+                        suggestionsContainer.classList.remove('show');
+                        updateProductGrid([selectedProduct]);
+                    }
+                });
+            });
+        } else {
+            suggestionsContainer.classList.remove('show');
+        }
+    }
+
     // Function to filter products based on search term
     function filterProducts(searchTerm) {
-    
         const filteredProducts = products.filter(product => {
             const productName = product.name.toLowerCase();
             const productCategory = product.category.toLowerCase();
@@ -419,14 +519,22 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize grid with all products
     updateProductGrid(products);
 
-    // Add event listener for search input
+    // Add event listeners for search input
     searchInput.addEventListener('input', function() {
         clearTimeout(searchTimeout);
         const searchTerm = this.value.toLowerCase().trim();
         
         searchTimeout = setTimeout(() => {
+            showSuggestions(searchTerm);
             filterProducts(searchTerm);
-        }, 300); // Debounce search for better performance
+        }, 300);
+    });
+
+    // Close suggestions when clicking outside
+    document.addEventListener('click', function(e) {
+        if (!searchInput.contains(e.target) && !suggestionsContainer.contains(e.target)) {
+            suggestionsContainer.classList.remove('show');
+        }
     });
 });
 </script>

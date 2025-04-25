@@ -78,6 +78,7 @@
       <div id="smooth-content">
 
 <!-- Breadcrumb Area  -->
+ 
 
 <div class="breadcrumb-area mt-50">
     <div class="container">
@@ -85,13 +86,15 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item"><a href="project.html">Project</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Details</li>
+                  
+                  <li class="breadcrumb-item active" aria-current="page">Applications</li>
                 </ol>
             </nav>
         </div>
     </div>
 </div>
+
+
 
 <!-- Project Details  -->
 <div class="container-fluid">

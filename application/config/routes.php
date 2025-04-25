@@ -53,7 +53,8 @@ $default_controller = "Welcome";
 $controller_exceptions = array('Admin','Admin2','Login_cont','Logout','Blog_Data','Notifications','News_Data','Gallry','Testimonial_Data','Employee','gallry','Insert','About','Insert_team','Product','Contact');
 
 $route['default_controller'] = $default_controller;
-// $route['contact-us'] = 'Welcome/Contact';
+
+$route['Contact'] = 'Welcome/Contact';
 // $route['about-us'] = 'Welcome/About_us';
 $route["^((?!\b".implode('\b|\b', $controller_exceptions)."\b).*)$"] = $default_controller.'/$1';
 $route['translate_uri_dashes'] = FALSE;

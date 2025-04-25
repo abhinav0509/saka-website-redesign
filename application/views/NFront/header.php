@@ -194,7 +194,9 @@
      </script>
 
 <style>
+    
 /* Add these styles to ensure active states are properly visible */
+
 .main-menu ul li.active > a.navlink {
     color: var(--primary-color);
     font-weight: 600;
