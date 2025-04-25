@@ -15,7 +15,7 @@
     </div>
 
     <!-- Hero Area -->
-    <div class="hero-area section-padding pt-100 pb-50">
+    <!-- <div class="hero-area section-padding pt-100 pb-50">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-xl-8 col-lg-8">
@@ -31,7 +31,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Search and Filter Section -->
     <div class="search-filter-section section-padding pt-0">
@@ -100,7 +100,8 @@
 
 .search-wrapper {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .search-input-group {
@@ -185,9 +186,10 @@
 
 #productGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 382px);
     gap: 20px;
     padding: 20px 0;
+    justify-content: center;
 }
 
 .product-item {
@@ -196,9 +198,9 @@
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
-    aspect-ratio: 1;
+    width: 382px;
+    height: 382px;
     background: #f8f9fa;
-    height: 100%;
 }
 
 .product-item:hover {
@@ -267,23 +269,15 @@
     grid-row: span 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     #productGrid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 15px;
+        grid-template-columns: repeat(2, 382px);
     }
-    
-    .product-item:nth-child(5n+1) {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
+}
 
-    .product-title {
-        font-size: 1rem;
-    }
-
-    .product-category {
-        font-size: 0.75rem;
+@media (max-width: 800px) {
+    #productGrid {
+        grid-template-columns: 382px;
     }
 }
 
