@@ -33,6 +33,105 @@
         background-color:#e7e7e7;
    }
 
+   /* Featured Products Grid Styles */
+   .featured-products-section {
+       background: #f8f9fa;
+       padding: 60px 0;
+   }
+
+   #featuredProductsGrid {
+       display: grid;
+       grid-template-columns: repeat(3, minmax(0, 1fr));
+       gap: 30px;
+       padding: 20px 0;
+       width: 100%;
+       max-width: 1200px;
+       margin: 0 auto;
+   }
+
+   .featured-product-item {
+       position: relative;
+       border-radius: 8px;
+       overflow: hidden;
+       cursor: pointer;
+       transition: all 0.3s ease;
+       width: 100%;
+       padding-bottom: 100%; /* Creates a square aspect ratio */
+       background: #f8f9fa;
+       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+   }
+
+   .featured-product-item img {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       object-fit: contain;
+       transition: transform 0.3s ease;
+       padding: 20px;
+   }
+
+   .featured-product-item:hover {
+       transform: translateY(-3px);
+       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+   }
+
+   .featured-product-item:hover img {
+       transform: scale(1.03);
+   }
+
+   .featured-product-overlay {
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       padding: 15px;
+       background: rgba(0, 0, 0, 0.7);
+       color: white;
+       opacity: 0;
+       transition: opacity 0.3s ease;
+   }
+
+   .featured-product-item:hover .featured-product-overlay {
+       opacity: 1;
+   }
+
+   .featured-product-title {
+       font-size: 1.2rem;
+       margin-bottom: 3px;
+       font-weight: 600;
+       line-height: 1.3;
+       color: #fff;
+   }
+
+   .featured-product-category {
+       font-size: 0.8rem;
+       opacity: 0.8;
+       color: #fff;
+   }
+
+   @media (max-width: 1200px) {
+       #featuredProductsGrid {
+           grid-template-columns: repeat(3, minmax(0, 1fr));
+           gap: 20px;
+           padding: 0 15px;
+       }
+   }
+
+   @media (max-width: 992px) {
+       #featuredProductsGrid {
+           grid-template-columns: repeat(2, minmax(0, 1fr));
+           gap: 20px;
+       }
+   }
+
+   @media (max-width: 576px) {
+       #featuredProductsGrid {
+           grid-template-columns: repeat(1, minmax(0, 1fr));
+           gap: 15px;
+       }
+   }
 
 </style>
 
@@ -57,14 +156,39 @@
             </div>
         </div>
                                                                      
+     <!-- Video Section Commented Out
      <div class="container-fluid mt-4" style="overflow:hidden;">
         <video class="col-md-12" autoplay muted loop id="hero  Video">
                 <source src="<?php echo base_url();?>assets/img/video/Saka-Corporate Video_final.mp4" type="video/mp4">
-                
-                
         </video>
-
      </div>
+     -->
+
+     <!-- Featured Products Grid -->
+     <div class="featured-products-section section-padding pt-50 pb-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h2>Our Featured Products</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-40">
+                <div class="col-12">
+                    <div id="featuredProductsGrid">
+                        <!-- Products will be loaded here via JavaScript -->
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-40">
+                <div class="col-12 text-center">
+                    <a href="<?php echo base_url();?>index.php/Project" class="theme-btn">See More Products</a>
+                </div>
+            </div>
+        </div>
+     </div>
+
 
 
  <!-- Client Section  -->
@@ -120,7 +244,7 @@
                         <h2>About <br> Saka India <span class="d-none d-md-block"><i class="las la-arrow-down ml-40"></i></span></h2>                            
                     </div>
                     <div class="about-desc mt-60 pl-150">
-                        <p>Saka India is a team of experienced engineers and designers Who are passionate about developing technology that serves the true purpose of your business.The commitment to be always aligned to Customer’s purpose has earned us a 85% repeat business,
+                        <p>Saka India is a team of experienced engineers and designers Who are passionate about developing technology that serves the true purpose of your business.The commitment to be always aligned to Customer's purpose has earned us a 85% repeat business,
                         even as the base of customers doubled every year since the inception.</p>
                     </div>
                 </div>
@@ -214,7 +338,7 @@
                                 <div class="services-text-container">
                                     <h4 class="services-title">Granulation System</h4>
                                     <p class="text-gray mb-0">
-                                        SAKA offers complete turn key solution for granulation systems right from drying till packing of granules. Our systems are widely used for granule formation for chemicals like Calcium Chloride, Magnesium Chloride, Calcium Nitrate etc. SAKA’s Granulation systems are custom built to provide desired size of granules. 
+                                        SAKA offers complete turn key solution for granulation systems right from drying till packing of granules. Our systems are widely used for granule formation for chemicals like Calcium Chloride, Magnesium Chloride, Calcium Nitrate etc. SAKA's Granulation systems are custom built to provide desired size of granules. 
                                     </p>
                                 </div>
                             </div>                            
@@ -227,7 +351,7 @@
                                 <div class="services-text-container">
                                     <h4 class="services-title">Spray Dryer</h4>
                                     <p class="text-gray mb-0">
-                                      SAKA’s Spray Dryers are designed to serve your specific process needs to deliver best output efficiency, with optimum operational costs and no product wastage
+                                      SAKA's Spray Dryers are designed to serve your specific process needs to deliver best output efficiency, with optimum operational costs and no product wastage
                                     </p>
                                 </div>
                             </div>                            
@@ -685,7 +809,7 @@
                                 <img src="assets/img/straight-quotes.png" alt="">
                             </div>
                             <div class="testimonial-content">
-                                <p>We’ve been working with Saka India for over three years now, and their commitment to quality and precision is unmatched. Their team has consistently delivered high-grade materials that meet our stringent standards.</p>
+                                <p>We've been working with Saka India for over three years now, and their commitment to quality and precision is unmatched. Their team has consistently delivered high-grade materials that meet our stringent standards.</p>
                             </div>
                             <div class="testimonial-author">
                                 <!--<img src="assets/img/testimonial/1.png" alt="">-->
@@ -886,8 +1010,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div> -->
+        </div> -->
 
     <!-- Blog Section  -->
     <div id="blog-3" class="blog-section section-padding pb-50">
@@ -966,5 +1089,315 @@
     <!--        </div>-->
     <!--    </div>-->
     <!--</div>-->
+
+
+
+    <style>
     
+    /* Product Catalog Styles */
+    
+    .search-filter-section {
+        background: #f8f9fa;
+        padding: 20px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    
+    .search-wrapper {
+        position: relative;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
+    .search-input-group {
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .search-input-group i {
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #666;
+    }
+    
+    .search-input-group input {
+        padding-left: 45px;
+        height: 65px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        width: 100%;
+        font-size: 15px;
+        transition: all 0.3s ease;
+    }
+    
+    .search-input-group input:focus {
+        border-color: #01a0e2;
+        box-shadow: 0 0 0 2px rgba(1, 160, 226, 0.1);
+        outline: none;
+    }
+    
+    /* Search Suggestions Styles */
+    .search-suggestions {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        max-height: 300px;
+        overflow-y: auto;
+        z-index: 1001;
+        display: none;
+    }
+    
+    .search-suggestions.show {
+        display: block;
+    }
+    
+    .suggestion-item {
+        padding: 12px 15px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .suggestion-item:last-child {
+        border-bottom: none;
+    }
+    
+    .suggestion-item:hover {
+        background-color: #f5f5f5;
+    }
+    
+    .suggestion-item .product-name {
+        font-weight: 500;
+        color: #333;
+    }
+    
+    .suggestion-item .product-category {
+        font-size: 0.8em;
+        color: #666;
+        margin-top: 4px;
+    }
+    
+    .product-grid-section {
+        min-height: 100vh;
+        position: relative;
+    }
+    
+    #productGrid {
+        display: grid;
+        grid-template-columns: repeat(3, 382px);
+        gap: 20px;
+        padding: 20px 0;
+        justify-content: center;
+    }
+    
+    .product-item {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: 382px;
+        height: 382px;
+        background: #f8f9fa;
+    }
+    
+    .product-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .product-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+    }
+    
+    .product-item:hover img {
+        transform: scale(1.03);
+    }
+    
+    .product-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 15px;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .product-item:hover .product-overlay {
+        opacity: 1;
+    }
+    
+    .product-title {
+        font-size: 1.2rem;
+        margin-bottom: 3px;
+        font-weight: 600;
+        line-height: 1.3;
+    }
+    
+    .product-category {
+        font-size: 0.8rem;
+        opacity: 0.8;
+    }
+    
+    /* Bento Grid Layout */
+    .product-item:nth-child(3n+1) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .product-item:nth-child(3n+2) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .product-item:nth-child(3n+3) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    /* Featured Product Highlight */
+    .product-item:nth-child(5n+1) {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+    
+    @media (max-width: 1200px) {
+        #productGrid {
+            grid-template-columns: repeat(2, 382px);
+        }
+    }
+    
+    @media (max-width: 800px) {
+        #productGrid {
+            grid-template-columns: 382px;
+        }
+    }
+    
+    /* Loading Animation */
+    
+    .loading {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255,255,255,0.8);
+    }
+    
+    .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #01a0e2;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    
+    /* No Results Message */
+    .no-results {
+        grid-column: 1 / -1;
+        text-align: center;
+        padding: 30px;
+        color: #666;
+        font-size: 1.1rem;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+    .product-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const products = [
+        {
+            id: 1,
+            name: "Granulation Calcium Chloride",
+            image: "assets/img/products/granulation/CaCl2-Granulation-Plant.JPG",
+            category: "Granulation",
+            tags: ["granulation", "chemical"]
+        },
+        {
+            id: 2,
+            name: "Granulation Sodium Benzoate",
+            image: "assets/img/products/granulation/Sodium-Benzoate-Granulation-System.JPG",
+            category: "Granulation",
+            tags: ["granulation", "chemical"]
+        },
+        {
+            id: 3,
+            name: "Granulation Calcium Nitrate",
+            image: "assets/img/products/granulation/calcium-nitrate.jpg",
+            category: "Granulation",
+            tags: ["granulation", "chemical"]
+        },
+        { 
+            id: 4,
+            name: "Nozzle Type Spray Dryer",
+            image: "assets/img/products/spray-dryers/NOZZLE-TYPE-SPRAY-DRYER.JPG",
+            category: "Spray Dryers",
+            tags: ["dryer", "industrial"]
+        },
+        {
+            id: 5,
+            name: "Atomiser Type Spray Dryer",
+            image: "assets/img/products/spray-dryers/Atomiser-Type-Spray-Dryer.JPG",
+            category: "Spray Dryers",
+            tags: ["dryer", "industrial"]
+        },
+        {
+            id: 6,
+            name: "Three Stage Spray Dryer",
+            image: "assets/img/products/spray-dryers/Three-Stage-Spray-Dryer.JPG",
+            category: "Spray Dryers",
+            tags: ["dryer", "industrial"]
+        }
+    ];
+
+    const featuredProductsGrid = document.getElementById('featuredProductsGrid');
+    featuredProductsGrid.innerHTML = '';
+    
+    // Only show first 6 products
+    products.slice(0, 6).forEach(product => {
+        const productCard = document.createElement('div');
+        productCard.className = 'featured-product-item';
+        
+        const baseUrl = "<?php echo base_url(); ?>";
+        productCard.innerHTML = `
+            <img src="${baseUrl}${product.image}" alt="${product.name}">
+            <div class="featured-product-overlay">
+                <h3 class="featured-product-title">${product.name}</h3>
+                <p class="featured-product-category">${product.category}</p>
+            </div>
+        `;
+        
+        featuredProductsGrid.appendChild(productCard);
+    });
+});
+</script>
    

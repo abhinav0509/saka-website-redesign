@@ -2,19 +2,22 @@
 
     <!-- Breadcrumb Area  -->
     <div class="breadcrumb-area mt-50">
-        <div class="container">
-            <div class="row">
+        <div class="container" style="width:100%;">
+            <div class="row" >
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>                          
+                        <li class="breadcrumb-item"><a href="<?php echo base_url();?>">Home</a></li>                          
                         <li class="breadcrumb-item active" aria-current="page">Product Catalogue</li>
                     </ol>
                 </nav>
+                
             </div>
         </div>
     </div>
+   
 
     <!-- Hero Area -->
+
     <!-- <div class="hero-area section-padding pt-100 pb-50">
         <div class="container">
             <div class="row align-items-center">
@@ -33,6 +36,8 @@
         </div>
     </div> -->
 
+
+
     <!-- Search and Filter Section -->
     <div class="search-filter-section section-padding pt-0">
         <div class="container">
@@ -43,7 +48,9 @@
                             <i class="las la-search"></i>
                             <input type="text" id="productSearch" class="form-control" placeholder="Search products here...">
                         </div>
+                        
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -186,10 +193,10 @@
 
 #productGrid {
     display: grid;
-    grid-template-columns: repeat(3, 382px);
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 20px;
     padding: 20px 0;
-    justify-content: center;
+    width: 100%;
 }
 
 .product-item {
@@ -198,9 +205,10 @@
     overflow: hidden;
     cursor: pointer;
     transition: all 0.3s ease;
-    width: 382px;
-    height: 382px;
+    width: 100%;
+    aspect-ratio: 1/1;
     background: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .product-item:hover {
@@ -247,37 +255,48 @@
     opacity: 0.8;
 }
 
-/* Bento Grid Layout */
-.product-item:nth-child(3n+1) {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.product-item:nth-child(3n+2) {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.product-item:nth-child(3n+3) {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-/* Featured Product Highlight */
+/* Remove the bento grid pattern styles */
+.product-item:nth-child(3n+1),
+.product-item:nth-child(3n+2),
+.product-item:nth-child(3n+3),
 .product-item:nth-child(5n+1) {
-    grid-column: span 2;
-    grid-row: span 1;
+    grid-column: auto;
+    grid-row: auto;
 }
 
 @media (max-width: 1200px) {
     #productGrid {
-        grid-template-columns: repeat(2, 382px);
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     #productGrid {
-        grid-template-columns: 382px;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 15px;
+    }
+    
+    .search-input-group {
+        max-width: 100%;
+    }
+    
+    .search-input-group input {
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    #productGrid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 10px;
+    }
+    
+    .product-title {
+        font-size: 0.9rem;
+    }
+    
+    .product-category {
+        font-size: 0.7rem;
     }
 }
 
@@ -328,6 +347,7 @@
 </style>
 
 <script>
+
 document.addEventListener('DOMContentLoaded', function() {
     // Product data 
     
@@ -397,6 +417,7 @@ document.addEventListener('DOMContentLoaded', function() {
             category: "Spray Dryers",
             tags: ["dryer", "industrial"]
         },
+        
         {
             id: 10,
             name: "Atomiser Type Spray Dryer Zero Discharge System",
@@ -435,6 +456,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Function to show search suggestions
+    
     function showSuggestions(searchTerm) {
         if (!searchTerm) {
             suggestionsContainer.classList.remove('show');
@@ -476,7 +498,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             suggestionsContainer.classList.remove('show');
         }
-    }
+    } 
 
     // Function to filter products based on search term
     function filterProducts(searchTerm) {
